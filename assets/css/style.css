@@ -61,6 +61,11 @@ h1, h2, h3 {
     width: 9rem;
 }
 
+.section {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 /*Navbar Styles*/
 #navbar {
     background-color: #2B4A4A;
@@ -79,7 +84,7 @@ h1, h2, h3 {
 #homepage-hero {
     background: url(../images/homepage-hero-image.webp) no-repeat center center/cover;
     position: relative;
-    height: 600px;
+    height: 500px;
     width: 100%;
 }
 
@@ -94,3 +99,14 @@ h1, h2, h3 {
     padding-left: 10px;
     z-index: 100;
 }
+
+/* Media queries */
+
+/* Medium devices (tablets 768px and up) */
+@media screen and (min-width: 768px) {
+}
+
+/* Large devices (desktops 992px and up) */
+@media screen and (min-width: 992px) {
+}
+
