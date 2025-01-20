@@ -16,7 +16,7 @@
 body {
     font-family: var(--primary-font--);
     color: var(--tertiary-color--);
-    padding-top: 57.15px; /*Prevent Navbar covering top of body*/
+    padding-top: 86px; /*Prevent Navbar covering top of body*/
     background-color: var(--primary-color--);
 }
 
@@ -71,4 +71,26 @@ h1, h2, h3 {
     font-family: var(--secondary-font--);
     font-size: 1.0rem;
     text-transform: uppercase;
+}
+
+/*Homepage*/
+
+/*Header Section*/
+#homepage-hero {
+    background: url(../images/homepage-hero-image.webp) no-repeat center center/cover;
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+#call-to-action {
+    /* Final rgba valye sets the opacity so it is semi-transparent */
+    background-color: rgba(237, 196, 121, .6);
+    position: absolute;
+    top: 30%;
+    width: 70%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    z-index: 100;
 }
