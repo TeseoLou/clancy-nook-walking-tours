@@ -54,8 +54,8 @@
             </div>
         </div>
     </nav>
-    <!--Header with Hero Section-->
-    <header id="homepage-hero">
+    <!--Header with Hero Section inspired by Love Running Project-->
+    <header id="homepage-hero" class="section">
         <div id="call-to-action">
             <h1 class="display-1">Clancy Nook</h1>
             <h3>Manchester Walking Tours</h2>
@@ -63,8 +63,8 @@
     </header>
     <!--Main Element with About Section and Tour Cards-->
     <main>
-        <!--About Section-->
-        <div id="about" class="container class section">
+        <!--About Section using Bootstrap Grid Classes for responsive Styling-->
+        <section id="about" class="container section">
             <div class="row">
                 <div class="col-12 col-lg-4 text-center">
                     <img src="assets/images/clancy-nook-about.webp" alt="A circular image of Clancy Nook in a suit, in front of city building" id="about-clancy" class="mb-4" height="250" width="250">
@@ -74,12 +74,32 @@
                         <h2 class="display-5">About</h2>
                     </div>
                     <div class="col-12 text-center text-lg-start">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                    <div class="col-12 text-end">
+                        <img src="assets/images/signature-transparent.webp" alt="Clancy Nook's Signature" id="signature" class="flex-end" width="140px">
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!--Tour Cards Section-->
+        <section id="tour-cards" class="container section">
+            <div class="row">
+                <div class="col-12 text-center text-lg-start">
+                    <h2 class="display-5">Tours</h2>
+                    <p>Click on each tour to learn more.</p>
+                </div>
+                <a href="tours.html" rel="related" aria-label="Link to Tours page on website for more details.">
+                    <div class="card p-0" style="width: 18rem;">
+                        <img src="assets/images/a-tale-of-two-cities-tour-card.webp" class="card-img-top" alt="View of St Ann's Square Manchester circa 1900">
+                        <div class="card-body">
+                        <h3 class="card-title">A Tale of Two Cities</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
     <!--Footer Element with Contact Details, Socials and Navigation Buttons-->
 
