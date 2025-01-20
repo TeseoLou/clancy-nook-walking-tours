@@ -17,10 +17,58 @@ body {
     font-family: var(--primary-font--);
     color: var(--tertiary-color--);
     padding-top: 57.15px; /*Prevent Navbar covering top of body*/
+    background-color: var(--primary-color--);
 }
 
 h1, h2, h3 {
     font-family: var(--secondary-font--);
     color: var(--secondary-color--);
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.custom-button-light {
+    border: 2px solid var(--primary-color--);
+    background-color: var(--primary-color--);
+    color: var(--secondary-color--);
+    width: 9rem;
+    padding: 3px 6px;
+    width: 130px;
+}
+
+.custom-button-light:hover {
+    border: 2px solid var(--primary-color--);
+    background-color: var(--secondary-color--);
+    color: white;
+    width: 9rem;
+    padding: 3px 6px;
+    width: 130px;
+}
+
+.custom-button-outline {
+    border: 2px solid var(--highlight-color--);
+    background-color: transparent;
+    color: var(--highlight-color--);
+    padding: 7px 25px;
+    width: 9rem;
+}
+
+.custom-button-outline:hover {
+    border: 2px solid var(--highlight-color--);
+    background-color: var(--highlight-color--);
+    color: white;
+    padding: 7px 25px;
+    width: 9rem;
+}
+
+/*Navbar Styles*/
+#navbar {
+    background-color: #2B4A4A;
+    color: var(--primary-color--);
+}
+
+#navbar .navbar-nav * {
+    font-family: var(--secondary-font--);
+    font-size: 1.0rem;
     text-transform: uppercase;
 }
