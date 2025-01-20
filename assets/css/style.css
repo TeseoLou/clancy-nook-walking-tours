@@ -1,0 +1,26 @@
+/*Google Fonts Import*/
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Variables */
+:root {
+    --primary-font--: "Montserrat", serif;
+    --secondary-font--: "IM Fell Double Pica", serif;
+    --primary-color--: #F3EED8; /*Cream*/
+    --secondary-color--: #2B4A4A; /*Dark Blue*/
+    --tertiary-color--: #3C331C; /*Dark Brown*/
+    --highlight-color-warm--: #EDC479; /*Caramel*/
+    --highlight-color-cold--: #7EA5A2; /*Light Blue*/            
+}
+
+/*Global Styles*/
+body {
+    font-family: var(--primary-font--);
+    color: var(--tertiary-color--);
+    padding-top: 57.15px; /*Prevent Navbar covering top of body*/
+}
+
+h1, h2, h3 {
+    font-family: var(--secondary-font--);
+    color: var(--secondary-color--);
+    text-transform: uppercase;
+}
