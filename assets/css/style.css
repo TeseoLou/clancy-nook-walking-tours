@@ -151,13 +151,21 @@ footer {
     box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
 }
 
+footer #contact-details {
+    font-size: 11px;
+}
+
+footer #direct-contact, footer #socials {
+    padding: 0;
+}
+
 #footer-navigation > p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 #footer-navigation .footer-nav-icon {
-    padding: 0 0.9rem;
+    padding: 0 0.5rem;
 }
 
 #footer-navigation a:hover * {
@@ -166,7 +174,7 @@ footer {
 
 #social-media-icons * {
 height: 24PX;
-margin-top: 6px;
+margin-top: 4px;
 padding-left: 0;
 }
 
