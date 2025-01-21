@@ -22,7 +22,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--secondary-font--);
-    color: var(--secondary-color--);
+    color: var(--tertiary-color--);
     text-transform: uppercase;
 }
 
@@ -45,9 +45,10 @@ a {
 
 /* Buttons */
 .custom-button-light {
-    border: 2px solid var(--primary-color--);
+    border: 1px solid var(--tertiary-color--);
+    border-radius: 2px;
     background-color: var(--primary-color--);
-    color: var(--secondary-color--);
+    color: var(--tertiary-color--);
     width: 9rem;
     padding: 3px 6px;
     width: 130px;
@@ -55,9 +56,10 @@ a {
 }
 
 .custom-button-light:hover {
-    border: 2px solid var(--primary-color--);
-    background-color: var(--secondary-color--);
-    color: white;
+    border: 1px solid var(--tertiary-color--);
+    border-radius: 2px;
+    background-color: var(--highlight-color-warm--);
+    color: var(--tertiary-color--);
     width: 9rem;
     padding: 3px 6px;
     width: 130px;
@@ -65,7 +67,8 @@ a {
 }
 
 .custom-button-outline {
-    border: 2px solid var(--highlight-color--);
+    border: 1px solid var(--highlight-color--);
+    border-radius: 2px;
     background-color: transparent;
     color: var(--highlight-color--);
     padding: 7px 25px;
@@ -74,7 +77,8 @@ a {
 }
 
 .custom-button-outline:hover {
-    border: 2px solid var(--highlight-color--);
+    border: 1px solid var(--highlight-color--);
+    border-radius: 2px;
     background-color: var(--highlight-color--);
     color: white;
     padding: 7px 25px;
@@ -133,11 +137,16 @@ a {
 }
 
 #tour-cards .card-body {
-    background-color: rgba(237, 196, 121, .6);
+    background-color: rgba(126, 165, 162, .6);
 }
 
 #tour-cards .card-title {
     color: var(--tertiary-color--);
+}
+
+/*Footer Section*/
+footer {
+    background-color: rgba(237, 196, 121, .6);
 }
 
 /*Media queries*/
