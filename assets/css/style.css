@@ -26,6 +26,23 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+hr {
+    border-color: var(--tertiary-color--);
+}
+
+.section {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card {
+    border-radius: none;
+}
+
 /* Buttons */
 .custom-button-light {
     border: 2px solid var(--primary-color--);
@@ -34,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 9rem;
     padding: 3px 6px;
     width: 130px;
+    transition: ease-in-out;
 }
 
 .custom-button-light:hover {
@@ -43,6 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 9rem;
     padding: 3px 6px;
     width: 130px;
+    transition: ease-in-out;
 }
 
 .custom-button-outline {
@@ -51,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--highlight-color--);
     padding: 7px 25px;
     width: 9rem;
+    transition: ease-in-out;
 }
 
 .custom-button-outline:hover {
@@ -59,23 +79,25 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     padding: 7px 25px;
     width: 9rem;
-}
-
-.section {
-    padding-top: 1rem;
-    margin-bottom: 1rem;
+    transition: ease-in-out;
 }
 
 /*Navbar Styles*/
 #navbar {
     background-color: #2B4A4A;
     color: var(--primary-color--);
+    box-shadow: 0 5px 10px rgba(36, 36, 36, 0.5);
 }
 
 #navbar .navbar-nav * {
     font-family: var(--secondary-font--);
     font-size: 1.0rem;
     text-transform: uppercase;
+}
+
+#navbar-logo:hover {
+    content: url(../images/logo-hover.png);
+    transition: ease-in-out;
 }
 
 /*Homepage*/
@@ -90,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #call-to-action {
     /* Final rgba valye sets the opacity so it is semi-transparent */
-    background-color: rgba(237, 196, 121, .6);
+    background-color: rgba(237, 196, 121, .75);
     position: absolute;
     top: 30%;
     width: 70%;
@@ -100,19 +122,56 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 100;
 }
 
-/* Media queries */
+/*Tour Cards Section*/
+#tour-cards .card {
+    margin: 0.6rem;
+    border: none;
+}
 
-/* Medium devices (tablets 768px and up) */
+#tour-cards .card:hover {
+    box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5);
+}
+
+#tour-cards .card-body {
+    background-color: rgba(237, 196, 121, .6);
+}
+
+#tour-cards .card-title {
+    color: var(--tertiary-color--);
+}
+
+/*Media queries*/
+
+/* Medium devices (tablets 768px and up)*/
 @media screen and (min-width: 768px) {
     #signature {
         width: 180px;
     }
+    #tour-cards .card-body {
+        min-height: 200.16px;
+    }
 }
 
-/* Large devices (desktops 992px and up) */
+/*Large devices (laptops 992px and up)*/
 @media screen and (min-width: 992px) {
     #signature {
         width: 200px;
     }
+    #tour-cards .card-body {
+        min-height: 280.61px;
+    }
 }
 
+/*Extra Large devices (desktops 1200px and up)*/
+@media screen and (min-width: 1200px) {
+    #tour-cards .card-body {
+        min-height: 260.78px;
+    }
+}
+
+/*Extra Extra Large devices (large desktops 1400px and up)*/
+@media screen and (min-width: 1400px) {
+    #tour-cards .card-body {
+        min-height: 203.19px;
+    }
+}
