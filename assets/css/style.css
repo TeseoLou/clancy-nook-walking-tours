@@ -164,6 +164,12 @@ footer {
     transform: scale(1.2);
 }
 
+#social-media-icons * {
+height: 24PX;
+margin-top: 6px;
+padding-left: 0;
+}
+
 /*Media queries*/
 
 /* Medium devices (tablets 768px and up)*/
