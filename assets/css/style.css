@@ -122,6 +122,19 @@ a {
 
 /*Homepage*/
 
+/*About Section */
+/*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected*/
+#about-anchor {
+    height: 1px;
+    position: relative;
+    margin-top: -87px;
+}
+
+/*Prevents About section from overlapping the Hero Section due to addition of #about-anchor div element*/
+#about {
+    margin-top: 87px;
+}
+
 /*Header Section*/
 #homepage-hero {
     background: url(../images/homepage-hero-image.webp) no-repeat center center/cover;
