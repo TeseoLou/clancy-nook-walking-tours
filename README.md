@@ -3,6 +3,25 @@ _Project Milestone 1_
 
 <img src="assets/images/clancy-nook-banner.webp" alt="Clancy Nook Walking Tours" width="600">
 
+## Contents
+
+### 1. [Site Overview](#site-overview)
+##### i. [Project Criteria](#project-criteria)
+##### ii. [Web Developer Showcase](#web-developer-showcase)
+##### iii. [Key Goals](#web-developer-showcase)
+### 2. [Introduction](#introduction)
+### 3. [User Experience (UX)](#user-experience-ux)
+#### i. [Strategy](#strategy)
+#### ii. [Scope](#scope)
+#### iii. [Structure](#structure)
+#### iv. [Skeleton](#skeleton)
+#### v. [Surface](#surface)
+### 4. [Features](#features)
+### 5. [Technologies Used](#technologies-used)
+### 6. [Testing](#testing)
+### 7. [Deployment](#deployment)
+### 8. [Credits](#credits)
+
 ## Site Overview 
 This Website is a responsive, user-focused website designed for **Clancy Nook**, an experienced tour guide offering historic walking tours around Manchester. This project is developed as part of **Project Milestone 1** for the Code Institute's **Full Stack Web Development program**. The website aims to provide a central hub for tour information, booking, and reviews.
 
