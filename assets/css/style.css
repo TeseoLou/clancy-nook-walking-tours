@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-    border-color: var(--tertiary-color--);
+    border-color: var(--tertiary-color--); /*To divide sections*/
 }
 
 .section {
@@ -66,26 +66,6 @@ a {
     transition: ease-in-out;
 }
 
-.custom-button-outline {
-    border: 1px solid var(--highlight-color--);
-    border-radius: 2px;
-    background-color: transparent;
-    color: var(--highlight-color--);
-    padding: 7px 25px;
-    width: 9rem;
-    transition: ease-in-out;
-}
-
-.custom-button-outline:hover {
-    border: 1px solid var(--highlight-color--);
-    border-radius: 2px;
-    background-color: var(--highlight-color--);
-    color: white;
-    padding: 7px 25px;
-    width: 9rem;
-    transition: ease-in-out;
-}
-
 /*Navbar Styles*/
 #navbar {
     background-color: #2B4A4A;
@@ -100,59 +80,54 @@ a {
 }
 
 #navbar .nav-link {
-    color: var(--primary-color--)
+    color: var(--primary-color--); /*Changed for accessibility due to low contrast from Bootstrap template*/
 }
 
 #navbar .nav-link:hover {
-    text-decoration: underline;
+    text-decoration: underline; /*Accessible feedback from hover*/
 }
 
 #navbar .navbar-toggler {
-    border: none;
-}
-
-#navbar .navbar-toggler:hover {
-    border: 1.5px;
+    border: none; 
 }
 
 #navbar-logo:hover {
-    content: url(../images/logo-hover.png);
+    content: url(../images/logo-hover.png); /*Responsive logo with different colors for feedback*/
     transition: ease-in-out;
 }
 
 /*Homepage*/
 
 /*About Section */
-/*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected*/
 #about-anchor {
-    height: 1px;
+    height: 0.1px;
     position: relative;
-    margin-top: -87px;
+    margin-top: -87px;/*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected (solution inspired by youtuber and web design tutor @dereksiuau)*/
 }
 
-/*Prevents About section from overlapping the Hero Section due to addition of #about-anchor div element*/
 #about {
-    margin-top: 87px;
+    margin-top: 87px;/*Prevents About section from overlapping the Hero Section due to addition of #about-anchor div element*/
+    padding-top: 20px
 }
 
 /*Header Section*/
 #homepage-hero {
-    background: url(../images/homepage-hero-image.webp) no-repeat center center/cover;
-    position: relative;
-    height: 500px;
+    background: url(../images/homepage-hero-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+    position: relative; /*So image crops on different screens instead of resizing*/
+    height: 500px; /*Fixed height to appeal to all screen sizes*/
     width: 100%;
 }
 
 #call-to-action {
     /* Final rgba valye sets the opacity so it is semi-transparent */
-    background-color: rgba(237, 196, 121, .75);
+    background-color: rgba(237, 196, 121, .75); /*Transparent call-to-action element for readibility but visible hero image (inspired by Love Running Project)*/
     position: absolute;
     top: 30%;
     width: 70%;
     min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
-    z-index: 100;
+    z-index: 100; /*Allows call-to-action to overlap the hero image*/
 }
 
 /*Tour Cards Section*/
