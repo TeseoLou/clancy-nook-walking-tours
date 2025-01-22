@@ -99,6 +99,14 @@ a {
     text-transform: uppercase;
 }
 
+#navbar .nav-link {
+    color: var(--primary-color--)
+}
+
+#navbar .nav-link:hover {
+    text-decoration: underline;
+}
+
 #navbar-logo:hover {
     content: url(../images/logo-hover.png);
     transition: ease-in-out;
@@ -159,6 +167,14 @@ footer #direct-contact, footer #socials {
     padding: 0;
 }
 
+#footer-navigation {
+    width: 250px;
+    margin: 10px 0;
+    background-color: var(--primary-color--);
+    border: solid 1px var(--tertiary-color--);
+    border-radius: 2px;
+}
+
 #footer-navigation > p {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -188,6 +204,14 @@ padding-left: 0;
     #tour-cards .card-body {
         min-height: 200.16px;
     }
+    #footer-navigation {
+        height: 120px;
+        width: 80px;
+        margin-top: 34px;
+        background-color: var(--primary-color--);
+        border: solid 1px var(--tertiary-color--);
+        border-radius: 2px;
+    }
     footer #nav-buttons {
         padding-top: 8px;
     }
@@ -210,6 +234,9 @@ padding-left: 0;
 @media screen and (min-width: 1200px) {
     #tour-cards .card-body {
         min-height: 260.78px;
+    }
+    #footer-navigation {
+        margin-top: 24px;
     }
 }
 
