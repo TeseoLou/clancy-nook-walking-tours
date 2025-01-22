@@ -107,6 +107,14 @@ a {
     text-decoration: underline;
 }
 
+#navbar .navbar-toggler {
+    border: none;
+}
+
+#navbar .navbar-toggler:hover {
+    border: 1.5px;
+}
+
 #navbar-logo:hover {
     content: url(../images/logo-hover.png);
     transition: ease-in-out;
