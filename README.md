@@ -20,7 +20,7 @@ _Project Milestone 1_
 ### 5. [Technologies Used](#technologies-used)
 ### 6. [Testing](#testing)
 ### 7. [Deployment](#deployment)
-### 8. [Credits](#credits)
+### 8. [Acknowledgements](#acknowledgements)
 
 ## Site Overview 
 This Website is a responsive, user-focused website designed for **Clancy Nook**, an experienced tour guide offering historic walking tours around Manchester. This project is developed as part of **Project Milestone 1** for the Code Institute's **Full Stack Web Development program**. The website aims to provide a central hub for tour information, booking, and reviews.
