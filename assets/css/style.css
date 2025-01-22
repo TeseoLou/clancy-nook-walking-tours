@@ -174,7 +174,7 @@ footer #direct-contact, footer #socials {
 
 #social-media-icons * {
 height: 24PX;
-margin-top: 4px;
+margin: 5px 0;
 padding-left: 0;
 }
 
@@ -187,6 +187,12 @@ padding-left: 0;
     }
     #tour-cards .card-body {
         min-height: 200.16px;
+    }
+    footer #nav-buttons {
+        padding-top: 8px;
+    }
+    footer #contact-details {
+        font-size: 13px;
     }
 }
 
