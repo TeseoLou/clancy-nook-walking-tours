@@ -45,7 +45,7 @@ As a developer in training, this project aims to demonstrate:
 5. The ability to write well-documented, maintainable code with an emphasis on **user experience (UX)** principles.
 6. **Thorough testing and debugging processes** to ensure the site performs as intended across multiple devices, browsers, and screen sizes.
 7. Use of **validation tools** (e.g., W3C HTML and CSS Validator) to confirm compliance with modern web standards.
-8. Leveraging **performance analytics tools** such as Lighthouse to optimize the site's performance, accessibility, and adherence to best practices.
+8. Implement **performance analytics tools** such as Lighthouse to optimize the site's performance, accessibility, and adherence to best practices.
 
 ### Key Goals
 The **Clancy Nook** project focuses on achieving the following:
