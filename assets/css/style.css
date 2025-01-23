@@ -157,7 +157,6 @@ footer {
     background-color: rgba(237, 196, 121, .6);
     box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
     margin-top: auto;/*Push Footer to the Bottom of the Page, solution provided by Nehal Ahmad on DEV*/
-
 }
 
 footer #contact-details {
@@ -172,8 +171,8 @@ footer #direct-contact, footer #socials {
     width: 250px;
     margin: 10px 0;
     background-color: var(--primary-color--);
-    border: solid 1px var(--tertiary-color--);
     border-radius: 2px;
+    box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.1);
 }
 
 #footer-navigation > p {
@@ -210,7 +209,6 @@ padding-left: 0;
         width: 80px;
         margin-top: 34px;
         background-color: var(--primary-color--);
-        border: solid 1px var(--tertiary-color--);
         border-radius: 2px;
     }
     footer #nav-buttons {
