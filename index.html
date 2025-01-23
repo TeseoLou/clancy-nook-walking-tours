@@ -133,10 +133,10 @@
         </section>
     </main>
     <!--Footer Element with Contact Details, Socials and Navigation Buttons-->
-    <!--mt-auto to Push Footer to the Bottom of the Page-->
-    <footer class="mt-auto">
+    <footer>
         <div class="container">
             <div class="row d-md-flex flex-md-row-reverse justify-content-center justify-content-md-start">
+                <!--Mini Nav-icon bar for Footer Section-->
                 <div id="footer-navigation" class="col-12 col-md-2 d-flex justify-content-center" aria-label="Navigation in page footer">
                     <p id="nav-buttons" class="justify-content-center my-md-0">
                         <div class="d-md-block align-content-center">
@@ -163,6 +163,7 @@
                         </div>
                     </p>
                 </div>
+                <!--Contact Details and Social Media Links-->
                 <div id="contact-details" class="col-12 col-md-10 justify-content-center mt-md-4">
                     <h4>Contact Details</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -183,6 +184,7 @@
                                                     <i class="col-4 fa-brands fa-linkedin fa-xl"></i>
                                                 </div>
                                             </div>
+                                            <!--Website Author-->
                                             <p><i class="fa-regular fa-copyright"></i> 2025 Teseo Nicholson</p>
                                         </div>
                                     </div>  
@@ -198,7 +200,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!--Font Awesome Kits JS-->
     <script src="https://kit.fontawesome.com/00ece23e82.js" crossorigin="anonymous"></script>
-    <!--Bootstrap Mobile Navbar Collapse for In-page links JS-->
+    <!--Bootstrap Mobile Navbar Collapse for In-page links JS, inspired by Boardwalk Games Project-->
     <script> 
         document
             .querySelectorAll(".navbar-collapse .nav-link")
@@ -206,15 +208,15 @@
                 link.addEventListener("click", function (e) {
                     let section = document.querySelector(e.target.getAttribute("href"));
                     if (section) {
-                        e.preventDefault(); // Prevent default anchor click behavior
+                        e.preventDefault(); //Prevent default anchor click behavior//
                         let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
                         window.scroll({
-                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            top: section.offsetTop - navbarHeight, //Adjust for navbar height//
                             behavior: "smooth",
                         });
                         document
                             .querySelector(".navbar-collapse")
-                            .classList.remove("show"); // Collapse navbar
+                            .classList.remove("show"); //Collapse navbar//
                     }
                 });
             });

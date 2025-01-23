@@ -18,6 +18,9 @@ body {
     color: var(--tertiary-color--);
     padding-top: 86px; /*Prevent Navbar covering top of body*/
     background-color: var(--primary-color--);
+    min-height: 100vh; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
+    display: flex; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
+    flex-direction: column; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -153,6 +156,8 @@ a {
 footer {
     background-color: rgba(237, 196, 121, .6);
     box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
+    margin-top: auto;/*Push Footer to the Bottom of the Page, solution provided by Nehal Ahmad on DEV*/
+
 }
 
 footer #contact-details {

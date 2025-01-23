@@ -24,28 +24,29 @@
         <div class="container">
             <!--Logo Links to Homepage-->
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.png" alt="Clancy Nook Logo" class="logo" width="60" height="60">
+                <img src="assets/images/logo.png" alt="Clancy Nook Logo" id="navbar-logo" class="logo" width="60" height="60">
             </a>
             <!--Responsive Navigation Menu using Bootstrap Template-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!--Navbar Menu Options-->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html" aria-label="Internal link to Homepage on Website">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="index.html#about-anchor" aria-label="Internal link to About Section on homepage.">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="tours.html">Tours</a>
+                        <a class="nav-link active" aria-current="page" href="tours.html" aria-label="Internal link to Tours Page on Website.">Tours</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
+                        <a class="nav-link" href="gallery.html" aria-label="Internal link to Gallery Page on Website.">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="reviews.html">Reviews</a>
+                        <a class="nav-link" href="reviews.html" aria-label="Internal link to Reviews Page on Website.">Reviews</a>
                     </li>
                     <li class="nav-item d-flex justify-content-end align-items-center">
                         <a class="btn mx-3 custom-button-light" href="contact.html">Contact</a>
@@ -54,26 +55,76 @@
             </div>
         </div>
     </nav>
-    <!--Header with Title and Description-->
-    <header>
 
-    </header>
-    <!--Main Element with Tour Details-->
-    <main>
-        <!--A Tale of Two Cities-->
-        <!--True Crime in Ancoats-->
-        <!--Stories of Whalley Range-->
-        <!--Private Tours-->
-    </main>
     <!--Footer Element with Contact Details, Socials and Navigation Buttons-->
-    <footer>
-
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="row d-md-flex flex-md-row-reverse justify-content-center justify-content-md-start">
+                <!--Mini Nav-icon bar for Footer Section-->
+                <div id="footer-navigation" class="col-12 col-md-2 d-flex justify-content-center" aria-label="Navigation in page footer">
+                    <p id="nav-buttons" class="justify-content-center my-md-0">
+                        <div class="d-md-block align-content-center">
+                        <a class="nav-link d-inline my-md-1" aria-current="page" href="index.html" aria-label="Internal link to Homepage on Website">
+                            <i class="fa-solid fa-house footer-nav-icon"></i>
+                        </a>
+                        <a class="nav-link d-inline d-md-block my-md-1" href="#about" aria-label="Internal link to About Section on homepage.">
+                            <i class="fa-solid fa-circle-user footer-nav-icon"></i>    
+                        </a>
+                        <a class="nav-link d-inline d-md-block my-md-1" href="tours.html" aria-label="Internal link to Tours Page on Website.">
+                            <i class="fa-solid fa-shoe-prints footer-nav-icon"></i>    
+                        </a>
+                        </div>
+                        <div class="d-md-block align-content-center">
+                        <a class="nav-link d-inline d-md-block my-md-1" href="gallery.html" aria-label="Internal link to Gallery Page on Website">
+                            <i class="fa-solid fa-images footer-nav-icon"></i>
+                        </a>
+                        <a class="nav-link d-inline d-md-block my-md-1" href="reviews.html" aria-label="Internal link to Reviews Page on Website.">
+                            <i class="fa-solid fa-star footer-nav-icon"></i>    
+                        </a>
+                        <a class="nav-link d-inline d-md-block my-md-1" href="contact.html" aria-label="Internal link to Contact Page on Website.">
+                            <i class="fa-solid fa-message footer-nav-icon"></i>
+                        </a>
+                        </div>
+                    </p>
+                </div>
+                <!--Contact Details and Social Media Links-->
+                <div id="contact-details" class="col-12 col-md-10 justify-content-center mt-md-4">
+                    <h4>Contact Details</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="container">
+                        <div id="socials" class="row">
+                            <div id="direct-contact" class="col-6">
+                                <p><i class="fa-solid fa-phone fa-lg pe-1"></i>07123456789</p>
+                                <p><i class="fa-solid fa-envelope fa-xl pe-1"></i>full-name@email.com</p>
+                            </div>
+                            <div class="col-6 flex justify-content-between p-0">
+                                <div class="container">
+                                    <div class="row ps-0.5">                            
+                                        <div class="col-12 p-0">
+                                            <div id="social-media-icons" class="container ps-0 d-md-block">
+                                                <div class="row d-flex justify-content-around">
+                                                    <i class="col-4 fa-brands fa-square-instagram fa-xl"></i>
+                                                    <i class="col-4 fa-brands fa-square-facebook fa-xl"></i>
+                                                    <i class="col-4 fa-brands fa-linkedin fa-xl"></i>
+                                                </div>
+                                            </div>
+                                            <!--Website Author-->
+                                            <p><i class="fa-regular fa-copyright"></i> 2025 Teseo Nicholson</p>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
     </footer>
     <!--Bootstrap 5 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!--Font Awesome Kit JS-->
+    <!--Font Awesome Kits JS-->
     <script src="https://kit.fontawesome.com/00ece23e82.js" crossorigin="anonymous"></script>
-    <!--Bootstrap Mobile Navbar Collapse for In-page links JS-->
+    <!--Bootstrap Mobile Navbar Collapse for In-page links JS, inspired by Boardwalk Games Project-->
     <script> 
         document
             .querySelectorAll(".navbar-collapse .nav-link")
@@ -81,15 +132,15 @@
                 link.addEventListener("click", function (e) {
                     let section = document.querySelector(e.target.getAttribute("href"));
                     if (section) {
-                        e.preventDefault(); // Prevent default anchor click behavior
+                        e.preventDefault(); //Prevent default anchor click behavior//
                         let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
                         window.scroll({
-                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            top: section.offsetTop - navbarHeight, //Adjust for navbar height//
                             behavior: "smooth",
                         });
                         document
                             .querySelector(".navbar-collapse")
-                            .classList.remove("show"); // Collapse navbar
+                            .classList.remove("show"); //Collapse navbar//
                     }
                 });
             });
