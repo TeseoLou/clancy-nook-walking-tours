@@ -61,7 +61,7 @@ User experience (UX) design focuses on creating meaningful, efficient, and enjoy
 Prioritising user experience is essential to ensuring that visitors can easily navigate the site, achieve their goals, and enjoy the process. This philosophy is particularly relevant to the Clancy Nook website, where the goal is to cater to a diverse audience of locals, tourists, and corporate clients.
 
 ### Strategy
-The Strategy plane in UX design forms the foundation of any project by aligning business goals with user needs. It addresses fundamental questions about what the website aims to achieve and how it delivers value to its users. 
+The **Strategy Plane** in UX design forms the foundation of any project by aligning business goals with user needs. It addresses fundamental questions about what the website aims to achieve and how it delivers value to its users. 
 
 For Clancy Nook, this meant not only creating an online presence but also ensuring the site serves as a seamless gateway for users to learn about, book, and engage with the historic walking tours offered. The strategy plane was the first port of call in the development process, as it established the overall purpose of the site and guided all subsequent design and development decisions.
 
@@ -112,10 +112,7 @@ Foster connections with local communities by offering concession rates or free t
 Goals 6 and 7, while not central to the website's initial development, represent aspirational objectives for the business’s growth and social impact. By planting the seeds for these initiatives now, the site can evolve over time to accommodate these long-term ambitions.
 
 #### **User Demographics**
-Understanding who is attending and booking Clancy Nook tours was a vital part of the design process. Establishing clear user demographics allowed us to identify key user groups, their needs, and their motivations, which informed the development of tailored user stories and features for the website. By analysing the clientele and tour attendance patterns, we could align the website's functionality and content with the expectations of the target audience. This ensured that every feature and piece of information on the site would resonate with its users and provide maximum value.
-
-The demographics were broken down by tour type to account for the unique audience profiles each tour attracts:
-Understanding who is attending and booking Clancy Nook tours was a vital part of the design process. Establishing clear user demographics allowed us to identify key user groups, their needs, and their motivations, which informed the development of tailored user stories and features for the website. By analyzing the clientele and tour attendance patterns, we could align the website's functionality and content with the expectations of the target audience. This ensured that every feature and piece of information on the site would resonate with its users and provide maximum value.
+Understanding attends and books Clancy Nook tours establishes clear user demographics, which permitted the identification of key user groups, their needs, and their motivations. These in turn informed the development of tailored user stories and features for the website. By analysing the clientele and tour attendance patterns, we could align the website's functionality and content with the expectations of the target audience. This ensured that every feature and piece of information on the site would resonate with its users and provide maximum value.
 
 The demographics were broken down by tour type to account for the unique audience profiles each tour attracts:
 - **City Center Tour:**
@@ -165,7 +162,7 @@ To ensure effective and timely delivery, the user stories were divided into thre
 
 This prioritization ensures that critical features are developed first while leaving room for additional improvements based on time and resources.
 
-**Must-Have**
+Must-Have
 - As a **tourist**, I want the website to be easy to navigate, allowing me to quickly find tour information.  
 - As a **local**, I want to read about the guide’s expertise and background so that I can appreciate the depth of historical knowledge offered.  
 - As a **new user**, I want clear instructions on how to book tours so that I can easily reserve my spot on a Clancy Nook tour.  
@@ -178,7 +175,7 @@ This prioritization ensures that critical features are developed first while lea
 - As a **new user**, I want to know how to contact the tour guide so I can ask questions about the services they offer.
 - As a **tourist**, I want to easily contact the tour guide so that I can ask which tour would be most suitable for me.
 
-**Should-Have**
+Should-Have
 - As a **corporate user**, I want to find information about private tours for businesses so that I can book a group experience.  
 - As a **returning user**, I want to find social media links in the footer so that I can follow updates and share my experience.  
 - As a **new user**, I want to view a gallery of images from past tours so that I can get a sense of the experience.  
@@ -186,8 +183,82 @@ This prioritization ensures that critical features are developed first while lea
 - As a **business owner**, I want to easily contact the tour guide so that I can ask about availability for private tours.  
 - As a **community leader**, I would like to be able to contact the tour guide so I can ask them about community concession rates.
 
-**Could-Have**
+Could-Have
 - As a **corporate user**, I want downloadable PDFs or brochures about corporate tours so that I can easily share them with my team.  
-- As a **tourist**, I want audio clips or snippets of the guide’s storytelling so that I can preview the experience before booking.  
+- As a **tourist**, I want media clips or snippets of the guide’s storytelling so that I can preview the experience before booking.  
 
 By creating and prioritizing these user stories, the website ensures a structured, user-focused development process that delivers meaningful value to both users and the business.
+
+#### **Emerging Website Components**
+The analysis of user needs and expectations highlighted several critical components that would form the foundation of the Clancy Nook website. These components were designed to address the goals of both the business and its diverse user base, ensuring a user-friendly, informative, and engaging experience. Below are the core website components that emerged during the planning phase:
+1. **About Section**  
+   Including information about the guide’s historical knowledge and storytelling abilities emphasizes the unique value Clancy Nook offers, particularly appealing to locals and history enthusiasts.
+
+2. **Tours Information**  
+   Providing clear and accessible details about available tours, including themes, schedules, meeting points, and additional details, was identified as a top priority. This ensures users can quickly learn about the experiences offered.
+
+3. **Booking Options**  
+   A streamlined booking process via integrated links to Eventbrite, combined with a user-friendly contact form for bespoke inquiries, makes securing a spot on a tour simple and efficient.
+
+4. **Contact Form**  
+   A dedicated contact section provides users with an easy way to reach out for questions, inquiries about bespoke tours, or to request additional information, ensuring seamless communication.
+
+5. **Transparent Pricing**  
+   Highlighting pricing information, including the pay-what-you-can option, ensures users understand the cost of the tours. This transparency encourages bookings while showcasing Clancy Nook's accessibility for a wider audience.
+
+6. **Group Booking Section**  
+   Dedicated sections for corporate users and community leaders provide tailored information about private and group tours. This includes details on how these tours can be customized to meet specific needs, reinforcing the business’s appeal to a broader audience.
+
+7. **Reviews Access**  
+   Featuring testimonials and reviews from past attendees helps build credibility and trust, particularly for new users and locals seeking assurance of tour quality.
+
+8. **Image Gallery**  
+   A gallery showcasing images from past tours provides a visual representation of the experiences offered. This component is designed to engage tourists and returning users, giving them a sense of the atmosphere and storytelling that Clancy Nook tours provide.
+
+9. **Social Media Integration**  
+   Social media links in the footer encourage users to stay connected with Clancy Nook, providing updates and opportunities to share their experiences. This fosters community engagement and increases the visibility of the tours.
+
+10. **Supplementary Media**  
+    Supplementary resources, such as downloadable PDFs or brochures for corporate and private tours, provide businesses with shareable materials to aid in internal planning. Additionally, audio or video snippets of the guide’s storytelling offer a unique preview of the experience for prospective customers, enticing them to book a tour.
+
+#### **Importance/Feasibility**
+The Importance/Feasibility analysis evaluates each website component based on two criteria: importance and feasibility. Importance refers to how critical the component is to achieving the business goals and addressing user needs outlined in the user stories. Feasibility, on the other hand, assesses the practicality of implementing the component within the project's constraints (e.g., timeline, resources, and technical expertise).
+
+This analysis ensures that the development process prioritizes components that deliver the most value while remaining achievable. By striking this balance, the project remains focused and efficient, delivering the maximum possible impact within its constraints.
+
+The table below rates each component on a scale of 1 to 5 for both importance and feasibility:
+- **Importance:** A rating of **1** means the component has low relevance to business goals or user stories, while a **5** signifies that the component is essential.
+- **Feasibility:** A rating of **1** indicates that the component is difficult to implement within the project's constraints, while a **5** means it is straightforward to achieve.
+
+| **Component** | **Importance** | **Feasibility** |
+| ------------- | -------------- | --------------- |
+| About Section | 5 | 5 |
+| Tours Information | 4 | 4 |
+| Booking Options | 4 | 3 |
+| Contact Form | 5 | 4 |
+| Transparent Pricing | 3 | 5 |
+| Group Booking Information | 3 | 4 |
+| Reviews Access | 4 | 2 |
+| Image Gallery | 3 | 3 |
+| Social Media Integration | 3 | 5 |
+| Supplementary Media | 1 | 2 |
+
+The graph below illustrates the relationship between importance and feasibility for each component. Components plotted closer to the top-right corner are both high in importance and feasible, making them top priorities for the project. Components in other quadrants help identify where compromises or adjustments may be needed.
+
+<img src="assets/images/importance-viability-graph.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="600">
+
+Graph Insights:
+- **High Importance & High Feasibility**: Components such as the **About Section**, **Contact Form**, **Tours Information**, and **Transparent Pricing** appear in this quadrant, making them the highest priority for the website. These are the backbone of the user experience and directly align with Clancy Nook’s primary goals of establishing credibility, simplifying bookings, and providing clear information.
+  
+- **High Importance & Moderate Feasibility**: Features like **Booking Options**, **Group Booking Information**, and **Reviews Access** are essential but require careful implementation. For example, while **Reviews Access** is crucial for building trust and encouraging bookings, the additional design and structural requirements make it slightly more complex to integrate. Nonetheless, it is still a key feature to include, especially as it directly supports the site's credibility and aligns with user needs for confidence in the service.
+  
+- **Moderate Importance & High Feasibility**: **Social Media Integration** stands out as a low-effort, high-reward feature. Adding social media icons in the footer enhances user engagement and encourages sharing without significantly increasing development complexity.
+
+- **Low Importance & Low Feasibility**: Features like **Supplementary Media**, including brochures and audio snippets, rank lower in priority. While they could enhance the user experience, they are considered optional for the project's minimal viable product (MVP).
+
+#### **Project Planning**
+This analysis directly informs project planning by providing a clear roadmap for prioritizing features during development. Using the _GitHub Projects Board_ [here](https://github.com/users/TeseoLou/projects/3/views/2), I can allocate tasks based on importance and feasibility, ensuring high-priority components are delivered first. This approach aligns with the concept of a **Minimal Viable Product (MVP)**.
+
+The **Scope Plane** in UX design also comes into play here, ensuring that the identified components fit within the project's constraints while still delivering a meaningful experience. By focusing on features in the high-importance/high-feasibility quadrant and working down, the project remains achievable without sacrificing value.
+
+
