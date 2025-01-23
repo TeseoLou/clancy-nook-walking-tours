@@ -1,7 +1,7 @@
 # **Clancy Nook | Walking Tours**
 _Project Milestone 1_
 
-<img src="assets/images/clancy-nook-banner.webp" alt="Clancy Nook Walking Tours" width="600">
+<img src="assets/images/clancy-nook-banner.webp" alt="Clancy Nook Walking Tours" width="1100">
 
 ## Contents
 
@@ -163,29 +163,29 @@ To ensure effective and timely delivery, the user stories were divided into thre
 This prioritization ensures that critical features are developed first while leaving room for additional improvements based on time and resources.
 
 Must-Have
-- As a **tourist**, I want the website to be easy to navigate, allowing me to quickly find tour information.  
-- As a **local**, I want to read about the guide’s expertise and background so that I can appreciate the depth of historical knowledge offered.  
-- As a **new user**, I want clear instructions on how to book tours so that I can easily reserve my spot on a Clancy Nook tour.  
-- As a **new user**, I want to learn about the tours’ themes and details so that I can decide which tour to book.  
-- As a **local**, I want to see reviews from other attendees so that I can feel confident about the tour’s quality.  
-- As a **returning user**, I want to be able to write a review so I can encourage others to book a tour.
-- As a **returning user**, I want to be able to contact the tour guide so I can ask about upcoming tours.
-- As a **returning user**, I want to find other available tours so that I can book a different tour.
-- As a **local**, I want to easily contact the tour guide so that I can ask about specific tour routes.
-- As a **new user**, I want to know how to contact the tour guide so I can ask questions about the services they offer.
-- As a **tourist**, I want to easily contact the tour guide so that I can ask which tour would be most suitable for me.
+>_As a **tourist**, I want the website to be easy to navigate, allowing me to quickly find tour information._  
+>_As a **local**, I want to read about the guide’s expertise and background so that I can appreciate the depth of historical knowledge offered._  
+>_As a **new user**, I want clear instructions on how to book tours so that I can easily reserve my spot on a Clancy Nook tour._ 
+>_As a **new user**, I want to learn about the tours’ themes and details so that I can decide which tour to book._  
+>_As a **local**, I want to see reviews from other attendees so that I can feel confident about the tour’s quality._  
+>_As a **returning user**, I want to be able to write a review so I can encourage others to book a tour._
+>_As a **returning user**, I want to be able to contact the tour guide so I can ask about upcoming tours._ <br>
+>_As a **returning user**, I want to find other available tours so that I can book a different tour._ <br>
+>_As a **local**, I want to easily contact the tour guide so that I can ask about specific tour routes._ <br>
+>_As a **new user**, I want to know how to contact the tour guide so I can ask questions about the services they offer._ <br>
+>_As a **tourist**, I want to easily contact the tour guide so that I can ask which tour would be most suitable for me._ <br>
 
 Should-Have
-- As a **corporate user**, I want to find information about private tours for businesses so that I can book a group experience.  
-- As a **returning user**, I want to find social media links in the footer so that I can follow updates and share my experience.  
-- As a **new user**, I want to view a gallery of images from past tours so that I can get a sense of the experience.  
-- As a **tourist**, I want to access clear meeting point details so that I can find the starting location easily.  
-- As a **business owner**, I want to easily contact the tour guide so that I can ask about availability for private tours.  
-- As a **community leader**, I would like to be able to contact the tour guide so I can ask them about community concession rates.
+>_As a **corporate user**, I want to find information about private tours for businesses so that I can book a group experience._  
+>_As a **returning user**, I want to find social media links in the footer so that I can follow updates and share my experience._  
+>_As a **new user**, I want to view a gallery of images from past tours so that I can get a sense of the experience._  
+>_As a **tourist**, I want to access clear meeting point details so that I can find the starting location easily._  
+>_As a **business owner**, I want to easily contact the tour guide so that I can ask about availability for private tours._  
+>_As a **community leader**, I would like to be able to contact the tour guide so I can ask them about community concession rates._
 
 Could-Have
-- As a **corporate user**, I want downloadable PDFs or brochures about corporate tours so that I can easily share them with my team.  
-- As a **tourist**, I want media clips or snippets of the guide’s storytelling so that I can preview the experience before booking.  
+>_As a **corporate user**, I want downloadable PDFs or brochures about corporate tours so that I can easily share them with my team._  
+>_As a **tourist**, I want media clips or snippets of the guide’s storytelling so that I can preview the experience before booking._  
 
 By creating and prioritizing these user stories, the website ensures a structured, user-focused development process that delivers meaningful value to both users and the business.
 
@@ -230,22 +230,22 @@ The table below rates each component on a scale of 1 to 5 for both importance an
 - **Importance:** A rating of **1** means the component has low relevance to business goals or user stories, while a **5** signifies that the component is essential.
 - **Feasibility:** A rating of **1** indicates that the component is difficult to implement within the project's constraints, while a **5** means it is straightforward to achieve.
 
-| **Component** | **Importance** | **Feasibility** |
-| ------------- | -------------- | --------------- |
-| About Section | 5 | 5 |
-| Tours Information | 4 | 4 |
-| Booking Options | 4 | 3 |
-| Contact Form | 5 | 4 |
-| Transparent Pricing | 3 | 5 |
-| Group Booking Information | 3 | 4 |
-| Reviews Access | 4 | 2 |
-| Image Gallery | 3 | 3 |
-| Social Media Integration | 3 | 5 |
-| Supplementary Media | 1 | 2 |
+| **Component**             | **Importance** | **Feasibility** |
+| ------------------------- | -------------- | --------------- |
+| About Section             | 5              | 5               |
+| Tours Information         | 4              | 4               |
+| Booking Options           | 4              | 3               |
+| Contact Form              | 5              | 4               |
+| Transparent Pricing       | 3              | 5               |
+| Group Booking Information | 3              | 4               |
+| Reviews Access            | 4              | 2               |
+| Image Gallery             | 3              | 3               |
+| Social Media Integration  | 3              | 5               |
+| Supplementary Media       | 1              | 2               |
 
 The graph below illustrates the relationship between importance and feasibility for each component. Components plotted closer to the top-right corner are both high in importance and feasible, making them top priorities for the project. Components in other quadrants help identify where compromises or adjustments may be needed.
 
-<img src="assets/images/importance-viability-graph.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="600">
+<img src="assets/images/importance-viability-graph.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="700">
 
 Graph Insights:
 - **High Importance & High Feasibility**: Components such as the **About Section**, **Contact Form**, **Tours Information**, and **Transparent Pricing** appear in this quadrant, making them the highest priority for the website. These are the backbone of the user experience and directly align with Clancy Nook’s primary goals of establishing credibility, simplifying bookings, and providing clear information.
@@ -261,4 +261,128 @@ This analysis directly informs project planning by providing a clear roadmap for
 
 The **Scope Plane** in UX design also comes into play here, ensuring that the identified components fit within the project's constraints while still delivering a meaningful experience. By focusing on features in the high-importance/high-feasibility quadrant and working down, the project remains achievable without sacrificing value.
 
+### Scope
+The Scope Plane in UX design addresses the functional and content requirements necessary to fulfill the strategic objectives outlined in the Strategy Plane. While the Strategy Plane defines _why_ the project exists and _who_ it serves, the Scope Plane determines _what_ the website needs to achieve those goals.
 
+The Scope Plane encompasses both **functional requirements** (features and interactivity) and **content requirements** (information and media). These elements work together to deliver a seamless user experience that meets user needs and supports the business objectives. By focusing on the scope early in the process, developers can outline a clear plan that ensures every feature or piece of content serves a defined purpose, avoiding feature creep or misaligned priorities.
+
+For the Clancy Nook website, the Scope Plane is essential to identifying the core features of the website by establishing what functional and content requirements will enable the project to meet its business goals and user needs effectively. The _Components_, _User Stories_, and _Business Goals_ presenting previously play a crucial role in defining and prioritizing these requirements, ensuring the project remains focused and aligned with its objectives.
+
+#### **Deriving Requirments**
+Through this analysis, it becomes evident that the components summarize the essential requirements for the website in terms of what must be achieved to deliver value to both users and the business. These requirements naturally prioritize themselves into three categories: must-have, should-have, and could-have requirements.
+
+Must-Have
+- Give the Users an Overall Feel for the Brand/Aesthetic
+- Share Information about Clancy Nook
+- Present the Available Tours
+- Provide Clear Pricing Information
+- Guide Users Through the Website Seamlessly
+- Receive Communications from Users
+- Show Reviews from Previous Clients
+- Enhance User Engagement and Accessibility
+- Instruct Users on How to Book
+
+Should-Have
+- Share Images from Previous Tours
+- Link to Various Social Media Outlets
+- Enable Users to Submit Their Own Reviews
+- Showcase Concession or Community Rates
+- Offer Private Booking Information
+
+Could-Have
+- Provide Supplementary Media
+
+#### **Functional Requirements**
+Functional requirements define the features and behaviors a website must have to meet user and business goals. In UX design and development, they ensure the website functions as intended, allowing users to navigate, submit forms, and access information easily. During development, these requirements act as a blueprint, helping prioritize tasks and allocate resources, ensuring the site fulfills its purpose, from booking tours to sharing reviews effectively.
+
+To determine which project requirements have functional requisites, we need to review the user stories, business goals, and UX components. I have categorise functional requirements based on their scope and application:
+- **Macro Functions:** Apply universally across the entire website (e.g., responsive navigation, accessibility).
+- **Meso Functions:** Apply across multiple but not all pages or features (e.g., booking and review instructions).
+- **Micro Functions:** Apply to specific sections or elements (e.g., the contact form functionality, image gallery).
+
+Must-Have
+- **Macro**:
+  - Seamless navigation across pages.
+  - Accessibility features (e.g., alt text, keyboard navigation).
+  - Responsive design for all devices.
+  - Functional links to booking options (Eventbrite).
+- **Meso**:
+  - Clear booking links.
+  - Tour highlights.
+  - Intuitive navigation with feedback animations.
+- **Micro**:
+  - Functional contact form for user inquiries.
+  - Accessible reviews from past clients.
+  - Clearly displayed dynamic pricing information.
+
+Should-Have
+- **Macro**:
+  - Social media icons linking to platforms.
+  - User-generated content uploads (e.g., photos, reviews).
+- **Micro**:
+  - Responsive Gallery Page.
+- **Meso**:
+  - Option for users to submit reviews directly via the site or linked platforms.
+
+Could-Have
+- **Meso**:
+  - Supplementary downloadables, e.g, PDFs of tours.
+- **Micro**:
+  - Features for private bookings, e.g., pre-filled forms.
+  - Playable media e.g., media snippets of guide or tour previews.
+
+#### **Content Requirements**
+Content requirements are the textual, visual, and aesthetic elements a website needs to meet user needs and fulfill its purpose. They translate the website's strategy and scope into tangible components that align with business goals and user stories.
+
+For Clancy Nook, content requirements provide the _what_ and _how_, filling the website's framework and ensuring users can access relevant materials like tour information, imagery, and branding elements, directly enhancing the site's usability and overall user experience (UX).
+
+Content is the information users interact with on a website. It drives engagement, builds trust, and communicates value. For Clancy Nook, clearly defined content requirements help ensure users can easily read and understand essential information, like tour schedules and pricing and create a visually appealing and cohesive aesthetic to align with the brand's identity.
+
+To ensure a comprehensive and organized development process, the content requirements are divided into the following categories:
+- **Graphic Content:** These elements represent visual assets that enhance user engagement and showcase Clancy Nook's unique identity.
+- **Textual Content:** Convey essential information and guide users through the website.
+- **Aesthetic Content:** These elements define the visual presentation of the website and reinforce the brand.
+- **Interactive Content** This category includes dynamic content elements that facilitate user interaction.
+
+Must-Have
+- **Graphic**
+   - Professional Logo
+   - Tour Image
+   - Image of Tourguide
+- **Textual**:
+   - Tour Information
+   - Page/Section Headings
+   - Tour Details
+   - Contact Information
+- **Aesthetic**: 
+   - Cohesive Color Palette
+   - Readable Typography
+- **Interactive**: 
+   - Links to Booking/Review Platforms
+   - Contact Forms Elements
+
+Should-Have
+- **Graphic**:
+   - More Imagery of Tours
+- **Textual**: 
+   - Reviews from Past Clients
+- **Interactive**: 
+   - Social Media Links
+
+Could-Have
+- **Graphic**: 
+   - High-quality, Videos of Guide and Tours
+- **Textual**:
+   - Downloadable brochures
+
+#### **Core Features**
+Core Features outline the key parts integrated into the Clancy Nook website to ensure it meets both user and business goals. These features stem from the previously defined strategy and scope, helping prioritize functionality and content into deliverables.
+
+Each feature has been categorized as a must-have, should-have, or could-have, based on its importance and feasibility, and further classified as Site, Page, Section, or Elemental Features to clarify its scope of application.
+
+<img src="assets/images/core-features.webp" alt="Infograph to show how the core features have been categorised and classified for the Clancy Nook website" width="1300">
+
+#### **Project Plannning**
+The work in this section has been instrumental in establishing clear acceptance criteria and actionable tasks, which are tracked on my GitHub Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2). This process ensures a focused and efficient approach to meeting user needs and business goals.
+
+In organizing and classifying features, I’ve also laid the groundwork for the website’s structure. This strategic planning naturally transitions into the **Structure Plane**, where the flow of information and navigation design will align with the core features defined here, ensuring a seamless user experience.
