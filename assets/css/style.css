@@ -184,8 +184,17 @@ footer #direct-contact, footer #socials {
 
 #social-media-icons * {
 height: 24PX;
-margin: 5px 0;
+margin-bottom: 8px;
 padding-left: 0;
+color: var(--tertiary-color--);
+}
+
+#social-media-icons a:hover * {
+    transform: scale(1.2);
+}
+
+#website-author {
+    margin-left: -11px;
 }
 
 /*Media queries*/
