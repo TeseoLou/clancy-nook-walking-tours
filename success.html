@@ -63,79 +63,76 @@
     </nav>
 
     <!--Footer Element with Contact Details, Socials and Navigation Buttons-->
-    <footer class="fixed-bottom">
-        <div class="container">
+    <footer>
+        <section class="container">
             <div class="row d-md-flex flex-md-row-reverse justify-content-center justify-content-md-start">
-                <!--Mini Nav-icon bar for Footer Section-->
-                <div id="footer-navigation" class="col-12 col-md-2 d-flex justify-content-center" aria-label="Navigation in page footer">
+                <!--Mini Nav-buttons-->
+                <nav id="footer-navigation" class="col-12 col-md-2 d-flex justify-content-center" aria-label="Navigation in page footer">
                     <p id="nav-buttons" class="justify-content-center my-md-0">
                         <div class="d-md-block align-content-center">
-                        <!--Homepage Link-->
                         <a class="nav-link d-inline my-md-1" aria-current="page" href="index.html" aria-label="Internal link to Homepage on Website">
                             <i class="fa-solid fa-house footer-nav-icon"></i>
                         </a>
-                        <!--About Section Link-->
-                        <a class="nav-link d-inline d-md-block my-md-1" href="index.html#about" aria-label="Internal link to About Section on homepage.">
+                        <a class="nav-link d-inline d-md-block my-md-1" href="index.html#about-anchor" aria-label="Internal link to About Section on homepage.">
                             <i class="fa-solid fa-circle-user footer-nav-icon"></i>    
                         </a>
-                        <!--Tours Page Link-->
                         <a class="nav-link d-inline d-md-block my-md-1" href="tours.html" aria-label="Internal link to Tours Page on Website.">
                             <i class="fa-solid fa-shoe-prints footer-nav-icon"></i>    
                         </a>
                         </div>
                         <div class="d-md-block align-content-center">
-                        <!--Gallery Page Link-->
                         <a class="nav-link d-inline d-md-block my-md-1" href="gallery.html" aria-label="Internal link to Gallery Page on Website">
                             <i class="fa-solid fa-images footer-nav-icon"></i>
                         </a>
-                        <!--Reviews Page Link-->
                         <a class="nav-link d-inline d-md-block my-md-1" href="reviews.html" aria-label="Internal link to Reviews Page on Website.">
                             <i class="fa-solid fa-star footer-nav-icon"></i>    
                         </a>
-                        <!--Contact Page Link-->
                         <a class="nav-link d-inline d-md-block my-md-1" href="contact.html" aria-label="Internal link to Contact Page on Website.">
                             <i class="fa-solid fa-message footer-nav-icon"></i>
                         </a>
                         </div>
                     </p>
-                </div>
-                <!--Contact Details and Social Media Links-->
-                <div id="contact-details" class="col-12 col-md-10 justify-content-center mt-md-4">
-                    <h4>Contact Details</h4>
+                </nav>
+                <!--Contact Info and Links-->
+                <article id="contact-details" class="col-12 col-md-10 justify-content-center mt-md-4">
+                    <h2>Contact Details</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="container">
                         <div id="socials" class="row">
+                            <!--Contact Info-->
                             <div id="direct-contact" class="col-6">
-                                <!--Phone Number-->
                                 <p><i class="fa-solid fa-phone fa-lg pe-1"></i>07123456789</p>
-                                <!--Email Address-->
                                 <p><i class="fa-solid fa-envelope fa-xl pe-1"></i>full-name@email.com</p>
                             </div>
+                            <!--Social Media Links-->
                             <div class="col-6 flex justify-content-between p-0">
                                 <div class="container">
                                     <div class="row ps-0.5">                            
                                         <div class="col-12 p-0">
-                                            <div id="social-media-icons" class="container ps-0 d-md-block">
+                                            <aside id="social-media-icons" class="container ps-0 d-md-block">
                                                 <div class="row d-flex justify-content-around">
-                                                    <!--Link to Instagram Account-->
-                                                    <i class="col-4 fa-brands fa-square-instagram fa-xl"></i>
-                                                    <!--Link to Facebook Account-->
-                                                    <i class="col-4 fa-brands fa-square-facebook fa-xl"></i>
-                                                    <!--Link to LinkedIN Account-->
-                                                    <i class="col-4 fa-brands fa-linkedin fa-xl"></i>
+                                                    <a href="https://www.instagram.com/clancy.nook/" class="col-4" target="_blank" rel="noopener" alt="Opens in new tab" aria-label="Pressing this button links to instagram page">
+                                                        <i class="col-4 fa-brands fa-square-instagram fa-xl"></i>
+                                                    </a>
+                                                    <a href="https://www.facebook.com/ClancyNook/" class="col-4" target="_blank" rel="noopener" alt="Opens in new tab" aria-label="Pressing this button links to facebook page">
+                                                        <i class="fa-brands fa-square-facebook fa-xl"></i>
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/clancy-nook-8a6764337/?originalSubdomain=uk" class="col-4" target="_blank" rel="noopener" alt="Opens in new tab" aria-label="Pressing this button links to linkedin page">
+                                                        <i class="col-4 fa-brands fa-linkedin fa-xl"></i>
+                                                    </a>
                                                 </div>
-                                            </div>
+                                            </aside>
                                             <!--Website Author-->
-                                            <p><i class="fa-regular fa-copyright"></i> 2025 Teseo Nicholson</p>
+                                            <p id="website-author" class="ms--0.8"><i class="fa-regular fa-copyright"></i> 2025 Teseo Nicholson</p>
                                         </div>
                                     </div>  
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
             </div>
-        </div> 
+        </section> 
     </footer>
     <!--Bootstrap 5 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
