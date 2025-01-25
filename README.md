@@ -1,7 +1,7 @@
 # **Clancy Nook | Walking Tours**
 _Project Milestone 1_
 
-<img src="assets/images/clancy-nook-banner.webp" alt="Clancy Nook Walking Tours" width="1100">
+<img src="docs/images/clancy-nook-banner.webp" alt="Clancy Nook Walking Tours" width="1100">
 
 ## Contents
 
@@ -245,7 +245,7 @@ The table below rates each component on a scale of 1 to 5 for both importance an
 
 The graph below illustrates the relationship between importance and feasibility for each component. Components plotted closer to the top-right corner are both high in importance and feasible, making them top priorities for the project. Components in other quadrants help identify where compromises or adjustments may be needed.
 
-<img src="assets/images/importance-viability-graph.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="700">
+<img src="docs/figures/importance-viability-graph.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="700">
 
 Graph Insights:
 - **High Importance & High Feasibility**: Components such as the **About Section**, **Contact Form**, **Tours Information**, and **Transparent Pricing** appear in this quadrant, making them the highest priority for the website. These are the backbone of the user experience and directly align with Clancy Nook’s primary goals of establishing credibility, simplifying bookings, and providing clear information.
@@ -380,9 +380,40 @@ Core Features outline the key parts integrated into the Clancy Nook website to e
 
 Each feature has been categorized as a must-have, should-have, or could-have, based on its importance and feasibility, and further classified as Site, Page, Section, or Elemental Features to clarify its scope of application.
 
-<img src="assets/images/core-features.webp" alt="Infograph to show how the core features have been categorised and classified for the Clancy Nook website" width="1300">
+<img src="docs/figures/core-features.webp" alt="Infograph to show how the core features have been categorised and classified for the Clancy Nook website" width="1000">
 
 #### **Project Plannning**
 The work in this section has been instrumental in establishing clear acceptance criteria and actionable tasks, which are tracked on my GitHub Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2). This process ensures a focused and efficient approach to meeting user needs and business goals.
 
 In organizing and classifying features, I’ve also laid the groundwork for the website’s structure. This strategic planning naturally transitions into the **Structure Plane**, where the flow of information and navigation design will align with the core features defined here, ensuring a seamless user experience.
+
+### Structure
+The **Structure Plane** in User Experience (UX) design focuses on how the information within the project is organized and how the users will interact with that information. It bridges the gap between the abstract elements of the strategy and scope and the more concrete aspects of the user interface, defining how the users will experience the navigation and interaction with the website.
+
+The Structure Plane encompasses navigation design, which demands a clear and consistent navigation scheme that reflects the importance and relationships of different core features. Additionally, interaction design is essential in defingin how users will interact with the website’s interface. This involves deciding on interaction models, selecting appropriate UI elements such as buttons, forms, and sliders, and designing feedback mechanisms that inform users of the system's responses to their actions. Furthermore, developing an effective information architecture is crucial. This includes organizing the website content in a logical manner for the target audience and may involve techniques like card sorting to involve users in the organization process.
+
+For Clancy Nook, this section sets the framework for organizing the content and functionality in a way that is intuitive and user-friendly. Key considerations including mapping out the user flow to cover the user stories and ensure that the navigation structure supports these journeys. Maintaining consistent patterns in layout and design is also vital in promoting instinctual navigation through the site as well as sticking to best practice. Furthermore, ensuring that the structure accomodates differently abled users, such as ensuring semantic elements are appropriate and aria-labels are descriptive will ensure screen reader compatibility. 
+
+#### **_MoSCoW_ Prioritization**
+So far in this project,  prioritising effectively according to business goals, user needs, and developer capabilities has been crucial. With the project scoped to develop a fully functional front-end site within a specific timeframe, continuously reevaluating priorities and core components ensures timely deployment while balancing essential and additional features.
+
+Effective prioritization is key for web developers, especially under tight deadlines. To manage this, the MoSCoW prioritization technique has been integral for me, in categorizing tasks. So far, categorizing tasks into Must-Have, Should-Have, and Could-Have has allowed me to focus resources effectively and meet critical milestones. Now, I introduce the final component in this model: the Won't-Have.
+
+Introducing Won't-Have's marks a strategic decision to recognise and set aside features that are not feasible at this stage due to current constraints in timeframe, project requirements, skillset, or client resources. This categorisation is not about permanently discarding features but rather temporarily setting aside those that, while valuable, are not possible for the initial launch.
+
+Unlike Could-Have items, which remain on my roadmap for potential inclusion for this project (if time and resources allow), Won't Have elements are not planned for this project phase at all. By clearly defining what will not be included in the initial deployment, I set the stage for future enhancements, as I develop more advanced skills and additional resources are secure by the client. 
+
+Several features have been relocated to the Won't-Have category due to current constraints in skillset, resources, and project scope. Here is a concise breakdown of these features:
+
+- **Community/Concession Rates**
+   - Client is still finalizing details for community and concession rates.
+- **Form Submission Functionality**
+   - Real back-end form submission capabilities exceed my current skills, limiting forms to front-end functionality only.
+- **Ability to Book on the Website**
+   - Direct booking requires back-end skills and integration with reservation and payment systems, which are beyond the current project scope.
+- **Supplementary Media like Downloadable Brochures**
+   - Absence of client-created content for downloadable brochures delays this feature.
+- **Hidden Form Fields Based on User Responses**
+   - Advanced form interactions such as dynamically displaying fields based on user input require more complex JavaScript skills.
+
+<img src="docs/figures/core-features-with-wont-have.webp" alt="Infograph to show how the core features have been categorised and classified for the Clancy Nook website with the addition of the wont=have category" width="800">
