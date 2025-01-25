@@ -146,6 +146,28 @@ a {
     color: var(--tertiary-color--);
 }
 
+/*Tours Page*/
+
+/*Header Section*/
+header > #title-section * {
+    text-align: center;
+}
+
+/*Featured Tours Section*/
+#featured-tours img {
+    object-fit: scale-down; /*Prevents image strecthing horizontally*/
+}
+
+#tour-information .card {
+    background-color: transparent;
+    border: none;
+}
+
+.tour-details {
+    font-size: 11px;
+    width: 150px;
+}
+
 /*Footer Section*/
 footer {
     background-color: rgba(237, 196, 121, .6);
