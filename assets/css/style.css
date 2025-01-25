@@ -59,14 +59,8 @@ a {
 }
 
 .custom-button-light:hover {
-    border: 1px solid var(--tertiary-color--);
-    border-radius: 2px;
     background-color: var(--highlight-color-warm--);
-    color: var(--tertiary-color--);
-    width: 9rem;
-    padding: 3px 6px;
-    width: 130px;
-    transition: ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 }
 
 /*Navbar Styles*/
