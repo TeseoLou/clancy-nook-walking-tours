@@ -225,7 +225,7 @@ header > #title-section * {
 
 .tour-details {
     font-size: 11px;
-    width: 150px;
+    width: 160px;
 }
 
 /*Media queries*/
@@ -273,14 +273,22 @@ header > #title-section * {
     .tour-information {
         align-content: start;
     }
-    #tour-1-info > h2, #tour-2-info > h2 {
+    #tour-1-info > h2 {
         margin-inline-start: -400px;
+        font-size: 34px;
+        height: 40px;
+    }
+    #tour-2-info > h2 {
+        margin-inline-start: 453px;
         font-size: 34px;
         height: 40px;
     }
     .tour-information > p {
         margin-bottom: 6px;
         align-self: flex-start;
+    }
+    #tour-2-details {
+        margin-left: 60px;
     }
 }
 
@@ -296,9 +304,15 @@ header > #title-section * {
         height: 275.6px;
     }
     #tour-1-info > h2, #tour-2-info > h2 {
-        margin-inline-start: 0;
+        margin-inline-start: auto;
         margin-bottom: 8px;
         font-size: 38px;
+    }
+    #tour-2-info > h2 {
+        justify-content: end;
+    }
+    #tour-2-details {
+        margin-left: 108px;
     }
 }
 
@@ -316,5 +330,8 @@ header > #title-section * {
     }
     .tour-information > p {
         font-size: 17px;
+    }
+    #tour-2-details {
+        margin-left: 152px;
     }
 }
