@@ -93,6 +93,58 @@ a {
     transition: ease-in-out;
 }
 
+/*Footer Section*/
+footer {
+    background-color: rgba(237, 196, 121, .6);
+    box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
+    margin-top: auto;/*Push Footer to the Bottom of the Page, solution provided by Nehal Ahmad on DEV*/
+    paddint-top: 3px;
+}
+
+footer #contact-details {
+    font-size: 11px;
+}
+
+footer #direct-contact, footer #socials {
+    padding: 0;
+}
+
+#footer-navigation {
+    width: 250px;
+    margin: 10px 0;
+    background-color: var(--primary-color--);
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.1);
+}
+
+#footer-navigation > p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-navigation .footer-nav-icon {
+    padding: 0 0.5rem;
+}
+
+#footer-navigation a:hover * {
+    transform: scale(1.2);
+}
+
+#social-media-icons * {
+height: 24PX;
+margin-bottom: 8px;
+padding-left: 0;
+color: var(--tertiary-color--);
+}
+
+#social-media-icons a:hover * {
+    transform: scale(1.2);
+}
+
+#website-author {
+    margin-left: -11px;
+}
+
 /*Homepage*/
 
 /*About Section */
@@ -154,70 +206,26 @@ header > #title-section * {
 }
 
 /*Featured Tours Section*/
-#featured-tours img {
+.featured-tours img {
     object-fit: scale-down; /*Prevents image strecthing horizontally*/
 }
 
-#tour-information .card {
+.tour-information .card {
     background-color: transparent;
     border: none;
+}
+
+.featured-tours > h2 {
+    font-size: 29px;
+}
+
+.tour-information > p {
+    font-size: 14px;
 }
 
 .tour-details {
     font-size: 11px;
     width: 150px;
-}
-
-/*Footer Section*/
-footer {
-    background-color: rgba(237, 196, 121, .6);
-    box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
-    margin-top: auto;/*Push Footer to the Bottom of the Page, solution provided by Nehal Ahmad on DEV*/
-    paddint-top: 3px;
-}
-
-footer #contact-details {
-    font-size: 11px;
-}
-
-footer #direct-contact, footer #socials {
-    padding: 0;
-}
-
-#footer-navigation {
-    width: 250px;
-    margin: 10px 0;
-    background-color: var(--primary-color--);
-    border-radius: 2px;
-    box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.1);
-}
-
-#footer-navigation > p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#footer-navigation .footer-nav-icon {
-    padding: 0 0.5rem;
-}
-
-#footer-navigation a:hover * {
-    transform: scale(1.2);
-}
-
-#social-media-icons * {
-height: 24PX;
-margin-bottom: 8px;
-padding-left: 0;
-color: var(--tertiary-color--);
-}
-
-#social-media-icons a:hover * {
-    transform: scale(1.2);
-}
-
-#website-author {
-    margin-left: -11px;
 }
 
 /*Media queries*/
@@ -243,6 +251,12 @@ color: var(--tertiary-color--);
     footer #contact-details {
         font-size: 13px;
     }
+    .featured-tours > h2 {
+        font-size: 32px;
+    }
+    .featured-tours img {
+        object-fit: initial; /*Prevents image strecthing horizontally*/
+    }
 }
 
 /*Large devices (laptops 992px and up)*/
@@ -252,6 +266,21 @@ color: var(--tertiary-color--);
     }
     #tour-cards .card-body {
         min-height: 280.61px;
+    }
+    .carousel-item img {
+        object-fit: scale-down; /*Prevents image strecthing horizontally*/
+    }
+    .tour-information {
+        align-content: start;
+    }
+    #tour-1-info > h2, #tour-2-info > h2 {
+        margin-inline-start: -400px;
+        font-size: 34px;
+        height: 40px;
+    }
+    .tour-information > p {
+        margin-bottom: 6px;
+        align-self: flex-start;
     }
 }
 
@@ -263,11 +292,29 @@ color: var(--tertiary-color--);
     #footer-navigation {
         margin-top: 24px;
     }
+    .tour-information {
+        height: 275.6px;
+    }
+    #tour-1-info > h2, #tour-2-info > h2 {
+        margin-inline-start: 0;
+        margin-bottom: 8px;
+        font-size: 38px;
+    }
 }
 
 /*Extra Extra Large devices (large desktops 1400px and up)*/
 @media screen and (min-width: 1400px) {
     #tour-cards .card-body {
         min-height: 203.19px;
+    }
+    .tour-information {
+        height: 321.44px;
+    }
+    #tour-1-info > h2, #tour-2-info > h2 {
+        margin-bottom: 8px;
+        font-size: 44px;
+    }
+    .tour-information > p {
+        font-size: 17px;
     }
 }

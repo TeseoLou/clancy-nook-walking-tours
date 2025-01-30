@@ -58,7 +58,7 @@
     <header class="section container d-flex mt-3">
         <section id="title-section" class="row">
             <h1 class="colomn col-12 display-1">Tours</h1>
-            <p class="column col-12">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            <p class="column col-12">Manchester is a city filled with stories, and I’m here to bring them to life. My walking tours go beyond the usual landmarks, diving into the lives of the people who shaped these streets. Whether we’re following the struggles and triumphs of Victorian Mancunians, uncovering the true crimes that once gripped the city, or exploring the changing fortunes of a historic suburb, each tour is designed to make history feel real and immediate. With a focus on storytelling, rich detail, and forgotten voices, I invite you to walk with me and see Manchester in a way you never have before.</p>
         </section>
     </header>
     <main>
@@ -70,18 +70,93 @@
         <!--Section Divider-->
         <hr class="container border-1">
         <!--Featured Tours-->
-        <section id="featured-tours" class="container section">
+        <!--A Tale of Two Cities Tour-->
+        <section class="container section featured-tours">
+            <h2 class="d-flex d-lg-none justify-content-center text-center w-100">A Tale of Two Cities</h2>
             <div class="row">
-                <img src="assets/images/a-tale-of-two-cities-tour-card.webp" alt="View of St Ann's Square Manchester circa 1900" class="col-12 col-lg-5 text-center mb-4" width="auto" height="auto">
-                <div id="tour-information" class="col-lg-7 row">
-                    <h2 class="col-12 text-lg-start">A Tale of Two Cities</h2>
-                    <p class="col-12 text-lg-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>                 
+                <figure id="tour-1-carousel" class="carousel slide col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel" width="auto" height="auto">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/images/a-tale-of-two-cities-tour-1.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of St Ann's Square Manchester circa 1900">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/a-tale-of-two-cities-tour-2.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of King Street Manchester 1866">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/a-tale-of-two-cities-tour-3.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of Old Brown Street Manchester 1866">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/a-tale-of-two-cities-tour-4.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of King Street West Manchester 1880">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tour-1-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tour-1-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+                <div id="tour-1-info" class="tour-information col-lg-7 row justify-content-md-center justify-content-lg-start align-content-xl-between">
+                    <h2 class="d-none d-lg-flex col-12 text-md-center text-lg-start">A Tale of Two Cities</h2>
+                    <p class="col-12 text-md-center text-lg-start">Step into 1850s Manchester and experience the city at a crossroads. This immersive tour follows Edward and Eithne, two Victorian Mancunians from opposite ends of society, as they navigate a rapidly changing industrial world. Inspired by real lives, the tour reveal stark contrasts between the wealthy elite and the struggling poor. Explore the slums of Little Ireland, where poverty and overcrowding defined daily life. Discover how Manchester was shifting from a milling town to a global trade center. Walking in their footsteps, through their workplaces and daily haunts, we will experience the challenges and opportunities of Victorian Manchester.</p>
                     <div class="row col-12 col-md-10 col-lg-9">
                         <div class="card col-6 col-md-3">
-                            <p class="card-text tour-details"><i class="fa-solid fa-coins"></i> What you can</p>
+                            <p class="card-text tour-details"><i class="fa-solid fa-coins"></i> Free</p>
                         </div>
                         <div class="card col-6 col-md-3">
                             <p class="card-text tour-details"><i class="fa-solid fa-clock"></i> 90 Minutes</p>
+
+                        </div>
+                        <div class="card col-6 col-md-3">
+                            <p class="card-text tour-details"><i class="fa-solid fa-shoe-prints"></i> Kilometres</p>
+                        </div>
+                        <div class="card col-6 col-md-3">
+                            <p class="card-text tour-details"><i class="fa-solid fa-location-dot"></i> Thirsty Scholar, M1 5NP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--True Crime in Ancoats Tour-->
+        <section class="container section featured-tours">
+            <h2 class="d-flex d-lg-none justify-content-center text-center w-100">True Crime in Ancoats</h2>
+            <div class="row">
+                <figure id="tour-2-carousel" class="carousel slide col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel" width="auto" height="auto">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/images/a-tale-of-two-cities-tour-1.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of St Ann's Square Manchester circa 1900">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/a-tale-of-two-cities-tour-2.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of King Street Manchester 1866">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/a-tale-of-two-cities-tour-3.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of Old Brown Street Manchester 1866">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/a-tale-of-two-cities-tour-4.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of King Street West Manchester 1880">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tour-2-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tour-2-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+                <div id="tour-2-info" class="tour-information col-lg-7 row justify-content-md-center justify-content-lg-start align-content-xl-between">
+                    <h2 class="d-none d-lg-flex col-12 text-md-center text-lg-start">True Crime in Ancoats</h2>
+                    <p class="col-12 text-md-center text-lg-start">In the late 19th century, Ancoats was a hub of hardship, crime, and unrest. Its overcrowded slums bred gangs, pickpockets, and murderers, filling Victorian newspapers with shocking tales. This tour explores the brutal conditions that fueled crime, from poverty to urban chaos. Hear shocking stories of murder on the canal, assassination by cake, and Italian romance gone wrong. Explore the riots and street fights that shaped political change, with Ancoats at the center of Manchester’s turbulent history. Visit the homes of criminals and victims alike, including Ancoats Hospital and Tame Street Workhouse, and step into the dark heart of Victorian Manchester.</p>
+                    <div class="row col-12 col-md-10 col-lg-9">
+                        <div class="card col-6 col-md-3">
+                            <p class="card-text tour-details"><i class="fa-solid fa-coins"></i> Free</p>
+                        </div>
+                        <div class="card col-6 col-md-3">
+                            <p class="card-text tour-details"><i class="fa-solid fa-clock"></i> 90 Minutes</p>
+
                         </div>
                         <div class="card col-6 col-md-3">
                             <p class="card-text tour-details"><i class="fa-solid fa-shoe-prints"></i> Kilometres</p>
