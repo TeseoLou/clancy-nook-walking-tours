@@ -281,7 +281,7 @@ color: var(--tertiary-color--);
 
 /*Reviews Page*/
 #reviews-page-background {
-    background: url(../images/reviews-page-background-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+    background: url(../images/reviews-page-background-image-small.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
     position: relative; /*So image crops on different screens instead of resizing*/
     height: 100%; /*Fixed height to appeal to all screen sizes*/
     width: 100vw;
@@ -373,6 +373,11 @@ color: var(--tertiary-color--);
     }
     .featured-tours img {
         object-fit: initial; /*Prevents image strecthing horizontally*/
+    }
+    #reviews-page-background {
+        background: url(../images/reviews-page-background-image-medium.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+        position: relative; /*So image crops on different screens instead of resizing*/
+        height: 100%; /*Fixed height to appeal to all screen sizes*/
     }
     #review-cards .card-title {
         font-size: 25px;
