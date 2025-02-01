@@ -58,15 +58,26 @@ a {
     transition: ease-in-out;
 }
 
-.custom-button-light:hover {
+.custom-button-dark:hover {
     background-color: var(--highlight-color-warm--);
     transition: background-color 0.3s ease-in-out;
 }
 
+.custom-button-dark {
+    border: 1px solid var(--tertiary-color--);
+    border-radius: 2px;
+    background-color: var(--secondary-color--);
+    color: var(--primary-color--);
+    width: 9rem;
+    padding: 3px 6px;
+    width: 130px;
+    transition: ease-in-out;
+}
+
 /*Navbar Styles*/
 #navbar {
-    background-color: #2B4A4A;
-    color: var(--primary-color--);
+    background-color: var(--secondary-color--);
+    color: var(--tertiary-color--);
     box-shadow: 0 5px 10px rgba(36, 36, 36, 0.5);
 }
 
@@ -201,11 +212,52 @@ color: var(--tertiary-color--);
 /*Tours Page*/
 
 /*Header Section*/
+#tours-hero {
+    background: url(../images/tours-hero-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+    position: relative; /*So image crops on different screens instead of resizing*/
+    height: 180px; /*Fixed height to appeal to all screen sizes*/
+    width: auto;
+}
+
+#tours-title {
+    background-color: rgba(237, 196, 121, .75);
+    width: fit-content;
+}
+
 header > #title-section * {
     text-align: center;
 }
 
+#tours-call-to-action * {
+    font-size: 1.1rem;
+    font-weight: light;
+}
+
+/*Booking Guide Section*/
+#booking-guide {
+    background-color: rgba(126, 165, 162, .4);
+    box-shadow: 0px 5px 10px rgba(36, 36, 36, 0.5);
+    width: 100vw;
+}
+
+#booking-guide p, #booking-info li {
+    font-size: 14px;
+}
+
+#eventbrite-link > img:hover {
+    content: url(../images/eventbrite-logo-hover.webp); /*Responsive logo with different colors for feedback*/
+    transition: ease-in-out;
+}
+
 /*Featured Tours Section*/
+#a-tale-of-two-cities-anchor, #true-crime-in-ancoats-anchor, #stories-of-whalley-range-anchor, #private-bookings-anchor {
+    height: 0.1px;
+    position: relative;
+    margin-top: -87px;/*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected (solution inspired by youtuber and web design tutor @dereksiuau)*/
+}
+#a-tale-of-two-cities, #true-crime-in-ancoats, #stories-of-whalley-range, #private-bookings {
+    padding-top: 107px;
+}
 .featured-tours img {
     object-fit: scale-down; /*Prevents image strecthing horizontally*/
 }
@@ -228,6 +280,10 @@ header > #title-section * {
     width: 160px;
 }
 
+#tour-4-details {
+    margin-left: 0px;
+}
+
 /*Media queries*/
 
 /* Medium devices (tablets 768px and up)*/
@@ -236,7 +292,7 @@ header > #title-section * {
         width: 180px;
     }
     #tour-cards .card-body {
-        min-height: 200.16px;
+        min-height: 222px;
     }
     #footer-navigation {
         height: 120px;
@@ -265,7 +321,7 @@ header > #title-section * {
         width: 200px;
     }
     #tour-cards .card-body {
-        min-height: 280.61px;
+        min-height: 321px;
     }
     .carousel-item img {
         object-fit: scale-down; /*Prevents image strecthing horizontally*/
@@ -290,23 +346,52 @@ header > #title-section * {
     #tour-2-details {
         margin-left: 60px;
     }
+    #tour-3-info > h2 {
+        margin-inline-start: -400px;
+        font-size: 34px;
+        height: 40px;
+        white-space: nowrap; /*Keep title all on one line*/
+    }
+    #private-bookings-title > h2 {
+        margin-inline-end: -403px;
+        font-size: 34px;
+        height: 40px;
+        text-align: end;
+    }
+    #tour-4-details {
+        margin-left: 4px;
+    }
+    #booking-info #private-booking-contact-button {
+        margin-right: 50px;
+    }
+}
+/*Larger devices (large laptops 1085px and up)*/
+@media screen and (min-width: 1085px) {
+    #tour-cards .card-body {
+        min-height: 331px;
+    }
 }
 
 /*Extra Large devices (desktops 1200px and up)*/
 @media screen and (min-width: 1200px) {
     #tour-cards .card-body {
-        min-height: 260.78px;
+        min-height: 276px;
     }
     #footer-navigation {
         margin-top: 24px;
     }
+    #booking-info #private-booking-contact-button {
+        margin-right: 80px;
+        margin-top: -42px;
+    }
     .tour-information {
         height: 275.6px;
     }
-    #tour-1-info > h2, #tour-2-info > h2 {
+    #tour-1-info > h2, #tour-2-info > h2, #tour-3-info > h2 {
         margin-inline-start: auto;
         margin-bottom: 8px;
         font-size: 38px;
+        margin-left: 0;
     }
     #tour-2-info > h2 {
         justify-content: end;
@@ -314,12 +399,21 @@ header > #title-section * {
     #tour-2-details {
         margin-left: 108px;
     }
+    #private-bookings-title > h2 {
+        margin-inline-end: -3px;
+        font-size: 38px;
+        height: 40px;
+    }
 }
 
 /*Extra Extra Large devices (large desktops 1400px and up)*/
 @media screen and (min-width: 1400px) {
     #tour-cards .card-body {
-        min-height: 203.19px;
+        min-height: 252px;
+    }
+    #booking-info #private-booking-contact-button {
+        margin-right: 110px;
+        margin-top: -42px;
     }
     .tour-information {
         height: 321.44px;
@@ -333,5 +427,10 @@ header > #title-section * {
     }
     #tour-2-details {
         margin-left: 152px;
+    }
+    #tour-4-info > h2 {
+        margin-inline-start: 274px;
+        font-size: 44px;
+        height: 40px;
     }
 }

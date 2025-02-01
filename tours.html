@@ -55,37 +55,51 @@
             </div>
         </div>
     </nav>
-    <header class="section container mt-3">
-        <section id="title-section" class="row d-flex justify-content-center">
-            <h1 class="colomn col-12 display-1 text-center">Tours</h1>
-        </section>
-        <section class="container section">
-            <p class="lead column col-12"><em>Manchester is a city filled with stories, and I’m here to bring them to life. My walking tours go beyond the usual landmarks, diving into the lives of the people who shaped these streets.<br>Whether we’re following the struggles and triumphs of Victorian Mancunians, uncovering the true crimes that once gripped the city, or exploring the changing fortunes of a historic suburb, each tour is designed to make history feel real and immediate.<br>With a focus on storytelling, rich detail, and forgotten voices, I invite you to walk with me and see Manchester in a way you never have before.</em></p>
+    <!--Hero Image and Title-->
+    <header id="tours-hero" class="section pt-3 d-flex align-items-center justify-content-center">
+        <section id="title-section" class="row d-flex align-items-center justify-content-center w-100">
+            <h1 id="tours-title" class="col-12 display-1 text-center">Tours</h1>
         </section>
     </header>
+    <!--Call-to-Action-->
+    <section class="container section">
+        <p id="tours-call-to-action" class="column col-12">
+        <em>"Join me as we step into the stories that shaped Manchester, walking in the footsteps of those who came before us. 
+                Because history isn’t just something to be learned, it’s something to be felt, experienced, and shared."
+        </em></p>
+    </section>
     <main>
-        <!--Section Divider-->
-        <hr class="container border-1">
-        <section id="booking-guide" class="container section">
-            <h2 class="mb-3 text-start">Book Your Tour</h2>
-            <p class="lead text-start">Join the adventure & reserve your spot today!</p>
-            <p class="mb-4 text-start">All public tours are pay-what-you-can, with a guide price of £7 per person. Tours are designed for those 14+ years, though parents and guardians are welcome to bring babies along.</p>
-            <section id="booking-info" class="container p-0">
-                <p class="text-start">Booking is quick and easy through <strong>Eventbrite</strong>:</p>
-                <ol class="mb-4">
-                    <li>Click the <strong>Eventbrite</strong> button below.</li>
-                    <li>Select the tour and date you’d like to attend.</li>
-                    <li>Choose the number of tickets you need and press <em>"Reserve a Spot"</em>.</li>
-                    <li>Enter your details to receive a confirmation email with all the tour info.</li>
-                </ol>
-                <p class="text-start">If you’d like to arrange a <strong>private group tour</strong>, or need assistance with your booking, feel free to get in touch!</p>
+        <!--Booking Guide Section-->
+        <section id="booking-guide" class="section">
+                <div class="container">
+                    <h2 class="mb-3 text-start">Book Your Tour</h2>
+                    <p class="mb-4 text-start">All public tours are pay-what-you-can, with a guide price of £7 per person. Tours are designed for those 14+ years, though parents and guardians are welcome to bring babies along.</p>
+                    <section id="booking-info" class="row p-0">
+                        <div class="col-12 col-lg-8">
+                            <p class="text-start">Booking is quick and easy through <strong>Eventbrite</strong>:</p>
+                            <ol class="mb-4">
+                                <li>Click the <strong>Eventbrite</strong> button below.</li>
+                                <li>Select the tour and date you’d like to attend.</li>
+                                <li>Choose the number of tickets you need and press <em>"Reserve a Spot"</em>.</li>
+                                <li>Enter your details to receive a confirmation email with all the tour info.</li>
+                            </ol>
+                        </div>
+                        <a id="eventbrite-link" class="nav-link col-12 col-lg-4 d-flex justify-content-center align-items-center pb-4" href="https://www.eventbrite.com/o/clancy-nook-59312701793" target="_blank" aria-label="External link to Clancy Nook Eventbrite booking page">
+                            <img src="assets/images/eventbrite-logo.webp" alt="Orange Eventbrite Logo, leads to Clancy Nook Eventbrite booking page." width="200px">
+                        </a>
+                        <p class="text-start">If you’d like to arrange a <strong>private group tour</strong>, or need assistance with your booking, get in touch via my contact form!</p>
+                        <!-- Center contact button on small screens, align right on larger screens -->
+                        <div class="col-12 d-flex justify-content-center justify-content-lg-end">
+                            <a id="private-booking-contact-button" class="btn custom-button-dark mb-3" href="contact.html">Contact</a>
+                        </div>
+                    </section>
+                </div>
             </section>
         </section>
-        <!--Section Divider-->
-        <hr class="container border-1">
         <!--Featured Tours-->
         <!--A Tale of Two Cities Tour-->
-        <section class="container section featured-tours">
+        <div id="a-tale-of-two-cities-anchor" class="d-hide"></div>
+        <section id="a-tale-of-two-cities" class="container section featured-tours">
             <h2 class="d-flex d-lg-none justify-content-center text-center w-100">A Tale of Two Cities</h2>
             <div class="row">
                 <figure id="tour-1-carousel" class="carousel slide col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel" width="auto" height="auto">
@@ -120,11 +134,11 @@
                             <p class="card-text tour-details"><i class="fa-solid fa-coins"></i> Free</p>
                         </div>
                         <div class="card col-6 col-md-3">
-                            <p class="card-text tour-details"><i class="fa-solid fa-clock"></i> 90 Minutes</p>
+                            <p class="card-text tour-details"><i class="fa-solid fa-clock"></i> 90 Min</p>
 
                         </div>
                         <div class="card col-6 col-md-3">
-                            <p class="card-text tour-details"><i class="fa-solid fa-shoe-prints"></i> Kilometres</p>
+                            <p class="card-text tour-details"><i class="fa-solid fa-shoe-prints"></i> 2.5 Km</p>
                         </div>
                         <div class="card col-6 col-md-3">
                             <p class="card-text tour-details"><i class="fa-solid fa-location-dot"></i> Thirsty Scholar, M1 5NP</p>
@@ -134,7 +148,8 @@
             </div>
         </section>
         <!--True Crime in Ancoats Tour-->
-        <section class="container section featured-tours">
+        <div id="true-crime-in-ancoats-anchor" class="d-hide"></div>
+        <section id="true-crime-in-ancoats" class="container section featured-tours">
             <h2 class="d-flex d-lg-none justify-content-center text-center w-100">True Crime in Ancoats</h2>
             <div class="row">
                 <figure id="tour-2-carousel" class="carousel slide order-lg-2 col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel" width="auto" height="auto">
@@ -169,15 +184,105 @@
                             <p class="card-text tour-details"><i class="fa-solid fa-coins"></i> Free</p>
                         </div>
                         <div class="card col-6 col-md-3">
-                            <p class="card-text tour-details"><i class="fa-solid fa-clock"></i> 120 Minutes</p>
+                            <p class="card-text tour-details"><i class="fa-solid fa-clock"></i> 120 Min</p>
 
                         </div>
                         <div class="card col-6 col-md-3">
-                            <p class="card-text tour-details"><i class="fa-solid fa-shoe-prints"></i> Kilometres</p>
+                            <p class="card-text tour-details"><i class="fa-solid fa-shoe-prints"></i> 3.2 Km</p>
                         </div>
                         <div class="card col-6 col-md-3">
-                            <p class="card-text tour-details"><i class="fa-solid fa-location-dot"></i> Divine Wellness, M16 7EW</p>
+                            <p class="card-text tour-details"><i class="fa-solid fa-location-dot"></i> Hallé St Peter's, M16 7EW</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Stories of Whalley Range-->
+        <div id="stories-of-whalley-range-anchor" class="d-hide"></div>
+        <section id="stories-of-whalley-range" class="container section featured-tours">
+            <h2 class="d-flex d-lg-none justify-content-center text-center w-100">Stories of Whalley Range</h2>
+            <div class="row">
+                <figure id="tour-3-carousel" class="carousel slide col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel" width="auto" height="auto">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/images/stories-of-whalley-range-tour-1.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of Whalley Hotel 1900">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/stories-of-whalley-range-tour-2.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of Lancashire Independent College 1910">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/stories-of-whalley-range-tour-3.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of Manley Park 1908">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/stories-of-whalley-range-tour-4.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of College Road 1912">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tour-3-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tour-3-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+                <div id="tour-3-info" class="tour-information col-lg-7 row justify-content-md-center justify-content-lg-start align-content-xl-between">
+                    <h2 class="d-none d-lg-flex col-12 text-md-center text-lg-start">Stories of Whalley Range</h2>
+                    <p class="col-12 text-md-center text-lg-start">Once an opulent Victorian retreat, later a hub of rebellion and rock-and-roll, Whalley Range has always been a place of transformation. This tour uncovers the stories woven into its streets, from a college for religious rebels once set to rival Oxbridge to the country’s largest aquarium, a spectacle that once drew crowds from across Britain. Over time, its genteel reputation gave way to inner-city struggles, reshaping the suburb’s identity. Through the voices of those who lived here, you’ll hear firsthand accounts of leafy childhoods, countercultural shifts, and how this unlikely spot became a magnet for 1970s rock legends.</p>
+                    <div class="row col-12 col-md-10 col-lg-9 mt-lg-3">
+                        <div class="card col-6 col-md-3">
+                            <p class="card-text tour-details"><i class="fa-solid fa-coins"></i> Free</p>
+                        </div>
+                        <div class="card col-6 col-md-3">
+                            <p class="card-text tour-details"><i class="fa-solid fa-clock"></i> 90 Min</p>
+
+                        </div>
+                        <div class="card col-6 col-md-3">
+                            <p class="card-text tour-details"><i class="fa-solid fa-shoe-prints"></i> 2.5 Km</p>
+                        </div>
+                        <div class="card col-6 col-md-3">
+                            <p class="card-text tour-details"><i class="fa-solid fa-location-dot"></i> Whalley Hotel, M16 8AA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Private Bookings-->
+        <div id="private-bookings-anchor" class="d-hide"></div>
+        <section id="private-bookings" class="container section featured-tours">
+            <h2 class="d-flex d-lg-none justify-content-center text-center w-100">Private Bookings</h2>
+            <div class="row">
+                <figure id="tour-4-carousel" class="carousel slide order-lg-2 col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel" width="auto" height="auto">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/images/private-bookings-tour-1.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="Photograph of Clancy Nook talking to a group on A Tale of Two Cities Tour.">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/private-bookings-tour-2.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="Photograph of group on A Tale of Two Cities Tour.">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/private-bookings-tour-3.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="Photograph of group on True Crime in Ancoats Tour.">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/private-bookings-tour-4.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="Photograph of group on Stories of Whalley Range Tour.">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tour-4-carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tour-4-carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </figure>
+                <div id="tour-4-info" class="tour-information order-lg-1 col-lg-7 row justify-content-md-center justify-content-lg-start align-content-xl-between">
+                    <div id="private-bookings-title" class="col-12 d-flex justify-content-lg-end">
+                        <h2 class="d-none d-lg-flex text-md-center text-lg-end">Private Bookings</h2>
+                    </div>
+                    <p class="col-12 text-md-center text-lg-end">All of my tours are available for private bookings, offering a flexible way to explore Manchester’s history in depth. Whether for a corporate event, special occasion, or private group, a tailored tour lets you experience the city at your own pace, focusing on the stories that interest you most. Ideal for team-building, birthdays, anniversaries, or a gathering of curious minds, I also offer concession rates for charities and educational institutions to keep history accessible to all. To arrange a private booking, fill out the contact form so we can sort your reservation, payment, and any accessibility requirements.</p>
+                    <div id="tour-4-details" class="row col-12 d-flex justify-content-start justify-content-md-center justify-content-lg-end px-0">
+                        <a class="btn mx-3 custom-button-dark" href="contact.html">Contact</a>
                     </div>
                 </div>
             </div>
@@ -188,9 +293,9 @@
         <section class="container">
             <div class="row d-md-flex justify-content-center justify-content-md-between">
                 <!--Contact Info and Links-->
-                <article id="contact-details" class="col-12 col-md-10 justify-content-center mt-md-4">
+                <article id="contact-details" class="col-12 col-md-10 justify-content-center mt-3">
                     <h2>Contact Details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>For private bookings, inquiries, or any questions, feel free to reach out directly! And don’t forget to follow Clancy Nook on social media for the latest tour updates, stories, and behind-the-scenes glimpses into Manchester’s past.</p>
                     <div class="container">
                         <div id="socials" class="row">
                             <!--Contact Info-->
