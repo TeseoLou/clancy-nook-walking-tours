@@ -352,6 +352,23 @@ color: var(--tertiary-color--);
     font-size: 13px;
 }
 
+/*Contact Page*/
+#contact-page-background {
+    background: url(../images/contact-page-background-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+    position: relative; /*So image crops on different screens instead of resizing*/
+    background-attachment: fixed; /*So background image remains static while scrolling*/
+    height: 100%; /*Fixed height to appeal to all screen sizes*/
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.hidden {
+    display: none;
+}
+
 /*Media queries*/
 /*Small devaices (small tablets 575px and up)*/
 @media screen and (min-width: 768px) {
