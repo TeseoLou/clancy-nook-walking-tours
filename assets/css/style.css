@@ -426,10 +426,6 @@ textarea {
     display: none !important; /*Ensures it is completely removed when toggled*/
 }
 
-.show {
-    display: flex !important; /*Ensures proper visibility*/
-}
-
 #tour-options {
     display: flex; /*Enables inline layout */
     flex-wrap: wrap; 

@@ -32,7 +32,7 @@
             </button>
             <!--Navbar Menu Options-->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mb-2 mb-lg-0 justify-content-lg-end">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html" aria-label="Internal link to Homepage on Website">Home</a>
                     </li>
@@ -235,77 +235,74 @@
     <script src="https://kit.fontawesome.com/00ece23e82.js" crossorigin="anonymous"></script>
     <!--Bootstrap Mobile Navbar Collapse for In-page links JS, inspired by Code Institute: Boardwalk Games Project-->
     <script> 
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); //Prevent default anchor click behavior//
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, //Adjust for navbar height//
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); //Collapse navbar//
+                    }
+                });
+            });
+    </script>
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("subject").addEventListener("change", toggleFields);
+            const subjectDropdown = document.getElementById("subject");
+            if (subjectDropdown) {
+                subjectDropdown.addEventListener("change", toggleFields); //Attach event listener to #subject dropdown//
+            }
         });
+
         function toggleFields() {
             const subject = document.getElementById("subject").value;
             const tourOptions = document.getElementById("tour-options");
             const reviewOptions = document.getElementById("review-options");
 
+            //Show the tour options if "Booking a Tour" or "Private Booking" is selected//
             if (subject === "booking-tour" || subject === "private-booking") {
                 tourOptions.classList.remove("hidden");
-                tourOptions.classList.add("show");
+                tourOptions.style.display = "flex";
                 document.querySelectorAll("#tour-options input").forEach(input => input.required = true);
             } else {
                 tourOptions.classList.add("hidden");
-                tourOptions.classList.remove("show");
+                tourOptions.style.display = "none";
                 document.querySelectorAll("#tour-options input").forEach(input => input.required = false);
             }
 
+            //Show the review options if "Leave a Review" is selected//
             if (subject === "leave-review") {
                 reviewOptions.classList.remove("hidden");
-                reviewOptions.classList.add("show");
+                reviewOptions.style.display = "flex";
                 document.getElementById("rating").required = true;
             } else {
                 reviewOptions.classList.add("hidden");
-                reviewOptions.classList.remove("show");
+                reviewOptions.style.display = "none";
                 document.getElementById("rating").required = false;
             }
         }
     </script>
     <script>
-        function toggleFields() {
-            const subject = document.getElementById("subject").value;
-            const tourOptions = document.getElementById("tour-options");
-            const reviewOptions = document.getElementById("review-options");
-
-            // Show the tour options if "Booking a Tour" or "Private Booking" is selected
-            if (subject === "booking-tour" || subject === "private-booking") {
-                tourOptions.classList.remove("hidden"); // Remove hidden class
-                tourOptions.style.display = "flex"; // Ensure it becomes visible
-                document.querySelectorAll("#tour-options input").forEach(input => input.required = true);
-            } else {
-                tourOptions.classList.add("hidden");
-                tourOptions.style.display = "none"; // Fully hide it
-                document.querySelectorAll("#tour-options input").forEach(input => input.required = false);
-            }
-            // Show the review options if "Leave a Review" is selected
-            if (subject === "leave-review") {
-                reviewOptions.classList.remove("hidden");
-                reviewOptions.style.display = "flex"; // Ensure it's visible
-                document.getElementById("rating").required = true;
-            } else {
-                reviewOptions.classList.add("hidden");
-                reviewOptions.style.display = "none"; // Fully hide it
-                document.getElementById("rating").required = false;
-            }
-        }
-    </script>
-    <script>
-        // Function to move the star with the slider (with reduced movement range)
+        //Function to move the star with the slider (with reduced movement range)//
         function updateStarPosition() {
             const slider = document.getElementById("rating");
             const star = document.querySelector(".star-icon");
 
-            // Get the slider's current value (1-5) and map it to a percentage (adjusted for reduced movement)
-            let value = ((slider.value - slider.min) / (slider.max - slider.min)) * 87; // Reduced movement range
+            //Get the slider's current value (1-5) and map it to a percentage (adjusted for reduced movement)//
+            let value = ((slider.value - slider.min) / (slider.max - slider.min)) * 87; // Reduced movement range//
 
-            // Move the star along the slider track, keeping it centered
-            star.style.left = `calc(${value}% + 10px)`; // Adjust offset for better centering
+            //Move the star along the slider track, keeping it centered//
+            star.style.left = `calc(${value}% + 10px)`; // Adjust offset for better centering//
         }
-
-        // Attach the updateStarPosition function to slider input
+        //Attach the updateStarPosition function to slider input//
         document.addEventListener("DOMContentLoaded", function () {
             const slider = document.getElementById("rating");
             if (slider) {
