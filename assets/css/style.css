@@ -121,7 +121,7 @@ footer {
     background-color: rgba(237, 196, 121, .6);
     box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
     margin-top: auto;/*Push Footer to the Bottom of the Page, solution provided by Nehal Ahmad on DEV*/
-    paddint-top: 3px;
+    padding-top: 3px;
 }
 
 footer #contact-details {
@@ -357,8 +357,8 @@ color: var(--tertiary-color--);
     background: url(../images/contact-page-background-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
     position: relative; /*So image crops on different screens instead of resizing*/
     background-attachment: fixed; /*So background image remains static while scrolling*/
-    height: 100%; /*Fixed height to appeal to all screen sizes*/
-    width: 100vw;
+    height: auto; /*Fixed height to appeal to all screen sizes*/
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -366,17 +366,193 @@ color: var(--tertiary-color--);
 }
 
 #form-container {
-    background-color: rgba(237, 196, 121, 0.75); /* Semi-transparent background */
+    background-color: rgba(151, 190, 187, 0.95); /*Semi-transparent background*/
     padding: 30px;
-    border-radius: 10px;
-    max-width: 600px;
+    border-radius: 2px;
+    max-width: 70rem;
     width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /*Subtle shadow for depth*/
     text-align: center;
 }
 
+/* Apply gap only on flex parent, not `.box` */
+#contact-form-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adds spacing between items */
+}
+
+#contact-form-body .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Ensures proper spacing */
+}
+
+.input-container {
+    padding: 2px 1px;
+    margin: 0px;
+}
+/* Ensure consistent styling and spacing */
+.box {
+    width: 100%; /* Makes inputs full width by default */
+    height: 40px;
+    background-color: var(--primary-color--);
+    border: 1px solid var(--tertiary-color--);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 0 1px 1px #af9f80;
+}
+
+textarea {
+    background-color: var(--primary-color--); /*Keeps the same background*/
+    width: 100%;
+    border: 1px solid var(--tertiary-color--);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; /*Allows vertical resizing*/
+    height: 100px; /*Sets a reasonable default height*/
+    box-shadow:inset 0 0 1px 1px #af9f80;
+    margin: 5px 1px;
+}
+
+.box:focus, textarea:focus {
+    background-color: #efd59f; /*Highlights input when focused*/
+    outline: #3C331C;
+}
+
 .hidden {
-    display: none;
+    display: none !important; /* Ensures it is completely removed when toggled */
+}
+
+.show {
+    display: flex !important; /* Ensures proper visibility */
+}
+
+#tour-options {
+    display: flex; /* Enables inline layout */
+    flex-wrap: wrap; /* Ensures items wrap properly */
+    text-align: start;
+    align-items: center; /*Aligns radio buttons and labels on the same line and buttons are the same size*/
+    justify-content: flex-start; /* ligns everything to the left*/
+    padding-left: 20px; /*Adds left padding*/
+    margin: 5px 0;
+}
+
+#tour-options label {
+    margin-right: 15px; /*Ensures space between labels*/
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between radio button and label */
+}
+
+.radio-container input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--tertiary-color--);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    background: var(--primary-color--);
+}
+
+.radio-container input[type="radio"]:checked::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-color--);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Ensures the range slider and labels are centered */
+#review-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+}
+
+/* Container for the range slider */
+.range-container {
+    position: relative;
+    width: 250px; /* Adjust width as needed */
+}
+
+/* Custom styling for the range slider */
+#rating {
+    -webkit-appearance: none;
+    width: 110%;
+    height: 6px;
+    background: var(--highlight-color-warm--);
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px; /*Space for scale*/
+}
+
+/*Custom thumb (dragger) styling for WebKit browsers*/
+#rating::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px; /* Default size */
+    height: 35px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* For Firefox */
+#rating::-moz-range-thumb {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Style for the Font Awesome star */
+.star-icon {
+    position: absolute;
+    font-size: 30px;
+    color: var(--secondary-color--);
+    pointer-events: none; /* Prevents interference with range input */
+    top: 0px;
+    left: 0;
+    transition: transform 0.2s ease-in-out;
+    z-index: 1;
+}
+
+/* Scale Numbers */
+.range-scale {
+    display: flex;
+    justify-content: space-between;
+    width: 246.59px;
+    font-size: 24px;
+    color: var(--tertiary-color--);
+    margin-top: -10px;
+}
+
+/* Centers the label and input for the review image */
+#review-options label[for="review-image"],
+#review-image {
+    display: block;
+    margin: 0px auto; /* Centers horizontally */
+    text-align: center;
+}
+
+#review-image {
+    padding-left: 164px;
+    margin-bottom: 10px;
 }
 
 /*Media queries*/
@@ -430,6 +606,7 @@ color: var(--tertiary-color--);
         width: 340px;
     }
 }
+
 
 /*Large devices (laptops 992px and up)*/
 @media screen and (min-width: 992px) {

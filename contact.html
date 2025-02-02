@@ -57,66 +57,105 @@
     </nav>
     <!-- Contact Page Section with Background Styling -->
     <section id="contact-page-background">
-        <main id="form-container">
+        <main id="form-container" class="container justify-content-center">
             <!-- Page Header Section -->
             <header>
                 <h1 class="display-1">Contact Us</h1>
-                <h2>Get in Touch for Enquiries, Bookings, or Feedback</h2>
-                <p>Fill out the form below to reach us. Whether you have a general enquiry, want to book a tour, leave a review, or something else, we’d love to hear from you!</p>
+                <h2 id="contact-call-to-action">Get in Touch for Enquiries, Bookings, or Feedback</h2>
+                <p id="contact-guidance">Fill out the form below to reach us. Whether you have a general enquiry, want to book a tour, leave a review, or something else, we’d love to hear from you!</p>
             </header>
             <!--Contact Form submits data to "success.html" using the GET method-->
-            <form action="success.html" method="GET"> 
-                <!--Forename-->
-                <label for="forename">Forename:</label>
-                <input type="text" id="forename" name="forename" required>
-                <!--Surname-->
-                <label for="surname">Surname:</label>
-                <input type="text" id="surname" name="surname" required>
-                <!--Pronouns-->
-                <label for="pronouns">Pronouns:</label>
-                <input type="text" id="pronouns" name="pronouns">
-                <!--Email Address-->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <!--User's Phone Number-->
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
-                <!--Subject Selection-->
-                <label for="subject">Message Subject:</label>
-                <select id="subject" name="subject" required>
-                    <option value="">-- Select an option --</option>
-                    <option value="general">General Enquiries</option>
-                    <option value="booking-tour">Booking a Tour</option>
-                    <option value="private-booking">Private Bookings</option>
-                    <option value="leave-review">Leave a Review</option>
-                    <option value="other">Other</option>
-                </select>
-                <!--Conditional Fields for Tour Bookings-->
-                <div id="tour-options" class="hidden">
-                    <label>Tour Type (Required for Bookings):</label>
-                    <!--Radio Buttonse-->
-                    <input type="radio" id="tale" name="tour-type" value="tale-of-two-cities">
-                    <label for="tale">A Tale of Two Cities</label>
-                    <input type="radio" id="crime" name="tour-type" value="true-crime-ancoats">
-                    <label for="crime">True Crime in Ancoats</label>
-                    <input type="radio" id="whalley" name="tour-type" value="stories-whalley-range">
-                    <label for="whalley">Stories of Whalley Range</label>
+            <form action="success.html" method="GET" id="contact-form-body" class="container-fluid w-100">
+                <div class="row w-100 d-flex flex-wrap justify-content-between">
+                    <!-- Forename & Surname-->
+                    <div class="input-container col-12 col-md-5 col-lg-3">
+                        <label for="forename" class="d-none">Forename:</label>
+                        <input type="text" id="forename" name="forename" class="box" placeholder="Forename*" required>
+                    </div>
+            
+                    <div class="input-container col-12 col-md-5 col-lg-3">
+                        <label for="surname" class="d-none">Surname:</label>
+                        <input type="text" id="surname" name="surname" class="box" placeholder="Surname*" required>
+                    </div>
+            
+                    <!-- Email-->
+                    <div class="input-container col-12 col-lg-5">
+                        <label for="email" class="d-none">Email:</label>
+                        <input type="email" id="email" name="email" class="box" placeholder="Email Address*" required>
+                    </div>
+            
+                    <!-- Phone Number & Pronouns (30% each at md) -->
+                    <div class="input-container col-12 col-md-4 col-lg-3">
+                        <label for="phone" class="d-none">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" class="box" placeholder="Phone Number">
+                    </div>
+            
+                    <div class="input-container col-12 col-md-4 col-lg-3">
+                        <label for="pronouns" class="d-none">Pronouns:</label>
+                        <input type="text" id="pronouns" name="pronouns" class="box" placeholder="Pronouns">
+                    </div>
+            
+                    <!-- Message Subject (60%) & Tour Options (40%) -->
+                    <div class="input-container col-12 col-md-7">
+                        <label for="subject" class="d-none">Message Subject:</label>
+                        <select id="subject" name="subject" class="box" required>
+                            <option value="">-- Message Subject --</option>
+                            <option value="general">General Enquiries</option>
+                            <option value="booking-tour">Booking a Tour</option>
+                            <option value="private-booking">Private Bookings</option>
+                            <option value="leave-review">Leave a Review</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+            
+                    <div id="tour-options" class="hidden col-12 col-md-5 row">
+                        <label class="col-12">Select a Tour:</label>
+                        <div class="radio-container col-12">
+                            <input type="radio" id="tale" name="tour-type" value="tale-of-two-cities">
+                            <label for="tale">A Tale of Two Cities</label>
+                        </div>
+                        <div class="radio-container col-12">
+                            <input type="radio" id="crime" name="tour-type" value="true-crime-ancoats">
+                            <label for="crime">True Crime in Ancoats</label>
+                        </div>
+                        <div class="radio-container col-12">
+                            <input type="radio" id="whalley" name="tour-type" value="stories-whalley-range">
+                            <label for="whalley">Stories of Whalley Range</label>
+                        </div>
+                    </div>
+                    <!-- Conditional Fields for Reviews -->
+                    <div id="review-options" class="hidden col-12 row w-100">
+                        <label for="rating">Rate Your Experience (1-5, Required for Reviews):</label> 
+                        <div class="range-container">
+                            <!-- Font Awesome Star (Positioned Above the Slider) -->
+                            <i class="fas fa-star star-icon"></i>
+                            <input type="range" id="rating" name="rating" min="1" max="5">
+                            <!-- Scale Below Slider -->
+                            <div class="range-scale">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <label for="review-image">Upload an Image (Optional, JPEG/PNG):</label>
+                        <!-- File Input Container -->
+                        <div class="file-upload-container">
+                            <input type="file" id="review-image" name="review-image" accept="image/jpeg, image/png" class="custom-file-input">
+                        </div>
+                    </div>
+                    <!-- Message -->
+                    <div class="input-container col-12">
+                        <label for="message" class="d-none">Your Message (Required):</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="col-12">
+                        <button type="submit" class="custom-button-dark my-3">Submit</button>
+                    </div>
                 </div>
-                <!--Conditional Fields for Reviews-->
-                <div id="review-options" class="hidden">
-                    <!--User Experience Rating-->
-                    <label for="rating">Rate Your Experience (1-5, Required for Reviews):</label>
-                    <input type="range" id="rating" name="rating" min="1" max="5">
-                    <!--Optional Image Upload-->
-                    <label for="review-image">Upload an Image (Optional, JPEG/PNG):</label>
-                    <input type="file" id="review-image" name="review-image" accept="image/jpeg, image/png">
-                </div>
-                <!--Message-->
-                <label for="message">Your Message (Required):</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <!--Submit Button-->
-                <button type="submit">Submit</button>
-            </form>
+            </form>                        
         </main>
     </section>
     <footer>
@@ -196,58 +235,83 @@
     <script src="https://kit.fontawesome.com/00ece23e82.js" crossorigin="anonymous"></script>
     <!--Bootstrap Mobile Navbar Collapse for In-page links JS, inspired by Code Institute: Boardwalk Games Project-->
     <script> 
-        document
-            .querySelectorAll(".navbar-collapse .nav-link")
-            .forEach((link) => {
-                //Adds click event listener to each link//
-                link.addEventListener("click", function (e) {
-                    //Retrieves the target section based on the `href` attribute of the clicked link//
-                    let section = document.querySelector(e.target.getAttribute("href"));
-                    //Only execute if the section exists//
-                    if (section) {
-                        e.preventDefault(); //Prevent default anchor click behavior//
-                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
-                        window.scroll({
-                            top: section.offsetTop - navbarHeight, //Adjust for navbar height//
-                            behavior: "smooth",
-                        });
-                        document
-                            .querySelector(".navbar-collapse")
-                            .classList.remove("show"); //Collapse navbar after clicking a link//
-                    }
-                });
-            });
-    </script>
-    <script>
-        //Wait until the page is fully loaded before running the script, information found on JavaScript.Info: DOMContentLoaded and further reading on CoderPad by Akande Olalekan Toheeb//
         document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("subject").addEventListener("change", toggleFields); //Attach the function to the subject dropdown change event found on MDN Web Docs: getElementById() method//
+            document.getElementById("subject").addEventListener("change", toggleFields);
         });
-        //Declares function named toggleFields()//
-        //Select key elements from the DOM using document.getElementById()//
-        //Display additional fields based on the selected subject, info found on MDN Web Docs: classList property//
-        //Loops through all matching input fields to update attributes, learnt on w3schools: HTML DOM querySelectorAll() Method//
         function toggleFields() {
-            const subject = document.getElementById("subject").value; //Retrieves the currently selected value from the dropdown menu with id="subject"//
-            const tourOptions = document.getElementById("tour-options"); //Selects the `<div>` containing tour selection radio buttons//
-            const reviewOptions = document.getElementById("review-options"); //Selects the `<div>` containing review-related fields (rating slider & image upload)//
-            //Show the tour options if "Booking a Tour" or "Private Booking" is selected//
+            const subject = document.getElementById("subject").value;
+            const tourOptions = document.getElementById("tour-options");
+            const reviewOptions = document.getElementById("review-options");
+
             if (subject === "booking-tour" || subject === "private-booking") {
-                tourOptions.classList.remove("hidden"); //Show the section//
-                document.querySelectorAll("#tour-options input").forEach(input => input.required = true); //Make all radio buttons required//
+                tourOptions.classList.remove("hidden");
+                tourOptions.classList.add("show");
+                document.querySelectorAll("#tour-options input").forEach(input => input.required = true);
             } else {
-                tourOptions.classList.add("hidden"); //Hide the section//
-                document.querySelectorAll("#tour-options input").forEach(input => input.required = false); //Remove required attribute//
+                tourOptions.classList.add("hidden");
+                tourOptions.classList.remove("show");
+                document.querySelectorAll("#tour-options input").forEach(input => input.required = false);
             }
-            //Show the review options if "Leave a Review" is selected//
+
             if (subject === "leave-review") {
-                reviewOptions.classList.remove("hidden"); //Show the section//
-                document.getElementById("rating").required = true; //Make rating required//
+                reviewOptions.classList.remove("hidden");
+                reviewOptions.classList.add("show");
+                document.getElementById("rating").required = true;
             } else {
-                reviewOptions.classList.add("hidden"); //Hide the section//
-                document.getElementById("rating").required = false; //Remove required attribute//
+                reviewOptions.classList.add("hidden");
+                reviewOptions.classList.remove("show");
+                document.getElementById("rating").required = false;
             }
         }
+    </script>
+    <script>
+        function toggleFields() {
+            const subject = document.getElementById("subject").value;
+            const tourOptions = document.getElementById("tour-options");
+            const reviewOptions = document.getElementById("review-options");
+
+            // Show the tour options if "Booking a Tour" or "Private Booking" is selected
+            if (subject === "booking-tour" || subject === "private-booking") {
+                tourOptions.classList.remove("hidden"); // Remove hidden class
+                tourOptions.style.display = "flex"; // Ensure it becomes visible
+                document.querySelectorAll("#tour-options input").forEach(input => input.required = true);
+            } else {
+                tourOptions.classList.add("hidden");
+                tourOptions.style.display = "none"; // Fully hide it
+                document.querySelectorAll("#tour-options input").forEach(input => input.required = false);
+            }
+            // Show the review options if "Leave a Review" is selected
+            if (subject === "leave-review") {
+                reviewOptions.classList.remove("hidden");
+                reviewOptions.style.display = "flex"; // Ensure it's visible
+                document.getElementById("rating").required = true;
+            } else {
+                reviewOptions.classList.add("hidden");
+                reviewOptions.style.display = "none"; // Fully hide it
+                document.getElementById("rating").required = false;
+            }
+        }
+    </script>
+    <script>
+        // Function to move the star with the slider (with reduced movement range)
+        function updateStarPosition() {
+            const slider = document.getElementById("rating");
+            const star = document.querySelector(".star-icon");
+
+            // Get the slider's current value (1-5) and map it to a percentage (adjusted for reduced movement)
+            let value = ((slider.value - slider.min) / (slider.max - slider.min)) * 87; // Reduced movement range
+
+            // Move the star along the slider track, keeping it centered
+            star.style.left = `calc(${value}% + 10px)`; // Adjust offset for better centering
+        }
+
+        // Attach the updateStarPosition function to slider input
+        document.addEventListener("DOMContentLoaded", function () {
+            const slider = document.getElementById("rating");
+            if (slider) {
+                slider.addEventListener("input", updateStarPosition);
+            }
+        });
     </script>
 </body>
 </html>
