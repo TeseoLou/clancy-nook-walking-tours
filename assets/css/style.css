@@ -48,9 +48,19 @@ a {
 
 /* Buttons */
 .custom-button-light {
-    border: 1px solid var(--tertiary-color--);
+    border: 1px solid var(--secondary-color--);
     border-radius: 2px;
     background-color: var(--primary-color--);
+    color: var(--tertiary-color--);
+    width: 9rem;
+    padding: 3px 6px;
+    width: 130px;
+    transition: ease-in-out;
+}
+.custom-button-light:hover {
+    border: 1px solid var(--secondary-color--);
+    border-radius: 2px;
+    background-color: var(--highlight-color-warm--);
     color: var(--tertiary-color--);
     width: 9rem;
     padding: 3px 6px;
