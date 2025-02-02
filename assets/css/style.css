@@ -375,26 +375,26 @@ color: var(--tertiary-color--);
     text-align: center;
 }
 
-/* Apply gap only on flex parent, not `.box` */
+/*Apply gap only on flex parent, not `.box`*/
 #contact-form-body {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /* Adds spacing between items */
+    gap: 1rem; /*Adds spacing between items*/
 }
 
 #contact-form-body .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /* Ensures proper spacing */
+    gap: 1rem; /*Ensures proper spacing*/
 }
 
 .input-container {
     padding: 2px 1px;
     margin: 0px;
 }
-/* Ensure consistent styling and spacing */
+/*Ensure consistent styling and spacing*/
 .box {
-    width: 100%; /* Makes inputs full width by default */
+    width: 100%; /*Makes inputs full width by default*/
     height: 40px;
     background-color: var(--primary-color--);
     border: 1px solid var(--tertiary-color--);
@@ -423,20 +423,20 @@ textarea {
 }
 
 .hidden {
-    display: none !important; /* Ensures it is completely removed when toggled */
+    display: none !important; /*Ensures it is completely removed when toggled*/
 }
 
 .show {
-    display: flex !important; /* Ensures proper visibility */
+    display: flex !important; /*Ensures proper visibility*/
 }
 
 #tour-options {
-    display: flex; /* Enables inline layout */
-    flex-wrap: wrap; /* Ensures items wrap properly */
+    display: flex; /*Enables inline layout */
+    flex-wrap: wrap; 
     text-align: start;
     align-items: center; /*Aligns radio buttons and labels on the same line and buttons are the same size*/
-    justify-content: flex-start; /* ligns everything to the left*/
-    padding-left: 20px; /*Adds left padding*/
+    justify-content: flex-start; 
+    padding-left: 20px; 
     margin: 5px 0;
 }
 
@@ -447,7 +447,7 @@ textarea {
 .radio-container {
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between radio button and label */
+    gap: 8px; /*Space between radio button and label*/
 }
 
 .radio-container input[type="radio"] {
@@ -473,7 +473,7 @@ textarea {
     transform: translate(-50%, -50%);
 }
 
-/* Ensures the range slider and labels are centered */
+/*Centers Range Slider and Labels*/
 #review-options {
     display: flex;
     flex-direction: column;
@@ -484,13 +484,13 @@ textarea {
     padding: 0px;
 }
 
-/* Container for the range slider */
+/*Container for Range Slider*/
 .range-container {
     position: relative;
-    width: 250px; /* Adjust width as needed */
+    width: 250px;
 }
 
-/* Custom styling for the range slider */
+/*Range Slider */
 #rating {
     -webkit-appearance: none;
     width: 110%;
@@ -499,20 +499,20 @@ textarea {
     outline: none;
     border-radius: 5px;
     position: relative;
-    margin-bottom: 20px; /*Space for scale*/
+    margin-bottom: 20px;
 }
 
-/*Custom thumb (dragger) styling for WebKit browsers*/
+/*For WebKit browsers*/
 #rating::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 35px; /* Default size */
+    width: 35px;
     height: 35px;
     background: transparent;
     cursor: pointer;
 }
 
-/* For Firefox */
+/*Firefox*/
 #rating::-moz-range-thumb {
     width: 35px;
     height: 35px;
@@ -520,19 +520,19 @@ textarea {
     cursor: pointer;
 }
 
-/* Style for the Font Awesome star */
+/*Style for the Font Awesome star*/
 .star-icon {
     position: absolute;
     font-size: 30px;
     color: var(--secondary-color--);
-    pointer-events: none; /* Prevents interference with range input */
+    pointer-events: none; /*Prevents interference*/
     top: 0px;
     left: 0;
     transition: transform 0.2s ease-in-out;
     z-index: 1;
 }
 
-/* Scale Numbers */
+/*Scale Numbers*/
 .range-scale {
     display: flex;
     justify-content: space-between;
@@ -542,11 +542,11 @@ textarea {
     margin-top: -10px;
 }
 
-/* Centers the label and input for the review image */
+/*Centers label and input for the review image*/
 #review-options label[for="review-image"],
 #review-image {
     display: block;
-    margin: 0px auto; /* Centers horizontally */
+    margin: 0px auto; /*Centers horizontally*/
     text-align: center;
 }
 
