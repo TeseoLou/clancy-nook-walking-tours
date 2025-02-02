@@ -478,8 +478,8 @@ textarea {
 
 .radio-container input[type="radio"] {
     appearance: none;
-    width: 18px;
-    height: 18px;
+    width: 15px;
+    height: 15px;
     border: 2px solid var(--tertiary-color--);
     border-radius: 50%;
     position: relative;
@@ -489,8 +489,8 @@ textarea {
 
 .radio-container input[type="radio"]:checked::before {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     background-color: var(--secondary-color--);
     border-radius: 50%;
     position: absolute;
