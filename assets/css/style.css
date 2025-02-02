@@ -352,6 +352,35 @@ color: var(--tertiary-color--);
     font-size: 13px;
 }
 
+/*Review Guide Section*/
+/*Styling for the review guide container*/
+#review-guide {
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 100%);
+    padding-top: 50px;
+    border-radius: 0px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+#review-guide h2 {
+    color: var(--primary-color--);
+} 
+
+#review-guide p {
+    font-size: 18px;
+    color: var(--primary-color--);
+}
+
+#tripadvisor-link > img:hover {
+    content: url(../images/trip-advisor-logo-hover.webp); /*Responsive logo with different colors for feedback*/
+    transition: ease-in-out;
+    transform: scale(1.2);
+}
+
 /*Contact Page*/
 #contact-page-background {
     background: url(../images/contact-page-background-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
