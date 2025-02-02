@@ -386,8 +386,8 @@ color: var(--tertiary-color--);
     background: url(../images/contact-page-background-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
     position: relative; /*So image crops on different screens instead of resizing*/
     background-attachment: fixed; /*So background image remains static while scrolling*/
-    height: auto; /*Fixed height to appeal to all screen sizes*/
-    width: 100%;
+    height: 100%; /*Fixed height to appeal to all screen sizes*/
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -429,7 +429,7 @@ color: var(--tertiary-color--);
     border: 1px solid var(--tertiary-color--);
     padding: 10px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     box-shadow: inset 0 0 1px 1px #af9f80;
 }
 
@@ -439,7 +439,7 @@ textarea {
     border: 1px solid var(--tertiary-color--);
     padding: 5px 10px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
     resize: vertical; /*Allows vertical resizing*/
     height: 100px; /*Sets a reasonable default height*/
     box-shadow:inset 0 0 1px 1px #af9f80;
@@ -463,6 +463,7 @@ textarea {
     justify-content: flex-start; 
     padding-left: 20px; 
     margin: 5px 0;
+    font-size: 13px;
 }
 
 #tour-options label {
@@ -506,7 +507,8 @@ textarea {
     justify-content: center;
     text-align: center;
     width: 100%;
-    padding: 0px;
+    padding-left: 30px;
+    font-size: 13px;
 }
 
 /*Container for Range Slider*/
@@ -518,7 +520,7 @@ textarea {
 /*Range Slider */
 #rating {
     -webkit-appearance: none;
-    width: 110%;
+    width: 112%;
     height: 6px;
     background: var(--highlight-color-warm--);
     outline: none;
@@ -548,43 +550,80 @@ textarea {
 /*Style for the Font Awesome star*/
 .star-icon {
     position: absolute;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--secondary-color--);
     pointer-events: none; /*Prevents interference*/
     top: 0px;
     left: 0;
     transition: transform 0.2s ease-in-out;
     z-index: 1;
+    margin-left: -7px;
 }
 
 /*Scale Numbers*/
 .range-scale {
     display: flex;
     justify-content: space-between;
-    width: 246.59px;
-    font-size: 24px;
+    width: 112%;
+    font-size: 15px;
     color: var(--tertiary-color--);
     margin-top: -10px;
 }
 
-/*Centers label and input for the review image*/
+.file-upload-container {
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+}
+
 #review-options label[for="review-image"],
-#review-image {
-    display: block;
+ {
     margin: 0px auto; /*Centers horizontally*/
     text-align: center;
+    width: inherit;
 }
 
 #review-image {
-    padding-left: 164px;
+    justify-self: center;
+    font-size: 11px;
+    position: relative;
+    width: 180px;
+}
+
+#review-image {
     margin-bottom: 10px;
+}
+.file-upload-container {
+    padding-left: 40px;
+    margin-left: -7x;
 }
 
 /*Media queries*/
+/*Plus Size Phones (Large Phones 375px and up)*/
+@media screen and (min-width: 375px) {
+    .star-icon {
+        font-size: 24px;
+        margin-left: -2px;
+    }
+)
+
+/*Media queries*/
 /*Small devaices (small tablets 575px and up)*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 575px) {
     #review-cards .card {
         width: 517.79px;
+    }
+    /*Contact Page*/
+    #contact-page-background {
+        background: url(../images/contact-page-background-image-medium.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+        position: relative; /*So image crops on different screens instead of resizing*/
+        background-attachment: fixed; /*So background image remains static while scrolling*/
+        height: auto; /*Fixed height to appeal to all screen sizes*/
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
     }
 }
 
@@ -629,6 +668,10 @@ textarea {
     }
     #review-cards .card {
         width: 340px;
+    }
+    .star-icon {
+        font-size: 27px;
+        margin-left: 0;
     }
 }
 

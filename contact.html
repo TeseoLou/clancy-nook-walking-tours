@@ -65,7 +65,7 @@
                 <p id="contact-guidance">Fill out the form below to reach us. Whether you have a general enquiry, want to book a tour, leave a review, or something else, we’d love to hear from you!</p>
             </header>
             <!--Contact Form submits data to "success.html" using the GET method-->
-            <form action="success.html" method="GET" id="contact-form-body" class="container-fluid w-100">
+            <form action="success.html" method="GET" id="contact-form-body" class="container-fluid w-100 d-flex justify-content-center align-content-center">
                 <div class="row w-100 d-flex flex-wrap justify-content-between">
                     <!-- Forename & Surname-->
                     <div class="input-container col-12 col-md-5 col-lg-3">
@@ -125,13 +125,13 @@
                     </div>
                     <!-- Conditional Fields for Reviews -->
                     <div id="review-options" class="hidden col-12 row w-100">
-                        <label for="rating">Rate Your Experience (1-5, Required for Reviews):</label> 
+                        <label for="rating">Rate Your Experience (1-5)</label> 
                         <div class="range-container">
                             <!-- Font Awesome Star (Positioned Above the Slider) -->
                             <i class="fas fa-star star-icon"></i>
                             <input type="range" id="rating" name="rating" min="1" max="5">
                             <!-- Scale Below Slider -->
-                            <div class="range-scale">
+                            <div class="range-scale d-flex justify-content-between">
                                 <span>1</span>
                                 <span>2</span>
                                 <span>3</span>
@@ -139,7 +139,7 @@
                                 <span>5</span>
                             </div>
                         </div>
-                        <label for="review-image">Upload an Image (Optional, JPEG/PNG):</label>
+                        <label for="review-image">Upload an Image (JPEG/PNG)</label>
                         <!-- File Input Container -->
                         <div class="file-upload-container">
                             <input type="file" id="review-image" name="review-image" accept="image/jpeg, image/png" class="custom-file-input">
@@ -297,10 +297,10 @@
             const star = document.querySelector(".star-icon");
 
             //Get the slider's current value (1-5) and map it to a percentage (adjusted for reduced movement)//
-            let value = ((slider.value - slider.min) / (slider.max - slider.min)) * 87; // Reduced movement range//
+            let value = ((slider.value - slider.min) / (slider.max - slider.min)) * 93; // Reduced movement range//
 
             //Move the star along the slider track, keeping it centered//
-            star.style.left = `calc(${value}% + 10px)`; // Adjust offset for better centering//
+            star.style.left = `calc(${value}% + 0.5rem)`; // Adjust offset for better centering//
         }
         //Attach the updateStarPosition function to slider input//
         document.addEventListener("DOMContentLoaded", function () {
