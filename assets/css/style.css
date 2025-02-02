@@ -357,7 +357,7 @@ color: var(--tertiary-color--);
 #review-guide {
     position: relative;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 100%);
-    padding-top: 50px;
+    padding-top: 5px;
     border-radius: 0px;
     width: 100vw;
     display: flex;
