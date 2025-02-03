@@ -291,6 +291,17 @@ color: var(--tertiary-color--);
     margin-left: 0px;
 }
 
+/*Gallery Page*/
+/* Gallery Page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
 /*Reviews Page*/
 #reviews-page-background {
     background: url(../images/reviews-page-background-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
