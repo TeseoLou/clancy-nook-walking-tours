@@ -520,7 +520,9 @@ textarea {
 
 /*Range Slider */
 #rating {
-    -webkit-appearance: none;
+    appearance: none; /* Standard property for all browsers */
+    -webkit-appearance: none; /* Chrome, Safari */
+    -moz-appearance: none; /* Firefox */
     width: 112%;
     height: 6px;
     background: var(--highlight-color-warm--);
@@ -578,8 +580,7 @@ textarea {
     justify-content: center;
 }
 
-#review-options label[for="review-image"],
- {
+#review-options label[for="review-image"] {
     margin: 0px auto; /*Centers horizontally*/
     text-align: center;
     width: inherit;
