@@ -461,26 +461,27 @@ textarea {
     text-align: start;
     align-items: center; /*Aligns radio buttons and labels on the same line and buttons are the same size*/
     justify-content: flex-start; 
-    padding-left: 20px; 
     margin: 5px 0;
-    font-size: 13px;
+    padding: 0;
 }
 
 #tour-options label {
-    margin-right: 15px; /*Ensures space between labels*/
+    margin: 0px; /*Ensures space between labels*/
+    font-size: 12.5px;
 }
 
 .radio-container {
     display: flex;
     align-items: center;
     gap: 8px; /*Space between radio button and label*/
+    padding: 0 0 0 4px;
 }
 
 .radio-container input[type="radio"] {
     appearance: none;
     width: 15px;
     height: 15px;
-    border: 2px solid var(--tertiary-color--);
+    border: 1px solid var(--tertiary-color--);
     border-radius: 50%;
     position: relative;
     cursor: pointer;
@@ -489,8 +490,8 @@ textarea {
 
 .radio-container input[type="radio"]:checked::before {
     content: "";
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     background-color: var(--secondary-color--);
     border-radius: 50%;
     position: absolute;
