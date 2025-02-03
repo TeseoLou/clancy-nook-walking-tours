@@ -297,7 +297,7 @@
             const star = document.querySelector(".star-icon");
 
             //Get the slider's current value (1-5) and map it to a percentage (adjusted for reduced movement)//
-            let value = ((slider.value - slider.min) / (slider.max - slider.min)) * 93s; // Reduced movement range//
+            let value = ((slider.value - slider.min) / (slider.max - slider.min)) * 93; // Reduced movement range//
 
             //Move the star along the slider track, keeping it centered//
             star.style.left = `calc(${value}% + 0.5rem)`; // Adjust offset for better centering//

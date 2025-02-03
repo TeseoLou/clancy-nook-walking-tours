@@ -1,874 +1,843 @@
 /*Google Fonts Import*/
-@import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS Variables */
 :root {
-  --primary-font--: "Montserrat", serif;
-  --secondary-font--: "IM Fell Double Pica", serif;
-  --primary-color--: #f3eed8; /*Cream*/
-  --secondary-color--: #2b4a4a; /*Dark Blue*/
-  --tertiary-color--: #3c331c; /*Dark Brown*/
-  --highlight-color-warm--: #edc479; /*Caramel*/
-  --highlight-color-cold--: #7ea5a2; /*Light Blue*/
+    --primary-font--: "Montserrat", serif;
+    --secondary-font--: "IM Fell Double Pica", serif;
+    --primary-color--: #F3EED8; /*Cream*/
+    --secondary-color--: #2B4A4A; /*Dark Blue*/
+    --tertiary-color--: #3C331C; /*Dark Brown*/
+    --highlight-color-warm--: #EDC479; /*Caramel*/
+    --highlight-color-cold--: #7EA5A2; /*Light Blue*/            
 }
 
 /*Global Styles*/
 body {
-  font-family: var(--primary-font--);
-  color: var(--tertiary-color--);
-  padding-top: 86px; /*Prevent Navbar covering top of body*/
-  background-color: var(--primary-color--);
-  min-height: 100vh; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
-  display: flex; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
-  flex-direction: column; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
+    font-family: var(--primary-font--);
+    color: var(--tertiary-color--);
+    padding-top: 86px; /*Prevent Navbar covering top of body*/
+    background-color: var(--primary-color--);
+    min-height: 100vh; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
+    display: flex; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
+    flex-direction: column; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--secondary-font--);
-  color: var(--tertiary-color--);
-  text-transform: uppercase;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--secondary-font--);
+    color: var(--tertiary-color--);
+    text-transform: uppercase;
 }
 
 hr {
-  border-color: var(--tertiary-color--); /*To divide sections*/
+    border-color: var(--tertiary-color--); /*To divide sections*/
 }
 
 .section {
-  padding-top: 1rem;
-  margin-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .card {
-  border-radius: none;
+    border-radius: none;
 }
 
 /* Buttons */
 .custom-button-light {
-  border: 1px solid var(--secondary-color--);
-  border-radius: 2px;
-  background-color: var(--primary-color--);
-  color: var(--tertiary-color--);
-  width: 9rem;
-  padding: 3px 6px;
-  width: 130px;
-  transition: ease-in-out;
+    border: 1px solid var(--secondary-color--);
+    border-radius: 2px;
+    background-color: var(--primary-color--);
+    color: var(--tertiary-color--);
+    width: 9rem;
+    padding: 3px 6px;
+    width: 130px;
+    transition: ease-in-out;
 }
 .custom-button-light:hover {
-  border: 1px solid var(--secondary-color--);
-  border-radius: 2px;
-  background-color: var(--highlight-color-warm--);
-  color: var(--tertiary-color--);
-  width: 9rem;
-  padding: 3px 6px;
-  width: 130px;
-  transition: ease-in-out;
+    border: 1px solid var(--secondary-color--);
+    border-radius: 2px;
+    background-color: var(--highlight-color-warm--);
+    color: var(--tertiary-color--);
+    width: 9rem;
+    padding: 3px 6px;
+    width: 130px;
+    transition: ease-in-out;
 }
 
 .custom-button-dark {
-  border: 1px solid var(--secondary-color--);
-  border-radius: 2px;
-  background-color: var(--secondary-color--);
-  font-family: var(--secondary-font--);
-  text-transform: uppercase;
-  color: var(--primary-color--);
-  width: 9rem;
-  padding: 3px 6px;
-  width: 130px;
-  transition: ease-in-out;
+    border: 1px solid var(--secondary-color--);
+    border-radius: 2px;
+    background-color: var(--secondary-color--);
+    font-family: var(--secondary-font--);
+    text-transform: uppercase;
+    color: var(--primary-color--);
+    width: 9rem;
+    padding: 3px 6px;
+    width: 130px;
+    transition: ease-in-out;
 }
 
 .custom-button-dark:hover {
-  background-color: var(--highlight-color-warm--);
-  transition: background-color 0.3s ease-in-out;
+    background-color: var(--highlight-color-warm--);
+    transition: background-color 0.3s ease-in-out;
 }
 
 /*Navbar Styles*/
 #navbar {
-  background-color: var(--secondary-color--);
-  color: var(--tertiary-color--);
-  box-shadow: 0 5px 10px rgba(36, 36, 36, 0.5);
+    background-color: var(--secondary-color--);
+    color: var(--tertiary-color--);
+    box-shadow: 0 5px 10px rgba(36, 36, 36, 0.5);
 }
 
 #navbar .navbar-nav * {
-  font-family: var(--secondary-font--);
-  font-size: 1rem;
-  text-transform: uppercase;
+    font-family: var(--secondary-font--);
+    font-size: 1.0rem;
+    text-transform: uppercase;
 }
 
 #navbar .nav-link {
-  color: var(
-    --primary-color--
-  ); /*Changed for accessibility due to low contrast from Bootstrap template*/
+    color: var(--primary-color--); /*Changed for accessibility due to low contrast from Bootstrap template*/
 }
 
 #navbar .nav-link:hover {
-  text-decoration: underline; /*Accessible feedback from hover*/
+    text-decoration: underline; /*Accessible feedback from hover*/
 }
 
 #navbar .navbar-toggler {
-  border: none;
+    border: none; 
 }
 
 #navbar-logo:hover {
-  content: url(../images/logo-hover.webp); /*Responsive logo with different colors for feedback*/
-  transition: ease-in-out;
+    content: url(../images/logo-hover.webp); /*Responsive logo with different colors for feedback*/
+    transition: ease-in-out;
 }
 
 /*Footer Section*/
 footer {
-  background-color: rgba(237, 196, 121, 0.6);
-  box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
-  margin-top: auto; /*Push Footer to the Bottom of the Page, solution provided by Nehal Ahmad on DEV*/
-  padding-top: 3px;
+    background-color: rgba(237, 196, 121, .6);
+    box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
+    margin-top: auto;/*Push Footer to the Bottom of the Page, solution provided by Nehal Ahmad on DEV*/
+    padding-top: 3px;
 }
 
 footer #contact-details {
-  font-size: 11px;
+    font-size: 11px;
 }
 
-footer #direct-contact,
-footer #socials {
-  padding: 0;
+footer #direct-contact, footer #socials {
+    padding: 0;
 }
 
 #footer-navigation {
-  width: 250px;
-  margin: 10px 0;
-  background-color: var(--primary-color--);
-  border-radius: 2px;
-  box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px 0;
+    background-color: var(--primary-color--);
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.1);
 }
 
 #footer-navigation > p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #footer-navigation .footer-nav-icon {
-  padding: 0 0.5rem;
+    padding: 0 0.5rem;
 }
 
 #footer-navigation a:hover * {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 #social-media-icons * {
-  height: 24px;
-  margin-bottom: 8px;
-  padding-left: 0;
-  color: var(--tertiary-color--);
+height: 24PX;
+margin-bottom: 8px;
+padding-left: 0;
+color: var(--tertiary-color--);
 }
 
 #social-media-icons a:hover * {
-  transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 #website-author {
-  margin-left: -11px;
+    margin-left: -11px;
 }
 
 /*Homepage*/
 
 /*About Section */
 #about-anchor {
-  height: 0.1px;
-  position: relative;
-  margin-top: -87px; /*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected (solution inspired by youtuber and web design tutor @dereksiuau)*/
+    height: 0.1px;
+    position: relative;
+    margin-top: -87px;/*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected (solution inspired by youtuber and web design tutor @dereksiuau)*/
 }
 
 #about {
-  margin-top: 87px; /*Prevents About section from overlapping the Hero Section due to addition of #about-anchor div element*/
-  padding-top: 20px;
+    margin-top: 87px;/*Prevents About section from overlapping the Hero Section due to addition of #about-anchor div element*/
+    padding-top: 20px
 }
 
 /*Header Section*/
 #homepage-hero {
-  background: url(../images/homepage-hero-image.webp) no-repeat center
-    center/cover; /*Permits a responsive hero image*/
-  position: relative; /*So image crops on different screens instead of resizing*/
-  height: 400px; /*Fixed height to appeal to all screen sizes*/
-  width: 100%;
+    background: url(../images/homepage-hero-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+    position: relative; /*So image crops on different screens instead of resizing*/
+    height: 400px; /*Fixed height to appeal to all screen sizes*/
+    width: 100%;
 }
 
 #call-to-action {
-  /* Final rgba valye sets the opacity so it is semi-transparent */
-  background-color: rgba(
-    237,
-    196,
-    121,
-    0.75
-  ); /*Transparent call-to-action element for readibility but visible hero image (inspired by Love Running Project)*/
-  position: absolute;
-  top: 25%;
-  width: 70%;
-  min-height: 200px;
-  padding-top: 40px;
-  padding-left: 10px;
-  z-index: 100; /*Allows call-to-action to overlap the hero image*/
+    /* Final rgba valye sets the opacity so it is semi-transparent */
+    background-color: rgba(237, 196, 121, .75); /*Transparent call-to-action element for readibility but visible hero image (inspired by Love Running Project)*/
+    position: absolute;
+    top: 25%;
+    width: 70%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    z-index: 100; /*Allows call-to-action to overlap the hero image*/
 }
 
 /*Tour Cards Section*/
 #tour-cards .card {
-  margin: 0.6rem;
-  border: none;
+    margin: 0.6rem;
+    border: none;
 }
 
 #tour-cards .card:hover {
-  box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5);
-  transform: scale(1.01);
+    box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5);
+    transform: scale(1.01);
 }
 
 #tour-cards .card-body {
-  background-color: rgba(126, 165, 162, 0.6);
+    background-color: rgba(126, 165, 162, .6);
 }
 
 #tour-cards .card-title {
-  color: var(--tertiary-color--);
+    color: var(--tertiary-color--);
 }
 
 /*Tours Page*/
 
 /*Header Section*/
 #tours-hero {
-  background: url(../images/tours-hero-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
-  position: relative; /*So image crops on different screens instead of resizing*/
-  height: 230px; /*Fixed height to appeal to all screen sizes*/
-  width: auto;
+    background: url(../images/tours-hero-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+    position: relative; /*So image crops on different screens instead of resizing*/
+    height: 230px; /*Fixed height to appeal to all screen sizes*/
+    width: auto;
 }
 
 #title-section {
-  background-color: rgba(237, 196, 121, 0.75);
+    background-color: rgba(237, 196, 121, .75);
 }
 
 #tours-call-to-action * {
-  font-size: 1.1rem;
-  font-weight: light;
+    font-size: 1.1rem;
+    font-weight: light;
 }
 
 /*Booking Guide Section*/
 #booking-guide {
-  background-color: rgb(178, 201, 199);
-  box-shadow: 0px 5px 10px rgba(36, 36, 36, 0.5);
-  width: 100vw;
+    background-color: rgb(178, 201, 199);
+    box-shadow: 0px 5px 10px rgba(36, 36, 36, 0.5);
+    width: 100vw;
 }
 
-#booking-guide p,
-#booking-info li {
-  font-size: 14px;
+#booking-guide p, #booking-info li {
+    font-size: 14px;
 }
 
 #eventbrite-link > img:hover {
-  content: url(../images/eventbrite-logo-hover.webp); /*Responsive logo with different colors for feedback*/
-  transition: ease-in-out;
+    content: url(../images/eventbrite-logo-hover.webp); /*Responsive logo with different colors for feedback*/
+    transition: ease-in-out;
 }
 
 /*Featured Tours Section*/
-#a-tale-of-two-cities-anchor,
-#true-crime-in-ancoats-anchor,
-#stories-of-whalley-range-anchor,
-#private-bookings-anchor {
-  height: 0.1px;
-  position: relative;
-  margin-top: -87px; /*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected (solution inspired by youtuber and web design tutor @dereksiuau)*/
+#a-tale-of-two-cities-anchor, #true-crime-in-ancoats-anchor, #stories-of-whalley-range-anchor, #private-bookings-anchor {
+    height: 0.1px;
+    position: relative;
+    margin-top: -87px;/*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected (solution inspired by youtuber and web design tutor @dereksiuau)*/
 }
-#a-tale-of-two-cities,
-#true-crime-in-ancoats,
-#stories-of-whalley-range,
-#private-bookings {
-  padding-top: 107px;
+#a-tale-of-two-cities, #true-crime-in-ancoats, #stories-of-whalley-range, #private-bookings {
+    padding-top: 107px;
 }
 .featured-tours img {
-  object-fit: scale-down; /*Prevents image strecthing horizontally*/
+    object-fit: scale-down; /*Prevents image strecthing horizontally*/
 }
 
 .tour-information .card {
-  background-color: transparent;
-  border: none;
+    background-color: transparent;
+    border: none;
 }
 
 .featured-tours > h2 {
-  font-size: 29px;
+    font-size: 29px;
 }
 
 .tour-information > p {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 .tour-details {
-  font-size: 11px;
-  width: 160px;
+    font-size: 11px;
+    width: 160px;
 }
 
 #tour-4-details {
-  margin-left: 0px;
+    margin-left: 0px;
 }
 
 /*Reviews Page*/
 #reviews-page-background {
-  background: url(../images/reviews-page-background-image.webp) no-repeat center
-    center/cover; /*Permits a responsive hero image*/
-  position: relative; /*So image crops on different screens instead of resizing*/
-  background-attachment: fixed; /*So background image remains static while scrolling*/
-  height: 100%; /*Fixed height to appeal to all screen sizes*/
-  width: 100vw;
+    background: url(../images/reviews-page-background-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+    position: relative; /*So image crops on different screens instead of resizing*/
+    background-attachment: fixed; /*So background image remains static while scrolling*/
+    height: 100%; /*Fixed height to appeal to all screen sizes*/
+    width: 100vw;
 }
 
 #reviews-title-section {
-  background-color: rgba(237, 196, 121, 0.75);
-  width: 95vw;
-  margin-top: 35px;
+    background-color: rgba(237, 196, 121, .75);
+    width: 95vw;
+    margin-top: 35px;
 }
 
 #review-cards * {
-  text-align: center;
+    text-align: center;
 }
 
 #review-cards .card {
-  margin: 0.5rem;
-  box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5);
-  border: none;
-  width: 90vw;
+    margin: 0.5rem;
+    box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5);
+    border: none;
+    width: 90vw;
 }
 
 #review-cards .card:hover {
-  box-shadow: 10px 10px 10px rgba(36, 36, 36, 0.5);
-  transform: scale(1.01);
+    box-shadow: 10px 10px 10px rgba(36, 36, 36, 0.5);
+    transform: scale(1.01);
 }
 
 #review-cards .review-content {
-  background-color: rgba(126, 165, 162, 0.6);
-  border: 2px;
-  border-color: rgba(126, 165, 162, 0.6);
-  border-radius: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+    background-color: rgba(126, 165, 162, .6);
+    border: 2px;
+    border-color: rgba(126, 165, 162, .6);
+    border-radius: 0;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #review-cards .card-title {
-  font-size: 24px;
-  color: var(--tertiary-color--);
-  padding-left: 10px;
-  padding-right: 10px;
+    font-size: 24px;
+    color: var(--tertiary-color--);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-#review-cards .source,
-#review-cards .date {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 0;
+#review-cards .source, #review-cards .date {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .review-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    font-size: 13px;
 }
 
 /*Review Guide Section*/
 /*Styling for the review guide container*/
 #review-guide {
-  position: relative;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.8) 40%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  padding-top: 5px;
-  border-radius: 0px;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 10px;
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 100%);
+    padding-top: 5px;
+    border-radius: 0px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
 }
 
 #review-guide h2 {
-  color: var(--primary-color--);
-}
+    color: var(--primary-color--);
+} 
 
 #review-guide p {
-  font-size: 18px;
-  color: var(--primary-color--);
+    font-size: 18px;
+    color: var(--primary-color--);
 }
 
 #tripadvisor-link > img:hover {
-  content: url(../images/trip-advisor-logo-hover.webp); /*Responsive logo with different colors for feedback*/
-  transition: ease-in-out;
-  transform: scale(1.2);
+    content: url(../images/trip-advisor-logo-hover.webp); /*Responsive logo with different colors for feedback*/
+    transition: ease-in-out;
+    transform: scale(1.2);
 }
 
 /*Contact Page*/
 #contact-page-background {
-  background: url(../images/contact-page-background-image.webp) no-repeat center
-    center/cover; /*Permits a responsive hero image*/
-  position: relative; /*So image crops on different screens instead of resizing*/
-  background-attachment: fixed; /*So background image remains static while scrolling*/
-  height: 100%; /*Fixed height to appeal to all screen sizes*/
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 20px;
+    background: url(../images/contact-page-background-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+    position: relative; /*So image crops on different screens instead of resizing*/
+    background-attachment: fixed; /*So background image remains static while scrolling*/
+    height: 100%; /*Fixed height to appeal to all screen sizes*/
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
 }
 
 #form-container {
-  background-color: rgba(151, 190, 187, 0.95); /*Semi-transparent background*/
-  padding: 30px;
-  border-radius: 2px;
-  max-width: 70rem;
-  width: 100%;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /*Subtle shadow for depth*/
-  text-align: center;
+    background-color: rgba(151, 190, 187, 0.95); /*Semi-transparent background*/
+    padding: 30px;
+    border-radius: 2px;
+    max-width: 70rem;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /*Subtle shadow for depth*/
+    text-align: center;
 }
 
 /*Apply gap only on flex parent, not `.box`*/
 #contact-form-body {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; /*Adds spacing between items*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /*Adds spacing between items*/
 }
 
 #contact-form-body .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; /*Ensures proper spacing*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /*Ensures proper spacing*/
 }
 
 .input-container {
-  padding: 2px 1px;
-  margin: 0px;
+    padding: 2px 1px;
+    margin: 0px;
 }
 /*Ensure consistent styling and spacing*/
 .box {
-  width: 100%; /*Makes inputs full width by default*/
-  height: 40px;
-  background-color: var(--primary-color--);
-  border: 1px solid var(--tertiary-color--);
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  box-shadow: inset 0 0 1px 1px #af9f80;
+    width: 100%; /*Makes inputs full width by default*/
+    height: 40px;
+    background-color: var(--primary-color--);
+    border: 1px solid var(--tertiary-color--);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: inset 0 0 1px 1px #af9f80;
 }
 
 textarea {
-  background-color: var(--primary-color--); /*Keeps the same background*/
-  width: 100%;
-  border: 1px solid var(--tertiary-color--);
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  resize: vertical; /*Allows vertical resizing*/
-  height: 100px; /*Sets a reasonable default height*/
-  box-shadow: inset 0 0 1px 1px #af9f80;
-  margin: 5px 1px;
+    background-color: var(--primary-color--); /*Keeps the same background*/
+    width: 100%;
+    border: 1px solid var(--tertiary-color--);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: vertical; /*Allows vertical resizing*/
+    height: 100px; /*Sets a reasonable default height*/
+    box-shadow:inset 0 0 1px 1px #af9f80;
+    margin: 5px 1px;
 }
 
-.box:focus,
-textarea:focus {
-  background-color: #efd59f; /*Highlights input when focused*/
-  outline: #3c331c;
+.box:focus, textarea:focus {
+    background-color: #efd59f; /*Highlights input when focused*/
+    outline: #3C331C;
 }
 
 .hidden {
-  display: none !important; /*Ensures it is completely removed when toggled*/
+    display: none !important; /*Ensures it is completely removed when toggled*/
 }
 
 #tour-options {
-  display: flex; /*Enables inline layout */
-  flex-wrap: wrap;
-  text-align: start;
-  align-items: center; /*Aligns radio buttons and labels on the same line and buttons are the same size*/
-  justify-content: flex-start;
-  margin: 5px 0;
-  padding: 0;
+    display: flex; /*Enables inline layout */
+    flex-wrap: wrap; 
+    text-align: start;
+    align-items: center; /*Aligns radio buttons and labels on the same line and buttons are the same size*/
+    justify-content: flex-start; 
+    margin: 5px 0;
+    padding: 0;
 }
 
 #tour-options label {
-  margin: 0px; /*Ensures space between labels*/
-  font-size: 12.5px;
+    margin: 0px; /*Ensures space between labels*/
+    font-size: 12.5px;
 }
 
 .radio-container {
-  display: flex;
-  align-items: center;
-  gap: 8px; /*Space between radio button and label*/
-  padding: 0 0 0 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px; /*Space between radio button and label*/
+    padding: 0 0 0 4px;
 }
 
 .radio-container input[type="radio"] {
-  appearance: none;
-  width: 15px;
-  height: 15px;
-  border: 1px solid var(--tertiary-color--);
-  border-radius: 50%;
-  position: relative;
-  cursor: pointer;
-  background: var(--primary-color--);
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--tertiary-color--);
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    background: var(--primary-color--);
 }
 
 .radio-container input[type="radio"]:checked::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background-color: var(--secondary-color--);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: var(--secondary-color--);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*Centers Range Slider and Labels*/
 #review-options {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  padding-left: 30px;
-  font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 30px;
+    font-size: 13px;
 }
 
 /*Container for Range Slider*/
 .range-container {
-  position: relative;
-  width: 250px;
+    position: relative;
+    width: 250px;
 }
 
 /*Range Slider */
 #rating {
-  -webkit-appearance: none;
-  width: 112%;
-  height: 6px;
-  background: var(--highlight-color-warm--);
-  outline: none;
-  border-radius: 5px;
-  position: relative;
-  margin-bottom: 20px;
+    -webkit-appearance: none;
+    width: 112%;
+    height: 6px;
+    background: var(--highlight-color-warm--);
+    outline: none;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 /*For WebKit browsers*/
 #rating::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 35px;
-  height: 35px;
-  background: transparent;
-  cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    cursor: pointer;
 }
 
 /*Firefox*/
 #rating::-moz-range-thumb {
-  width: 35px;
-  height: 35px;
-  background: transparent;
-  cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    cursor: pointer;
 }
 
 /*Style for the Font Awesome star*/
 .star-icon {
-  position: absolute;
-  font-size: 20px;
-  color: var(--secondary-color--);
-  pointer-events: none; /*Prevents interference*/
-  top: 0px;
-  left: 0;
-  transition: transform 0.2s ease-in-out;
-  z-index: 1;
-  margin-left: -7px;
+    position: absolute;
+    font-size: 20px;
+    color: var(--secondary-color--);
+    pointer-events: none; /*Prevents interference*/
+    top: 0px;
+    left: 0;
+    transition: transform 0.2s ease-in-out;
+    z-index: 1;
+    margin-left: -7px;
 }
 
 /*Scale Numbers*/
 .range-scale {
-  display: flex;
-  justify-content: space-between;
-  width: 112%;
-  font-size: 15px;
-  color: var(--tertiary-color--);
-  margin-top: -10px;
+    display: flex;
+    justify-content: space-between;
+    width: 112%;
+    font-size: 15px;
+    color: var(--tertiary-color--);
+    margin-top: -10px;
 }
 
 .file-upload-container {
-  padding-left: 30px;
-  display: flex;
-  justify-content: center;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
 }
 
-#review-options label[for="review-image"] {
-  margin: 0px auto; /*Centers horizontally*/
-  text-align: center;
-  width: inherit;
-}
-
-#review-image {
-  justify-self: center;
-  font-size: 11px;
-  position: relative;
-  width: 180px;
+#review-options label[for="review-image"],
+ {
+    margin: 0px auto; /*Centers horizontally*/
+    text-align: center;
+    width: inherit;
 }
 
 #review-image {
-  margin-bottom: 10px;
+    justify-self: center;
+    font-size: 11px;
+    position: relative;
+    width: 180px;
+}
+
+#review-image {
+    margin-bottom: 10px;
 }
 .file-upload-container {
-  padding-left: 40px;
-  margin-left: -7x;
+    padding-left: 40px;
+    margin-left: -7x;
 }
 
 /*Media queries*/
 /*Plus Size Phones (Large Phones 375px and up)*/
 @media screen and (min-width: 375px) {
-  .star-icon {
-    font-size: 24px;
-    margin-left: -2px;
-  }
+    .star-icon {
+        font-size: 24px;
+        margin-left: -2px;
+    }
 }
 
 /*Media queries*/
 /*Small devaices (small tablets 575px and up)*/
 @media screen and (min-width: 575px) {
-  #review-cards .card {
-    width: 517.79px;
-  }
-  /*Contact Page*/
-  #contact-page-background {
-    background: url(../images/contact-page-background-image-medium.webp)
-      no-repeat center center/cover; /*Permits a responsive hero image*/
-    position: relative; /*So image crops on different screens instead of resizing*/
-    background-attachment: fixed; /*So background image remains static while scrolling*/
-    height: auto; /*Fixed height to appeal to all screen sizes*/
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-  }
+    #review-cards .card {
+        width: 517.79px;
+    }
+    /*Contact Page*/
+    #contact-page-background {
+        background: url(../images/contact-page-background-image-medium.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+        position: relative; /*So image crops on different screens instead of resizing*/
+        background-attachment: fixed; /*So background image remains static while scrolling*/
+        height: auto; /*Fixed height to appeal to all screen sizes*/
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+    }
 }
 
 /* Medium devices (tablets 768px and up)*/
 @media screen and (min-width: 768px) {
-  #signature {
-    width: 180px;
-  }
-  #tour-cards .card-body {
-    min-height: 222px;
-  }
-  #footer-navigation {
-    height: 120px;
-    width: 80px;
-    margin-top: 34px;
-    background-color: var(--primary-color--);
-    border-radius: 2px;
-  }
-  footer #nav-buttons {
-    padding-top: 8px;
-  }
-  footer #contact-details {
-    font-size: 13px;
-  }
-  .featured-tours > h2 {
-    font-size: 32px;
-  }
-  .featured-tours img {
-    object-fit: initial; /*Prevents image strecthing horizontally*/
-  }
-  #reviews-page-background {
-    background: url(../images/reviews-page-background-image-medium.webp)
-      no-repeat center center/cover; /*Permits a responsive hero image*/
-    background-attachment: fixed; /*So background image remains static while scrolling*/
-    position: relative; /*So image crops on different screens instead of resizing*/
-    height: 100%; /*Fixed height to appeal to all screen sizes*/
-  }
-  #review-cards .card-title {
-    font-size: 25px;
-  }
-  .review-content {
-    font-size: 14px;
-  }
-  #review-cards .card {
-    width: 340px;
-  }
-  .star-icon {
-    font-size: 27px;
-    margin-left: 0;
-  }
+    #signature {
+        width: 180px;
+    }
+    #tour-cards .card-body {
+        min-height: 222px;
+    }
+    #footer-navigation {
+        height: 120px;
+        width: 80px;
+        margin-top: 34px;
+        background-color: var(--primary-color--);
+        border-radius: 2px;
+    }
+    footer #nav-buttons {
+        padding-top: 8px;
+    }
+    footer #contact-details {
+        font-size: 13px;
+    }
+    .featured-tours > h2 {
+        font-size: 32px;
+    }
+    .featured-tours img {
+        object-fit: initial; /*Prevents image strecthing horizontally*/
+    }
+    #reviews-page-background {
+        background: url(../images/reviews-page-background-image-medium.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
+        background-attachment: fixed; /*So background image remains static while scrolling*/
+        position: relative; /*So image crops on different screens instead of resizing*/
+        height: 100%; /*Fixed height to appeal to all screen sizes*/
+    }
+    #review-cards .card-title {
+        font-size: 25px;
+    }
+    .review-content {
+        font-size: 14px;
+    }
+    #review-cards .card {
+        width: 340px;
+    }
+    .star-icon {
+        font-size: 27px;
+        margin-left: 0;
+    }
 }
+
 
 /*Large devices (laptops 992px and up)*/
 @media screen and (min-width: 992px) {
-  #signature {
-    width: 200px;
-  }
-  #tour-cards .card-body {
-    min-height: 321px;
-  }
-  .carousel-item img {
-    object-fit: scale-down; /*Prevents image strecthing horizontally*/
-  }
-  .tour-information {
-    align-content: start;
-  }
-  #tour-1-info > h2 {
-    margin-inline-start: -400px;
-    font-size: 34px;
-    height: 40px;
-  }
-  #tour-2-info > h2 {
-    margin-inline-start: 453px;
-    font-size: 34px;
-    height: 40px;
-  }
-  .tour-information > p {
-    margin-bottom: 6px;
-    align-self: flex-start;
-  }
-  #tour-2-details {
-    margin-left: 60px;
-  }
-  #tour-3-info > h2 {
-    margin-inline-start: -400px;
-    font-size: 34px;
-    height: 40px;
-    white-space: nowrap; /*Keep title all on one line*/
-  }
-  #private-bookings-title > h2 {
-    margin-inline-end: -403px;
-    font-size: 34px;
-    height: 40px;
-    text-align: end;
-  }
-  #tour-4-details {
-    margin-left: 4px;
-  }
-  #booking-info #private-booking-contact-button {
-    margin-right: 50px;
-  }
-  #review-cards .card-title {
-    font-size: 26px;
-  }
-  .review-content {
-    font-size: 14px;
-  }
-  #review-cards .card {
-    width: 302.4px;
-  }
-  #review-cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
+    #signature {
+        width: 200px;
+    }
+    #tour-cards .card-body {
+        min-height: 321px;
+    }
+    .carousel-item img {
+        object-fit: scale-down; /*Prevents image strecthing horizontally*/
+    }
+    .tour-information {
+        align-content: start;
+    }
+    #tour-1-info > h2 {
+        margin-inline-start: -400px;
+        font-size: 34px;
+        height: 40px;
+    }
+    #tour-2-info > h2 {
+        margin-inline-start: 453px;
+        font-size: 34px;
+        height: 40px;
+    }
+    .tour-information > p {
+        margin-bottom: 6px;
+        align-self: flex-start;
+    }
+    #tour-2-details {
+        margin-left: 60px;
+    }
+    #tour-3-info > h2 {
+        margin-inline-start: -400px;
+        font-size: 34px;
+        height: 40px;
+        white-space: nowrap; /*Keep title all on one line*/
+    }
+    #private-bookings-title > h2 {
+        margin-inline-end: -403px;
+        font-size: 34px;
+        height: 40px;
+        text-align: end;
+    }
+    #tour-4-details {
+        margin-left: 4px;
+    }
+    #booking-info #private-booking-contact-button {
+        margin-right: 50px;
+    }
+    #review-cards .card-title {
+        font-size: 26px;
+    }
+    .review-content {
+        font-size: 14px;
+    }
+    #review-cards .card {
+        width: 302.4px;
+    }
+    #review-cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 /*Larger devices (large laptops 1085px and up)*/
 @media screen and (min-width: 1085px) {
-  #tour-cards .card-body {
-    min-height: 331px;
-  }
+    #tour-cards .card-body {
+        min-height: 331px;
+    }
 }
 
 /*Extra Large devices (desktops 1200px and up)*/
 @media screen and (min-width: 1200px) {
-  #tour-cards .card-body {
-    min-height: 276px;
-  }
-  #footer-navigation {
-    margin-top: 24px;
-  }
-  #booking-info #private-booking-contact-button {
-    margin-right: 80px;
-    margin-top: -42px;
-  }
-  .tour-information {
-    height: 275.6px;
-  }
-  #tour-1-info > h2,
-  #tour-2-info > h2,
-  #tour-3-info > h2 {
-    margin-inline-start: auto;
-    margin-bottom: 8px;
-    font-size: 38px;
-    margin-left: 0;
-  }
-  #tour-2-info > h2 {
-    justify-content: end;
-  }
-  #tour-2-details {
-    margin-left: 108px;
-  }
-  #private-bookings-title > h2 {
-    margin-inline-end: -3px;
-    font-size: 38px;
-    height: 40px;
-  }
-  #review-cards .card-title {
-    font-size: 27px;
-  }
-  .review-content {
-    font-size: 15px;
-  }
-  #review-cards .card {
-    width: 360px;
-  }
+    #tour-cards .card-body {
+        min-height: 276px;
+    }
+    #footer-navigation {
+        margin-top: 24px;
+    }
+    #booking-info #private-booking-contact-button {
+        margin-right: 80px;
+        margin-top: -42px;
+    }
+    .tour-information {
+        height: 275.6px;
+    }
+    #tour-1-info > h2, #tour-2-info > h2, #tour-3-info > h2 {
+        margin-inline-start: auto;
+        margin-bottom: 8px;
+        font-size: 38px;
+        margin-left: 0;
+    }
+    #tour-2-info > h2 {
+        justify-content: end;
+    }
+    #tour-2-details {
+        margin-left: 108px;
+    }
+    #private-bookings-title > h2 {
+        margin-inline-end: -3px;
+        font-size: 38px;
+        height: 40px;
+    }
+    #review-cards .card-title {
+        font-size: 27px;
+    }
+    .review-content {
+        font-size: 15px;
+    }
+    #review-cards .card {
+        width: 360px;
+    }
 }
 
 /*Extra Extra Large devices (large desktops 1400px and up)*/
 @media screen and (min-width: 1400px) {
-  #tour-cards .card-body {
-    min-height: 252px;
-  }
-  #booking-info #private-booking-contact-button {
-    margin-right: 110px;
-    margin-top: -42px;
-  }
-  .tour-information {
-    height: 321.44px;
-  }
-  #tour-1-info > h2,
-  #tour-2-info > h2 {
-    margin-bottom: 8px;
-    font-size: 44px;
-  }
-  .tour-information > p {
-    font-size: 17px;
-  }
-  #tour-2-details {
-    margin-left: 152px;
-  }
-  #tour-4-info > h2 {
-    margin-inline-start: 274px;
-    font-size: 44px;
-    height: 40px;
-  }
-  #review-cards .card-title {
-    font-size: 28px;
-  }
-  .review-content {
-    font-size: 16px;
-  }
-  #review-cards .card {
-    width: 420px;
-  }
-  #review-cards .first-row {
-    min-height: 424px;
-  }
-  #review-cards .second-row {
-    min-height: 573.59px;
-  }
-  #review-cards .third-row {
-    min-height: 477.59px;
-  }
-  #review-cards .fourth-row {
-    min-height: 446.4px;
-  }
+    #tour-cards .card-body {
+        min-height: 252px;
+    }
+    #booking-info #private-booking-contact-button {
+        margin-right: 110px;
+        margin-top: -42px;
+    }
+    .tour-information {
+        height: 321.44px;
+    }
+    #tour-1-info > h2, #tour-2-info > h2 {
+        margin-bottom: 8px;
+        font-size: 44px;
+    }
+    .tour-information > p {
+        font-size: 17px;
+    }
+    #tour-2-details {
+        margin-left: 152px;
+    }
+    #tour-4-info > h2 {
+        margin-inline-start: 274px;
+        font-size: 44px;
+        height: 40px;
+    }
+    #review-cards .card-title {
+        font-size: 28px;
+    }
+    .review-content {
+        font-size: 16px;
+    }
+    #review-cards .card {
+        width: 420px;
+    }
+    #review-cards .first-row {
+        min-height: 424px;
+    }
+    #review-cards .second-row {
+        min-height: 573.59px;
+    }
+    #review-cards .third-row {
+        min-height: 477.59px;
+    }
+    #review-cards .fourth-row {
+        min-height: 446.4px;
+    }
 }
