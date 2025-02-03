@@ -292,14 +292,20 @@ color: var(--tertiary-color--);
 }
 
 /*Gallery Page*/
-/* Gallery Page */
+#photos {
+    line-height: 0;
+}
+
+#photos div {
+    margin: 0;
+    padding: 0;
+}
+
 #photos img {
     width: 100%;
     line-height: 1em;
-}
-
-#photos {
-    line-height: 0;
+    padding: 0;
+    margin: 0;
 }
 
 /*Reviews Page*/
@@ -622,7 +628,7 @@ textarea {
 }
 
 /*Media queries*/
-/*Small devaices (small tablets 575px and up)*/
+/*Small devaices or landscape phones (small tablets 575px and up)*/
 @media screen and (min-width: 575px) {
     #review-cards .card {
         width: 517.79px;
@@ -687,6 +693,7 @@ textarea {
         font-size: 27px;
         margin-left: 0;
     }
+    
 }
 
 
