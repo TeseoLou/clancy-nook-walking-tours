@@ -416,12 +416,12 @@ Explanation of Colors: <br>
 #### **Project Plannning**
 The work in this section has been instrumental in establishing clear acceptance criteria and actionable tasks, which are tracked on my GitHub Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2). This process ensures a focused and efficient approach to meeting user needs and business goals.
 
-In organising and classifying features, I’ve also laid the groundwork for the website’s structure. This strategic planning naturally transitions into the **Structure Plane**, where the flow of information and navigation design will align with the core features defined here, ensuring a seamless user experience.
+In organising and classifying features, I’ve also laid the groundwork for the website’s structure. This strategic planning naturally transitions into the **Structure Plane**, where the flow of information and navigation will align with the core features defined here, ensuring a seamless user experience.
 
 ### **Structure**
 The **Structure Plane** in User Experience (UX) design focuses on how the information within the project is organised and how the users will interact with that information. It bridges the gap between the abstract elements of the strategy and scope and the more concrete aspects of the user interface, defining how the users will experience the navigation and interaction with the website.
 
-The Structure Plane encompasses navigation design, which demands a clear and consistent navigation scheme that reflects the importance and relationships of different core features. Additionally, interaction design is essential in defining how users will interact with the website’s interface. This involves deciding on interaction models, selecting appropriate UI elements such as buttons, forms, and sliders, and designing feedback mechanisms that inform users of the system's responses to their actions. Furthermore, developing an effective information architecture is crucial. This includes organising the website content in a logical manner for the target audience and may involve techniques like card sorting to involve users in the organisation process.
+The Structure Plane encompasses navigation, which demands a clear and consistent navigation scheme that reflects the importance and relationships of different core features. Additionally, interaction design is essential in defining how users will interact with the website’s interface. This involves deciding on interaction models, selecting appropriate UI elements such as buttons, forms, and sliders, and designing feedback mechanisms that inform users of the system's responses to their actions. Furthermore, developing an effective information architecture is crucial. This includes organising the website content in a logical manner for the target audience and may involve techniques like card sorting to involve users in the organisation process.
 
 For Clancy Nook, this section sets the framework for organising the content and functionality in a way that is intuitive and user-friendly. Key considerations including mapping out the user flow to cover the user stories and ensure that the navigation structure supports these journeys. Maintaining consistent patterns in layout and design is also vital in promoting instinctual navigation through the site as well as sticking to best practice. Furthermore, ensuring that the structure accommodates differently abled users, such as ensuring semantic elements are appropriate and aria-labels are descriptive will ensure screen reader compatibility. 
 
@@ -511,7 +511,7 @@ By following these principles, the Clancy Nook website will provide an intuitive
 
 The pyramid diagram visually represents the hierarchical structure of the Clancy Nook website, showing the relationships between the pages based on importance, functionality, user frequency and journey.
 
-<img src="docs\figures\site-hierarchy-pyramid.webp" alt="Pyramid diagram representing the Clancy Nook website's hierarchy." width="400">
+<img src="docs/figures/site-hierarchy-pyramid.webp" alt="Pyramid diagram representing the Clancy Nook website's hierarchy." width="400">
 
 To clearly define the purpose and function of each page, I have assigned labels (_Who, What, Where, When, Why, How, Help, Witness, Worth, Welldone, and Whoops_) to to understand how each page serves user needs and supports Clancy Nook’s business goals.
 
@@ -546,7 +546,7 @@ To clearly define the purpose and function of each page, I have assigned labels 
 
 The finalised navbar order follows both best practices and business goals:
 
-<img src="docs\figures\site-hierarchy-navbar.webp" alt="Diagram of the Clancy Nook website navbar" width="700">
+<img src="docs/figures/site-hierarchy-navbar.webp" alt="Diagram of the Clancy Nook website navbar" width="700">
 
 This ensures a logical and effective user journey, guiding visitors through exploring tours, seeing testimonials, and finally contacting the guide.
 
@@ -596,9 +596,9 @@ Certain actions require external platform navigation, integrated seamlessly into
 
 This ensures that while external tools handle bookings and reviews, users always feel anchored within the Clancy Nook website.
 
-This diagram illustrates the navigation design of the Clancy Nook website, showing how users can move between core pages such as Home, About, Tours, Gallery, Reviews, and Contact. It also depicts external navigation links to social media, booking, and review platforms, as well as functional pages like the 404 Error and Thank You pages, which guide users when they encounter errors or complete actions.
+This diagram illustrates the navigation of the Clancy Nook website, showing how users can move between core pages such as Home, About, Tours, Gallery, Reviews, and Contact. It also depicts external navigation links to social media, booking, and review platforms, as well as functional pages like the 404 Error and Thank You pages, which guide users when they encounter errors or complete actions.
 
-<img src="docs\figures\navigation-design.webp" alt="Diagram of the Clancy Nook website navigation design" width="700">
+<img src="docs/figures/navigation.webp" alt="Diagram of the Clancy Nook website navigation design" width="700">
 
 #### **User Interaction (UI)**
 Interaction design plays a crucial role in shaping how users engage with the website’s interface. It involves determining effective interaction models, selecting suitable UI elements like buttons, forms, and sliders, and implementing feedback mechanisms that provide users with clear responses to their actions. The goal is to create an intuitive and engaging experience that aligns with user expectations and business objectives.
@@ -621,17 +621,13 @@ The Clancy Nook project applies these best practices while considering previous 
 6. A success page confirms user actions, ensuring clarity after a form submission.
 
 #### Navbar
-This is a crucial aspect of user experience, ensuring that users can simply move between different sections of the website. By providing a **sticky** navigation bar that remains at the top of the screen as users scroll. This ensures that users can quickly access key pages without needing to scroll back to the top, improving usability and accessibility. Additionally, when users hover over elements in the navbar, the text will be underlined to provide a clear visual cue, reinforcing which item is being interacted with and enhancing navigation clarity.
-
-<img src="docs\figures\user-interaction-navbar.webp" alt="Navigation bar design for the Clancy Nook website, displaying menu options" width="700">
+This is a crucial aspect of user experience, ensuring that users can simply move between different sections of the website. By providing a **sticky** navigation bar that remains at the top of the screen as users scroll. This ensures that users can quickly access key pages without needing to scroll back to the top, improving usability and accessibility. 
 
 #### Navicons
-A **fixed** footer will remain at the bottom of the page, providing additional navigation buttons for quick access to key areas and social media pages. When users hover over an icon, it will expand slightly to enhance visibility and indicate interactivity. This subtle animation improves usability by making navigation elements more intuitive and engaging.
-
-<img src="docs\figures\user-interaction-footer.webp" alt="Website footer mockup featuring, social media icons and a small navigation menu with icons." width="700">
+A **fixed** footer will remain at the bottom of the page, providing additional navigation buttons for quick access to key areas and social media pages.
 
 #### Buttons
-"Text" Buttons will also guide users through the website. To improve user experience, buttons will have hover feedback, changing color when hovered over to indicate interactivity.
+"Text" Buttons will also guide users through the website. 
 
 - **Contact** button is prominently placed to ensure easy access to making enquiries. 
 - **Submit** button will be included in the contact form, providing clear action confirmation. 
@@ -639,13 +635,7 @@ A **fixed** footer will remain at the bottom of the page, providing additional n
 
 Each button will have a corresponding call-to-action, encouraging users to take the next step, whether it's making an inquiry or finalizing a booking.
 
-<img src="docs\figures\user-interaction-buttons.webp" alt="Three buttons labeled 'Contact,' 'Home,' and 'Submit,' designed for user interaction." width="400">
-
 "Logo" buttons for _Eventbrite_ and _TripAdvisor_ will be placed on the Tours and Reviews pages, respectively. These buttons provide direct access to Eventbrite for booking tours and TripAdvisor for reading and submitting reviews, ensuring a seamless transition to these external platforms.
-
-To improve usability, these buttons will feature a hover effect that changes their color, reinforcing interactivity and making it clear that they are clickable. This feedback mechanism aligns with standard UI practices, guiding users toward essential actions without cluttering the interface.
-
-<img src="docs\figures\user-interaction-logos.webp" alt="Black circular logo buttons for Eventbrite and TripAdvisor, representing external links for booking tours and reading or writing reviews." width="300">
 
 #### Clickable Tour Cards
 Another interactive feature designed to enhance user engagement is the clickable tour cards on the homepage. These cards provide a brief summary of each featured tour, giving users an overview of the available experiences. To encourage interaction, users will be able to click on a card, which will take them directly to the corresponding tour section on the Tours page. This will include:
@@ -653,7 +643,7 @@ Another interactive feature designed to enhance user engagement is the clickable
 - **Hover Effects**, where the card will expand slightly and a shadow will appear to create a sense of depth.
 - A **call-to-action** at the beginning of the section, informing users that they can click on any tour for more details.
 
-<img src="docs\figures\user-interaction-tour-cards.webp" alt="Wireframe of four tour cards displaying tour names and descriptions. One card is highlighted with a shadow effect and a cursor hovering over it, indicating an interactive hover state." width="700">
+<img src="docs/figures/user-interaction-tour-cards.webp" alt="Wireframe of four tour cards displaying tour names and descriptions. One card is highlighted with a shadow effect and a cursor hovering over it, indicating an interactive hover state." width="700">
 
 #### Image Carousel
 To enhance the user experience on the Tours pages, image carousels will be implemented, allowing users to easily browse through historic photos of landmarks featured on the tours. These interactive elements provide a dynamic visual preview of the experiences offered, helping potential customers make informed decisions. To balance convenience with interactivity, each carousel will include:
@@ -662,7 +652,7 @@ To enhance the user experience on the Tours pages, image carousels will be imple
 - **Automatic Rotation**
 - **Previous** and **Next** Buttons 
 
-<img src="docs\figures\user-interaction-carousel.webp" alt="Wireframe of an image carousel with previous and next buttons." width="700">
+<img src="docs/figures/user-interaction-carousel.webp" alt="Wireframe of an image carousel with previous and next buttons." width="700">
 
 #### Form Fields
 The contact form provides a simple and accessible way for users to ask questions or make inquiries. To improve usability and streamline interactions, several design choices enhance the user experience.
@@ -676,7 +666,7 @@ The contact form provides a simple and accessible way for users to ask questions
 - **Image Upload** functionality enables users to submit images (JPEG and PNG formats only), allowing them to share photos relevant to their inquiry or review.
 - **Placeholders** guide users through the required fields, ensuring they understand what information is needed.
 
-<img src="docs\figures\user-interaction-form.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="500">
+<img src="docs/figures/user-interaction-form.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="500">
 
 #### **Information Architecture (IA)**
 The structuring, organisation, and labeling of website content ensures users can easily navigate and find relevant information. This critical aspect of user experience (UX) design, influences how content is grouped, connected, and accessed.
@@ -691,7 +681,7 @@ When designing a website's information architecture, several key principles are 
 
 This diagram visualizes information architecture for the site as well as the the hierarchy and relationships between pages, interactive elements, and external links. The structure follows established UX best practices while integrating the project's strategic goals.
 
-<img src="docs\figures\information-architecture.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="700">
+<img src="docs/figures/information-architecture.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="700">
 
 #### Core Pages & Sections
 The website is divided into five main pages, each containing sections and interactive elements that contribute to an efficient user journey:
@@ -735,6 +725,245 @@ The work in this section has been vital in outlining the website’s structural 
 
 All key structural decisions have been translated into actionable development tasks, which are tracked on my GitHub Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2). This ensures an organised approach, maintaining clarity and efficiency in implementing the navigation and interaction elements.
 
-By finalising the structure, I have created a clear roadmap for the next stages of development, seamlessly transitioning into the **Surface Plane**. This final phase will focus on the site's visual and aesthetic elements, ensuring a polished, user-friendly design that enhances engagement and accessibility.
+By finalising the structure, I have created a clear roadmap for the next stages of development, seamlessly transitioning into the **Skeleton Plane**. This phase will focus on the site's layout.
 
-### **Surface**
+### **Skeleton**
+The Skeleton Plane in UX design builds upon the Structure Plane, refining the foundational layout into a tangible, user-friendly interface. While the Structure Plane established how the website’s content and navigation are organized, the Skeleton Plane focuses on how users interact with these elements, ensuring a seamless and intuitive experience. This includes defining how navigation, interactive features, and responsiveness contribute to a fluid user journey.
+
+**Navigation design** was introduced in the Structure Plane to establish a clear hierarchy and logical content flow. In the Skeleton Plane, this concept is further refined into visual and interactive navigation elements that guide users efficiently through the site.
+
+The Skeleton Plane introduces three aspects of user experience:
+
+1. **Interface Design**: Determines the placement of buttons, forms, images, and interactive elements, ensuring they are intuitive and user-friendly.
+2. **Information Design**: Focuses on how content is structured and displayed, ensuring readability, accessibility, and logical progression of information.
+3. **Responsiveness**: Ensures that the layout, interactive components, and navigation adapt fluidly across mobile, tablet, and desktop devices, providing a consistent and accessible experience regardless of screen size.
+
+#### **Navigation Design**
+A well-designed navigation system enhances usability and supports business objectives by guiding visitors toward key actions. In the Skeleton Plane, navigation design is an extension of the structural foundation laid out in the previous phase. While the Structure Plane defined how content is organised and how different sections relate to one another, the Skeleton Plane determines how users see that structure.
+
+When designing a website’s navigation, industry best practices focus on clarity, consistency, and predictability. Standard conventions include:
+
+- **Navigation Bars**: Ensuring the primary navigation is always accessible without users having to scroll back up.
+- **Logical Ordering of Menu Items**: Following a structure that mirrors user intent and expected progression.
+- **Clear Labels & Readability**: Avoiding jargon or ambiguous terms in navigation links.
+
+Effective navigation also considers the natural progression of a user journey when visiting a website considering: 
+- **Predictable Flow**: The navbar, footer navigation, and internal links maintain consistency across all pages, reinforcing intuitive movement.
+- **Progressive Discovery**: Content is structured to lead users naturally from exploration (Homepage & Tours) to engagement (Reviews & Gallery) and finally action (Contact & Booking).
+- **Interaction & Feedback**: Hover effects, active states, and visual indicators provide clear cues when users engage with navigation elements.
+
+The Clancy Nook website’s navigation follows a hierarchical order that aligns with user expectations:
+1. **Homepage** (Overview) – Visitors first need an introduction to Clancy Nook and the experience it offers.
+2. **About** (Who Provides the Service?) – Establishing credibility by introducing the guide.
+3. **Tours** (What is the Service?) – Providing clear details on what is being offered.
+4. **Gallery** & **Reviews** (How Good is the Service?) – Allowing users to see testimonials and images from past tours to build trust.
+5. **Contact** (Next Steps – Booking, Inquiry, or Review Submission) – Providing a clear action point to either book a tour, submit a review, or ask a question.
+
+#### Navbar
+The primary navigation bar (shown in the wireframe) follows these principles by presenting the most relevant pages in a structured and easy-to-scan format. Key design choices include:
+
+- **Sticky Positioning**: Ensures that users always have access to navigation, no matter where they are on the page.
+- **Clear Hierarchy**: The order of menu items reflects the natural progression of user interest.
+- **Hover Feedback**: When users hover over navigation links, the text is underlined to reinforce interactivity and improve clarity.
+- **CTA Emphasis**: The "Contact" button is visually distinct, guiding users toward taking action.
+
+<img src="docs/figures/user-interaction-navbar.webp" alt="Navigation bar design for the Clancy Nook website, displaying menu options" width="700">
+
+#### Footer Navigation
+In addition to the primary navbar, the footer navigation serves as a secondary means of guiding users through the site. To maintain simplicity and user familiarity, icons have been carefully chosen based on widely recognized symbols that users instinctively associate with their functions.  
+ 
+- **Additional Access to Core Pages**:  
+  The footer contains links to important sections like the **Homepage, About, Tours, Gallery, Reviews, and Contact pages**, reinforcing the primary navigation structure.  
+- **Social Media Links**:  
+  Icons for **Instagram, Facebook, and LinkedIn** provide a direct link to Clancy Nook’s presence on these platforms. These choices align with user expectations, ensuring instant recognition and seamless transitions between the website and social media engagement.  
+- **Alternative Navigation in Case of Page Errors**:  
+  If users land on an **404 Error page**, the footer ensures they can return to the homepage without frustration.  
+
+To enhance usability, the icons and navigation links in the footer will feature hover effects that subtly change color or add a shadow effect when hovered over. This feedback mechanism improves user interaction by reinforcing interactivity, making it clear which elements are clickable and guiding the user effortlessly.  
+
+<img src="docs/figures/user-interaction-footer.webp" alt="Website footer mockup featuring, social media icons and a small navigation menu with icons." width="700">
+
+#### Access Points & Interactive Elements  
+Navigation extends beyond menus—buttons serve as additional access points, ensuring smooth user interactions. These elements are **strategically placed** across the site to align with user intent and facilitate seamless movement between pages and actions.  
+
+- **Call-to-Action** Buttons  
+   - **Contact Button**: Encourages users to get in touch for inquiries and bookings.  
+   - **Submit Button**: Located within the contact form, ensuring clarity in form submission.  
+   - **Home Button**: Appears on the **Success** and **404 Error** pages, helping users return to the main site effortlessly.  
+
+<img src="docs/figures/user-interaction-buttons.webp" alt="Three buttons labeled 'Contact,' 'Home,' and 'Submit,' designed for user interaction." width="400">
+
+- **External Links/Logo** Buttons  
+   - **Eventbrite Button (on the Tours page)**: Takes users directly to the booking platform.  
+   - **TripAdvisor Button (on the Reviews page)**: Provides quick access to customer reviews and the option to submit feedback.  
+
+<img src="docs/figures/user-interaction-logos.webp" alt="Black circular logo buttons for Eventbrite and TripAdvisor, representing external links for booking tours and reading or writing reviews." width="300">
+
+These buttons feature a **color change on hover**, reinforcing interactivity and indicating that they are clickable.  
+
+#### **Interface and Information Design**
+Interface design and information design are key components of the Skeleton Plane in UX, transforming abstract structural decisions into tangible, user-friendly elements.
+
+- **Interface Design** determines how users interact with the site, ensuring that buttons, menus, forms, and other interactive components are intuitive and accessible. It directly impacts usability, influencing how easily users can perform actions such as booking a tour or submitting a review.
+- **Information Design** focuses on how content is structured and displayed, ensuring clarity, readability, and logical flow. This encompasses text hierarchy, visual layout, and how information is grouped to guide users through the website.
+
+Both interface and information design work together to create a seamless user experience, making sure the site is both visually coherent and functionally efficient.
+
+The Clancy Nook wireframes follow a mobile-first design approach, prioritizing smaller screens before scaling up to desktop layouts. This ensures optimal usability on smartphones and tablets, where most users will likely access the site.
+
+The wireframes illustrate key interface and information design principles, with a consistent navbar and footer for smooth navigation across all pages, clear sectioning of content, guiding users through an intuitive journey and accessible call-to-actions ensuring easy engagement with tour information, booking links, and reviews.
+
+#### Homepage
+The homepage introduces Clancy Nook and serves as the central hub for user exploration. The design follows a logical user flow, moving from general information to specific actions:
+
+- A prominent call-to-action (CTA) at the top immediately encourages engagement.
+- The About section provides credibility, highlighting the tour guide’s expertise.
+- The Tours section presents key offerings using interactive cards, allowing users to navigate to detailed descriptions effortlessly.
+- The footer navigation ensures users can quickly access contact details and social media.
+
+<img src="docs/figures/ii-design-homepage.webp" alt="" width="150">
+
+#### Tours Page
+The Tours page expands on available experiences, following an information hierarchy that aligns with user expectations:
+
+- Each tour card includes a high-level description, price, duration, and key details.
+- Icons are used for quick comprehension of factors like meeting points, cost, and accessibility.
+- The external booking button (Eventbrite) is clearly highlighted, directing users to secure their spot.
+
+<img src="docs/figures/ii-design-tours-page.webp" alt="" width="150">
+
+#### Gallery Page
+A visually rich section, the Gallery Page utilizes a grid layout to showcase previous tours.
+
+- The image-driven design minimizes text reliance, immersing users in the experience.
+- Consistent spacing and alignment ensure aesthetic harmony and usability.
+
+<img src="docs/figures/ii-design-gallery.webp" alt="" width="150">
+
+#### Reviews Page
+User-generated content plays a key role in building trust. The Reviews page is designed with:
+
+- Card-based layout, making individual testimonials easy to read.
+   - Star ratings for visual impact.
+- External TripAdvisor integration, allowing users to contribute their own feedback.
+
+<img src="docs/figures/ii-design-reviews.webp" alt="" width="150">
+
+#### Contact Page
+This page simplifies communication, ensuring users can reach out effortlessly.
+
+- A structured contact form with labeled fields maintains clarity.
+- Dropdowns and radio buttons streamline form completion.
+
+<img src="docs/figures/ii-design-contact.webp" alt="" width="150">
+
+#### Success Page & 404 Page
+These pages enhance the user journey and error recovery:
+
+- The Success Page reassures users after submitting a form, with a return home button for further exploration.
+- The 404 Page provides helpful redirection, preventing frustration by guiding users back to key sections.
+
+<img src="docs/figures/ii-design-success-and-error-pages.webp" alt="" width="300">
+
+A key principle in interface and information design is ensuring consistency across all elements of the website. Consistency reinforces usability by helping users develop predictable interaction patterns, reducing cognitive load and improving navigation efficiency.
+
+- UI Feedback & Interaction Enhancements
+   - Hover Effects on buttons and navigation elements provide visual confirmation of interactivity, ensuring users intuitively understand which elements are clickable.
+   - Familiar Icons (social media, contact, booking platforms) align with user expectations, creating a seamless bridge between the website and external services like Eventbrite and TripAdvisor.
+   - Simple, high-contrast buttons improve accessibility, ensuring users with visual impairments or low contrast sensitivity can easily identify key actions.
+
+- Consistency Across the Interface
+   - The navigation bar and footer remain persistent across all pages, ensuring users always have access to primary actions regardless of their location on the site.
+   - Typography, spacing, and button styling follow a uniform design system, reinforcing brand identity and usability.
+   - Forms and CTAs maintain a consistent design language, with structured layouts, clear labeling, and predictable placements to enhance intuitive interactions.
+
+#### **Responsiveness**
+Responsiveness is a fundamental aspect of modern web design, ensuring that websites function seamlessly across various screen sizes and devices. A responsive design dynamically adapts to different viewports, maintaining usability and accessibility without compromising the user experience. The Clancy Nook website follows a mobile-first approach, progressively enhancing features for larger screens while ensuring optimal performance on smaller devices.
+
+Responsive design follows established industry standards and best practices to ensure websites are accessible, functional, and performant across all devices. These guidelines help create a seamless user experience while maintaining consistency and usability. The Clancy Nook website adheres to these principles, ensuring a high-quality, responsive interface.
+
+1. **Mobile-First Approach**: 
+Websites are designed for small screens first, with enhancements for larger devices. This ensures optimized performance, progressive enhancement, and better accessibility for mobile users.
+2. **Flexible & Fluid Layouts**: Using relative units (%, em, rem, vh, vw) along with CSS Flexbox and Grid allows content to scale dynamically, maintaining proportional spacing and responsiveness.
+3. **Adaptive Styling with Media Queries**: 
+CSS media queries adjust content based on device resolution, ensuring a tailored experience across mobile, tablet, and desktop.
+4. **Optimized Navigation for Usability**: Clear navigation improves user experience with hamburger menus for mobile, sticky headers for quick access, and footer navigation for alternative entry points.
+5. **Accessibility & Inclusive Design**: The site follows _Web Content Accessibility Guidelines_ (WCAG) guidelines, incorporating semantic HTML, alt atrributes, aria labels and readable typography for improved usability.
+
+Responsive web design ensures that a website provides an optimal viewing and interaction experience across various devices. The Clancy Nook wireframes follow a structured approach to responsiveness, adapting layouts and elements to different screen sizes through core breakpoints. These breakpoints ensure seamless transitions between mobile, tablet, and desktop views:
+
+- **Mobile (≤ 768px):** Designed for vertical scrolling with stacked content for easy navigation and touch interactions.  
+- **Tablet (769px - 992px):** Introduces multi-column layouts where possible, maintaining readability and usability.  
+- **Laptop/Desktop (≥ 992px):** Maximizes screen real estate with a full-width layout, enhancing spacing and alignment for a visually engaging experience.  
+
+Each page follows a mobile-first approach, progressively adapting content and UI components for larger screens while ensuring a consistent and user-friendly experience.
+
+#### Homepage (Grid-Based Adaptability)  
+The homepage wireframes illustrate how key sections dynamically adjust across devices.
+
+- **Mobile View:** Sections are stacked vertically for a streamlined scroll experience.  
+- **Tablet View:** Elements begin aligning side by side where space allows.  
+- **Desktop View:** A full-width layout ensures content is spread optimally.  
+
+<img src="docs/figures/responsiveness-homepage.webp" alt="" width="800">
+
+#### Tours Page (Content Scaling & Consistency)  
+The Tours page maintains readability across devices.
+
+- **Card-based layout:** Each tour is presented in a modular card style that adjusts seamlessly with an image carousel.  
+- **Consistency:** Tour details and images scale proportionally.  
+- **Alternating Content Alignment:** On larger screens, the layout shifts from a centrally aligned structure to an alternating arrangement along the x-axis. This enhances visual flow and breaks monotony, making the content more engaging and easier to follow.
+
+<img src="docs/figures/responsiveness-tours.webp" alt="" width="800">
+
+#### Gallery Page (Masonry Layout for Fluid Display)  
+Inspired by a masonry layout, the Gallery page adjusts dynamically.
+
+- **Mobile View:** A single-column display ensures image clarity.  
+- **Tablet & Desktop Views:** A staggered multi-column arrangement maximizes screen space and aesthetic appeal.  
+
+<img src="docs/figures/responsiveness-gallery.webp" alt="" width="800">
+
+#### Reviews Page (Scalability of Testimonial Cards)  
+The Reviews page maintains structured spacing across breakpoints.
+
+- **Mobile View:** Reviews stack vertically.  
+- **Tablet View:** A two-column grid balances content and readability.  
+- **Desktop View:** Expands to a three-column layout for efficient space utilization.  
+
+<img src="docs/figures/responsiveness-reviews.webp" alt="" width="800">
+
+#### Contact Page (Form Adaptability)  
+The Contact page ensures an intuitive and accessible form experience across devices.
+
+- **Mobile:** Form inputs and buttons span the full width of the screen, making them easy to tap on smaller devices.  
+- **Desktop:** Inputs are arranged side by side where space allows, optimizing readability and usability.  
+- **Adaptive Input Sizing:** Fields such as phone number inputs are shorter, while longer text inputs like email fields expand to accommodate expected content length.  
+- **High Contrast & Accessibility:** All form elements maintain sufficient contrast and spacing for optimal legibility.  
+
+<img src="docs/figures/responsiveness-contact.webp" alt="" width="800">
+
+#### Success Page (Confirmation Layout)  
+The Success page provides clear user feedback and an easy navigation path after form submission.
+
+- **Mobile:** The confirmation message and CTA button are centrally aligned, ensuring visibility.  
+- **Desktop:** Content is spaced more generously, with improved layout structure.  
+- **Clear Navigation:** Users are guided back to the homepage or another relevant section through a prominent CTA button.  
+
+<img src="docs/figures/responsiveness-success.webp" alt="" width="800">
+
+#### 404 Page (Consistent User Guidance)  
+The 404 error page ensures users can navigate back easily.
+
+- A clear CTA button directs users to the homepage.  
+- Responsive text scaling ensures visibility.
+
+<img src="docs/figures/responsiveness-404.webp" alt="" width="800">
+
+#### **Project Planning**
+The work in this section has been principal in defining the core visual and functional framework of the website, ensuring that interface design, navigation systems, and information architecture are presented well for users. 
+
+The wireframes produced in Balsamiq serve as a crucial reference throughout the development process, providing a clear guide for structuring content, arranging interface elements, and ensuring consistency across devices. These wireframes help bridge the gap between conceptual planning and practical implementation, allowing for an iterative design process where adjustments can be made before committing to full development.  
+
+By finalizing the Skeleton Plane, I have established a solid blueprint for the **Surface Plane**. This stage will focus on refining visual styling, branding consistency, and aesthetic cohesion to enhance the user experience.  
+
