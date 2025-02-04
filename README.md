@@ -3,7 +3,7 @@ _Project Milestone 1_
 
 <img src="docs/images/clancy-nook-banner.webp" alt="Clancy Nook Walking Tours" width="1100">
 
-## Contents
+## **Contents**
 
 ### 1. [Site Overview](#site-overview)
 ##### i. [Project Criteria](#project-criteria)
@@ -22,12 +22,12 @@ _Project Milestone 1_
 ### 7. [Deployment](#deployment)
 ### 8. [Acknowledgements](#acknowledgements)
 
-## Site Overview 
+## **Site Overview** 
 This Website is a responsive, user-focused website designed for **Clancy Nook**, an experienced tour guide offering historic walking tours around Manchester. This project is developed as part of **Project Milestone 1** for the Code Institute's **Full Stack Web Development program**. The website aims to provide a central hub for tour information, booking, and reviews.
 
 Visit the deployed site on github [here](https://teseolou.github.io/clancy-nook-walking-tours/index.html).
 
-### Project Criteria
+### **Project Criteria**
 This project is designed to meet the following key requirements:
 1. Create a **static front-end website** of at least 3 pages, or a single scrolling page divided into at least 3 distinct sections.
 2. Incorporate **HTML5** and **CSS3** technologies to structure and style the site.
@@ -36,31 +36,31 @@ This project is designed to meet the following key requirements:
 5. Provide **clear, user-focused content** that fulfills both user and business goals.
 6. Host the project on **GitHub Pages**, with version control via Git and complete documentation in a this README.md file.
 
-### Web Developer Showcase
+### **Web Developer Showcase**
 As a developer in training, this project aims to demonstrate:
 1. Proficiency in HTML5 and CSS3 to create **structured and styled web pages**.
 2. The ability to implement **responsive design principles**, ensuring the site adapts seamlessly to mobile, tablet, and desktop devices.
 3. Skills in **accessibility-focused design**, following WCAG guidelines for color contrast, navigation, and semantic markup.
-4. The capability to organize and manage a project using **Git version control** and clear commit messages.
+4. The capability to organise and manage a project using **Git version control** and clear commit messages.
 5. The ability to write well-documented, maintainable code with an emphasis on **user experience (UX)** principles.
 6. **Thorough testing and debugging processes** to ensure the site performs as intended across multiple devices, browsers, and screen sizes.
 7. Use of **validation tools** (e.g., W3C HTML and CSS Validator) to confirm compliance with modern web standards.
-8. Implement **performance analytics tools** such as Lighthouse to optimize the site's performance, accessibility, and adherence to best practices.
+8. Implement **performance analytics tools** such as Lighthouse to optimise the site's performance, accessibility, and adherence to best practices.
 
-### Key Goals
+### **Key Goals**
 The **Clancy Nook** project focuses on achieving the following:
 1. Offer an intuitive, engaging platform for tourists, locals, corporate and community clients to learn about and book walking tours.
 2. Showcase Clancy Nook's expertise and services offered.
 3. Build a professional online presence for Clancy Nook.
 
-## Introduction
+## **Introduction**
 
-## User Experience (UX)
+## **User Experience (UX)**
 User experience (UX) design focuses on creating meaningful, efficient, and enjoyable interactions between users and a product or service. For a website, this means designing a platform that meets users’ needs while providing an intuitive and visually appealing interface. 
 
 Prioritising user experience is essential to ensuring that visitors can easily navigate the site, achieve their goals, and enjoy the process. This philosophy is particularly relevant to the Clancy Nook website, where the goal is to cater to a diverse audience of locals, tourists, and corporate clients.
 
-### Strategy
+### **Strategy**
 The **Strategy Plane** in UX design forms the foundation of any project by aligning business goals with user needs. It addresses fundamental questions about what the website aims to achieve and how it delivers value to its users. 
 
 For Clancy Nook, this meant not only creating an online presence but also ensuring the site serves as a seamless gateway for users to learn about, book, and engage with the historic walking tours offered. The strategy plane was the first port of call in the development process, as it established the overall purpose of the site and guided all subsequent design and development decisions.
@@ -72,7 +72,7 @@ The development process for the Clancy Nook website began with an in-depth meeti
 - The primary goals for the business and the website.
 - Insights into Clancy Nook’s current operations, including its use of Linktree, TripAdvisor,  and Eventbrite.
 - Current clientele and future clientele.
-- Future Goals to expand the business by attracting more corporate clients and building partnerships with community organizations. 
+- Future Goals to expand the business by attracting more corporate clients and building partnerships with community organisations. 
 
 #### **Business Goals**
 The following business goals were established for the Clancy Nook website during the initial discussion phase. These goals emerged from a collaborative dialogue with the client, focusing on both immediate needs and aspirations for the future. While some goals centered on creating a strong digital presence and improving user experience, others reflected long-term ambitions, such as attracting corporate clients and collaborating with local communities.
@@ -86,7 +86,7 @@ Create a professional and user-friendly website to build credibility for Clancy 
 **Call-to-Action:** _"Discover Clancy Nook and explore Manchester's rich history with our guided walking tours. Visit my website to learn more and join our community of history enthusiasts."_
 
 2. **Simplify Booking** <br>
-Integrate seamless links to Eventbrite for easy tour booking while showcasing a personalized contact option for inquiries. <br>
+Integrate seamless links to Eventbrite for easy tour booking while showcasing a personalised contact option for inquiries. <br>
 **Call-to-Action:** _"Book your spot on a Clancy Nook walking tour today through our seamless Eventbrite integration or contact me directly for inquiries."_
 
 3. **Showcase Unique Value** <br>
@@ -149,7 +149,7 @@ The insights gathered from the demographic analysis and business goals allowed u
    Businesses interested in private tours for team-building events, company outings, or corporate retreats.
 
 6. **Community Leaders (Non-profits/Schools) - Prospective Customers:**  
-   Organizations looking to collaborate with Clancy Nook for concession-priced or free educational tours tailored to their needs.
+   Organisations looking to collaborate with Clancy Nook for concession-priced or free educational tours tailored to their needs.
 
 #### **User Stories** 
 For this project, user stories developed capture the diverse needs of Clancy Nook’s target audience, ensuring the website provides a user-centric experience. The creation of user stories helped define what different user groups—such as locals, tourists, corporate clients, and returning users—expect from the website. These stories bridge the gap between user needs and the technical development process, ensuring every feature contributes to a positive user experience and serve as a roadmap for development and guiding design decisions. 
@@ -160,7 +160,7 @@ To ensure effective and timely delivery, the user stories were divided into thre
 - **Should-Have** stories include features that enhance the user experience and cater to specific user groups, such as social media links and private tour information.  
 - **Could-Have** stories consist of advanced or supplementary features that, while not essential, would add extra value if implemented, such as downloadable brochures or storytelling audio clips.  
 
-This prioritization ensures that critical features are developed first while leaving room for additional improvements based on time and resources.
+This prioritisation ensures that critical features are developed first while leaving room for additional improvements based on time and resources.
 
 Must-Have
 >_As a **tourist**, I want the website to be easy to navigate, allowing me to quickly find tour information._  
@@ -187,12 +187,12 @@ Could-Have
 >_As a **corporate user**, I want downloadable PDFs or brochures about corporate tours so that I can easily share them with my team._  
 >_As a **tourist**, I want media clips or snippets of the guide’s storytelling so that I can preview the experience before booking._  
 
-By creating and prioritizing these user stories, the website ensures a structured, user-focused development process that delivers meaningful value to both users and the business.
+By creating and prioritising these user stories, the website ensures a structured, user-focused development process that delivers meaningful value to both users and the business.
 
 #### **Emerging Website Components**
 The analysis of user needs and expectations highlighted several critical components that would form the foundation of the Clancy Nook website. These components were designed to address the goals of both the business and its diverse user base, ensuring a user-friendly, informative, and engaging experience. Below are the core website components that emerged during the planning phase:
 1. **About Section**  
-   Including information about the guide’s historical knowledge and storytelling abilities emphasizes the unique value Clancy Nook offers, particularly appealing to locals and history enthusiasts.
+   Including information about the guide’s historical knowledge and storytelling abilities emphasises the unique value Clancy Nook offers, particularly appealing to locals and history enthusiasts.
 
 2. **Tours Information**  
    Providing clear and accessible details about available tours, including themes, schedules, meeting points, and additional details, was identified as a top priority. This ensures users can quickly learn about the experiences offered.
@@ -207,7 +207,7 @@ The analysis of user needs and expectations highlighted several critical compone
    Highlighting pricing information, including the pay-what-you-can option, ensures users understand the cost of the tours. This transparency encourages bookings while showcasing Clancy Nook's accessibility for a wider audience.
 
 6. **Group Booking Section**  
-   Dedicated sections for corporate users and community leaders provide tailored information about private and group tours. This includes details on how these tours can be customized to meet specific needs, reinforcing the business’s appeal to a broader audience.
+   Dedicated sections for corporate users and community leaders provide tailored information about private and group tours. This includes details on how these tours can be customised to meet specific needs, reinforcing the business’s appeal to a broader audience.
 
 7. **Reviews Access**  
    Featuring testimonials and reviews from past attendees helps build credibility and trust, particularly for new users and locals seeking assurance of tour quality.
@@ -224,7 +224,7 @@ The analysis of user needs and expectations highlighted several critical compone
 #### **Importance/Feasibility**
 The Importance/Feasibility analysis evaluates each website component based on two criteria: importance and feasibility. Importance refers to how critical the component is to achieving the business goals and addressing user needs outlined in the user stories. Feasibility, on the other hand, assesses the practicality of implementing the component within the project's constraints (e.g., timeline, resources, and technical expertise).
 
-This analysis ensures that the development process prioritizes components that deliver the most value while remaining achievable. By striking this balance, the project remains focused and efficient, delivering the maximum possible impact within its constraints.
+This analysis ensures that the development process prioritises components that deliver the most value while remaining achievable. By striking this balance, the project remains focused and efficient, delivering the maximum possible impact within its constraints.
 
 The table below rates each component on a scale of 1 to 5 for both importance and feasibility:
 - **Importance:** A rating of **1** means the component has low relevance to business goals or user stories, while a **5** signifies that the component is essential.
@@ -257,19 +257,19 @@ Graph Insights:
 - **Low Importance & Low Feasibility**: Features like **Supplementary Media**, including brochures and audio snippets, rank lower in priority. While they could enhance the user experience, they are considered optional for the project's minimal viable product (MVP).
 
 #### **Project Planning**
-This analysis directly informs project planning by providing a clear roadmap for prioritizing features during development. Using the _GitHub Projects Board_ [here](https://github.com/users/TeseoLou/projects/3/views/2), I can allocate tasks based on importance and feasibility, ensuring high-priority components are delivered first. This approach aligns with the concept of a **Minimal Viable Product (MVP)**.
+This analysis directly informs project planning by providing a clear roadmap for prioritising features during development. Using the _GitHub Projects Board_ [here](https://github.com/users/TeseoLou/projects/3/views/2), I can allocate tasks based on importance and feasibility, ensuring high-priority components are delivered first. This approach aligns with the concept of a **Minimal Viable Product (MVP)**.
 
 The **Scope Plane** in UX design also comes into play here, ensuring that the identified components fit within the project's constraints while still delivering a meaningful experience. By focusing on features in the high-importance/high-feasibility quadrant and working down, the project remains achievable without sacrificing value.
 
-### Scope
+### **Scope**
 The Scope Plane in UX design addresses the functional and content requirements necessary to fulfill the strategic objectives outlined in the Strategy Plane. While the Strategy Plane defines _why_ the project exists and _who_ it serves, the Scope Plane determines _what_ the website needs to achieve those goals.
 
 The Scope Plane encompasses both **functional requirements** (features and interactivity) and **content requirements** (information and media). These elements work together to deliver a seamless user experience that meets user needs and supports the business objectives. By focusing on the scope early in the process, developers can outline a clear plan that ensures every feature or piece of content serves a defined purpose, avoiding feature creep or misaligned priorities.
 
-For the Clancy Nook website, the Scope Plane is essential to identifying the core features of the website by establishing what functional and content requirements will enable the project to meet its business goals and user needs effectively. The _Components_, _User Stories_, and _Business Goals_ presenting previously play a crucial role in defining and prioritizing these requirements, ensuring the project remains focused and aligned with its objectives.
+For the Clancy Nook website, the Scope Plane is essential to identifying the core features of the website by establishing what functional and content requirements will enable the project to meet its business goals and user needs effectively. The _Components_, _User Stories_, and _Business Goals_ presenting previously play a crucial role in defining and prioritising these requirements, ensuring the project remains focused and aligned with its objectives.
 
-#### **Deriving Requirments**
-Through this analysis, it becomes evident that the components summarize the essential requirements for the website in terms of what must be achieved to deliver value to both users and the business. These requirements naturally prioritize themselves into three categories: must-have, should-have, and could-have requirements.
+#### **Deriving Requirements**
+Through this analysis, it becomes evident that the components summarise the essential requirements for the website in terms of what must be achieved to deliver value to both users and the business. These requirements naturally prioritise themselves into three categories: must-have, should-have, and could-have requirements.
 
 Must-Have
 - Give the Users an Overall Feel for the Brand/Aesthetic
@@ -293,7 +293,7 @@ Could-Have
 - Provide Supplementary Media
 
 #### **Functional Requirements**
-Functional requirements define the features and behaviors a website must have to meet user and business goals. In UX design and development, they ensure the website functions as intended, allowing users to navigate, submit forms, and access information easily. During development, these requirements act as a blueprint, helping prioritize tasks and allocate resources, ensuring the site fulfills its purpose, from booking tours to sharing reviews effectively.
+Functional requirements define the features and behaviors a website must have to meet user and business goals. In UX design and development, they ensure the website functions as intended, allowing users to navigate, submit forms, and access information easily. During development, these requirements act as a blueprint, helping prioritise tasks and allocate resources, ensuring the site fulfills its purpose, from booking tours to sharing reviews effectively.
 
 To determine which project requirements have functional requisites, we need to review the user stories, business goals, and UX components. I have categorise functional requirements based on their scope and application:
 - **Macro Functions:** Apply universally across the entire website (e.g., responsive navigation, accessibility).
@@ -338,7 +338,7 @@ For Clancy Nook, content requirements provide the _what_ and _how_, filling the 
 
 Content is the information users interact with on a website. It drives engagement, builds trust, and communicates value. For Clancy Nook, clearly defined content requirements help ensure users can easily read and understand essential information, like tour schedules and pricing and create a visually appealing and cohesive aesthetic to align with the brand's identity.
 
-To ensure a comprehensive and organized development process, the content requirements are divided into the following categories:
+To ensure a comprehensive and organised development process, the content requirements are divided into the following categories:
 - **Graphic Content:** These elements represent visual assets that enhance user engagement and showcase Clancy Nook's unique identity.
 - **Textual Content:** Convey essential information and guide users through the website.
 - **Aesthetic Content:** These elements define the visual presentation of the website and reinforce the brand.
@@ -376,28 +376,61 @@ Could-Have
    - Downloadable brochures
 
 #### **Core Features**
-Core Features outline the key parts integrated into the Clancy Nook website to ensure it meets both user and business goals. These features stem from the previously defined strategy and scope, helping prioritize functionality and content into deliverables.
+Core Features outline the key parts integrated into the Clancy Nook website to ensure it meets both user and business goals. These features stem from the previously defined strategy and scope, helping prioritise functionality and content into deliverables.
 
-Each feature has been categorized as a must-have, should-have, or could-have, based on its importance and feasibility, and further classified as Site, Page, Section, or Elemental Features to clarify its scope of application.
+Each feature has been categorised as a must-have, should-have, or could-have, based on its importance and feasibility, and further classified as Site, Page, Section, or Elemental Features to clarify its scope of application.
 
-<img src="docs/figures/core-features.webp" alt="Infograph to show how the core features have been categorised and classified for the Clancy Nook website" width="1000">
+# Clancy Nook | Walking Tours - MoSCoW Prioritisation Table
+
+| Component                               | Importance | Feasibility | Category  | Scope Priority |
+|-----------------------------------------|------------|-------------|------------|---------------|
+| Navbar at top of page & footer navigation buttons | 5 | 5 | Website  | 🔴 **Must-Have** |
+| Footer                                  | 5 | 5 | Website  | 🔴 **Must-Have** |
+| Accessibility features (alt text, aria-label, contrast, readable fonts) | 5 | 5 | Website  | 🔴 **Must-Have** |
+| Responsive design for all devices       | 5 | 5 | Website  | 🔴 **Must-Have** |
+| Homepage                                | 5 | 5 | Page     | 🔴 **Must-Have** |
+| Tours Page                              | 5 | 4 | Page     | 🔴 **Must-Have** |
+| Contact Page                            | 5 | 4 | Page     | 🔴 **Must-Have** |
+| Success Page                            | 4 | 4 | Page     | 🔴 **Must-Have** |
+| 404 Error Page                          | 4 | 5 | Page     | 🔴 **Must-Have** |
+| About Section                           | 5 | 5 | Section  | 🔴 **Must-Have** |
+| Tour Summarising                        | 4 | 4 | Section  | 🔴 **Must-Have** |
+| Links to platforms (Eventbrite, TripAdvisor) | 4 | 4 | Elemental | 🔴 **Must-Have** |
+| Contact Button                          | 5 | 5 | Elemental | 🔴 **Must-Have** |
+| General Inquiries Option on contact form | 5 | 5 | Elemental | 🔴 **Must-Have** |
+| Contact Details                         | 5 | 5 | Elemental | 🔴 **Must-Have** |
+| Gallery Page with images from past tours | 4 | 4 | Page     | 🟡 **Should-Have** |
+| Reviews Page for feedback from past customers | 4 | 3 | Page     | 🟡 **Should-Have** |
+| Private Bookings Section                | 4 | 3 | Section  | 🟡 **Should-Have** |
+| Community/concession rates section      | 3 | 3 | Section  | 🟡 **Should-Have** |
+| Social Media Links                      | 4 | 5 | Elemental | 🟡 **Should-Have** |
+| Review option on contact form           | 4 | 3 | Elemental | 🟡 **Should-Have** |
+| Booking option on contact form          | 4 | 3 | Elemental | 🟡 **Should-Have** |
+| Dedicated section for private bookings & group tours | 3 | 3 | Page     | 🟢 **Could-Have** |
+| Supplementary media (downloadable brochures, audio clips) | 2 | 2 | Section  | 🟢 **Could-Have** |
+| Embedded video snippets showcasing storytelling | 2 | 2 | Elemental | 🟢 **Could-Have** |
+
+Explanation of Colors:
+- 🔴 **Must-Have (Red)** → Critical to the website’s function & user experience  
+- 🟡 **Should-Have (Yellow)** → Important enhancements but not vital for MVP  
+- 🟢 **Could-Have (Green)** → Nice-to-have features 
 
 #### **Project Plannning**
 The work in this section has been instrumental in establishing clear acceptance criteria and actionable tasks, which are tracked on my GitHub Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2). This process ensures a focused and efficient approach to meeting user needs and business goals.
 
-In organizing and classifying features, I’ve also laid the groundwork for the website’s structure. This strategic planning naturally transitions into the **Structure Plane**, where the flow of information and navigation design will align with the core features defined here, ensuring a seamless user experience.
+In organising and classifying features, I’ve also laid the groundwork for the website’s structure. This strategic planning naturally transitions into the **Structure Plane**, where the flow of information and navigation design will align with the core features defined here, ensuring a seamless user experience.
 
-### Structure
-The **Structure Plane** in User Experience (UX) design focuses on how the information within the project is organized and how the users will interact with that information. It bridges the gap between the abstract elements of the strategy and scope and the more concrete aspects of the user interface, defining how the users will experience the navigation and interaction with the website.
+### **Structure**
+The **Structure Plane** in User Experience (UX) design focuses on how the information within the project is organised and how the users will interact with that information. It bridges the gap between the abstract elements of the strategy and scope and the more concrete aspects of the user interface, defining how the users will experience the navigation and interaction with the website.
 
-The Structure Plane encompasses navigation design, which demands a clear and consistent navigation scheme that reflects the importance and relationships of different core features. Additionally, interaction design is essential in defingin how users will interact with the website’s interface. This involves deciding on interaction models, selecting appropriate UI elements such as buttons, forms, and sliders, and designing feedback mechanisms that inform users of the system's responses to their actions. Furthermore, developing an effective information architecture is crucial. This includes organizing the website content in a logical manner for the target audience and may involve techniques like card sorting to involve users in the organization process.
+The Structure Plane encompasses navigation design, which demands a clear and consistent navigation scheme that reflects the importance and relationships of different core features. Additionally, interaction design is essential in defingin how users will interact with the website’s interface. This involves deciding on interaction models, selecting appropriate UI elements such as buttons, forms, and sliders, and designing feedback mechanisms that inform users of the system's responses to their actions. Furthermore, developing an effective information architecture is crucial. This includes organising the website content in a logical manner for the target audience and may involve techniques like card sorting to involve users in the organisation process.
 
-For Clancy Nook, this section sets the framework for organizing the content and functionality in a way that is intuitive and user-friendly. Key considerations including mapping out the user flow to cover the user stories and ensure that the navigation structure supports these journeys. Maintaining consistent patterns in layout and design is also vital in promoting instinctual navigation through the site as well as sticking to best practice. Furthermore, ensuring that the structure accomodates differently abled users, such as ensuring semantic elements are appropriate and aria-labels are descriptive will ensure screen reader compatibility. 
+For Clancy Nook, this section sets the framework for organising the content and functionality in a way that is intuitive and user-friendly. Key considerations including mapping out the user flow to cover the user stories and ensure that the navigation structure supports these journeys. Maintaining consistent patterns in layout and design is also vital in promoting instinctual navigation through the site as well as sticking to best practice. Furthermore, ensuring that the structure accommodates differently abled users, such as ensuring semantic elements are appropriate and aria-labels are descriptive will ensure screen reader compatibility. 
 
-#### **_MoSCoW_ Prioritization**
+#### **_MoSCoW_ Prioritisation**
 So far in this project,  prioritising effectively according to business goals, user needs, and developer capabilities has been crucial. With the project scoped to develop a fully functional front-end site within a specific timeframe, continuously reevaluating priorities and core components ensures timely deployment while balancing essential and additional features.
 
-Effective prioritization is key for web developers, especially under tight deadlines. To manage this, the MoSCoW prioritization technique has been integral for me, in categorizing tasks. So far, categorizing tasks into Must-Have, Should-Have, and Could-Have has allowed me to focus resources effectively and meet critical milestones. Now, I introduce the final component in this model: the Won't-Have.
+Effective prioritisation is key for web developers, especially under tight deadlines. To manage this, the MoSCoW prioritisation technique has been integral for me, in categorising tasks. So far, categorising tasks into Must-Have, Should-Have, and Could-Have has allowed me to focus resources effectively and meet critical milestones. Now, I introduce the final component in this model: the Won't-Have.
 
 Introducing Won't-Have's marks a strategic decision to recognise and set aside features that are not feasible at this stage due to current constraints in timeframe, project requirements, skillset, or client resources. This categorisation is not about permanently discarding features but rather temporarily setting aside those that, while valuable, are not possible for the initial launch.
 
@@ -406,14 +439,169 @@ Unlike Could-Have items, which remain on my roadmap for potential inclusion for 
 Several features have been relocated to the Won't-Have category due to current constraints in skillset, resources, and project scope. Here is a concise breakdown of these features:
 
 - **Community/Concession Rates**
-   - Client is still finalizing details for community and concession rates.
+   - Client is still finalising details for community and concession rates.
 - **Form Submission Functionality**
    - Real back-end form submission capabilities exceed my current skills, limiting forms to front-end functionality only.
 - **Ability to Book on the Website**
    - Direct booking requires back-end skills and integration with reservation and payment systems, which are beyond the current project scope.
 - **Supplementary Media like Downloadable Brochures**
    - Absence of client-created content for downloadable brochures delays this feature.
-- **Hidden Form Fields Based on User Responses**
-   - Advanced form interactions such as dynamically displaying fields based on user input require more complex JavaScript skills.
 
-<img src="docs/figures/core-features-with-wont-have.webp" alt="Infograph to show how the core features have been categorised and classified for the Clancy Nook website with the addition of the wont=have category" width="800">
+#### **Updated Importance/Feasibility Table with MoSCoW Prioritisation**  
+
+| **Component**             | **Importance** | **Feasibility** | **Priority (MoSCoW)** |
+|--------------------------|--------------|---------------|------------------|
+| **About Section**             | 5            | 5            | 🔴 **Must-Have** |
+| **Tours Information**        | 4            | 4            | 🔴 **Must-Have** |
+| **Booking Options**         | 4            | 3            | 🔴 **Must-Have** |
+| **Contact Form**            | 5            | 4            | 🔴 **Must-Have** |
+| **Transparent Pricing**      | 3            | 5            | 🔴 **Must-Have** |
+| **Group Booking Information** | 3          | 4            | 🟡 **Should-Have** |
+| **Reviews Access**          | 4            | 2            | 🟡 **Should-Have** |
+| **Image Gallery**           | 3            | 3            | 🟡 **Should-Have** |
+| **Social Media Integration** | 3            | 5            | 🟡 **Should-Have** |
+| **Supplementary Media**      | 1            | 2            | 🟢 **Could-Have** |
+| **Community/Concession Rates** | 3  | 2   | 🔵 **Won’t-Have** 🚫 |
+| **Form Submission Functionality** | 4 | 2  | 🔵 **Won’t-Have** 🚫 |
+| **Ability to Book on the Website** | 5 | 1  | 🔵 **Won’t-Have** 🚫 |
+| **Downloadable Brochures** | 2  | 2  | 🔵 **Won’t-Have** 🚫 |
+
+Explanation of Colors:
+- 🔴 **Must-Have (Red)** → Critical to the website’s function & user experience  
+- 🟡 **Should-Have (Yellow)** → Important enhancements but not vital for MVP  
+- 🟢 **Could-Have (Green)** → Nice-to-have features 
+- 🔵 **Won’t-Have (Blue)** → Not feasible for this phase due to scope/time constraints  
+
+#### **Site Hierarchy**
+
+Site hierarchy refers to the organisation and structure of a website’s content and navigation. It determines how information is grouped, categorised, and accessed by users, impacting how efficiently they can find what they need. A well-structured site hierarchy enhances usability, accessibility, and overall user experience (UX) by guiding users through the website in a logical, intuitive way.
+
+From a UX perspective, site hierarchy plays a crucial role in:
+- Ensuring easy navigation so users find key information quickly.
+- Minimising frustration by preventing unnecessary clicks or confusion.
+
+When designing a navbar and site structure, **standard best practices** guide how content is prioritised. These principles ensure a good user journey:
+
+1. The homepage 
+   - Should always be the first navigation item.  
+   - This serves as the starting point for users to explore the site.
+
+2. Pages arranged in a logical order  
+   - Main content comes first (e.g., Tours).  
+   - Supplementary content follows (e.g., Gallery, Reviews).  
+   - Action-oriented items (e.g., Contact) appear last or are highlighted.
+
+3. About sections are commonly integrated into the homepage rather than a standalone page.  
+   - Many sites place the About section on the homepage, ensuring quick access while keeping navigation concise.
+
+4. Primary actions should be made visually distinct.  
+   - The most important action (e.g., "Contact") should stand out using color or styling.
+
+5. Supporting Functional Pages:  
+   - A 404 Error Page ensures that users are properly redirected if they encounter a broken link.  
+   - A Success Page provides confirmation after users complete a form submission, reinforcing positive engagement.
+
+By following these principles, the Clancy Nook website will provide an intuitive user experience that aligns with expectations. I have identified which features should be standalone pages and which should exist as sections within pages.
+
+| **Page Name**   | **Purpose** |
+|------------|---------|
+| **Home**   | Provides an overview of Clancy Nook, highlights key tours, and includes an embedded About section. |
+| **Tours**  | Lists all available walking tours, including details on themes, schedules, and booking options. |
+| **Gallery** | Showcases images from past tours to visually engage users. |
+| **Reviews** | Features testimonials and feedback to build credibility. |
+| **Contact** | Provides a contact form, direct contact details, and social media links. |
+| **Success Page** | Confirms form submissions, ensuring users know their request was received. |
+| **404 Error Page** | Provides an accessible, helpful page when users land on a broken or missing link, guiding them back to relevant content. |
+
+The pyramid diagram visually represents the hierarchical structure of the Clancy Nook website, showing the relationships between the pages based on importance, functionality, user frequency and journey.
+
+<img src="docs\figures\site-hierarchy-pyramid.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="400">
+
+To clearly define the purpose and function of each page, I have assigned labels (_Who, What, Where, When, Why, How, Help, Witness, Worth, Welldone, and Whoops_) to to understand how each page serves user needs and supports Clancy Nook’s business goals.
+
+1. Homepage - _Welcome, What & Why_
+   - The homepage acts as the entry point, introducing Clancy Nook and the services provided.
+   - As the most visited page, it acts as the primary entry point for users.
+   - The About section is placed within the homepage, aligning with standard practices.
+   - A brief preview of the available tours designed to engage and attract potential participants.
+
+2. Contact Page _How & Help_
+   - Many users will navigate to this page after exploring the site, making it a key component of the hierarchy.
+   - Serves a crucial role in the business.
+   - Highlighting the "Contact" will encourages users to first explore the site, then take action.  
+   - It is visually distinct in the navbar to emphasise its importance.
+
+3. About Section - _Who_
+   - Provides essential background on Clancy Nook.
+   - While not a standalone page, it is a key section on customer journeys.
+
+2. Tours as the Central Page - _Which, Where & When_
+   - Core offering
+   - Center page of the customer journey (beyond the starting homepage and ending contact page).
+
+3. Gallery & Reviews as Supporting Pages  - _Witness & Worth_
+   - These help build trust and provide additional engagement but are secondary to the tours themselves.
+   - Offers a visual representation of past tours, helping potential customers get a feel for the experience.
+   - Showcases testimonials from previous customers, reinforcing credibility and trust.
+
+5. Success Page & 404 Page as Supporting Functional Pages - _Welldone & Whoops_
+   - The Success Page provides a confirmation message after users submit a form, preventing confusion.  
+   - The 404 Error Page ensures users are given helpful redirection options rather than encountering a dead end.
+
+The finalised navbar order follows both best practices and business goals:
+
+<img src="docs\figures\site-hierarchy-navbar.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="700">
+
+This ensures a logical and effective user journey, guiding visitors through exploring tours, seeing testimonials, and finally contacting the guide.
+
+The Success Page and 404 Page will exist as functional pages but will not appear in the navigation. Instead:
+- The Success Page is triggered after form submissions.
+- The 404 Error Page will automatically load if users enter an incorrect or broken URL.
+
+Web designers follow established principles when creating site hierarchy to ensure a seamless experience:
+
+#### **Navigation Design**
+Effective navigation is fundamental to user experience (UX) design, ensuring users can explore the website intuitively while being guided toward key actions. Standard navigation best practices emphasise clarity, consistency, and accessibility, making it easy for users to find what they need while supporting the business’s objectives.
+
+For the Clancy Nook website, navigation is structured to balance free access via the navbar with a logical journey between related pages, aligning with standard web design conventions, user needs, and business goals.
+
+Good website navigation follows three key principles:
+
+1. **Predictability** – Users should know where to go next without confusion.  
+2. **Efficiency** – Important pages should be accessible within one or two clicks.  
+3. **Guidance** – While users can explore freely, the site should encourage a natural progression.
+
+Navigation directly supports Clancy Nook’s business objectives by:
+
+- Promoting tour bookings – Tours are the focal point of the site, with multiple entry points leading users there.  
+- Building trust – The Reviews and Gallery pages reinforce credibility, leading users toward conversion.  
+- Encouraging engagement – Contact options are made prominent, ensuring users can easily inquire or book.  
+- Providing seamless information flow – The About section is embedded into the homepage to keep the structure concise while still introducing the guide’s expertise.
+
+By structuring the navigation around user intent and business priorities, the site helps new visitors discover Clancy Nook, validate its credibility, and complete a booking inquiry effortlessly.
+
+As a standard web convention, the navbar appears across all pages, giving users immediate access to:
+
+**📌 Home 📌 About 📌 Tours 📌 Gallery 📌 Reviews 📌 Contact**  
+
+This reflects a widely recognized pattern in website navigation, where the website is structured to encourage a natural progression through interconnected pages.
+
+1. **Homepage** serves as the entry point  
+2. **About Section** follows, providing background context.  
+3. Core service (**Tours Page**) takes central focus.  
+4. Supporting content (**Gallery & Reviews Pages**) enhances credibility.  
+5. **Contact Page** remains a prominent final step for conversions.
+
+While the Success Page and 404 Error Page are not part of the core navigation, they still play an essential role in the site's user experience. These pages exist within the Clancy Nook website, ensuring users remain within the site's ecosystem.
+
+6. **Success Page** provides confirmation after a form submission, reassuring users that their action was completed successfully. It prevents uncertainty and offers a clear next step, such as returning to the homepage or exploring more tours.
+
+7. **404 Error Page**  provides helpful redirection options to guide them back to relevant sections of the site, such as the homepage or tours page. This is if users reach a broken or non-existent link, the 404 page ensures they are not met with frustration.
+
+Certain actions require external platform navigation, integrated seamlessly into the user journey:
+
+- Booking (**Eventbrite**) – Linked from the Tours and Contact pages.  
+- Review Platform (**TripAdvisor**) – Linked from the Reviews page.  
+- **Social Media** – Found in the footer and relevant sections for engagement.
+
+This ensures that while external tools handle bookings and reviews, users always feel anchored within the Clancy Nook website.
