@@ -380,8 +380,6 @@ Core Features outline the key parts integrated into the Clancy Nook website to e
 
 Each feature has been categorised as a must-have, should-have, or could-have, based on its importance and feasibility, and further classified as Site, Page, Section, or Elemental Features to clarify its scope of application.
 
-# Clancy Nook | Walking Tours - MoSCoW Prioritisation Table
-
 | Component                               | Importance | Feasibility | Category  | Scope Priority |
 |-----------------------------------------|------------|-------------|------------|---------------|
 | Navbar at top of page & footer navigation buttons | 5 | 5 | Website  | 🔴 **Must-Have** |
@@ -446,8 +444,6 @@ Several features have been relocated to the Won't-Have category due to current c
    - Direct booking requires back-end skills and integration with reservation and payment systems, which are beyond the current project scope.
 - **Supplementary Media like Downloadable Brochures**
    - Absence of client-created content for downloadable brochures delays this feature.
-
-#### **Updated Importance/Feasibility Table with MoSCoW Prioritisation**  
 
 | **Component**             | **Importance** | **Feasibility** | **Priority (MoSCoW)** |
 |--------------------------|--------------|---------------|------------------|
