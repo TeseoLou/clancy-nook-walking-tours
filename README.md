@@ -410,10 +410,10 @@ Each feature has been categorised as a must-have, should-have, or could-have, ba
 | Supplementary media (downloadable brochures, audio clips) | 2 | 2 | Section  | 🟢 **Could-Have** |
 | Embedded video snippets showcasing storytelling | 2 | 2 | Elemental | 🟢 **Could-Have** |
 
-Explanation of Colors:
-- 🔴 **Must-Have (Red)** → Critical to the website’s function & user experience  
-- 🟡 **Should-Have (Yellow)** → Important enhancements but not vital for MVP  
-- 🟢 **Could-Have (Green)** → Nice-to-have features 
+Explanation of Colors: <br>
+🔴 **Must-Have (Red)** → Critical to the website’s function & user experience <br>
+🟡 **Should-Have (Yellow)** → Important enhancements but not vital for MVP <br>
+🟢 **Could-Have (Green)** → Nice-to-have features 
 
 #### **Project Plannning**
 The work in this section has been instrumental in establishing clear acceptance criteria and actionable tasks, which are tracked on my GitHub Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2). This process ensures a focused and efficient approach to meeting user needs and business goals.
@@ -423,7 +423,7 @@ In organising and classifying features, I’ve also laid the groundwork for the 
 ### **Structure**
 The **Structure Plane** in User Experience (UX) design focuses on how the information within the project is organised and how the users will interact with that information. It bridges the gap between the abstract elements of the strategy and scope and the more concrete aspects of the user interface, defining how the users will experience the navigation and interaction with the website.
 
-The Structure Plane encompasses navigation design, which demands a clear and consistent navigation scheme that reflects the importance and relationships of different core features. Additionally, interaction design is essential in defingin how users will interact with the website’s interface. This involves deciding on interaction models, selecting appropriate UI elements such as buttons, forms, and sliders, and designing feedback mechanisms that inform users of the system's responses to their actions. Furthermore, developing an effective information architecture is crucial. This includes organising the website content in a logical manner for the target audience and may involve techniques like card sorting to involve users in the organisation process.
+The Structure Plane encompasses navigation design, which demands a clear and consistent navigation scheme that reflects the importance and relationships of different core features. Additionally, interaction design is essential in defining how users will interact with the website’s interface. This involves deciding on interaction models, selecting appropriate UI elements such as buttons, forms, and sliders, and designing feedback mechanisms that inform users of the system's responses to their actions. Furthermore, developing an effective information architecture is crucial. This includes organising the website content in a logical manner for the target audience and may involve techniques like card sorting to involve users in the organisation process.
 
 For Clancy Nook, this section sets the framework for organising the content and functionality in a way that is intuitive and user-friendly. Key considerations including mapping out the user flow to cover the user stories and ensure that the navigation structure supports these journeys. Maintaining consistent patterns in layout and design is also vital in promoting instinctual navigation through the site as well as sticking to best practice. Furthermore, ensuring that the structure accommodates differently abled users, such as ensuring semantic elements are appropriate and aria-labels are descriptive will ensure screen reader compatibility. 
 
@@ -466,10 +466,10 @@ Several features have been relocated to the Won't-Have category due to current c
 | **Ability to Book on the Website** | 5 | 1  | 🔵 **Won’t-Have** 🚫 |
 | **Downloadable Brochures** | 2  | 2  | 🔵 **Won’t-Have** 🚫 |
 
-Explanation of Colors:
-- 🔴 **Must-Have (Red)** → Critical to the website’s function & user experience  
-- 🟡 **Should-Have (Yellow)** → Important enhancements but not vital for MVP  
-- 🟢 **Could-Have (Green)** → Nice-to-have features 
+Explanation of Colors: <br>
+- 🔴 **Must-Have (Red)** → Critical to the website’s function & user experience <br>
+- 🟡 **Should-Have (Yellow)** → Important enhancements but not vital for MVP <br>
+- 🟢 **Could-Have (Green)** → Nice-to-have features <br>
 - 🔵 **Won’t-Have (Blue)** → Not feasible for this phase due to scope/time constraints  
 
 #### **Site Hierarchy**
@@ -515,7 +515,7 @@ By following these principles, the Clancy Nook website will provide an intuitive
 
 The pyramid diagram visually represents the hierarchical structure of the Clancy Nook website, showing the relationships between the pages based on importance, functionality, user frequency and journey.
 
-<img src="docs\figures\site-hierarchy-pyramid.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="400">
+<img src="docs\figures\site-hierarchy-pyramid.webp" alt="Pyramid diagram representing the Clancy Nook website's hierarchy." width="400">
 
 To clearly define the purpose and function of each page, I have assigned labels (_Who, What, Where, When, Why, How, Help, Witness, Worth, Welldone, and Whoops_) to to understand how each page serves user needs and supports Clancy Nook’s business goals.
 
@@ -550,7 +550,7 @@ To clearly define the purpose and function of each page, I have assigned labels 
 
 The finalised navbar order follows both best practices and business goals:
 
-<img src="docs\figures\site-hierarchy-navbar.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="700">
+<img src="docs\figures\site-hierarchy-navbar.webp" alt="Diagram of the Clancy Nook website navbar" width="700">
 
 This ensures a logical and effective user journey, guiding visitors through exploring tours, seeing testimonials, and finally contacting the guide.
 
@@ -560,25 +560,16 @@ The Success Page and 404 Page will exist as functional pages but will not appear
 
 Web designers follow established principles when creating site hierarchy to ensure a seamless experience:
 
-#### **Navigation Design**
+#### **Navigation**
 Effective navigation is fundamental to user experience (UX) design, ensuring users can explore the website intuitively while being guided toward key actions. Standard navigation best practices emphasise clarity, consistency, and accessibility, making it easy for users to find what they need while supporting the business’s objectives.
 
-For the Clancy Nook website, navigation is structured to balance free access via the navbar with a logical journey between related pages, aligning with standard web design conventions, user needs, and business goals.
-
-Good website navigation follows three key principles:
+For the Clancy Nook website, navigation is structured to balance free access via the navbar with a logical journey between related pages, aligning with standard web design conventions, user needs, and business goals. Good website navigation follows three key principles:
 
 1. **Predictability** – Users should know where to go next without confusion.  
 2. **Efficiency** – Important pages should be accessible within one or two clicks.  
 3. **Guidance** – While users can explore freely, the site should encourage a natural progression.
 
-Navigation directly supports Clancy Nook’s business objectives by:
-
-- Promoting tour bookings – Tours are the focal point of the site, with multiple entry points leading users there.  
-- Building trust – The Reviews and Gallery pages reinforce credibility, leading users toward conversion.  
-- Encouraging engagement – Contact options are made prominent, ensuring users can easily inquire or book.  
-- Providing seamless information flow – The About section is embedded into the homepage to keep the structure concise while still introducing the guide’s expertise.
-
-By structuring the navigation around user intent and business priorities, the site helps new visitors discover Clancy Nook, validate its credibility, and complete a booking inquiry effortlessly.
+Navigation directly supports Clancy Nook’s business objectives by, promoting tour bookings (where the tours page provide a focal point of the site, with multiple entry points leading users there), building trust (as the reviews and gallery pages reinforce credibility, leading users towards booking), and encouraging engagement (by providing prominent contact options). By structuring the navigation around user intent and business priorities, the site helps new visitors discover Clancy Nook, validate its credibility, and complete a booking inquiry effortlessly.
 
 As a standard web convention, the navbar appears across all pages, giving users immediate access to:
 
@@ -594,14 +585,160 @@ This reflects a widely recognized pattern in website navigation, where the websi
 
 While the Success Page and 404 Error Page are not part of the core navigation, they still play an essential role in the site's user experience. These pages exist within the Clancy Nook website, ensuring users remain within the site's ecosystem.
 
-6. **Success Page** provides confirmation after a form submission, reassuring users that their action was completed successfully. It prevents uncertainty and offers a clear next step, such as returning to the homepage or exploring more tours.
+**🎉 Success ❌🔗 404 Error**
 
+6. **Success Page** provides confirmation after a form submission, reassuring users that their action was completed successfully. It prevents uncertainty and offers a clear next step, such as returning to the homepage or exploring more tours.
 7. **404 Error Page**  provides helpful redirection options to guide them back to relevant sections of the site, such as the homepage or tours page. This is if users reach a broken or non-existent link, the 404 page ensures they are not met with frustration.
 
 Certain actions require external platform navigation, integrated seamlessly into the user journey:
 
-- Booking (**Eventbrite**) – Linked from the Tours and Contact pages.  
-- Review Platform (**TripAdvisor**) – Linked from the Reviews page.  
-- **Social Media** – Found in the footer and relevant sections for engagement.
+**🔗➡️ Booking 🔗➡️ Review 🔗➡️ Social Media**
+
+8. Booking (**Eventbrite**) – Linked from the Tours and Contact pages.  
+9. Review Platform (**TripAdvisor**) – Linked from the Reviews page.  
+10. **Social Media** – Found in the footer and relevant sections for engagement.
 
 This ensures that while external tools handle bookings and reviews, users always feel anchored within the Clancy Nook website.
+
+This diagram illustrates the navigation design of the Clancy Nook website, showing how users can move between core pages such as Home, About, Tours, Gallery, Reviews, and Contact. It also depicts external navigation links to social media, booking, and review platforms, as well as functional pages like the 404 Error and Thank You pages, which guide users when they encounter errors or complete actions.
+
+<img src="docs\figures\navigation-design.webp" alt="Diagram of the Clancy Nook website navigation design" width="700">
+
+#### **User Interaction (UI)**
+Interaction design plays a crucial role in shaping how users engage with the website’s interface. It involves determining effective interaction models, selecting suitable UI elements like buttons, forms, and sliders, and implementing feedback mechanisms that provide users with clear responses to their actions. The goal is to create an intuitive and engaging experience that aligns with user expectations and business objectives.
+
+Effective interaction design follows industry best practices to ensure intuitive usabiity:
+
+- Provide clear and predictable interactions, minimizing user frustration.
+- Implement visual feedback mechanisms (such as hover effects, form validation, and confirmation messages).
+- Use sticky navigation or footers for quick access to essential functions.
+- Design forms with dropdowns, auto-fill options, and validation messages to enhance usability.
+- Ensure smooth scrolling for intuitive page transitions, especially on mobile devices.
+
+The Clancy Nook project applies these best practices while considering previous design decisions to guide users through the site. Therefore: 
+
+1. Navbar elements are designed to be intuitive, ensuring users can easily explore tour options and make inquiries.
+2. The footer provides additional navigation buttons, improving accessibility without cluttering the main interface.
+3. The booking process is streamlined, with clear CTAs directing users to external platforms such as Eventbrite.
+4. Forms use conditional fields, while providing real-time feedback for missing or incorrect inputs.
+5. Error handling mechanisms (such as the 404 page) prevent dead ends, guiding users back to relevant content.
+6. A success page confirms user actions, ensuring clarity after a form submission.
+
+#### Navbar
+This is a crucial aspect of user experience, ensuring that users can simply move between different sections of the website. By providing a **sticky** navigation bar that remains at the top of the screen as users scroll. This ensures that users can quickly access key pages without needing to scroll back to the top, improving usability and accessibility. Additionally, when users hover over elements in the navbar, the text will be underlined to provide a clear visual cue, reinforcing which item is being interacted with and enhancing navigation clarity.
+
+<img src="docs\figures\user-interaction-navbar.webp" alt="Navigation bar design for the Clancy Nook website, displaying menu options" width="700">
+
+#### Navicons
+A **fixed** footer will remain at the bottom of the page, providing additional navigation buttons for quick access to key areas and social media pages. When users hover over an icon, it will expand slightly to enhance visibility and indicate interactivity. This subtle animation improves usability by making navigation elements more intuitive and engaging.
+
+<img src="docs\figures\user-interaction-footer.webp" alt="Website footer mockup featuring, social media icons and a small navigation menu with icons." width="700">
+
+#### Buttons
+"Text" Buttons will also guide users through the website. To improve user experience, buttons will have hover feedback, changing color when hovered over to indicate interactivity.
+
+- **Contact** button is prominently placed to ensure easy access to making enquiries. 
+- **Submit** button will be included in the contact form, providing clear action confirmation. 
+- **Home**" button will be available on the 404 Error and Success pages, allowing users to easily navigate back to the main site.
+
+Each button will have a corresponding call-to-action, encouraging users to take the next step, whether it's making an inquiry or finalizing a booking.
+
+<img src="docs\figures\user-interaction-buttons.webp" alt="Three buttons labeled 'Contact,' 'Home,' and 'Submit,' designed for user interaction." width="400">
+
+"Logo" buttons for _Eventbrite_ and _TripAdvisor_ will be placed on the Tours and Reviews pages, respectively. These buttons provide direct access to Eventbrite for booking tours and TripAdvisor for reading and submitting reviews, ensuring a seamless transition to these external platforms.
+
+To improve usability, these buttons will feature a hover effect that changes their color, reinforcing interactivity and making it clear that they are clickable. This feedback mechanism aligns with standard UI practices, guiding users toward essential actions without cluttering the interface.
+
+<img src="docs\figures\user-interaction-logos.webp" alt="Black circular logo buttons for Eventbrite and TripAdvisor, representing external links for booking tours and reading or writing reviews." width="300">
+
+#### Clickable Tour Cards
+Another interactive feature designed to enhance user engagement is the clickable tour cards on the homepage. These cards provide a brief summary of each featured tour, giving users an overview of the available experiences. To encourage interaction, users will be able to click on a card, which will take them directly to the corresponding tour section on the Tours page. This will include:
+
+- **Hover Effects**, where the card will expand slightly and a shadow will appear to create a sense of depth.
+- A **call-to-action** at the beginning of the section, informing users that they can click on any tour for more details.
+
+<img src="docs\figures\user-interaction-tour-cards.webp" alt="Wireframe of four tour cards displaying tour names and descriptions. One card is highlighted with a shadow effect and a cursor hovering over it, indicating an interactive hover state." width="700">
+
+#### Image Carousel
+To enhance the user experience on the Tours pages, image carousels will be implemented, allowing users to easily browse through historic photos of landmarks featured on the tours. These interactive elements provide a dynamic visual preview of the experiences offered, helping potential customers make informed decisions. To balance convenience with interactivity, each carousel will include:
+
+- **Four Photos**
+- **Automatic Rotation**
+- **Previous** and **Next** Buttons 
+
+<img src="docs\figures\user-interaction-carousel.webp" alt="Wireframe of an image carousel with previous and next buttons." width="700">
+
+#### Form Fields
+The contact form provides a simple and accessible way for users to ask questions or make inquiries. To improve usability and streamline interactions, several design choices enhance the user experience.
+
+- **Required Fields** prevent form submission unless all necessary details are provided, improving data accuracy.
+- **Error Handling** and **Validation** notify users of missing or incorrect entries, prompting them to make corrections before submitting.
+- **Dropdown Select** allow users to select predefined options, reducing input errors and making the form easier to complete.
+- **Conditional Fields** dynamically appear based on the selected message subject, ensuring users only see relevant input fields, reducing clutter and improving efficiency.
+- **Radio Buttons** enable users to quickly select a specific tour, simplifying the booking or inquiry process.
+- **Rating Slider** allows users to provide feedback on their experience, offering an intuitive way to rate tours.
+- **Image Upload** functionality enables users to submit images (JPEG and PNG formats only), allowing them to share photos relevant to their inquiry or review.
+- **Placeholders** guide users through the required fields, ensuring they understand what information is needed.
+
+<img src="docs\figures\user-interaction-form.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="500">
+
+#### **Information Architecture (IA)**
+The structuring, organisation, and labeling of website content ensures users can easily navigate and find relevant information. This critical aspect of user experience (UX) design, influences how content is grouped, connected, and accessed.
+
+When designing a website's information architecture, several key principles are considered to ensure an intuitive and user-friendly experience:
+
+1. **Hierarchy & Organization**: Content is structured logically, with core pages easily accessible through the navigation bar, and supplementary content grouped into relevant sections.
+2. **Logicality & Flow**: The structure follows a natural user journey, ensuring that pages and sections connect in a way that makes sense. Users are guided seamlessly from broad introductory content to specific details, reducing friction and cognitive load.
+3. **Findability & Accessibility**: Users should be able to locate key information efficiently, with minimal clicks.
+4. **Consistency**: Layout, terminology, and navigation patterns remain uniform across all pages to reduce confusion.
+5. **Scalability & Flexibility**: The structure allows for future growth, ensuring new content can be integrated without disrupting usability.
+
+This diagram visualizes information architecture for the site as well as the the hierarchy and relationships between pages, interactive elements, and external links. The structure follows established UX best practices while integrating the project's strategic goals.
+
+<img src="docs\figures\information-architecture.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="700">
+
+#### Core Pages & Sections
+The website is divided into five main pages, each containing sections and interactive elements that contribute to an efficient user journey:
+1. Homepage:
+   - Serves as the entry point and provides a structured overview of Clancy Nook’s offerings.
+   - Contains the About section and a Featured Tours section, which links directly to detailed tour pages.
+2. Tours Page:
+   - The core service page listing available walking tours.
+   - Contains individual tour sections (e.g., A Tale of Two Cities, True Crime in Ancoats).
+   - Integrates Booking Guidance, which directs users to external platforms for reservations.
+3. Gallery Page:
+   - Displays images from past tours in an interactive format.
+4. Reviews Page: 
+   - Highlights feedback from previous participants.
+   - Integrates Feedback Guidance, linking users to external review platforms.
+5. Contact Page:
+   - Provides direct access for inquiries.
+   - Features a Contact Form with interactive fields and submission validation.
+
+#### Supporting Functional Pages
+Some pages serve a functional purpose within the user journey, ensuring smooth interactions and error recovery:
+1. 404 Error Page:
+   - Prevents frustration by guiding users back to the homepage or relevant sections.
+2. Success Page:
+   - Confirms form submissions and provides next-step options.
+
+#### Navigation & Linking
+Navigation has been structured to ensure efficiency and clarity:
+1. Primary navigation:
+   - Sticky navbar provides constant access to key pages.
+2. Secondary navigation:
+   - Fixed footer provides additionall access to key pages.
+3. Internal linking:
+   - Featured tours on the homepage link to corresponding tour sections.
+4. External linking: 
+   - Eventbrite and TripAdvisor buttons direct users to booking and review platforms.
+   - Fixed footer contains links to instagram, facebook and linkedin. 
+
+#### **Project Planning**
+The work in this section has been vital in outlining the website’s structural foundation, ensuring that navigation, interaction, and information architecture align with user expectations and business objectives. These insights have directly have provided critical building blocks for designing the layout, logical flow, and connections between core features, refining the user journey.
+
+All key structural decisions have been translated into actionable development tasks, which are tracked on my GitHub Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2). This ensures an organised approach, maintaining clarity and efficiency in implementing the navigation and interaction elements.
+
+By finalising the structure, I have created a clear roadmap for the next stages of development, seamlessly transitioning into the **Surface Plane**. This final phase will focus on the site's visual and aesthetic elements, ensuring a polished, user-friendly design that enhances engagement and accessibility.
+
+### **Surface**
