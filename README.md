@@ -1040,9 +1040,9 @@ Much of the surface plane has been directly influenced by my initial meeting wit
 These images play a crucial role in this alignment, depicting Louis Cane as Clancy Nook in his tour guide attire, embodying the Victorian-era historian and storyteller that defines his brand. This persona is not just a marketing tool but an integral part of the tour experience itself—when visitors book a tour, they are stepping into a world of curated narratives and historical insights. Therefore, it is vital that his online presence mirrors his in-person identity, ensuring a cohesive brand experience across digital and real-world interactions.
 
 <div align="center">
-<img src="docs/images/clancy-nook-banner.webp" alt="Clancy Nook Banner on Social Media" width="200">
+<img src="docs/images/clancy-nook-banner.webp" alt="Clancy Nook Banner on Social Media" width="500">
 </div>
-
+<br>
 <div align="center">
    <img src="assets/images/clancy-nook-about.webp" alt="Clancy Nook Profile Icon on Social Media" width="200">
 </div>
@@ -1241,3 +1241,66 @@ Most images in the gallery were taken by Louis Cane or were shared by tourists w
 <div align="center">
    <img src="docs/images/gallery-imagery.webp" alt="Imagery Arrangement and Choices" width="600">
 </div>
+
+#### **Buttons**
+The button design across the Clancy Nook website prioritizes usability, accessibility, and aesthetic consistency to maximise user experience.
+
+To ensure clarity and usability, button design follows web accessibility and UI/UX best practices:
+
+- **Consistent Sizing & Placement**
+- **High Contrast for Readability**
+- **Large Clickable Areas**
+- **Clear Visual Feedback**
+
+#### Call-to-Actin Buttons
+These Buttons maintain uniform spacing and dimensions across pages, improving clickability on both desktop and mobile. Text is always easily legible, avoiding low-contrast combinations. Buttons have ample padding, making them easy to tap on mobile devices.
+- **Light Buttons** A cream background with dark serif typography, maintaining readability and an elegant vintage feel.
+- **Dark Buttons** A deep green background with contrasting cream text, offering an alternative for varied visual appeal.
+
+Both button types change to a warm caramel tone upon hover or interaction. This aligns with the call-to-action overlays and footer, reinforcing branding consistency.
+
+<div align="center">
+   <img src="docs/images/light-button.webp" alt="Light button and hover effect" width="400">
+</div>
+<div align="center">
+   <img src="docs/images/dark-button.webp" alt="Dark button and hover effect" width="400">
+</div>
+
+#### Navbar & Logo
+- **Navbar Tabs** Styled without borders, these buttons use a simple underlined effect on hover to maintain a clean, vintage aesthetic.
+- **Logo Home Button** Designed in _Canva_ based on Louis Cane's specifications, this logo replicates a wax seal style with Clancy Nook’s initials encircled by cotton flowers, symbolizing Manchester’s industrial heritage. On hover, the logo turns light blue, offering subtle interaction feedback.
+
+<div align="center">
+   <img src="docs/images/navbar-tabs.webp" alt="Navbar with hovereffect on home button" width="600">
+</div>
+<div align="center">
+   <img src="docs/images/logo-home-button.webp" alt="Logo with hovereffect" width="200">
+</div>
+
+#### **Iconography**
+Icons play a vital role in enhancing navigation, accessibility, and user engagement across the Clancy Nook website. The use of _Font Awesome_ ensures a consistent and visually appealing icon set that aligns with the site's historical theme while maintaining modern usability.
+
+To maintain usability and consistency, best practice includes :
+
+- **Simplicity & Recognition**
+- **Consistent Styling**
+- **Hover & Click Effects**
+- **Mobile-Friendly Scaling**
+
+The following design choices are: 
+- **Minimalist & Monochrome Icons** styled in a dark tone that complements the site's muted color palette, ensuring clarity without overwhelming the design.
+- **Social Media & Contact Icons** easily recognizable symbols for email, phone, and social platforms (Instagram, Facebook, LinkedIn) make contacting Clancy Nook intuitive.
+- **Tour Information Icons** small but sensible icons for distance, duration, and cost improve readability, quickly conveying essential details without excessive text.
+- **Footer Navicons** secondary navigation bar utilises simple, intuitive icons for home, profile, tours, gallery, favorites, and reviews, offering a streamlined browsing experience.
+- **Hover Feedback** interactive icons, such as social media links and navigation buttons, slightly enlarge when hovered, providing a tactile, user-friendly experience. 
+
+<div align="center">
+   <img src="docs/images/iconography.webp" alt="Showcasing Iconography with hover effect" width="600">
+</div>
+
+#### **Project Planning**
+The Surface Plane is where structure, interaction, and aesthetics merge into a polished, user-friendly interface. For Clancy Nook, this phase ensured the final design not only reflected its historical storytelling identity but also provided a seamless experience.
+
+Every element—color, typography, buttons, and imagery—was chosen for usability, branding, and accessibility. Each UX plane builds upon the last, shaping the final experience. The Surface Plane unites these layers, serving as a guide for development and ensuring the Clancy Nook website delivers an immersive and intuitive journey.
+
+To stay on track and prioritise tasks effectively, my Github Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2) was continually used in the development process.
