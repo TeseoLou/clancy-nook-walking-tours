@@ -1,7 +1,9 @@
 # **Clancy Nook | Walking Tours**
 _Project Milestone 1_
 
-<img src="docs/images/clancy-nook-banner.webp" alt="Clancy Nook Walking Tours" width="1100">
+<div align="center">
+   <img src="docs/images/clancy-nook-banner.webp" alt="Clancy Nook Walking Tours" width="1100">
+</div>
 
 ## **Contents**
 
@@ -245,7 +247,9 @@ The table below rates each component on a scale of 1 to 5 for both importance an
 
 The graph below illustrates the relationship between importance and feasibility for each component. Components plotted closer to the top-right corner are both high in importance and feasible, making them top priorities for the project. Components in other quadrants help identify where compromises or adjustments may be needed.
 
-<img src="docs/figures/importance-viability-graph.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="700">
+<div align="center">
+   <img src="docs/figures/importance-viability-graph.webp" alt="Graph to show the importance/viability of different website components defined by Business Goals and User Stories" width="700">
+</div>
 
 Graph Insights:
 - **High Importance & High Feasibility**: Components such as the **About Section**, **Contact Form**, **Tours Information**, and **Transparent Pricing** appear in this quadrant, making them the highest priority for the website. These are the backbone of the user experience and directly align with Clancy Nook’s primary goals of establishing credibility, simplifying bookings, and providing clear information.
@@ -511,7 +515,9 @@ By following these principles, the Clancy Nook website will provide an intuitive
 
 The pyramid diagram visually represents the hierarchical structure of the Clancy Nook website, showing the relationships between the pages based on importance, functionality, user frequency and journey.
 
-<img src="docs/figures/site-hierarchy-pyramid.webp" alt="Pyramid diagram representing the Clancy Nook website's hierarchy." width="400">
+<div align="center">
+   <img src="docs/figures/site-hierarchy-pyramid.webp" alt="Pyramid diagram representing the Clancy Nook website's hierarchy." width="400">
+</div>
 
 To clearly define the purpose and function of each page, I have assigned labels (_Who, What, Where, When, Why, How, Help, Witness, Worth, Welldone, and Whoops_) to to understand how each page serves user needs and supports Clancy Nook’s business goals.
 
@@ -546,7 +552,9 @@ To clearly define the purpose and function of each page, I have assigned labels 
 
 The finalised navbar order follows both best practices and business goals:
 
-<img src="docs/figures/site-hierarchy-navbar.webp" alt="Diagram of the Clancy Nook website navbar" width="700">
+<div align="center">
+   <img src="docs/figures/site-hierarchy-navbar.webp" alt="Diagram of the Clancy Nook website navbar" width="700">
+</div>
 
 This ensures a logical and effective user journey, guiding visitors through exploring tours, seeing testimonials, and finally contacting the guide.
 
@@ -598,7 +606,9 @@ This ensures that while external tools handle bookings and reviews, users always
 
 This diagram illustrates the navigation of the Clancy Nook website, showing how users can move between core pages such as Home, About, Tours, Gallery, Reviews, and Contact. It also depicts external navigation links to social media, booking, and review platforms, as well as functional pages like the 404 Error and Thank You pages, which guide users when they encounter errors or complete actions.
 
-<img src="docs/figures/navigation.webp" alt="Diagram of the Clancy Nook website navigation design" width="700">
+<div align="center">
+   <img src="docs/figures/navigation.webp" alt="Diagram of the Clancy Nook website navigation design" width="700">
+</div>
 
 #### **User Interaction (UI)**
 Interaction design plays a crucial role in shaping how users engage with the website’s interface. It involves determining effective interaction models, selecting suitable UI elements like buttons, forms, and sliders, and implementing feedback mechanisms that provide users with clear responses to their actions. The goal is to create an intuitive and engaging experience that aligns with user expectations and business objectives.
@@ -643,7 +653,9 @@ Another interactive feature designed to enhance user engagement is the clickable
 - **Hover Effects**, where the card will expand slightly and a shadow will appear to create a sense of depth.
 - A **call-to-action** at the beginning of the section, informing users that they can click on any tour for more details.
 
-<img src="docs/figures/user-interaction-tour-cards.webp" alt="Wireframe of four tour cards displaying tour names and descriptions. One card is highlighted with a shadow effect and a cursor hovering over it, indicating an interactive hover state." width="700">
+<div align="center">
+   <img src="docs/figures/user-interaction-tour-cards.webp" alt="Wireframe of four tour cards displaying tour names and descriptions. One card is highlighted with a shadow effect and a cursor hovering over it, indicating an interactive hover state." width="700">
+</div>
 
 #### Image Carousel
 To enhance the user experience on the Tours pages, image carousels will be implemented, allowing users to easily browse through historic photos of landmarks featured on the tours. These interactive elements provide a dynamic visual preview of the experiences offered, helping potential customers make informed decisions. To balance convenience with interactivity, each carousel will include:
@@ -652,7 +664,9 @@ To enhance the user experience on the Tours pages, image carousels will be imple
 - **Automatic Rotation**
 - **Previous** and **Next** Buttons 
 
-<img src="docs/figures/user-interaction-carousel.webp" alt="Wireframe of an image carousel with previous and next buttons." width="700">
+<div align="center">
+   <img src="docs/figures/user-interaction-carousel.webp" alt="Wireframe of an image carousel with previous and next buttons." width="700">
+</div>
 
 #### Form Fields
 The contact form provides a simple and accessible way for users to ask questions or make inquiries. To improve usability and streamline interactions, several design choices enhance the user experience.
@@ -666,7 +680,9 @@ The contact form provides a simple and accessible way for users to ask questions
 - **Image Upload** functionality enables users to submit images (JPEG and PNG formats only), allowing them to share photos relevant to their inquiry or review.
 - **Placeholders** guide users through the required fields, ensuring they understand what information is needed.
 
-<img src="docs/figures/user-interaction-form.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="500">
+<div align="center">
+   <img src="docs/figures/user-interaction-form.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="500">
+</div>
 
 #### **Information Architecture (IA)**
 The structuring, organisation, and labeling of website content ensures users can easily navigate and find relevant information. This critical aspect of user experience (UX) design, influences how content is grouped, connected, and accessed.
@@ -681,7 +697,9 @@ When designing a website's information architecture, several key principles are 
 
 This diagram visualizes information architecture for the site as well as the the hierarchy and relationships between pages, interactive elements, and external links. The structure follows established UX best practices while integrating the project's strategic goals.
 
-<img src="docs/figures/information-architecture.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="700">
+<div align="center">
+   <img src="docs/figures/information-architecture.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="700">
+</div>
 
 #### Core Pages & Sections
 The website is divided into five main pages, each containing sections and interactive elements that contribute to an efficient user journey:
@@ -767,7 +785,9 @@ The primary navigation bar (shown in the wireframe) follows these principles by 
 - **Hover Feedback**: When users hover over navigation links, the text is underlined to reinforce interactivity and improve clarity.
 - **CTA Emphasis**: The "Contact" button is visually distinct, guiding users toward taking action.
 
-<img src="docs/figures/user-interaction-navbar.webp" alt="Navigation bar design for the Clancy Nook website, displaying menu options" width="700">
+<div align="center">
+   <img src="docs/figures/user-interaction-navbar.webp" alt="Navigation bar design for the Clancy Nook website, displaying menu options" width="700">
+</div>
 
 #### Footer Navigation
 In addition to the primary navbar, the footer navigation serves as a secondary means of guiding users through the site. To maintain simplicity and user familiarity, icons have been carefully chosen based on widely recognized symbols that users instinctively associate with their functions.  
@@ -781,7 +801,9 @@ In addition to the primary navbar, the footer navigation serves as a secondary m
 
 To enhance usability, the icons and navigation links in the footer will feature hover effects that subtly change color or add a shadow effect when hovered over. This feedback mechanism improves user interaction by reinforcing interactivity, making it clear which elements are clickable and guiding the user effortlessly.  
 
-<img src="docs/figures/user-interaction-footer.webp" alt="Website footer mockup featuring, social media icons and a small navigation menu with icons." width="700">
+<div align="center">
+   <img src="docs/figures/user-interaction-footer.webp" alt="Website footer mockup featuring, social media icons and a small navigation menu with icons." width="700">
+</div>
 
 #### Access Points & Interactive Elements  
 Navigation extends beyond menus—buttons serve as additional access points, ensuring smooth user interactions. These elements are **strategically placed** across the site to align with user intent and facilitate seamless movement between pages and actions.  
@@ -791,13 +813,17 @@ Navigation extends beyond menus—buttons serve as additional access points, ens
    - **Submit Button**: Located within the contact form, ensuring clarity in form submission.  
    - **Home Button**: Appears on the **Success** and **404 Error** pages, helping users return to the main site effortlessly.  
 
-<img src="docs/figures/user-interaction-buttons.webp" alt="Three buttons labeled 'Contact,' 'Home,' and 'Submit,' designed for user interaction." width="400">
+<div align="center">
+   <img src="docs/figures/user-interaction-buttons.webp" alt="Three buttons labeled 'Contact,' 'Home,' and 'Submit,' designed for user interaction." width="400">
+</div>
 
 - **External Links/Logo** Buttons  
    - **Eventbrite Button (on the Tours page)**: Takes users directly to the booking platform.  
    - **TripAdvisor Button (on the Reviews page)**: Provides quick access to customer reviews and the option to submit feedback.  
 
-<img src="docs/figures/user-interaction-logos.webp" alt="Black circular logo buttons for Eventbrite and TripAdvisor, representing external links for booking tours and reading or writing reviews." width="300">
+<div align="center">
+   <img src="docs/figures/user-interaction-logos.webp" alt="Black circular logo buttons for Eventbrite and TripAdvisor, representing external links for booking tours and reading or writing reviews." width="300">
+</div>
 
 These buttons feature a **color change on hover**, reinforcing interactivity and indicating that they are clickable.  
 
@@ -821,7 +847,9 @@ The homepage introduces Clancy Nook and serves as the central hub for user explo
 - The Tours section presents key offerings using interactive cards, allowing users to navigate to detailed descriptions effortlessly.
 - The footer navigation ensures users can quickly access contact details and social media.
 
-<img src="docs/figures/ii-design-homepage.webp" alt="" width="150">
+<div align="center">
+   <img src="docs/figures/ii-design-homepage.webp" alt="" width="150">
+</div>
 
 #### Tours Page
 The Tours page expands on available experiences, following an information hierarchy that aligns with user expectations:
@@ -830,7 +858,9 @@ The Tours page expands on available experiences, following an information hierar
 - Icons are used for quick comprehension of factors like meeting points, cost, and accessibility.
 - The external booking button (Eventbrite) is clearly highlighted, directing users to secure their spot.
 
-<img src="docs/figures/ii-design-tours-page.webp" alt="" width="150">
+<div align="center">
+   <img src="docs/figures/ii-design-tours-page.webp" alt="" width="150">
+</div>
 
 #### Gallery Page
 A visually rich section, the Gallery Page utilizes a grid layout to showcase previous tours.
@@ -838,7 +868,9 @@ A visually rich section, the Gallery Page utilizes a grid layout to showcase pre
 - The image-driven design minimizes text reliance, immersing users in the experience.
 - Consistent spacing and alignment ensure aesthetic harmony and usability.
 
-<img src="docs/figures/ii-design-gallery.webp" alt="" width="150">
+<div align="center">
+   <img src="docs/figures/ii-design-gallery.webp" alt="" width="150">
+</div>
 
 #### Reviews Page
 User-generated content plays a key role in building trust. The Reviews page is designed with:
@@ -847,7 +879,9 @@ User-generated content plays a key role in building trust. The Reviews page is d
    - Star ratings for visual impact.
 - External TripAdvisor integration, allowing users to contribute their own feedback.
 
-<img src="docs/figures/ii-design-reviews.webp" alt="" width="150">
+<div align="center">
+   <img src="docs/figures/ii-design-reviews.webp" alt="" width="150">
+</div>
 
 #### Contact Page
 This page simplifies communication, ensuring users can reach out effortlessly.
@@ -855,7 +889,9 @@ This page simplifies communication, ensuring users can reach out effortlessly.
 - A structured contact form with labeled fields maintains clarity.
 - Dropdowns and radio buttons streamline form completion.
 
-<img src="docs/figures/ii-design-contact.webp" alt="" width="150">
+<div align="center">
+   <img src="docs/figures/ii-design-contact.webp" alt="" width="150">
+</div>
 
 #### Success Page & 404 Page
 These pages enhance the user journey and error recovery:
@@ -863,7 +899,9 @@ These pages enhance the user journey and error recovery:
 - The Success Page reassures users after submitting a form, with a return home button for further exploration.
 - The 404 Page provides helpful redirection, preventing frustration by guiding users back to key sections.
 
-<img src="docs/figures/ii-design-success-and-error-pages.webp" alt="" width="300">
+<div align="center">
+   <img src="docs/figures/ii-design-success-and-error-pages.webp" alt="" width="300">
+</div>
 
 A key principle in interface and information design is ensuring consistency across all elements of the website. Consistency reinforces usability by helping users develop predictable interaction patterns, reducing cognitive load and improving navigation efficiency.
 
@@ -905,7 +943,9 @@ The homepage wireframes illustrate how key sections dynamically adjust across de
 - **Tablet View:** Elements begin aligning side by side where space allows.  
 - **Desktop View:** A full-width layout ensures content is spread optimally.  
 
-<img src="docs/figures/responsiveness-homepage.webp" alt="" width="800">
+<div align="center">
+   <img src="docs/figures/responsiveness-homepage.webp" alt="" width="800">
+</div>
 
 #### Tours Page (Content Scaling & Consistency)  
 The Tours page maintains readability across devices.
@@ -914,7 +954,9 @@ The Tours page maintains readability across devices.
 - **Consistency:** Tour details and images scale proportionally.  
 - **Alternating Content Alignment:** On larger screens, the layout shifts from a centrally aligned structure to an alternating arrangement along the x-axis. This enhances visual flow and breaks monotony, making the content more engaging and easier to follow.
 
-<img src="docs/figures/responsiveness-tours.webp" alt="" width="800">
+<div align="center">
+   <img src="docs/figures/responsiveness-tours.webp" alt="" width="800">
+</div>
 
 #### Gallery Page (Masonry Layout for Fluid Display)  
 Inspired by a masonry layout, the Gallery page adjusts dynamically.
@@ -922,7 +964,9 @@ Inspired by a masonry layout, the Gallery page adjusts dynamically.
 - **Mobile View:** A single-column display ensures image clarity.  
 - **Tablet & Desktop Views:** A staggered multi-column arrangement maximizes screen space and aesthetic appeal.  
 
-<img src="docs/figures/responsiveness-gallery.webp" alt="" width="800">
+<div align="center">
+   <img src="docs/figures/responsiveness-gallery.webp" alt="" width="800">
+</div>
 
 #### Reviews Page (Scalability of Testimonial Cards)  
 The Reviews page maintains structured spacing across breakpoints.
@@ -931,7 +975,9 @@ The Reviews page maintains structured spacing across breakpoints.
 - **Tablet View:** A two-column grid balances content and readability.  
 - **Desktop View:** Expands to a three-column layout for efficient space utilization.  
 
-<img src="docs/figures/responsiveness-reviews.webp" alt="" width="800">
+<div align="center">
+   <img src="docs/figures/responsiveness-reviews.webp" alt="" width="800">
+</div>
 
 #### Contact Page (Form Adaptability)  
 The Contact page ensures an intuitive and accessible form experience across devices.
@@ -941,7 +987,9 @@ The Contact page ensures an intuitive and accessible form experience across devi
 - **Adaptive Input Sizing:** Fields such as phone number inputs are shorter, while longer text inputs like email fields expand to accommodate expected content length.  
 - **High Contrast & Accessibility:** All form elements maintain sufficient contrast and spacing for optimal legibility.  
 
-<img src="docs/figures/responsiveness-contact.webp" alt="" width="800">
+<div align="center">
+   <img src="docs/figures/responsiveness-contact.webp" alt="" width="800">
+</div>
 
 #### Success Page (Confirmation Layout)  
 The Success page provides clear user feedback and an easy navigation path after form submission.
@@ -950,7 +998,9 @@ The Success page provides clear user feedback and an easy navigation path after 
 - **Desktop:** Content is spaced more generously, with improved layout structure.  
 - **Clear Navigation:** Users are guided back to the homepage or another relevant section through a prominent CTA button.  
 
-<img src="docs/figures/responsiveness-success.webp" alt="" width="800">
+<div align="center">
+   <img src="docs/figures/responsiveness-success.webp" alt="" width="800">
+</div>
 
 #### 404 Page (Consistent User Guidance)  
 The 404 error page ensures users can navigate back easily.
@@ -958,7 +1008,9 @@ The 404 error page ensures users can navigate back easily.
 - A clear CTA button directs users to the homepage.  
 - Responsive text scaling ensures visibility.
 
-<img src="docs/figures/responsiveness-404.webp" alt="" width="800">
+<div align="center">
+   <img src="docs/figures/responsiveness-404.webp" alt="" width="800">
+</div>
 
 #### **Project Planning**
 The work in this section has been principal in defining the core visual and functional framework of the website, ensuring that interface design, navigation systems, and information architecture are presented well for users. 
@@ -987,16 +1039,22 @@ Much of the surface plane has been directly influenced by my initial meeting wit
 
 These images play a crucial role in this alignment, depicting Louis Cane as Clancy Nook in his tour guide attire, embodying the Victorian-era historian and storyteller that defines his brand. This persona is not just a marketing tool but an integral part of the tour experience itself—when visitors book a tour, they are stepping into a world of curated narratives and historical insights. Therefore, it is vital that his online presence mirrors his in-person identity, ensuring a cohesive brand experience across digital and real-world interactions.
 
+<div align="center">
 <img src="docs/images/clancy-nook-banner.webp" alt="Clancy Nook Banner on Social Media" width="200">
+</div>
 
-<img src="assets/images/clancy-nook-about.webp" alt="Clancy Nook Profile Icon on Social Media" width="200">
+<div align="center">
+   <img src="assets/images/clancy-nook-about.webp" alt="Clancy Nook Profile Icon on Social Media" width="200">
+</div>
 
 #### **Color Palette**
 Color is essential for branding, navigation, and user interaction. The website’s palette balances historical authenticity with modern usability and accessibility. Inspired by Clancy Nook’s branding and Louis Cane’s tour guide persona, the aesthetic reflects Victorian-era storytelling, emphasizing mystery, heritage, and exploration.
 
 To ensure the selected colors met both branding and accessibility requirements, _Adobe Color_ was used to extract a historically resonant yet web-friendly palette. This tool enabled the derivation of primary and secondary hues from key brand imagery, ensuring visual coherence across all design elements.
 
-<img src="docs/figures/color-palette.webp" alt="Clancy Nook color palette" width="600">
+<div align="center">
+   <img src="docs/figures/color-palette.webp" alt="Clancy Nook color palette" width="600">
+</div>
 
 The WCAG 2.0 Level AA guidelines require a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text to ensure accessibility. Additionally, WCAG 2.1 mandates a minimum 3:1 contrast ratio for graphics and user interface components, such as form input borders, ensuring key functional elements are easily distinguishable. For an even higher level of accessibility, WCAG Level AAA requires a 7:1 ratio for normal text and 4.5:1 for large text, benefiting users with more severe visual impairments.
 
@@ -1006,7 +1064,9 @@ To ensure the Clancy Nook website meets these accessibility standards, I tested 
 2. **Moderate contrast ratios** (3:1 - 4.5:1) are used for larger text elements, such as headings and section titles.
 3. **Lower contrast colors** that do not meet accessibility thresholds for text are instead applied to decorative or background elements, ensuring they do not interfere with readability.
 
-<img src="docs/figures/color-contrast-checker.webp" alt="Clancy Nook color contrast validation" width="600">
+<div align="center">
+   <img src="docs/figures/color-contrast-checker.webp" alt="Clancy Nook color contrast validation" width="600">
+</div>
 
 The background color for the website was set to **Cream (#F3EED8)** to provide a warm, neutral base that ensures readability without overwhelming users. **Dark Brown (#3C331C)** was chosen for the primary text color, as it maintains a contrast ratio above 4.5:1 against the cream background, meeting accessibility standards for normal text. This pairing ensures that content remains legible across various devices and lighting conditions.
 
@@ -1019,7 +1079,9 @@ Accent colors were incorporated to highlight interactive elements without sacrif
 
 The final palette was tested using _Chroma Tool_ for deuteranopia (red-green deficiency), protanopia (red blindness), and tritanopia (blue-yellow deficiency). This ensured that all critical UI elements maintained clear visual contrast across different types of color blindness. This commitment to accessibility aligns with WCAG 2.1 best practices, reinforcing readability and usability for a diverse audience.
 
-<img src="docs/figures/color-colorblind-safe-checker.webp" alt="Clancy Nook color contrast validation" width="600">
+<div align="center">
+   <img src="docs/figures/color-colorblind-safe-checker.webp" alt="Clancy Nook color contrast validation" width="600">
+</div>
 
 #### **Typography**
 When designing the Clancy Nook website, I aimed to replicate the original typography used in the Clancy Nook Facebook banner. However, as the exact font was unknown, I turned to _Google Fonts_ to find a close match. After thorough exploration, I selected **IM Fell Double Pica**, a historically inspired serif font that aligns with the brand’s heritage-driven aesthetic.
@@ -1037,7 +1099,9 @@ IM Fell Double Pica offers several advantages:
    - While its traditional design can lead to visual fatigue in extensive reading, limiting its use to headings and navigational elements ensures a balanced user experience.
    - Adaptable across different devices and languages, maintaining legibility and aesthetic appeal.
 
-<img src="docs/figures/im-fell-double-pica.webp" alt="Clancy Nook secondary font for headers" width="600">
+<div align="center">
+   <img src="docs/figures/im-fell-double-pica.webp" alt="Clancy Nook secondary font for headers" width="600">
+</div>
 
 This font is exclusively for headings and navigation, and to optimize readability, it is applied in UPPERCASE. This decision was made to reinforce Clancy Nook’s historical aesthetic while ensuring that text remains legible and impactful, providing: 
 
@@ -1047,7 +1111,9 @@ This font is exclusively for headings and navigation, and to optimize readabilit
 
 To complement IM Fell Double Pica’s ornate, old-world feel, I used _FontForge_ to identify a modern, highly readable sans-serif for body text. **Montserrat** was chosen for its clarity, versatility, and strong visual contrast, ensuring seamless readability without detracting from Clancy Nook’s period-inspired branding.
 
-<img src="docs/figures/font-pairing.webp" alt="Clancy Nook font-pairing" width="600">
+<div align="center">
+   <img src="docs/figures/font-pairing.webp" alt="Clancy Nook font-pairing" width="600">
+</div>
 
 Montserrat offers several key benefits:
 
@@ -1064,7 +1130,9 @@ Montserrat offers several key benefits:
    - Adaptable across various devices, screen resolutions, and languages, ensuring a universal reading experience.
    - Its multiple font weights allow for hierarchical structuring of content, guiding users seamlessly through the site.
 
-<img src="docs/figures/montserrat.webp" alt="Clancy Nook primary font for text body" width="600">
+<div align="center">
+   <img src="docs/figures/montserrat.webp" alt="Clancy Nook primary font for text body" width="600">
+</div>
 
 #### **Imagery**
 Visual storytelling plays a crucial role in shaping the Clancy Nook website, immersing users in rich historical narratives while enhancing engagement. Carefully curated imagery, subtle overlays, shadows and dynamic elements work together to create an authentic and visually compelling experience.
@@ -1080,11 +1148,15 @@ An effective hero image should:
 
 The homepage hero image, featuring a historical Manchester street in Ancoats, with complementary colors are designed to draw users into the site. A semi-transparent overlay is applied to these images, ensuring text readability while preserving the atmospheric depth and vintage aesthetic. 
 
-<img src="docs/figures/hero-banner-homepage.webp" alt="Clancy Nook homepage hero banner" width="200">
+<div align="center">
+   <img src="docs/figures/hero-banner-homepage.webp" alt="Clancy Nook homepage hero banner" width="200">
+</div>
 
 The hero image for the Tours page captures the intrigue of Clancy Nook’s storytelling. A moody Manchester street scene in the city centre, with the same overlay. 
 
-<img src="docs/figures/hero-banner-tour-page.webp" alt="Clancy Nook tour page hero banner" width="200">
+<div align="center">
+   <img src="docs/figures/hero-banner-tour-page.webp" alt="Clancy Nook tour page hero banner" width="200">
+</div>
 
 #### **Backgrounds**
 Throughout the site, full-width background images complement key pages, such as reviews and the contact page. They provide a strong seconsory connection to the service being provided, without overwhelming the content. Light blue has been selected on these pages as the background for the sectional elements containing content such as the review cards and form, ensuring accessibility for all users.
@@ -1100,11 +1172,15 @@ Key considerations for background imagery include:
 
 The reviews page features a historic building with ornate windows and an external fire escape, reinforcing Clancy Nook’s connection to Manchester’s industrial and architectural heritage. The design will ensure that user testimonials remain the focal point while maintaining visual harmony, using a light blue overlay on the review cards.
 
-<img src="docs/images/background-image-reviews.webp" alt="Clancy Nook reviews page background image" width="200">
+<div align="center">
+   <img src="docs/images/background-image-reviews.webp" alt="Clancy Nook reviews page background image" width="200">
+</div>
 
 The contact page background captures the Thirsty Scholar pub, a well-known Manchester landmark, linking directly to the city's vibrant history and Clancy Nook’s tour locations. The consistent light blue overlay will this time be slightly transparrent with opaque, muted cream input fields to contrast subtly, providing a vintage yet accessible feel. 
 
-<img src="docs/images/background-image-contact.webp" alt="Clancy Nook contact page background image" width="200">
+<div align="center">
+   <img src="docs/images/background-image-contact.webp" alt="Clancy Nook contact page background image" width="200">
+</div>
 
 #### Black & White Imagery
 The Clancy Nook website incorporates historical imagery from the Manchester Local Image Collection, a public domain archive documenting the city's evolution. These black-and-white photographs of Victorian streets, industrial districts, and historic landmarks establish a strong sense of place and authenticity, immersing users in the setting before they even step onto a tour.
@@ -1119,11 +1195,15 @@ Black and White Images in Web Design:
 
 This approach aligns with Clancy Nook’s historical branding, drawn heavily from Victorian-era newspaper reports from the 1800s and early 1900s. This choice evokes the feel of archival materials and historical publications, reinforcing the tours’ connection to the past.
 
-<img src="assets/images/a-tale-of-two-cities-tour-2.webp" alt="Photograph of city centre from Manchester Local Image Collection" width="500">
+<div align="center">
+   <img src="assets/images/a-tale-of-two-cities-tour-2.webp" alt="Photograph of city centre from Manchester Local Image Collection" width="500">
+</div>
 
 Additionally, group photos taken by tourists have been edited into black and white to maintain visual consistency across the website. These images, originally shared by visitors, were used with full consent for business purposes, ensuring that prospective customers see real tour experiences while preserving the historical aesthetic.
 
-<img src="assets/images/private-bookings-tour-3.webp" alt="Photograph of tour group on Ancoats Tour" width="500">
+<div align="center">
+   <img src="assets/images/private-bookings-tour-3.webp" alt="Photograph of tour group on Ancoats Tour" width="500">
+</div>
 
 #### Carousels
 To enhance user engagement and create an interactive experience, the tours page features image carousels, allowing visitors to scroll through a curated selection of historical and contemporary images. These carousels visually preview key locations, historical sites, and moments from past tours, striking a balance between historical authenticity and modern storytelling.
@@ -1135,7 +1215,9 @@ _NN/g_ UX Experts suggest carousels should:
 
 The carousel format was chosen to keep the page structured and visually engaging while avoiding excessive imagery that might overwhelm the layout on the Tours page. This ensures a smooth user experience, allowing visitors to explore different aspects of each tour at their own pace.
 
-<img src="docs/images/carousel-example.webp" alt="Photograph of tour group on Ancoats Tour" width="600">
+<div align="center">
+   <img src="docs/images/carousel-example.webp" alt="Photograph of tour group on Ancoats Tour" width="600">
+</div>
 
 ### Gallery
 The gallery page is intentionally the most colorful and visually rich section of the website, contrasting with the muted, vintage tones used elsewhere. While other sections focus on historical authenticity with black-and-white images, the gallery embraces full-color photography, emphasising the vibrancy and energy of the tours.
@@ -1156,4 +1238,6 @@ Most images in the gallery were taken by Louis Cane or were shared by tourists w
 - Third-party photos are used with permission, properly crediting contributors where needed.
 - Some photos have been color edited using _Photokit_ to match the site’s palette aesthetic
 
-<img src="docs/images/gallery-imagery.webp" alt="Imagery Arrangement and Choices" width="600">
+<div align="center">
+   <img src="docs/images/gallery-imagery.webp" alt="Imagery Arrangement and Choices" width="600">
+</div>
