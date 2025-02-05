@@ -987,7 +987,7 @@ Much of the surface plane has been directly influenced by my initial meeting wit
 
 These images play a crucial role in this alignment, depicting Louis Cane as Clancy Nook in his tour guide attire, embodying the Victorian-era historian and storyteller that defines his brand. This persona is not just a marketing tool but an integral part of the tour experience itself—when visitors book a tour, they are stepping into a world of curated narratives and historical insights. Therefore, it is vital that his online presence mirrors his in-person identity, ensuring a cohesive brand experience across digital and real-world interactions.
 
-<img src="docs/images/clancy-nook-banner.webp" alt="Clancy Nook Banner on Social Media" width="300">
+<img src="docs/images/clancy-nook-banner.webp" alt="Clancy Nook Banner on Social Media" width="200">
 
 <img src="assets/images/clancy-nook-about.webp" alt="Clancy Nook Profile Icon on Social Media" width="200">
 
@@ -1026,14 +1026,14 @@ When designing the Clancy Nook website, I aimed to replicate the original typogr
 
 IM Fell Double Pica offers several advantages:
 
-1. Legibility
+1. **Legibility**
    - Moderate x-height and well-proportioned letterforms improve clarity.
    - Sufficient spacing between characters enhances readability.
    - Clear differentiation between characters prevents misinterpretation.
-2. Readability:
+2. **Readability**
    - Works well for long text passages, maintaining a comfortable reading flow.
    - Suitable for captions and digital displays, preserving clarity even in smaller sizes.
-3. Visual Fatigue & Adaptability:
+3. **Visual Fatigue & Adaptability**
    - While its traditional design can lead to visual fatigue in extensive reading, limiting its use to headings and navigational elements ensures a balanced user experience.
    - Adaptable across different devices and languages, maintaining legibility and aesthetic appeal.
 
@@ -1064,5 +1064,96 @@ Montserrat offers several key benefits:
    - Adaptable across various devices, screen resolutions, and languages, ensuring a universal reading experience.
    - Its multiple font weights allow for hierarchical structuring of content, guiding users seamlessly through the site.
 
-<img src="docs/figures/montserrat.webp" alt="Clancy Nook primary font for text body" width="800">
+<img src="docs/figures/montserrat.webp" alt="Clancy Nook primary font for text body" width="600">
 
+#### **Imagery**
+Visual storytelling plays a crucial role in shaping the Clancy Nook website, immersing users in rich historical narratives while enhancing engagement. Carefully curated imagery, subtle overlays, shadows and dynamic elements work together to create an authentic and visually compelling experience.
+
+#### Hero Banners
+Hero images serve as focal points across the website, immediately setting the tone for visitors. Hero images are visually striking elements positioned near the top of pages, often spanning its full width. It provides visitors with an immediate introduction to the brand while shaping their first impression and overall user experience.
+
+An effective hero image should:
+
+- Capture attention instantly
+- Visually communicate the brand’s value proposition
+- Guide users toward relevant content or actions
+
+The homepage hero image, featuring a historical Manchester street in Ancoats, with complementary colors are designed to draw users into the site. A semi-transparent overlay is applied to these images, ensuring text readability while preserving the atmospheric depth and vintage aesthetic. 
+
+<img src="docs/figures/hero-banner-homepage.webp" alt="Clancy Nook homepage hero banner" width="200">
+
+The hero image for the Tours page captures the intrigue of Clancy Nook’s storytelling. A moody Manchester street scene in the city centre, with the same overlay. 
+
+<img src="docs/figures/hero-banner-tour-page.webp" alt="Clancy Nook tour page hero banner" width="200">
+
+#### **Backgrounds**
+Throughout the site, full-width background images complement key pages, such as reviews and the contact page. They provide a strong seconsory connection to the service being provided, without overwhelming the content. Light blue has been selected on these pages as the background for the sectional elements containing content such as the review cards and form, ensuring accessibility for all users.
+
+Key considerations for background imagery include:
+
+- High-Resolution & Optimal Sizing (< 2048px x 1536px)
+- Brand Alignment & Authenticity
+- Readability & Accessibility
+- CSS Implementation & Responsiveness
+- Static Backgrounds for Immersion
+- Performance Optimization
+
+The reviews page features a historic building with ornate windows and an external fire escape, reinforcing Clancy Nook’s connection to Manchester’s industrial and architectural heritage. The design will ensure that user testimonials remain the focal point while maintaining visual harmony, using a light blue overlay on the review cards.
+
+<img src="docs/images/background-image-reviews.webp" alt="Clancy Nook reviews page background image" width="200">
+
+The contact page background captures the Thirsty Scholar pub, a well-known Manchester landmark, linking directly to the city's vibrant history and Clancy Nook’s tour locations. The consistent light blue overlay will this time be slightly transparrent with opaque, muted cream input fields to contrast subtly, providing a vintage yet accessible feel. 
+
+<img src="docs/images/background-image-contact.webp" alt="Clancy Nook contact page background image" width="200">
+
+#### Black & White Imagery
+The Clancy Nook website incorporates historical imagery from the Manchester Local Image Collection, a public domain archive documenting the city's evolution. These black-and-white photographs of Victorian streets, industrial districts, and historic landmarks establish a strong sense of place and authenticity, immersing users in the setting before they even step onto a tour.
+
+Black and White Images in Web Design: 
+
+- Lessens distractions
+- Offers a minimal aesthetic
+- Provides a sophisticated look
+- Creates on light, form, and texture
+- Doesn't detract from the color palette
+
+This approach aligns with Clancy Nook’s historical branding, drawn heavily from Victorian-era newspaper reports from the 1800s and early 1900s. This choice evokes the feel of archival materials and historical publications, reinforcing the tours’ connection to the past.
+
+<img src="assets/images/a-tale-of-two-cities-tour-2.webp" alt="Photograph of city centre from Manchester Local Image Collection" width="500">
+
+Additionally, group photos taken by tourists have been edited into black and white to maintain visual consistency across the website. These images, originally shared by visitors, were used with full consent for business purposes, ensuring that prospective customers see real tour experiences while preserving the historical aesthetic.
+
+<img src="assets/images/private-bookings-tour-3.webp" alt="Photograph of tour group on Ancoats Tour" width="500">
+
+#### Carousels
+To enhance user engagement and create an interactive experience, the tours page features image carousels, allowing visitors to scroll through a curated selection of historical and contemporary images. These carousels visually preview key locations, historical sites, and moments from past tours, striking a balance between historical authenticity and modern storytelling.
+
+_NN/g_ UX Experts suggest carousels should: 
+- Include 5 or fewer frames
+- Ensure that navigation controls appear inside the frame
+- Use crisp-looking images
+
+The carousel format was chosen to keep the page structured and visually engaging while avoiding excessive imagery that might overwhelm the layout on the Tours page. This ensures a smooth user experience, allowing visitors to explore different aspects of each tour at their own pace.
+
+<img src="docs/images/carousel-example.webp" alt="Photograph of tour group on Ancoats Tour" width="600">
+
+### Gallery
+The gallery page is intentionally the most colorful and visually rich section of the website, contrasting with the muted, vintage tones used elsewhere. While other sections focus on historical authenticity with black-and-white images, the gallery embraces full-color photography, emphasising the vibrancy and energy of the tours.
+
+A well-designed website gallery should have:
+- High-Quality, Authentic Images
+- Seamless Layout
+- Immersive Experience
+- Diverse Perspectives
+
+The gallery prioritizes high-resolution photos to maintain clarity and professionalism. The borderless, collage-style arrangement ensures that images flow naturally, immersing visitors in the tour experience. This approach minimizes visual clutter and enhances the feeling of continuity between moments. 
+
+A mix of candid, group photos, architectural shots, and historical landmarks create a balanced visual representation, allowing potential customers to envision themselves on the tour, engaging with the locations and narratives.
+
+Most images in the gallery were taken by Louis Cane or were shared by tourists with explicit consent for business use. To maintain transparency and ethical integrity:
+
+- Some images are sourced from free-use libraries, ensuring copyright compliance.
+- Third-party photos are used with permission, properly crediting contributors where needed.
+- Some photos have been color edited using _Photokit_ to match the site’s palette aesthetic
+
+<img src="docs/images/gallery-imagery.webp" alt="Imagery Arrangement and Choices" width="600">
