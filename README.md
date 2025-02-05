@@ -404,9 +404,9 @@ Each feature has been categorised as a must-have, should-have, or could-have, ba
 | Social Media Links                      | 4 | 5 | Elemental | 🟡 **Should-Have** |
 | Review option on contact form           | 4 | 3 | Elemental | 🟡 **Should-Have** |
 | Booking option on contact form          | 4 | 3 | Elemental | 🟡 **Should-Have** |
-| Dedicated section for private bookings & group tours | 3 | 3 | Page     | 🟢 **Could-Have** |
-| Supplementary media (downloadable brochures, audio clips) | 2 | 2 | Section  | 🟢 **Could-Have** |
-| Embedded video snippets showcasing storytelling | 2 | 2 | Elemental | 🟢 **Could-Have** |
+| Dedicated section for private bookings & group tours | 3 | 3 | Page     | 🟢 |
+| Supplementary media (downloadable brochures, audio clips) | 2 | 2 | Section  | 🟢 |
+| Embedded video snippets showcasing storytelling | 2 | 2 | Elemental | 🟢 |
 
 Explanation of Colors: <br>
 🔴 **Must-Have (Red)** → Critical to the website’s function & user experience <br>
@@ -447,20 +447,20 @@ Several features have been relocated to the Won't-Have category due to current c
 
 | **Component**             | **Importance** | **Feasibility** | **Priority (MoSCoW)** |
 |--------------------------|--------------|---------------|------------------|
-| **About Section**             | 5            | 5            | 🔴 **Must-Have** |
-| **Tours Information**        | 4            | 4            | 🔴 **Must-Have** |
-| **Booking Options**         | 4            | 3            | 🔴 **Must-Have** |
-| **Contact Form**            | 5            | 4            | 🔴 **Must-Have** |
-| **Transparent Pricing**      | 3            | 5            | 🔴 **Must-Have** |
-| **Group Booking Information** | 3          | 4            | 🟡 **Should-Have** |
-| **Reviews Access**          | 4            | 2            | 🟡 **Should-Have** |
-| **Image Gallery**           | 3            | 3            | 🟡 **Should-Have** |
-| **Social Media Integration** | 3            | 5            | 🟡 **Should-Have** |
-| **Supplementary Media**      | 1            | 2            | 🟢 **Could-Have** |
-| **Community/Concession Rates** | 3  | 2   | 🔵 **Won’t-Have** 🚫 |
-| **Form Submission Functionality** | 4 | 2  | 🔵 **Won’t-Have** 🚫 |
-| **Ability to Book on the Website** | 5 | 1  | 🔵 **Won’t-Have** 🚫 |
-| **Downloadable Brochures** | 2  | 2  | 🔵 **Won’t-Have** 🚫 |
+| **About Section**             | 5            | 5            | 🔴 |
+| **Tours Information**        | 4            | 4            | 🔴 |
+| **Booking Options**         | 4            | 3            | 🔴 |
+| **Contact Form**            | 5            | 4            | 🔴 |
+| **Transparent Pricing**      | 3            | 5            | 🔴 |
+| **Group Booking Information** | 3          | 4            | 🟡 |
+| **Reviews Access**          | 4            | 2            | 🟡 |
+| **Image Gallery**           | 3            | 3            | 🟡 |
+| **Social Media Integration** | 3            | 5            | 🟡 |
+| **Supplementary Media**      | 1            | 2            | 🟢 |
+| **Community/Concession Rates** | 3  | 2   | 🔵 |
+| **Form Submission Functionality** | 4 | 2  | 🔵 |
+| **Ability to Book on the Website** | 5 | 1  | 🔵 |
+| **Downloadable Brochures** | 2  | 2  | 🔵 |
 
 Explanation of Colors: <br>
 - 🔴 **Must-Have (Red)** → Critical to the website’s function & user experience <br>
