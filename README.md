@@ -18,11 +18,14 @@ _Project Milestone 1_
 #### iii. [Structure](#structure)
 #### iv. [Skeleton](#skeleton)
 #### v. [Surface](#surface)
-### 4. [Features](#features)
-### 5. [Technologies Used](#technologies-used)
+### 4. [Development](#development-process)
+#### i. [Approach](#approach)
+#### ii. [Features](#features)
+#### iii. [Technologies Used](#technologies-used)
+#### iv. [Bugs](#bugs)
 ### 6. [Testing](#testing)
 ### 7. [Deployment](#deployment)
-### 8. [Acknowledgements](#acknowledgements)
+### 9. [Acknowledgements](#acknowledgements)
 
 ## **Site Overview** 
 This Website is a responsive, user-focused website designed for **Clancy Nook**, an experienced tour guide offering historic walking tours around Manchester. This project is developed as part of **Project Milestone 1** for the Code Institute's **Full Stack Web Development program**. The website aims to provide a central hub for tour information, booking, and reviews.
@@ -1304,3 +1307,359 @@ The Surface Plane is where structure, interaction, and aesthetics merge into a p
 Every element—color, typography, buttons, and imagery—was chosen for usability, branding, and accessibility. Each UX plane builds upon the last, shaping the final experience. The Surface Plane unites these layers, serving as a guide for development and ensuring the Clancy Nook website delivers an immersive and intuitive journey.
 
 To stay on track and prioritise tasks effectively, my Github Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2) was continually used in the development process.
+
+## **Development**
+The Clancy Nook Walking Tours website is a user-centric, fully responsive, and visually engaging platform designed to showcase historic walking tours in Manchester. The goal is to provide an intuitive and accessible experience for both tourists and locals, ensuring seamless navigation, efficient booking options, and an engaging presentation of the tour offerings.
+
+This section outlines the step-by-step approach during development, the website features, challenges and solutions along the way, and the technologies used to bring the project to completion. 
+
+### **Approach**
+The development process is a structured, incremental approach, emphasising responsiveness, accessibility, and clean code. 
+
+Industry best practices in front-end web development include the use of:
+- Mobile First
+- Minimum Viable Project Model
+- SMART Objectives
+- Semantic HTML 
+- Modular CSS
+- CSS specificity principles
+- Code documentation through comments 
+- Git Version control
+- Regular deployment and testing 
+
+The project is designed with these industry standards for front-end web development in mind. 
+
+#### **Initial Setup**
+To kickstart development, the GitHub was established for version control, ensuring tracking of changes and shared access with mentors and Louis. Within the repository, a structured folder hierarchy was set up, including directories for assets, css, images, and pages, helping maintain an organized and scalable codebase.
+
+<div align="center">
+   <img src="docs/images/file-structure.webp" alt="Image to show file structure of repository" width="200">
+</div>
+
+A standardised HTML boilerplate was created to maintain consistency across all pages. This boilerplate included essential the head logo icon, meta tags (altered for different webpages) for SEO and accessibility. To streamline the design process, _Bootstrap 5_ was integrated along with _Font Awesome_ for icons and _Google Fonts_ for typography. 
+
+<div align="center">
+   <img src="docs/images/html-boilerplate.webp" alt="Image to show html boilerplate" width="600">
+</div>
+
+#### **Core Layout and Navigation** 
+With the foundational setup in place, the next step was to develop the HTML and CSS files for key sections of the website. The navbar, uses Bootstrap’s navbar component, for uniformity across all pages and internal links facilitate easy navigation. The layout follows a mobile-first design approach, ensuring smooth responsiveness across different screen sizes. 
+
+<div align="center">
+   <img src="docs/images/boilerplate-with-styling-small-screen.webp" alt="Image to show html boilerplate" width="256">
+   <img src="docs/images/boilerplate-with-styling-large-screen.webp" alt="Image to show html boilerplate" width="600">
+</div>
+
+To maintain a cohesive and visually appealing design, CSS variables were implemented for the font and color palette. These variables ensured consistency across all pages, making it easier to apply global style changes efficiently. A set of global styles was created to define the primary and secondary colors, typography, and spacing rules. This approach improved maintainability and streamlined the customization process.
+
+<div align="center">
+   <img src="docs/images/css-variables.webp" alt="Image to show html boilerplate" width="300">
+</div>
+
+#### **Website Development Sequence**
+
+The sequence followed in developing the website at a page level:  
+
+Home Page → Tours Page → Reviews Page → Contact Page → Success & 404 Page → Gallery Page
+
+This structured approach was based on the prioritization set out in the GitHub Projects board [here](https://github.com/users/TeseoLou/projects/3/views/2), ensuring that the most critical and user-facing pages were developed first.  
+
+This development order aligns with user experience (UX) best practices, ensuring that essential pages were fully functional before focusing on secondary content. By following the GitHub Projects board, the workflow remained structured, systematically addressing high-priority features first while keeping scope manageable.
+
+The development process was guided by wireframes for each page, generally working sequentially from the top down. Each section was then styled to be responsive, aesthetically consistent and tested in _DevTools_, before proceeding to the next, ensuring alignment with the intended design.
+
+To style each page: 
+- **CSS Variables** defined primary and secondary colors and typography
+- **Global CSS Styling** ensured consistency across sections without repetitive styling.
+- **Bootstrap Utility Classes** declared spacing & alignment
+- **Specific CSS Styling** using elemental, class, id and combinator selectors refined the visual appeal of the pages
+- **Pseudo-Class CSS Styling** provided visual feedback functionality.
+
+To guarantee full responsiveness:
+- **Media queries** were integrated into the stylesheets to ensure seamless adaptation across mobile, tablet, and desktop views.
+- Continuous **testing** was conducted throughout development to maintain optimal usability and aesthetics across various devices.
+
+#### **Page Development Sequence**
+**Home Page:**
+
+1. **Hero Section**  
+   - Introduced a prominent title and call-to-action (CTA) to immediately engage visitors.  
+
+2. **About Section**  
+   - Implemented using Flexbox to allow for dynamic structuring and smooth adaptation across different screen sizes.  
+   - Contained a brief introduction to the site’s purpose and the guide’s expertise.  
+   - Featured an image and descriptive text, adjusting dynamically based on the viewport.  
+
+3. **Featured Tours**
+   - Used a Bootstrap card template to display tour details concisely and attractively.  
+   - Each card included an image, title, and short description, improving readability and visual appeal.  
+   - Anchor tags around each card directed users to the dedicated Tours page.
+
+<div align="center">
+   <img src="docs/images/development-homepage.webp" alt="Homepage" width="600">
+</div>
+
+**Tours Page:**
+1. **Hero Section**  
+   - Created first, featuring to set the tone for the page.
+   - Used background image in CSS to provide Hero Image. 
+
+2. **Main Tour Content**  
+   - Structured the **primary tour details** to ensure accessibility and visual engagement.  
+   - Utilized the framework from the About Section on the Homepage
+   - Used Bootstrap card groups to efficiently showcase key tour details such as:  
+     - Cost 
+     - Duration 
+     - Distance 
+     - Location
+   - Integrated a Bootstrap carousel component to display a series of tour images, enhancing visual appeal and providing users with a preview of the experience.  
+
+4. **Additional Sections**  
+   Once the primary content was in place, additional sections were implemented:  
+   - Quote Section  
+   - Booking Guidance Section
+
+<div align="center">
+   <img src="docs/images/development-tours-page.webp" alt="Tours Page" width="600">
+</div>
+
+**Reviews Page:**
+1. **Background Image Implementation**  
+   - Ensured the background image* was fully responsive across devices and static when scrolling the page. 
+   - Applied two different images at specific CSS breakpoints to maintain high resolution and good placement across screen sizes.  
+
+2. **Header Section**  
+   - Introduced clear introductory text to set the tone for the reviews section.  
+   - Used Bootstrap typography classes to maintain a consistent heading style across pages.  
+
+3. **Review Cards**  
+   - An alternative new card template from Bootstrap utilised.
+   - Structured each card with:  
+     - A header to display the review source.  
+     - A footer to show the date of the review.  
+     - Applied CSS techniques to maintain consistent card heights within each row, improving visual alignment.  
+     - Used Bootstrap Flex and Grid classes to ensure the layout dynamically adjusted based on screen size.  
+     - Added **media queries** for smooth transitions across different devices.  
+
+5. **Review Guidance Section**  
+   - Implemented a guidance section at the end of the page, following the same structure as the booking guidance section on the Tours Page.  
+   - Made minor tweaks to align with the purpose of the Reviews Page.
+
+<div align="center">
+   <img src="docs/images/development-reviews-page.webp" alt="Reviews Page" width="600">
+</div>
+
+**Contact Page** 
+1. **Background Image Implementation**  
+   - Applied a fully responsive background image for visual appeal.  
+   - Used two images at different breakpoints to maintain high quality across various screen sizes.  
+
+2. **Form Container Structure**  
+   - The form container was structured into two sections:  
+     - A header to introduce the contact form.  
+     - The form itself, prioritised first to ensure all essential input elements were correctly implemented.  
+
+3. **Form Development**  
+   - The form was built in HTML, ensuring that each field had the appropriate:  
+     - Input types for usability  
+     - Labels and attributes for accessibility (set to **display: hidden** in CSS, and placeholders were used instead to act as labels to save space and maintain a visually minimal form layout)  
+   - Incorporated key elements to enhance user interaction:  
+     - Forename and surname for user identification.  
+     - Email address and phone number for contact details.  
+     - Pronouns field to allow users to specify their preferred pronouns.  
+     - Message subject dropdown to categorize inquiries.  
+     - Radio buttons for selecting a tour.  
+     - Rating slider for user feedback.  
+     - Image upload field for submitting tour photos.  
+     - Text area for user messages.  
+     - Submit button to finalize form submission.  
+
+4. **Dynamic Form Functionality**  
+   - Implemented conditional visibility where certain fields dynamically display or hide based on the selected subject.  
+   - Used JavaScript functionality to enhance the user experience through visual styling showing scale and star. 
+
+<div align="center">
+   <img src="docs/images/development-contact-page.webp" alt="Contact Page" width="600">
+</div>
+
+**Success & Error Pages** _(developed in tandem to ensure consistency)_
+1. **Header Section**  
+   - Developed first (successful submission or an error occurrence)  
+
+3. **Success Section Implementation**  
+   - Displayed a confirmation message reassuring users that their submission was successful.  
+   - Included a call-to-action button directing users back to the homepage or another relevant section.  
+   - Featured an image of Clancy Nook to maintain branding and visual appeal.  
+
+4. **Error Section (404) Implementation**  
+   - Displayed a friendly error message informing users that the page they were looking for could not be found.  
+   - Incorporated a button to redirect users back to the homepage for easy navigation.  
+   - Included a Clancy Nook image to ensure branding consistency.  
+
+<div align="center">
+   <img src="docs/images/development-success-page.webp" alt="Success Page" width="300">
+   <img src="docs/images/development-404-page.webp" alt="404 Page" width="300">
+</div>
+
+**Gallery Page** 
+1. **Mobile-First Approach**  
+   - Ensured the gallery adapted seamlessly across different screen sizes.
+   - Ordered photos one on top of the other in mobile design.   
+
+3. **Responsive Grid Layout**  
+   - Implemented a grid format to organize the images effectively.  
+   - Used Bootstrap’s Flex and Display classes and CSS Media Queries to create a dynamic and responsive gallery.  
+
+4. **Styling & Optimization**  
+   - Set container to fluid so gallery did not stretch on extra large screens. 
+   - Applied Bootstrap utility to fine-tune the gallery’s presentation, removing margins, padding and gutters.
+
+<div align="center">
+   <img src="docs/images/development-gallery-page.webp" alt="Gallery Page" width="600">
+</div>
+
+### **Features**
+The development of features on this website followed a structured, user-focused approach, ensuring responsiveness, accessibility, and intuitive navigation. Each feature was designed with usability and aesthetics in mind, leveraging Bootstrap components, CSS styling, and JavaScript enhancements where necessary.
+
+The development process prioritized core features essential for navigation and site functionality, followed by specific content elements that enhance the user experience.
+
+#### **Core Features**
+**Navbar**
+
+The navigation bar (navbar) was developed as a persistent, site-wide feature, ensuring users could easily access all key sections of the website.
+
+- Implemented using Bootstrap's navbar component, allowing for a structured and flexible navigation system.
+- Designed to be fully responsive, with a collapsible menu for smaller screens.
+- Included a brand logo for site identity and a clearly structured menu for seamless navigation.
+- Used JavaScript toggles to enhance interaction for mobile users.
+
+<div align="center">
+   <img src="docs/images/core-feature-navbar.webp" alt="Navbar" width="300">
+</div>
+
+**Footer**
+
+The footer was implemented across all pages to provide users with consistent access to important information and quick navigation links.
+
+- Structured using Bootstrap’s grid system for organized layout.
+- Included social media icons for external engagement.
+- Provided quick links to key sections of the site, improving navigation.
+- Designed to be pushed to the bottom of the page, ensuring it remains there when content is minimal.
+
+<div align="center">
+   <img src="docs/images/core-feature-footer.webp" alt="Footer" width="300">
+</div>
+
+#### **Specific Features**
+**Hero Banners**
+
+Hero banners were designed to create visual impact and engagement, serving as introductory sections on the home and tours and reviews pages.
+
+- Used full-width background images with CSS overlays for readability.
+- Included compelling headlines and call-to-action (CTA) buttons to direct users toward the next step.
+- Designed with media queries to ensure text and images scale appropriately across devices.
+
+<div align="center">
+   <img src="docs/images/specific-features-hero-banner-1.webp" alt="Homepage Hero Banner" width="300">
+   <img src="docs/images/specific-features-hero-banner-2.webp" alt="Tours Page Hero Banner" width="300">
+</div>
+
+**About Section**
+
+The about section provided essential information about the site’s purpose while maintaining a visually appealing layout.
+
+- Implemented using Flexbox for a two-column layout, balancing text and imagery.
+- Styled with custom CSS refinements, including spacing and font adjustments.
+- Ensured alignment with the overall branding and tone of the website.
+
+<div align="center">
+   <img src="docs/images/specific-feature-about.webp" alt="About Feature" width="300">
+</div>
+
+**Featured Tours Section**
+
+The featured tours section was developed to highlight key offerings and encourage users to explore further.
+
+- Used Bootstrap card components for a clean and structured display.
+- Included images, descriptions, and CTA buttons, directing users to detailed tour pages.
+- Ensured a dynamic layout using Bootstrap's grid system and utility classes.
+
+<div align="center">
+   <img src="docs/images/specific-features-featured-tours.webp" alt="Featured Tours Tiles" width="300">
+</div>
+
+**Tour Sections**
+
+Each tour section was designed to present structured information while maintaining an engaging format.
+
+- Integrated Bootstrap card groups to display essential details such as cost, duration, and location.
+- Incorporated a carousel component for visual storytelling, allowing users to browse multiple images.
+- Used consistent styling to maintain uniformity across different tour pages.
+
+<div align="center">
+   <img src="docs/images/specific-feature-tours-sections.webp" alt="Tours Feature" width="300">
+</div>
+
+**Review Tiles**
+
+The reviews section was developed to build credibility and trust, showcasing testimonials from previous users.
+
+- Created custom-styled review tiles for a distinct appearance compared to standard cards.
+- Used a structured layout with Bootstrap’s grid system for even alignment.
+- Ensured responsive resizing using CSS techniques to maintain readability.
+
+<div align="center">
+   <img src="docs/images/specific-feature-reviews.webp" alt="Reviews Tiles" width="300">
+</div>
+
+**Form**
+
+The contact form was built to facilitate easy communication and inquiries, with a focus on usability and accessibility.
+
+- Included essential input fields such as name, email, and message fields.
+- Used placeholders as labels to maintain a minimal and clean design.
+- Integrated radio buttons, dropdown selectors, and a rating slider, enhancing interactivity.
+- Implemented JavaScript functionality for dynamic field visibility, displaying certain fields only when needed.
+
+<div align="center">
+   <img src="docs/images/specific-feature-form.webp" alt="Form Feature" width="300">
+</div>
+
+**Gallery**
+
+The gallery page was developed to be simple yet visually impactful, showcasing high-quality images in an immersive format.
+
+- Used a grid layout with Bootstrap’s Flex and Display classes for responsiveness.
+- Ensured a seamless viewing experience with structured spacing and dynamic scaling.
+- Applied media queries to refine image positioning across different devices.
+
+<div align="center">
+   <img src="docs/images/specific-feature-gallery.webp" alt="Gallery-Feature" width="300">
+</div>
+
+#### **Other Features**
+In addition to the core and content-specific features, several supplementary sections were implemented to enhance user guidance, accessibility, and user feedback collection. 
+
+**Booking Guidance Section**
+
+The Booking Guidance section was implemented to provide users with clear instructions on how to secure a tour booking.
+- Placed at the end of the Tours Page, ensuring users could find it after exploring available tours.
+- Structured similarly to the Review Guidance section, following a clear heading, instructional text, and call-to-action button format.
+- Used Bootstrap’s grid system for a structured, responsive layout.
+- Designed to be concise and visually clear, guiding users efficiently through the booking process.
+
+<div align="center">
+   <img src="docs/images/other-feature-booking-guidance.webp" alt="Gallery-Feature" width="300">
+</div>
+
+**Review Guidance Section**
+
+The Review Guidance section was developed to encourage and assist users in leaving feedback after their experience.
+- Placed at the end of the Reviews Page, mirroring the Booking Guidance section in both layout and functionality.
+- Provided step-by-step instructions on how users could submit a review.
+- Included a call-to-action button directing users to the appropriate review submission platform.
+- Used consistent design elements to align with the Tours Page, ensuring a familiar structure for users.
+
+<div align="center">
+   <img src="docs/images/other-feature-review-guidance.webp" alt="Gallery-Feature" width="300">
+</div>
