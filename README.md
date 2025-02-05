@@ -380,30 +380,30 @@ Core Features outline the key parts integrated into the Clancy Nook website to e
 
 Each feature has been categorised as a must-have, should-have, or could-have, based on its importance and feasibility, and further classified as Site, Page, Section, or Elemental Features to clarify its scope of application.
 
-| Component                               | Importance | Feasibility | Category  | Scope Priority |
+| Component                               | Importance | Feasibility | Category  | Priority |
 |-----------------------------------------|------------|-------------|------------|---------------|
-| Navbar at top of page & footer navigation buttons | 5 | 5 | Website  | 🔴 **Must-Have** |
-| Footer                                  | 5 | 5 | Website  | 🔴 **Must-Have** |
-| Accessibility features (alt text, aria-label, contrast, readable fonts) | 5 | 5 | Website  | 🔴 **Must-Have** |
-| Responsive design for all devices       | 5 | 5 | Website  | 🔴 **Must-Have** |
-| Homepage                                | 5 | 5 | Page     | 🔴 **Must-Have** |
-| Tours Page                              | 5 | 4 | Page     | 🔴 **Must-Have** |
-| Contact Page                            | 5 | 4 | Page     | 🔴 **Must-Have** |
-| Success Page                            | 4 | 4 | Page     | 🔴 **Must-Have** |
-| 404 Error Page                          | 4 | 5 | Page     | 🔴 **Must-Have** |
-| About Section                           | 5 | 5 | Section  | 🔴 **Must-Have** |
-| Tour Summarising                        | 4 | 4 | Section  | 🔴 **Must-Have** |
-| Links to platforms (Eventbrite, TripAdvisor) | 4 | 4 | Elemental | 🔴 **Must-Have** |
-| Contact Button                          | 5 | 5 | Elemental | 🔴 **Must-Have** |
-| General Inquiries Option on contact form | 5 | 5 | Elemental | 🔴 **Must-Have** |
-| Contact Details                         | 5 | 5 | Elemental | 🔴 **Must-Have** |
-| Gallery Page with images from past tours | 4 | 4 | Page     | 🟡 **Should-Have** |
-| Reviews Page for feedback from past customers | 4 | 3 | Page     | 🟡 **Should-Have** |
-| Private Bookings Section                | 4 | 3 | Section  | 🟡 **Should-Have** |
-| Community/concession rates section      | 3 | 3 | Section  | 🟡 **Should-Have** |
-| Social Media Links                      | 4 | 5 | Elemental | 🟡 **Should-Have** |
-| Review option on contact form           | 4 | 3 | Elemental | 🟡 **Should-Have** |
-| Booking option on contact form          | 4 | 3 | Elemental | 🟡 **Should-Have** |
+| Navbar at top of page & footer navigation buttons | 5 | 5 | Website  | 🔴 |
+| Footer                                  | 5 | 5 | Website  | 🔴 |
+| Accessibility features (alt text, aria-label, contrast, readable fonts) | 5 | 5 | Website  | 🔴 |
+| Responsive design for all devices       | 5 | 5 | Website  | 🔴 |
+| Homepage                                | 5 | 5 | Page     | 🔴 |
+| Tours Page                              | 5 | 4 | Page     | 🔴 |
+| Contact Page                            | 5 | 4 | Page     | 🔴 |
+| Success Page                            | 4 | 4 | Page     | 🔴 |
+| 404 Error Page                          | 4 | 5 | Page     | 🔴 |
+| About Section                           | 5 | 5 | Section  | 🔴 |
+| Tour Summarising                        | 4 | 4 | Section  | 🔴 |
+| Links to platforms (Eventbrite, TripAdvisor) | 4 | 4 | Elemental | 🔴 |
+| Contact Button                          | 5 | 5 | Elemental | 🔴 |
+| General Inquiries Option on contact form | 5 | 5 | Elemental | 🔴 |
+| Contact Details                         | 5 | 5 | Elemental | 🔴 |
+| Gallery Page with images from past tours | 4 | 4 | Page     | 🟡 |
+| Reviews Page for feedback from past customers | 4 | 3 | Page     | 🟡 |
+| Private Bookings Section                | 4 | 3 | Section  | 🟡 |
+| Community/concession rates section      | 3 | 3 | Section  | 🟡 |
+| Social Media Links                      | 4 | 5 | Elemental | 🟡 |
+| Review option on contact form           | 4 | 3 | Elemental | 🟡 |
+| Booking option on contact form          | 4 | 3 | Elemental | 🟡 |
 | Dedicated section for private bookings & group tours | 3 | 3 | Page     | 🟢 |
 | Supplementary media (downloadable brochures, audio clips) | 2 | 2 | Section  | 🟢 |
 | Embedded video snippets showcasing storytelling | 2 | 2 | Elemental | 🟢 |
