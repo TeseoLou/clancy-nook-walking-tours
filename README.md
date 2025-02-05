@@ -851,7 +851,7 @@ The homepage introduces Clancy Nook and serves as the central hub for user explo
 - The footer navigation ensures users can quickly access contact details and social media.
 
 <div align="center">
-   <img src="docs/figures/ii-design-homepage.webp" alt="" width="150">
+   <img src="docs/figures/ii-design-homepage.webp" alt="Homepage Wireframe" width="150">
 </div>
 
 #### Tours Page
@@ -862,7 +862,7 @@ The Tours page expands on available experiences, following an information hierar
 - The external booking button (Eventbrite) is clearly highlighted, directing users to secure their spot.
 
 <div align="center">
-   <img src="docs/figures/ii-design-tours-page.webp" alt="" width="150">
+   <img src="docs/figures/ii-design-tours-page.webp" alt="Torus Page Wireframe" width="150">
 </div>
 
 #### Gallery Page
@@ -872,7 +872,7 @@ A visually rich section, the Gallery Page utilizes a grid layout to showcase pre
 - Consistent spacing and alignment ensure aesthetic harmony and usability.
 
 <div align="center">
-   <img src="docs/figures/ii-design-gallery.webp" alt="" width="150">
+   <img src="docs/figures/ii-design-gallery.webp" alt="Gallery Page Wireframe" width="150">
 </div>
 
 #### Reviews Page
@@ -883,7 +883,7 @@ User-generated content plays a key role in building trust. The Reviews page is d
 - External TripAdvisor integration, allowing users to contribute their own feedback.
 
 <div align="center">
-   <img src="docs/figures/ii-design-reviews.webp" alt="" width="150">
+   <img src="docs/figures/ii-design-reviews.webp" alt="Reviews Page Wireframe" width="150">
 </div>
 
 #### Contact Page
@@ -893,7 +893,7 @@ This page simplifies communication, ensuring users can reach out effortlessly.
 - Dropdowns and radio buttons streamline form completion.
 
 <div align="center">
-   <img src="docs/figures/ii-design-contact.webp" alt="" width="150">
+   <img src="docs/figures/ii-design-contact.webp" alt="Contact Page Wireframe" width="150">
 </div>
 
 #### Success Page & 404 Page
@@ -903,7 +903,7 @@ These pages enhance the user journey and error recovery:
 - The 404 Page provides helpful redirection, preventing frustration by guiding users back to key sections.
 
 <div align="center">
-   <img src="docs/figures/ii-design-success-and-error-pages.webp" alt="" width="300">
+   <img src="docs/figures/ii-design-success-and-error-pages.webp" alt="Success and Error Pages Wireframes" width="300">
 </div>
 
 A key principle in interface and information design is ensuring consistency across all elements of the website. Consistency reinforces usability by helping users develop predictable interaction patterns, reducing cognitive load and improving navigation efficiency.
@@ -947,7 +947,7 @@ The homepage wireframes illustrate how key sections dynamically adjust across de
 - **Desktop View:** A full-width layout ensures content is spread optimally.  
 
 <div align="center">
-   <img src="docs/figures/responsiveness-homepage.webp" alt="" width="800">
+   <img src="docs/figures/responsiveness-homepage.webp" alt="Homepage Responsiveness" width="800">
 </div>
 
 #### Tours Page (Content Scaling & Consistency)  
@@ -958,7 +958,7 @@ The Tours page maintains readability across devices.
 - **Alternating Content Alignment:** On larger screens, the layout shifts from a centrally aligned structure to an alternating arrangement along the x-axis. This enhances visual flow and breaks monotony, making the content more engaging and easier to follow.
 
 <div align="center">
-   <img src="docs/figures/responsiveness-tours.webp" alt="" width="800">
+   <img src="docs/figures/responsiveness-tours.webp" alt="Tours Page Responsiveness" width="800">
 </div>
 
 #### Gallery Page (Masonry Layout for Fluid Display)  
@@ -968,7 +968,7 @@ Inspired by a masonry layout, the Gallery page adjusts dynamically.
 - **Tablet & Desktop Views:** A staggered multi-column arrangement maximizes screen space and aesthetic appeal.  
 
 <div align="center">
-   <img src="docs/figures/responsiveness-gallery.webp" alt="" width="800">
+   <img src="docs/figures/responsiveness-gallery.webp" alt="Gallery Page Responsiveness" width="800">
 </div>
 
 #### Reviews Page (Scalability of Testimonial Cards)  
@@ -979,7 +979,7 @@ The Reviews page maintains structured spacing across breakpoints.
 - **Desktop View:** Expands to a three-column layout for efficient space utilization.  
 
 <div align="center">
-   <img src="docs/figures/responsiveness-reviews.webp" alt="" width="800">
+   <img src="docs/figures/responsiveness-reviews.webp" alt="Reviews Page Responsiveness" width="800">
 </div>
 
 #### Contact Page (Form Adaptability)  
@@ -991,7 +991,7 @@ The Contact page ensures an intuitive and accessible form experience across devi
 - **High Contrast & Accessibility:** All form elements maintain sufficient contrast and spacing for optimal legibility.  
 
 <div align="center">
-   <img src="docs/figures/responsiveness-contact.webp" alt="" width="800">
+   <img src="docs/figures/responsiveness-contact.webp" alt="Contact Page Responsiveness" width="800">
 </div>
 
 #### Success Page (Confirmation Layout)  
@@ -1002,7 +1002,7 @@ The Success page provides clear user feedback and an easy navigation path after 
 - **Clear Navigation:** Users are guided back to the homepage or another relevant section through a prominent CTA button.  
 
 <div align="center">
-   <img src="docs/figures/responsiveness-success.webp" alt="" width="800">
+   <img src="docs/figures/responsiveness-success.webp" alt="Success Page Responsiveness" width="800">
 </div>
 
 #### 404 Page (Consistent User Guidance)  
@@ -1012,7 +1012,7 @@ The 404 error page ensures users can navigate back easily.
 - Responsive text scaling ensures visibility.
 
 <div align="center">
-   <img src="docs/figures/responsiveness-404.webp" alt="" width="800">
+   <img src="docs/figures/responsiveness-404.webp" alt="404 Page Responsiveness" width="800">
 </div>
 
 #### **Project Planning**
