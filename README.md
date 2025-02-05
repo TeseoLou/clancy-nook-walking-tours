@@ -965,5 +965,104 @@ The work in this section has been principal in defining the core visual and func
 
 The wireframes produced in Balsamiq serve as a crucial reference throughout the development process, providing a clear guide for structuring content, arranging interface elements, and ensuring consistency across devices. These wireframes help bridge the gap between conceptual planning and practical implementation, allowing for an iterative design process where adjustments can be made before committing to full development.  
 
-By finalizing the Skeleton Plane, I have established a solid blueprint for the **Surface Plane**. This stage will focus on refining visual styling, branding consistency, and aesthetic cohesion to enhance the user experience.  
+By finalizing the Skeleton Plane, I have established a solid blueprint for the **Surface Plane**. This stage will focus on refining visual styling, branding consistency, and aesthetic cohesion to enhance the user experience.
+
+### **Surface**
+The Surface Plane is the final stage of UX design, where structure, interaction, and aesthetics come together to create a visually polished and intuitive interface, shaped by the underlying skeleton. While earlier phases focused on functionality, content organization, and interactivity, this stage refines color schemes, typography, spacing, contrast, and branding consistency to bolster usability and engagement.
+
+Visual design is not just about aesthetics. It plays a crucial role in, branding and guiding users through a fluid experience. Every design choice is intentional, aligning with the strategy, structure, and interaction models developed in previous stages.  
+
+For Clancy Nook, the visual identity is more than just an interface. It embodies the essence of the business. The design reflects the rich storytelling heritage, deep historical connections, and ties to Manchester’s past. The aesthetic approach carefully balances tradition with modern usability, fostering a sense of exploration, discovery, and historical intrigue while ensuring clarity and ease of use for all visitors. Each design element—from typography inspired by historical manuscripts to a warm, inviting color palette that echoes Manchester’s industrial and cultural legacy—has been thoughtfully selected to establish Clancy Nook as a knowledgeable, and engaging tour experience.
+
+I have considered the following visual design principles:
+
+- **Hierarchy & Focus** – Highlighting content as clear focal points, using contrast and typography to guide user attention.
+- **Consistency** – Standardising color schemes, spacing, and typography for a cohesive and professional appearance across all pages.
+- **Accessibility** – Ensuring WCAG compliance, including high-contrast text, scalable font sizes, and readable typography.
+- **Clarity & Readability** – Using clear, legible fonts, adequate line spacing, and structured layouts to improve content consumption.
+- **Minimalism & Simplicity** – Removing unnecessary elements to highlight key interactions and maintain a clean, user-friendly experience.
+
+#### **Branding & Aesthetic**
+Much of the surface plane has been directly influenced by my initial meeting with Louis Cane, where we explored the essence of Clancy Nook’s brand identity. During this discussion, we established a thematic direction rooted in storytelling, history, mystery, and intrigue, forming the core of Clancy Nook’s persona. These discussions guided the design choices, ensuring that every visual aspect of the website aligns with Louis’s existing branding, including the logos and imagery that evoke a sense of exploration and discovery.
+
+These images play a crucial role in this alignment, depicting Louis Cane as Clancy Nook in his tour guide attire, embodying the Victorian-era historian and storyteller that defines his brand. This persona is not just a marketing tool but an integral part of the tour experience itself—when visitors book a tour, they are stepping into a world of curated narratives and historical insights. Therefore, it is vital that his online presence mirrors his in-person identity, ensuring a cohesive brand experience across digital and real-world interactions.
+
+<img src="docs/images/clancy-nook-banner.webp" alt="Clancy Nook Banner on Social Media" width="300">
+
+<img src="assets/images/clancy-nook-about.webp" alt="Clancy Nook Profile Icon on Social Media" width="200">
+
+#### **Color Palette**
+Color is essential for branding, navigation, and user interaction. The website’s palette balances historical authenticity with modern usability and accessibility. Inspired by Clancy Nook’s branding and Louis Cane’s tour guide persona, the aesthetic reflects Victorian-era storytelling, emphasizing mystery, heritage, and exploration.
+
+To ensure the selected colors met both branding and accessibility requirements, _Adobe Color_ was used to extract a historically resonant yet web-friendly palette. This tool enabled the derivation of primary and secondary hues from key brand imagery, ensuring visual coherence across all design elements.
+
+<img src="docs/figures/color-palette.webp" alt="Clancy Nook color palette" width="600">
+
+The WCAG 2.0 Level AA guidelines require a contrast ratio of at least 4.5:1 for normal text and 3:1 for large text to ensure accessibility. Additionally, WCAG 2.1 mandates a minimum 3:1 contrast ratio for graphics and user interface components, such as form input borders, ensuring key functional elements are easily distinguishable. For an even higher level of accessibility, WCAG Level AAA requires a 7:1 ratio for normal text and 4.5:1 for large text, benefiting users with more severe visual impairments.
+
+To ensure the Clancy Nook website meets these accessibility standards, I tested various color combinations using _Contrast Checker_. This analysis allows me to determine which color pairings are suitable for different design elements:
+
+1. **High-contrast combinations** (4.5:1 or higher) are reserved for body text and critical information to maximize readability.
+2. **Moderate contrast ratios** (3:1 - 4.5:1) are used for larger text elements, such as headings and section titles.
+3. **Lower contrast colors** that do not meet accessibility thresholds for text are instead applied to decorative or background elements, ensuring they do not interfere with readability.
+
+<img src="docs/figures/color-contrast-checker.webp" alt="Clancy Nook color contrast validation" width="600">
+
+The background color for the website was set to **Cream (#F3EED8)** to provide a warm, neutral base that ensures readability without overwhelming users. **Dark Brown (#3C331C)** was chosen for the primary text color, as it maintains a contrast ratio above 4.5:1 against the cream background, meeting accessibility standards for normal text. This pairing ensures that content remains legible across various devices and lighting conditions.
+
+For key navigational elements and interactive components, **Dark Blue (#2B4A4A)** was selected as the navbar background with **Cream (#F3EED8)** text, ensuring an at least 7:1 contrast ratio, compliant with WCAG AAA standards.
+
+Accent colors were incorporated to highlight interactive elements without sacrificing accessibility:
+
+- **Caramel (#EDC479)** serves as a warm highlight color, providing contrast in call-to-action elements and the footer background.
+- **Light Blue (#7EA5A2)** adds a cooler accent for visual balance, applied in secondary design elements such as cards and form backgrounds.
+
+The final palette was tested using _Chroma Tool_ for deuteranopia (red-green deficiency), protanopia (red blindness), and tritanopia (blue-yellow deficiency). This ensured that all critical UI elements maintained clear visual contrast across different types of color blindness. This commitment to accessibility aligns with WCAG 2.1 best practices, reinforcing readability and usability for a diverse audience.
+
+<img src="docs/figures/color-colorblind-safe-checker.webp" alt="Clancy Nook color contrast validation" width="600">
+
+#### **Typography**
+When designing the Clancy Nook website, I aimed to replicate the original typography used in the Clancy Nook Facebook banner. However, as the exact font was unknown, I turned to _Google Fonts_ to find a close match. After thorough exploration, I selected **IM Fell Double Pica**, a historically inspired serif font that aligns with the brand’s heritage-driven aesthetic.
+
+IM Fell Double Pica offers several advantages:
+
+1. Legibility
+   - Moderate x-height and well-proportioned letterforms improve clarity.
+   - Sufficient spacing between characters enhances readability.
+   - Clear differentiation between characters prevents misinterpretation.
+2. Readability:
+   - Works well for long text passages, maintaining a comfortable reading flow.
+   - Suitable for captions and digital displays, preserving clarity even in smaller sizes.
+3. Visual Fatigue & Adaptability:
+   - While its traditional design can lead to visual fatigue in extensive reading, limiting its use to headings and navigational elements ensures a balanced user experience.
+   - Adaptable across different devices and languages, maintaining legibility and aesthetic appeal.
+
+<img src="docs/figures/im-fell-double-pica.webp" alt="Clancy Nook secondary font for headers" width="600">
+
+This font is exclusively for headings and navigation, and to optimize readability, it is applied in UPPERCASE. This decision was made to reinforce Clancy Nook’s historical aesthetic while ensuring that text remains legible and impactful, providing: 
+
+- Improved Clarity
+- Enhanced Visibility in Navigation
+- Stronger Branding Presence
+
+To complement IM Fell Double Pica’s ornate, old-world feel, I used _FontForge_ to identify a modern, highly readable sans-serif for body text. **Montserrat** was chosen for its clarity, versatility, and strong visual contrast, ensuring seamless readability without detracting from Clancy Nook’s period-inspired branding.
+
+<img src="docs/figures/font-pairing.webp" alt="Clancy Nook font-pairing" width="600">
+
+Montserrat offers several key benefits:
+
+1. **Legibility**
+   - A clean and crisp design ensures clear character differentiation, even at small sizes.
+   - A generous x-height improves clarity, making it easier to distinguish similar letters.
+   - Well-spaced letterforms contribute to optimal readability in diverse text settings.
+3. **Readability**
+   - Works well for long text passages, captions, and digital displays.
+   - Ensures consistent clarity across devices, preventing strain in prolonged reading sessions.
+   - Its modern aesthetic makes it highly effective for both digital and print media.
+4. **Visual Fatigue & Adaptability**
+   - Montserrat’s design minimizes visual fatigue, making it suitable for extensive reading.
+   - Adaptable across various devices, screen resolutions, and languages, ensuring a universal reading experience.
+   - Its multiple font weights allow for hierarchical structuring of content, guiding users seamlessly through the site.
+
+<img src="docs/figures/montserrat.webp" alt="Clancy Nook primary font for text body" width="800">
 
