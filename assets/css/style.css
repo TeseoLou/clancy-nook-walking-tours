@@ -43,7 +43,7 @@ a {
 }
 
 .card {
-    border-radius: none;
+    border-radius: 0;
 }
 
 /* Buttons */
@@ -258,7 +258,7 @@ color: var(--tertiary-color--);
 #tours-call-to-action * {
     font-family: var(--primary-font--);
     font-size: 1.1rem;
-    font-weight: light;
+    font-weight: 300;
     text-transform: none;
 }
 
@@ -363,8 +363,7 @@ color: var(--tertiary-color--);
 
 #review-cards .review-content {
     background-color: rgba(126, 165, 162, .6);
-    border: 2px;
-    border-color: rgba(126, 165, 162, .6);
+    border: 0;
     border-radius: 0;
     padding-left: 10px;
     padding-right: 10px;
@@ -637,7 +636,7 @@ textarea {
 }
 .file-upload-container {
     padding-left: 40px;
-    margin-left: -7x;
+    margin-left: -7px;
 }
 
 /*Media queries*/
