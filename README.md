@@ -1526,12 +1526,33 @@ The development process prioritized core features essential for navigation and s
 #### **Core Features**
 **Navbar**
 
-The navigation bar (navbar) was developed as a persistent, site-wide feature, ensuring users could easily access all key sections of the website.
+The navigation bar (navbar) was developed as a persistent, site-wide feature, ensuring users could easily access all key sections of the website. It is structured using Bootstrap's navbar component, which provides a collapsible menu, a fixed-top layout, and a clear brand identity with the Clancy Nook logo.
 
-- Implemented using Bootstrap's navbar component, allowing for a structured and flexible navigation system.
-- Designed to be fully responsive, with a collapsible menu for smaller screens.
-- Included a brand logo for site identity and a clearly structured menu for seamless navigation.
-- Used JavaScript toggles to enhance interaction for mobile users.
+Structure and Functionality
+- Navbar Layout  
+   - The navbar is built with Bootstrap's navbar-expand-lg class, ensuring it is:
+     - Expanded by default on large screen* for a horizontal layout.
+     - Collapsible into a hamburger menu on smaller devices.
+   - A logo is positioned on the left and linked to the homepage to reinforce brand identity.
+   - Navigation links are organized within an unordered list (ul) and aligned to the right using ms-auto.
+   - The contact button is styled separately for prominence and positioned with d-flex justify-content-end align-items-center.
+- Collapsible Menu
+   - The Bootstrap navbar-toggler button is used to collapse and expand the navigation menu on mobile screens.
+   - When clicked, it reveals the menu options while keeping the layout clean and uncluttered.
+- Enhanced with JavaScript snippet by Code Institute: Boardwalk Games Project
+   - A JavaScript function enhances usability by ensuring smooth scrolling to in-page sections.
+   - The script works by automatically collapsing the navbar after selection, improving usability on mobile devices.
+
+Responsiveness and Styling
+- The fixed-top class ensures the navbar remains visible as users scroll, improving accessibility and ease of navigation.
+- Bootstrap’s dark theme gives the navigation a modern and professional appearance.
+- The custom-styled contact button stands out, ensuring users can quickly access the contact page.
+- Navigation links feature hover effects, enhancing user interaction:
+   - The contact button changes background color on hover, reinforcing its importance.
+   - Other navigation links underline when hovered over, providing a visual cue for users.
+   - The logo changes on hover, simulating a color change effect that enhances brand interactivity and provides a subtle but engaging visual transition.
+- The logo is consistently sized and positioned, contributing to brand recognition across all screen sizes.
+- Media queries in the CSS further refine spacing and alignment for different devices.
 
 <div align="center">
    <img src="docs/images/core-feature-navbar.webp" alt="Navbar" width="300">
@@ -1539,12 +1560,42 @@ The navigation bar (navbar) was developed as a persistent, site-wide feature, en
 
 **Footer**
 
-The footer was implemented across all pages to provide users with consistent access to important information and quick navigation links.
+The footer was implemented across all pages, providing essential contact details, social media links, and quick navigation options. It is designed to be responsive, accessible, and visually consistent with the rest of the website. The footer is structured using Bootstrap’s grid system to ensure flexibility across different screen sizes. 
 
-- Structured using Bootstrap’s grid system for organized layout.
-- Included social media icons for external engagement.
-- Provided quick links to key sections of the site, improving navigation.
-- Designed to be pushed to the bottom of the page, ensuring it remains there when content is minimal.
+Structure and Functionality  
+- Contact Details Section  
+  - The contact information is housed within an article for semantic accuracy.  
+  - It includes a heading to highlight the section’s purpose.  
+  - A brief paragraph provides an introduction to the contact details.  
+  - The direct contact information includes:
+    - A phone number with an icon.  
+    - An email address with an envelope icon.  
+- Social Media Integration  
+  - Social media icons are linked to external platforms using anchor tags with attributes:
+    - target="_blank" ensures links open in a new tab.  
+    - rel="noopener" improves security when opening external links.  
+  - The icons for Instagram, Facebook, and LinkedIn use:
+    - Bootstrap’s column (col-4) layout to distribute icons evenly across the row.  
+  - The entire section is wrapped inside an aside element to indicate secondary content that complements the main page.
+- Website Author Attribution
+  - The website’s copyright information is displayed using:
+    - A paragraph element with the FontAwesome copyright icon.  
+- Mini Navigation Buttons 
+  - A secondary navigation menu is included at the bottom for quick access.  
+  - It is wrapped within a nav element inside #footer-navigation, improving semantic clarity.  
+  - Each button is represented by an icon-only navigation link using anchor tags, which:
+    - Provide quick access to different pages such as Home, About, Tours, Gallery, Reviews, and Contact.  
+    - Are styled with rounded corners and shadows for an elevated button-like effect.
+
+Responsiveness and Styling  
+- Bootstrap’s grid system (row and col-6) ensures that the contact details and social media icons are evenly spaced.
+- Flexbox properties (d-md-flex justify-content-center justify-content-md-between) are used to control alignment across different screen sizes:
+  - On larger screens, content is distributed horizontally.
+  - On smaller screens, elements are stack vertically for a cleaner layout.
+- The mini navigation buttons are styled with shadows (`shadow`) and padding (`p-2`) to create a soft, interactive feel.
+-  Each anchored icon features a hover effect where the background color subtly changes, reinforcing the interactive nature of the navigation.
+
+This footer effectively combines functionality, responsiveness, and aesthetics, providing a structured yet visually appealing way to access key information and navigate the site efficiently.
 
 <div align="center">
    <img src="docs/images/core-feature-footer.webp" alt="Footer" width="300">
