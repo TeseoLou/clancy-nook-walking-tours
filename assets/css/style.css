@@ -132,11 +132,23 @@ footer #direct-contact, footer #socials {
     padding: 0;
 }
 
+/* Footer Navigation - Mobile First */
 #footer-navigation {
-    width: 250px;
-    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px 0;
+    border-radius: 12px;
+    padding: 8px 16px;
+}
+
+/* Navigation Box */
+.footer-nav-box {
+    display: flex;
+    flex-wrap: nowrap; /* Icons in a single row by default */
+    justify-content: center;
+    gap: 12px;
     background-color: var(--primary-color--);
-    border-radius: 2px;
     box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -145,11 +157,18 @@ footer #direct-contact, footer #socials {
     margin-bottom: 1rem;
 }
 
-#footer-navigation .footer-nav-icon {
-    padding: 0 0.5rem;
+/* Footer Icons */
+.footer-nav-box a {
+    text-decoration: none;
 }
 
-#footer-navigation a:hover * {
+.footer-nav-icon {
+    color: var(--tertiary-color--);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.footer-nav-box a:hover .footer-nav-icon {
     transform: scale(1.2);
 }
 
@@ -661,6 +680,12 @@ textarea {
         margin-top: 34px;
         background-color: var(--primary-color--);
         border-radius: 2px;
+    }
+    .footer-nav-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 16px;
+        width: 90px; /* Keeps it compact */
     }
     footer #nav-buttons {
         padding-top: 8px;
