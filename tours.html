@@ -24,7 +24,7 @@
         <div class="container">
             <!--Logo Links to Homepage-->
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.webp" alt="Clancy Nook Logo" id="navbar-logo" class="logo" width="60px" height="60px">
+                <img src="assets/images/logo.webp" alt="Clancy Nook Logo" id="navbar-logo" class="logo" width="60" height="60">
             </a>
             <!--Responsive Navigation Menu using Bootstrap Template-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
@@ -63,19 +63,20 @@
         </section>
     </header>
     <!--Call-to-Action-->
-    <section class="container section">
-        <p id="tours-call-to-action" class="column col-12">
+    <div class="container section">
+        <h3 id="tours-call-to-action" class="column col-12">
         <em>"Join me as we step into the stories that shaped Manchester, walking in the footsteps of those who came before us. 
                 Because history isn’t just something to be learned, it’s something to be felt, experienced, and shared."
-        </em></p>
-    </section>
+        </em></h3>
+    </div>
     <main>
         <!--Booking Guide Section-->
         <section id="booking-guide" class="section">
+            <h2 class="d-none mb-3 text-start">Booking Guide</h2>
             <div class="container">
                 <h2 class="mb-3 text-start">Book Your Tour</h2>
                 <p class="mb-4 text-start">All public tours are pay-what-you-can, with a guide price of £7 per person. Tours are designed for those 14+ years, though parents and guardians are welcome to bring babies along.</p>
-                <section id="booking-info" class="row p-0">
+                <div id="booking-info" class="row p-0">
                     <div class="col-12 col-lg-8">
                         <p class="text-start">Booking is quick and easy through <strong>Eventbrite</strong>:</p>
                         <ol class="mb-4">
@@ -86,14 +87,14 @@
                         </ol>
                     </div>
                     <a id="eventbrite-link" class="nav-link col-12 col-lg-4 d-flex justify-content-center align-items-center pb-4" href="https://www.eventbrite.com/o/clancy-nook-59312701793" target="_blank" aria-label="External link to Clancy Nook Eventbrite booking page">
-                            <img src="assets/images/eventbrite-logo.webp" alt="Orange Eventbrite Logo, leads to Clancy Nook Eventbrite booking page." width="200px">
+                            <img src="assets/images/eventbrite-logo.webp" alt="Orange Eventbrite Logo, leads to Clancy Nook Eventbrite booking page." width="200">
                     </a>
                     <p class="text-start">If you’d like to arrange a <strong>private group tour</strong>, or need assistance with your booking, get in touch via my contact form!</p>
                     <!-- Center contact button on small screens, align right on larger screens -->
                     <div class="col-12 d-flex justify-content-center justify-content-lg-end">
                             <a id="private-booking-contact-button" class="btn custom-button-dark mb-3" href="contact.html">Contact</a>
                     </div>
-                </section>
+                </div>
             </div>
         </section>
         <!--Featured Tours-->
@@ -102,7 +103,7 @@
         <section id="a-tale-of-two-cities" class="container section featured-tours">
             <h2 class="d-flex d-lg-none justify-content-center text-center w-100">A Tale of Two Cities</h2>
             <div class="row">
-                <figure id="tour-1-carousel" class="carousel slide col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel" width="auto" height="auto">
+                <figure id="tour-1-carousel" class="carousel slide col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="assets/images/a-tale-of-two-cities-tour-1.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of St Ann's Square Manchester circa 1900">
@@ -152,7 +153,7 @@
         <section id="true-crime-in-ancoats" class="container section featured-tours">
             <h2 class="d-flex d-lg-none justify-content-center text-center w-100">True Crime in Ancoats</h2>
             <div class="row">
-                <figure id="tour-2-carousel" class="carousel slide order-lg-2 col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel" width="auto" height="auto">
+                <figure id="tour-2-carousel" class="carousel slide order-lg-2 col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="assets/images/true-crime-in-ancoats-tour-1.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of St Georges Avenue Manchester circa 1900">
@@ -202,7 +203,7 @@
         <section id="stories-of-whalley-range" class="container section featured-tours">
             <h2 class="d-flex d-lg-none justify-content-center text-center w-100">Stories of Whalley Range</h2>
             <div class="row">
-                <figure id="tour-3-carousel" class="carousel slide col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel" width="auto" height="auto">
+                <figure id="tour-3-carousel" class="carousel slide col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="assets/images/stories-of-whalley-range-tour-1.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="View of Whalley Hotel 1900">
@@ -252,7 +253,7 @@
         <section id="private-bookings" class="container section featured-tours">
             <h2 class="d-flex d-lg-none justify-content-center text-center w-100">Private Bookings</h2>
             <div class="row">
-                <figure id="tour-4-carousel" class="carousel slide order-lg-2 col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel" width="auto" height="auto">
+                <figure id="tour-4-carousel" class="carousel slide order-lg-2 col-12 col-lg-5 text-center mb-4 align-content-center" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="assets/images/private-bookings-tour-1.webp" class="d-block w-100 pt-lg-5 pt-xl-0" alt="Photograph of Clancy Nook talking to a group on A Tale of Two Cities Tour.">
@@ -290,7 +291,7 @@
     </main>
     <!--Footer Element with Contact Details, Socials and Navigation Buttons-->
     <footer>
-        <section class="container">
+        <div class="container">
             <div class="row d-md-flex justify-content-center justify-content-md-between">
                 <!--Contact Info and Links-->
                 <article id="contact-details" class="col-12 col-md-10 justify-content-center mt-3">
@@ -310,13 +311,13 @@
                                         <div class="col-12 p-0">
                                             <aside id="social-media-icons" class="container ps-0 d-md-block">
                                                 <div class="row d-flex justify-content-around">
-                                                    <a href="https://www.instagram.com/clancy.nook/" class="col-4" target="_blank" rel="noopener" alt="Opens in new tab" aria-label="Pressing this button links to instagram page">
+                                                    <a href="https://www.instagram.com/clancy.nook/" class="col-4" target="_blank" rel="noopener" aria-label="Pressing this button links to instagram page in a new tab">
                                                         <i class="col-4 fa-brands fa-square-instagram fa-xl"></i>
                                                     </a>
-                                                    <a href="https://www.facebook.com/ClancyNook/" class="col-4" target="_blank" rel="noopener" alt="Opens in new tab" aria-label="Pressing this button links to facebook page">
+                                                    <a href="https://www.facebook.com/ClancyNook/" class="col-4" target="_blank" rel="noopener" aria-label="Pressing this button links to facebook page in a new tab">
                                                         <i class="fa-brands fa-square-facebook fa-xl"></i>
                                                     </a>
-                                                    <a href="https://www.linkedin.com/in/clancy-nook-8a6764337/?originalSubdomain=uk" class="col-4" target="_blank" rel="noopener" alt="Opens in new tab" aria-label="Pressing this button links to linkedin page">
+                                                    <a href="https://www.linkedin.com/in/clancy-nook-8a6764337/?originalSubdomain=uk" class="col-4" target="_blank" rel="noopener" aria-label="Pressing this button links to linkedin page in a new tab">
                                                         <i class="col-4 fa-brands fa-linkedin fa-xl"></i>
                                                     </a>
                                                 </div>
@@ -352,9 +353,9 @@
                             <i class="fa-solid fa-message footer-nav-icon"></i>
                         </a>
                     </nav>
-                </div> 
+                </div>                              
             </div>
-        </section> 
+        </div>
     </footer>
     <!--Bootstrap 5 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

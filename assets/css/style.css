@@ -212,6 +212,7 @@ color: var(--tertiary-color--);
 #call-to-action {
     /* Final rgba valye sets the opacity so it is semi-transparent */
     background-color: rgba(237, 196, 121, .75); /*Transparent call-to-action element for readibility but visible hero image (inspired by Love Running Project)*/
+
     position: absolute;
     top: 25%;
     width: 70%;
@@ -255,8 +256,10 @@ color: var(--tertiary-color--);
 }
 
 #tours-call-to-action * {
+    font-family: var(--primary-font--);
     font-size: 1.1rem;
     font-weight: light;
+    text-transform: none;
 }
 
 /*Booking Guide Section*/

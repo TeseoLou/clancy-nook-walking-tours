@@ -24,7 +24,7 @@
         <div class="container">
             <!--Logo Links to Homepage-->
             <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.webp" alt="Clancy Nook Logo" id="navbar-logo" class="logo" width="60px" height="60px">
+                <img src="assets/images/logo.webp" alt="Clancy Nook Logo" id="navbar-logo" class="logo" width="60" height="60">
             </a>
             <!--Responsive Navigation Menu using Bootstrap Template-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Navigation">
@@ -55,11 +55,9 @@
             </div>
         </div>
     </nav>
-    <header class="d-none">
-        <h2>Gallery</h2>
-    </header>
     <main id="gallery">
         <section class="d-block d-sm-none" id="photos">
+            <h2 class="d-none">Gallery</h2>
             <img src="assets/images/image-gallery-photo-01.webp" alt="A group posing for a selfie with Clancy Nook in front of an ornate historic building with a curved balcony.">
             <img src="assets/images/image-gallery-photo-02.webp" alt="Clancy Nook speaks to a group in front of a colorful graffiti wall.">
             <img src="assets/images/image-gallery-photo-03.webp" alt="Clancy Nook speaks to a small group inside a grand historic building with tall columns.">
@@ -74,6 +72,7 @@
             <img src="assets/images/image-gallery-photo-12.webp" alt="A historic brick mill building alongside a canal, with a bridge in the foreground under a clear blue sky.">
         </section>
         <section class="container g-0 d-none d-sm-block d-lg-none" id="#photos-medium">
+            <h2 class="d-none">Gallery</h2>
             <div class="row g-0 align-items-stretch">
                 <div class="col-6 m-0 p-0">
                     <img src="assets/images/image-gallery-photo-01.webp" alt="A group posing for a selfie in front of an ornate historic building with a curved balcony." class="img-fluid h-100 w-100 object-fit-cover">
@@ -114,6 +113,7 @@
             </div>
         </section>
         <section class="container g-0 d-none d-lg-block" id="photos-large">
+            <h2 class="d-none">Gallery</h2>
             <div class="row align-items-stretch">
                 <div class="col-4 p-0">
                     <img src="assets/images/image-gallery-photo-01.webp" alt="A group posing for a selfie in front of an ornate historic building with a curved balcony." class="img-fluid h-100 w-100 object-fit-cover">
@@ -154,7 +154,7 @@
     </main>
     <!--Footer Element with Contact Details, Socials and Navigation Buttons-->
     <footer>
-        <section class="container">
+        <div class="container">
             <div class="row d-md-flex justify-content-center justify-content-md-between">
                 <!--Contact Info and Links-->
                 <article id="contact-details" class="col-12 col-md-10 justify-content-center mt-3">
@@ -174,13 +174,13 @@
                                         <div class="col-12 p-0">
                                             <aside id="social-media-icons" class="container ps-0 d-md-block">
                                                 <div class="row d-flex justify-content-around">
-                                                    <a href="https://www.instagram.com/clancy.nook/" class="col-4" target="_blank" rel="noopener" alt="Opens in new tab" aria-label="Pressing this button links to instagram page">
+                                                    <a href="https://www.instagram.com/clancy.nook/" class="col-4" target="_blank" rel="noopener" aria-label="Pressing this button links to instagram page in a new tab">
                                                         <i class="col-4 fa-brands fa-square-instagram fa-xl"></i>
                                                     </a>
-                                                    <a href="https://www.facebook.com/ClancyNook/" class="col-4" target="_blank" rel="noopener" alt="Opens in new tab" aria-label="Pressing this button links to facebook page">
+                                                    <a href="https://www.facebook.com/ClancyNook/" class="col-4" target="_blank" rel="noopener" aria-label="Pressing this button links to facebook page in a new tab">
                                                         <i class="fa-brands fa-square-facebook fa-xl"></i>
                                                     </a>
-                                                    <a href="https://www.linkedin.com/in/clancy-nook-8a6764337/?originalSubdomain=uk" class="col-4" target="_blank" rel="noopener" alt="Opens in new tab" aria-label="Pressing this button links to linkedin page">
+                                                    <a href="https://www.linkedin.com/in/clancy-nook-8a6764337/?originalSubdomain=uk" class="col-4" target="_blank" rel="noopener" aria-label="Pressing this button links to linkedin page in a new tab">
                                                         <i class="col-4 fa-brands fa-linkedin fa-xl"></i>
                                                     </a>
                                                 </div>
@@ -216,9 +216,9 @@
                             <i class="fa-solid fa-message footer-nav-icon"></i>
                         </a>
                     </nav>
-                </div> 
+                </div>                              
             </div>
-        </section> 
+        </div>
     </footer>
     <!--Bootstrap 5 JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
