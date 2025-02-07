@@ -1660,7 +1660,9 @@ The Tour Overview Section serves as an introduction to the service, so users can
 <details>
 <summary>Additional Information</summary>
 <br>
-Reponsiveness:
+
+Responsiveness:
+
 - Bootstrap Grid Classes for Adaptability
    - col-12: Ensures that each card takes up the full width on small screens, stacking vertically.  
    - col-md-6: On medium screens, two cards are displayed per row, making better use of available space.  
