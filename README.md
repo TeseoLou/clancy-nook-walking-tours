@@ -2052,13 +2052,13 @@ Responsiveness and Styling
 - Large Screens (Desktops) – d-none d-lg-block  
    - A multi-row and multi-column layout, allowing for a more expansive gallery view.  
 - Image Sizing and Positioning  
-   - The `g-0` and `p-0` classes remove unwanted spacing, ensuring that images appear seamlessly aligned.  
-   - The `img-fluid` class is applied to each `<img>` tag, making images scale dynamically within their containers.  
-   - The `object-fit-cover` property ensures images maintain aspect ratios without distortion.  
+   - Setting gutter and padding to 0 removed unwanted spacing, ensuring that images appear seamlessly aligned.  
+   - The img-fluid class was applied to each img tag, making images scale dynamically within their containers.  
+   - The object-fit-cover property ensures images maintain aspect ratios without distortion.  
    - The gallery is grid-based, ensuring a balanced visual hierarchy.  
    - Larger images are strategically placed to emphasize key moments, such as group shots or historic buildings.  
    - Smaller images are interwoven to create variety while maintaining alignment.
-   - `img-fluid` and `object-fit-cover` ensure images remain properly scaled and cropped.  
+   - img-fluid and object-fit-cover ensure images remain properly scaled and cropped.  
    - Horizontal and vertical images are consistently cropped to maintain a visually balanced layout.   
 - Contrast and Background Integration  
    - The gallery’s background is neutral, allowing the images to stand out.  
@@ -2109,7 +2109,6 @@ Responsiveness and Styling
 
 **Review Guidance Section**
 
-### Review Guide  
 Structure and Functionality
 - The review guide is wrapped in section id="review-guide", ensuring semantic grouping within the webpage.  
 - A div class="container" maintains structured content placement.  
