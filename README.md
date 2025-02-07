@@ -11,26 +11,29 @@ _Project Milestone 1_
 ##### i. [Project Criteria](#project-criteria)
 ##### ii. [Web Developer Showcase](#web-developer-showcase)
 ##### iii. [Key Goals](#web-developer-showcase)
-### 2. [Introduction](#introduction)
-### 3. [User Experience (UX)](#user-experience-ux)
+### 2. [User Experience (UX)](#user-experience-ux)
 #### i. [Strategy](#strategy)
 #### ii. [Scope](#scope)
 #### iii. [Structure](#structure)
 #### iv. [Skeleton](#skeleton)
 #### v. [Surface](#surface)
-### 4. [Development](#development-process)
+### 3. [Development](#development)
 #### i. [Approach](#approach)
 #### ii. [Features](#features)
 #### iii. [Technologies Used](#technologies-used)
 #### iv. [Bugs](#bugs)
-### 6. [Testing](#testing)
-### 7. [Deployment](#deployment)
-### 9. [Acknowledgements](#acknowledgements)
+### 4. [Testing](#testing)
+### 5. [Deployment](#deployment)
+### 6. [Acknowledgements](#acknowledgements)
+
+---
 
 ## **Site Overview** 
 This Website is a responsive, user-focused website designed for **Clancy Nook**, an experienced tour guide offering historic walking tours around Manchester. This project is developed as part of **Project Milestone 1** for the Code Institute's **Full Stack Web Development program**. The website aims to provide a central hub for tour information, booking, and reviews.
 
-Visit the deployed site on github [here](https://teseolou.github.io/clancy-nook-walking-tours/index.html).
+Visit the deployed site on GitHub [here](https://teseolou.github.io/clancy-nook-walking-tours/index.html).
+
+---
 
 ### **Project Criteria**
 This project is designed to meet the following key requirements:
@@ -38,8 +41,10 @@ This project is designed to meet the following key requirements:
 2. Incorporate **HTML5** and **CSS3** technologies to structure and style the site.
 3. Include a **main navigation menu** for intuitive user experience and **responsive design** for different device sizes.
 4. Use **semantic markup** and **accessible design principles** to ensure inclusivity.
-5. Provide **clear, user-focused content** that fulfills both user and business goals.
+5. Provide **clear, user-focused content** that fulfils both user and business goals.
 6. Host the project on **GitHub Pages**, with version control via Git and complete documentation in a this README.md file.
+
+---
 
 ### **Web Developer Showcase**
 As a developer in training, this project aims to demonstrate:
@@ -52,18 +57,22 @@ As a developer in training, this project aims to demonstrate:
 7. Use of **validation tools** (e.g., W3C HTML and CSS Validator) to confirm compliance with modern web standards.
 8. Implement **performance analytics tools** such as Lighthouse to optimise the site's performance, accessibility, and adherence to best practices.
 
+---
+
 ### **Key Goals**
 The **Clancy Nook** project focuses on achieving the following:
 1. Offer an intuitive, engaging platform for tourists, locals, corporate and community clients to learn about and book walking tours.
 2. Showcase Clancy Nook's expertise and services offered.
 3. Build a professional online presence for Clancy Nook.
 
-## **Introduction**
+---
 
 ## **User Experience (UX)**
 User experience (UX) design focuses on creating meaningful, efficient, and enjoyable interactions between users and a product or service. For a website, this means designing a platform that meets users’ needs while providing an intuitive and visually appealing interface. 
 
 Prioritising user experience is essential to ensuring that visitors can easily navigate the site, achieve their goals, and enjoy the process. This philosophy is particularly relevant to the Clancy Nook website, where the goal is to cater to a diverse audience of locals, tourists, and corporate clients.
+
+---
 
 ### **Strategy**
 The **Strategy Plane** in UX design forms the foundation of any project by aligning business goals with user needs. It addresses fundamental questions about what the website aims to achieve and how it delivers value to its users. 
@@ -72,12 +81,16 @@ For Clancy Nook, this meant not only creating an online presence but also ensuri
 
 By starting with the strategy, the project focused on identifying key objectives—such as enhancing visibility, streamlining booking processes, and showcasing the unique value of the tours—and balancing these with the needs of diverse user groups like tourists, locals, and corporate clients. This foundational step ensured that every feature and design element served a clear purpose, meeting both user expectations and business ambitions.
 
+---
+
 #### **Initial Discussion**
 The development process for the Clancy Nook website began with an in-depth meeting with the client, Louis Cane. During this discussion, we explored key aspects of the business, including:
 - The primary goals for the business and the website.
 - Insights into Clancy Nook’s current operations, including its use of Linktree, TripAdvisor,  and Eventbrite.
 - Current clientele and future clientele.
 - Future Goals to expand the business by attracting more corporate clients and building partnerships with community organisations. 
+
+---
 
 #### **Business Goals**
 The following business goals were established for the Clancy Nook website during the initial discussion phase. These goals emerged from a collaborative dialogue with the client, focusing on both immediate needs and aspirations for the future. While some goals centered on creating a strong digital presence and improving user experience, others reflected long-term ambitions, such as attracting corporate clients and collaborating with local communities.
@@ -116,6 +129,8 @@ Foster connections with local communities by offering concession rates or free t
 
 Goals 6 and 7, while not central to the website's initial development, represent aspirational objectives for the business’s growth and social impact. By planting the seeds for these initiatives now, the site can evolve over time to accommodate these long-term ambitions.
 
+---
+
 #### **User Demographics**
 Understanding attends and books Clancy Nook tours establishes clear user demographics, which permitted the identification of key user groups, their needs, and their motivations. These in turn informed the development of tailored user stories and features for the website. By analysing the clientele and tour attendance patterns, we could align the website's functionality and content with the expectations of the target audience. This ensured that every feature and piece of information on the site would resonate with its users and provide maximum value.
 
@@ -133,6 +148,8 @@ The demographics were broken down by tour type to account for the unique audienc
 - **Ancoats Tour:**
   - **80-90% from the Wider Manchester Region:** Predominantly history enthusiasts who appreciate the industrial heritage of Ancoats.
   - **Currently Lacking Local Attendance:** Attracting Ancoats locals remains a growth area and a goal for the tour guide.
+
+---
 
 #### **Target Audiences**
 
@@ -155,6 +172,8 @@ The insights gathered from the demographic analysis and business goals allowed u
 
 6. **Community Leaders (Non-profits/Schools) - Prospective Customers:**  
    Organisations looking to collaborate with Clancy Nook for concession-priced or free educational tours tailored to their needs.
+
+---
 
 #### **User Stories** 
 For this project, user stories developed capture the diverse needs of Clancy Nook’s target audience, ensuring the website provides a user-centric experience. The creation of user stories helped define what different user groups—such as locals, tourists, corporate clients, and returning users—expect from the website. These stories bridge the gap between user needs and the technical development process, ensuring every feature contributes to a positive user experience and serve as a roadmap for development and guiding design decisions. 
@@ -194,6 +213,8 @@ Could-Have
 
 By creating and prioritising these user stories, the website ensures a structured, user-focused development process that delivers meaningful value to both users and the business.
 
+---
+
 #### **Emerging Website Components**
 The analysis of user needs and expectations highlighted several critical components that would form the foundation of the Clancy Nook website. These components were designed to address the goals of both the business and its diverse user base, ensuring a user-friendly, informative, and engaging experience. Below are the core website components that emerged during the planning phase:
 1. **About Section**  
@@ -225,6 +246,8 @@ The analysis of user needs and expectations highlighted several critical compone
 
 10. **Supplementary Media**  
     Supplementary resources, such as downloadable PDFs or brochures for corporate and private tours, provide businesses with shareable materials to aid in internal planning. Additionally, audio or video snippets of the guide’s storytelling offer a unique preview of the experience for prospective customers, enticing them to book a tour.
+
+---
 
 #### **Importance/Feasibility**
 The Importance/Feasibility analysis evaluates each website component based on two criteria: importance and feasibility. Importance refers to how critical the component is to achieving the business goals and addressing user needs outlined in the user stories. Feasibility, on the other hand, assesses the practicality of implementing the component within the project's constraints (e.g., timeline, resources, and technical expertise).
@@ -263,17 +286,23 @@ Graph Insights:
 
 - **Low Importance & Low Feasibility**: Features like **Supplementary Media**, including brochures and audio snippets, rank lower in priority. While they could enhance the user experience, they are considered optional for the project's minimal viable product (MVP).
 
+---
+
 #### **Project Planning**
 This analysis directly informs project planning by providing a clear roadmap for prioritising features during development. Using the _GitHub Projects Board_ [here](https://github.com/users/TeseoLou/projects/3/views/2), I can allocate tasks based on importance and feasibility, ensuring high-priority components are delivered first. This approach aligns with the concept of a **Minimal Viable Product (MVP)**.
 
 The **Scope Plane** in UX design also comes into play here, ensuring that the identified components fit within the project's constraints while still delivering a meaningful experience. By focusing on features in the high-importance/high-feasibility quadrant and working down, the project remains achievable without sacrificing value.
 
+---
+
 ### **Scope**
-The Scope Plane in UX design addresses the functional and content requirements necessary to fulfill the strategic objectives outlined in the Strategy Plane. While the Strategy Plane defines _why_ the project exists and _who_ it serves, the Scope Plane determines _what_ the website needs to achieve those goals.
+The Scope Plane in UX design addresses the functional and content requirements necessary to fulfil the strategic objectives outlined in the Strategy Plane. While the Strategy Plane defines _why_ the project exists and _who_ it serves, the Scope Plane determines _what_ the website needs to achieve those goals.
 
 The Scope Plane encompasses both **functional requirements** (features and interactivity) and **content requirements** (information and media). These elements work together to deliver a seamless user experience that meets user needs and supports the business objectives. By focusing on the scope early in the process, developers can outline a clear plan that ensures every feature or piece of content serves a defined purpose, avoiding feature creep or misaligned priorities.
 
 For the Clancy Nook website, the Scope Plane is essential to identifying the core features of the website by establishing what functional and content requirements will enable the project to meet its business goals and user needs effectively. The _Components_, _User Stories_, and _Business Goals_ presenting previously play a crucial role in defining and prioritising these requirements, ensuring the project remains focused and aligned with its objectives.
+
+---
 
 #### **Deriving Requirements**
 Through this analysis, it becomes evident that the components summarise the essential requirements for the website in terms of what must be achieved to deliver value to both users and the business. These requirements naturally prioritise themselves into three categories: must-have, should-have, and could-have requirements.
@@ -299,8 +328,10 @@ Should-Have
 Could-Have
 - Provide Supplementary Media
 
+---
+
 #### **Functional Requirements**
-Functional requirements define the features and behaviors a website must have to meet user and business goals. In UX design and development, they ensure the website functions as intended, allowing users to navigate, submit forms, and access information easily. During development, these requirements act as a blueprint, helping prioritise tasks and allocate resources, ensuring the site fulfills its purpose, from booking tours to sharing reviews effectively.
+Functional requirements define the features and behaviors a website must have to meet user and business goals. In UX design and development, they ensure the website functions as intended, allowing users to navigate, submit forms, and access information easily. During development, these requirements act as a blueprint, helping prioritise tasks and allocate resources, ensuring the site fulfils its purpose, from booking tours to sharing reviews effectively.
 
 To determine which project requirements have functional requisites, we need to review the user stories, business goals, and UX components. I have categorise functional requirements based on their scope and application:
 - **Macro Functions:** Apply universally across the entire website (e.g., responsive navigation, accessibility).
@@ -338,8 +369,10 @@ Could-Have
   - Features for private bookings, e.g., pre-filled forms.
   - Playable media e.g., media snippets of guide or tour previews.
 
+---
+
 #### **Content Requirements**
-Content requirements are the textual, visual, and aesthetic elements a website needs to meet user needs and fulfill its purpose. They translate the website's strategy and scope into tangible components that align with business goals and user stories.
+Content requirements are the textual, visual, and aesthetic elements a website needs to meet user needs and fulfil its purpose. They translate the website's strategy and scope into tangible components that align with business goals and user stories.
 
 For Clancy Nook, content requirements provide the _what_ and _how_, filling the website's framework and ensuring users can access relevant materials like tour information, imagery, and branding elements, directly enhancing the site's usability and overall user experience (UX).
 
@@ -382,6 +415,8 @@ Could-Have
 - **Textual**:
    - Downloadable brochures
 
+---
+
 #### **Core Features**
 Core Features outline the key parts integrated into the Clancy Nook website to ensure it meets both user and business goals. These features stem from the previously defined strategy and scope, helping prioritise functionality and content into deliverables.
 
@@ -420,10 +455,14 @@ Explanation of Colors: <br>
 🟡 **Should-Have (Yellow)** → Important enhancements but not vital for MVP <br>
 🟢 **Could-Have (Green)** → Nice-to-have features 
 
-#### **Project Plannning**
+---
+
+#### **Project Planning**
 The work in this section has been instrumental in establishing clear acceptance criteria and actionable tasks, which are tracked on my GitHub Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2). This process ensures a focused and efficient approach to meeting user needs and business goals.
 
 In organising and classifying features, I’ve also laid the groundwork for the website’s structure. This strategic planning naturally transitions into the **Structure Plane**, where the flow of information and navigation will align with the core features defined here, ensuring a seamless user experience.
+
+---
 
 ### **Structure**
 The **Structure Plane** in User Experience (UX) design focuses on how the information within the project is organised and how the users will interact with that information. It bridges the gap between the abstract elements of the strategy and scope and the more concrete aspects of the user interface, defining how the users will experience the navigation and interaction with the website.
@@ -431,6 +470,8 @@ The **Structure Plane** in User Experience (UX) design focuses on how the inform
 The Structure Plane encompasses navigation, which demands a clear and consistent navigation scheme that reflects the importance and relationships of different core features. Additionally, interaction design is essential in defining how users will interact with the website’s interface. This involves deciding on interaction models, selecting appropriate UI elements such as buttons, forms, and sliders, and designing feedback mechanisms that inform users of the system's responses to their actions. Furthermore, developing an effective information architecture is crucial. This includes organising the website content in a logical manner for the target audience and may involve techniques like card sorting to involve users in the organisation process.
 
 For Clancy Nook, this section sets the framework for organising the content and functionality in a way that is intuitive and user-friendly. Key considerations including mapping out the user flow to cover the user stories and ensure that the navigation structure supports these journeys. Maintaining consistent patterns in layout and design is also vital in promoting instinctual navigation through the site as well as sticking to best practice. Furthermore, ensuring that the structure accommodates differently abled users, such as ensuring semantic elements are appropriate and aria-labels are descriptive will ensure screen reader compatibility. 
+
+---
 
 #### **_MoSCoW_ Prioritisation**
 So far in this project,  prioritising effectively according to business goals, user needs, and developer capabilities has been crucial. With the project scoped to develop a fully functional front-end site within a specific timeframe, continuously reevaluating priorities and core components ensures timely deployment while balancing essential and additional features.
@@ -474,6 +515,8 @@ Explanation of Colors: <br>
 - 🟡 **Should-Have (Yellow)** → Important enhancements but not vital for MVP <br>
 - 🟢 **Could-Have (Green)** → Nice-to-have features <br>
 - 🔵 **Won’t-Have (Blue)** → Not feasible for this phase due to scope/time constraints  
+
+---
 
 #### **Site Hierarchy**
 
@@ -567,6 +610,8 @@ The Success Page and 404 Page will exist as functional pages but will not appear
 
 Web designers follow established principles when creating site hierarchy to ensure a seamless experience:
 
+---
+
 #### **Navigation**
 Effective navigation is fundamental to user experience (UX) design, ensuring users can explore the website intuitively while being guided toward key actions. Standard navigation best practices emphasise clarity, consistency, and accessibility, making it easy for users to find what they need while supporting the business’s objectives.
 
@@ -613,6 +658,8 @@ This diagram illustrates the navigation of the Clancy Nook website, showing how 
    <img src="docs/figures/navigation.webp" alt="Diagram of the Clancy Nook website navigation design" width="700">
 </div>
 
+---
+
 #### **User Interaction (UI)**
 Interaction design plays a crucial role in shaping how users engage with the website’s interface. It involves determining effective interaction models, selecting suitable UI elements like buttons, forms, and sliders, and implementing feedback mechanisms that provide users with clear responses to their actions. The goal is to create an intuitive and engaging experience that aligns with user expectations and business objectives.
 
@@ -633,8 +680,12 @@ The Clancy Nook project applies these best practices while considering previous 
 5. Error handling mechanisms (such as the 404 page) prevent dead ends, guiding users back to relevant content.
 6. A success page confirms user actions, ensuring clarity after a form submission.
 
+---
+
 #### Navbar
 This is a crucial aspect of user experience, ensuring that users can simply move between different sections of the website. By providing a **sticky** navigation bar that remains at the top of the screen as users scroll. This ensures that users can quickly access key pages without needing to scroll back to the top, improving usability and accessibility. 
+
+---
 
 #### Navicons
 A **fixed** footer will remain at the bottom of the page, providing additional navigation buttons for quick access to key areas and social media pages.
@@ -650,6 +701,8 @@ Each button will have a corresponding call-to-action, encouraging users to take 
 
 "Logo" buttons for _Eventbrite_ and _TripAdvisor_ will be placed on the Tours and Reviews pages, respectively. These buttons provide direct access to Eventbrite for booking tours and TripAdvisor for reading and submitting reviews, ensuring a seamless transition to these external platforms.
 
+---
+
 #### Clickable Tour Cards
 Another interactive feature designed to enhance user engagement is the clickable tour cards on the homepage. These cards provide a brief summary of each featured tour, giving users an overview of the available experiences. To encourage interaction, users will be able to click on a card, which will take them directly to the corresponding tour section on the Tours page. This will include:
 
@@ -659,6 +712,8 @@ Another interactive feature designed to enhance user engagement is the clickable
 <div align="center">
    <img src="docs/figures/user-interaction-tour-cards.webp" alt="Wireframe of four tour cards displaying tour names and descriptions. One card is highlighted with a shadow effect and a cursor hovering over it, indicating an interactive hover state." width="700">
 </div>
+
+---
 
 #### Image Carousel
 To enhance the user experience on the Tours pages, image carousels will be implemented, allowing users to easily browse through historic photos of landmarks featured on the tours. These interactive elements provide a dynamic visual preview of the experiences offered, helping potential customers make informed decisions. To balance convenience with interactivity, each carousel will include:
@@ -670,6 +725,8 @@ To enhance the user experience on the Tours pages, image carousels will be imple
 <div align="center">
    <img src="docs/figures/user-interaction-carousel.webp" alt="Wireframe of an image carousel with previous and next buttons." width="700">
 </div>
+
+---
 
 #### Form Fields
 The contact form provides a simple and accessible way for users to ask questions or make inquiries. To improve usability and streamline interactions, several design choices enhance the user experience.
@@ -687,8 +744,10 @@ The contact form provides a simple and accessible way for users to ask questions
    <img src="docs/figures/user-interaction-form.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="500">
 </div>
 
+---
+
 #### **Information Architecture (IA)**
-The structuring, organisation, and labeling of website content ensures users can easily navigate and find relevant information. This critical aspect of user experience (UX) design, influences how content is grouped, connected, and accessed.
+The structuring, organisation, and labelling of website content ensures users can easily navigate and find relevant information. This critical aspect of user experience (UX) design, influences how content is grouped, connected, and accessed.
 
 When designing a website's information architecture, several key principles are considered to ensure an intuitive and user-friendly experience:
 
@@ -704,8 +763,9 @@ This diagram visualizes information architecture for the site as well as the the
    <img src="docs/figures/information-architecture.webp" alt="Wireframe of a contact form with conditional fields in three different states." width="700">
 </div>
 
+---
+
 #### Core Pages & Sections
-The website is divided into five main pages, each containing sections and interactive elements that contribute to an efficient user journey:
 1. Homepage:
    - Serves as the entry point and provides a structured overview of Clancy Nook’s offerings.
    - Contains the About section and a Featured Tours section, which links directly to detailed tour pages.
@@ -722,24 +782,28 @@ The website is divided into five main pages, each containing sections and intera
    - Provides direct access for inquiries.
    - Features a Contact Form with interactive fields and submission validation.
 
+---
+
 #### Supporting Functional Pages
-Some pages serve a functional purpose within the user journey, ensuring smooth interactions and error recovery:
 1. 404 Error Page:
    - Prevents frustration by guiding users back to the homepage or relevant sections.
 2. Success Page:
    - Confirms form submissions and provides next-step options.
 
+---
+
 #### Navigation & Linking
-Navigation has been structured to ensure efficiency and clarity:
 1. Primary navigation:
    - Sticky navbar provides constant access to key pages.
 2. Secondary navigation:
-   - Fixed footer provides additionall access to key pages.
+   - Fixed footer provides additional access to key pages.
 3. Internal linking:
    - Featured tours on the homepage link to corresponding tour sections.
 4. External linking: 
    - Eventbrite and TripAdvisor buttons direct users to booking and review platforms.
    - Fixed footer contains links to instagram, facebook and linkedin. 
+
+---
 
 #### **Project Planning**
 The work in this section has been vital in outlining the website’s structural foundation, ensuring that navigation, interaction, and information architecture align with user expectations and business objectives. These insights have directly have provided critical building blocks for designing the layout, logical flow, and connections between core features, refining the user journey.
@@ -748,16 +812,20 @@ All key structural decisions have been translated into actionable development ta
 
 By finalising the structure, I have created a clear roadmap for the next stages of development, seamlessly transitioning into the **Skeleton Plane**. This phase will focus on the site's layout.
 
+---
+
 ### **Skeleton**
 The Skeleton Plane in UX design builds upon the Structure Plane, refining the foundational layout into a tangible, user-friendly interface. While the Structure Plane established how the website’s content and navigation are organized, the Skeleton Plane focuses on how users interact with these elements, ensuring a seamless and intuitive experience. This includes defining how navigation, interactive features, and responsiveness contribute to a fluid user journey.
 
-**Navigation design** was introduced in the Structure Plane to establish a clear hierarchy and logical content flow. In the Skeleton Plane, this concept is further refined into visual and interactive navigation elements that guide users efficiently through the site.
+Navigation design was introduced in the Structure Plane to establish a clear hierarchy and logical content flow. In the Skeleton Plane, this concept is further refined into visual and interactive navigation elements that guide users efficiently through the site.
 
 The Skeleton Plane introduces three aspects of user experience:
 
 1. **Interface Design**: Determines the placement of buttons, forms, images, and interactive elements, ensuring they are intuitive and user-friendly.
 2. **Information Design**: Focuses on how content is structured and displayed, ensuring readability, accessibility, and logical progression of information.
 3. **Responsiveness**: Ensures that the layout, interactive components, and navigation adapt fluidly across mobile, tablet, and desktop devices, providing a consistent and accessible experience regardless of screen size.
+
+---
 
 #### **Navigation Design**
 A well-designed navigation system enhances usability and supports business objectives by guiding visitors toward key actions. In the Skeleton Plane, navigation design is an extension of the structural foundation laid out in the previous phase. While the Structure Plane defined how content is organised and how different sections relate to one another, the Skeleton Plane determines how users see that structure.
@@ -780,6 +848,8 @@ The Clancy Nook website’s navigation follows a hierarchical order that aligns 
 4. **Gallery** & **Reviews** (How Good is the Service?) – Allowing users to see testimonials and images from past tours to build trust.
 5. **Contact** (Next Steps – Booking, Inquiry, or Review Submission) – Providing a clear action point to either book a tour, submit a review, or ask a question.
 
+---
+
 #### Navbar
 The primary navigation bar (shown in the wireframe) follows these principles by presenting the most relevant pages in a structured and easy-to-scan format. Key design choices include:
 
@@ -791,6 +861,8 @@ The primary navigation bar (shown in the wireframe) follows these principles by 
 <div align="center">
    <img src="docs/figures/user-interaction-navbar.webp" alt="Navigation bar design for the Clancy Nook website, displaying menu options" width="700">
 </div>
+
+---
 
 #### Footer Navigation
 In addition to the primary navbar, the footer navigation serves as a secondary means of guiding users through the site. To maintain simplicity and user familiarity, icons have been carefully chosen based on widely recognized symbols that users instinctively associate with their functions.  
@@ -807,6 +879,8 @@ To enhance usability, the icons and navigation links in the footer will feature 
 <div align="center">
    <img src="docs/figures/user-interaction-footer.webp" alt="Website footer mockup featuring, social media icons and a small navigation menu with icons." width="700">
 </div>
+
+---
 
 #### Access Points & Interactive Elements  
 Navigation extends beyond menus—buttons serve as additional access points, ensuring smooth user interactions. These elements are **strategically placed** across the site to align with user intent and facilitate seamless movement between pages and actions.  
@@ -830,6 +904,8 @@ Navigation extends beyond menus—buttons serve as additional access points, ens
 
 These buttons feature a **color change on hover**, reinforcing interactivity and indicating that they are clickable.  
 
+---
+
 #### **Interface and Information Design**
 Interface design and information design are key components of the Skeleton Plane in UX, transforming abstract structural decisions into tangible, user-friendly elements.
 
@@ -841,6 +917,8 @@ Both interface and information design work together to create a seamless user ex
 The Clancy Nook wireframes follow a mobile-first design approach, prioritizing smaller screens before scaling up to desktop layouts. This ensures optimal usability on smartphones and tablets, where most users will likely access the site.
 
 The wireframes illustrate key interface and information design principles, with a consistent navbar and footer for smooth navigation across all pages, clear sectioning of content, guiding users through an intuitive journey and accessible call-to-actions ensuring easy engagement with tour information, booking links, and reviews.
+
+---
 
 #### Homepage
 The homepage introduces Clancy Nook and serves as the central hub for user exploration. The design follows a logical user flow, moving from general information to specific actions:
@@ -854,6 +932,8 @@ The homepage introduces Clancy Nook and serves as the central hub for user explo
    <img src="docs/figures/ii-design-homepage.webp" alt="Homepage Wireframe" width="150">
 </div>
 
+---
+
 #### Tours Page
 The Tours page expands on available experiences, following an information hierarchy that aligns with user expectations:
 
@@ -865,6 +945,8 @@ The Tours page expands on available experiences, following an information hierar
    <img src="docs/figures/ii-design-tours-page.webp" alt="Torus Page Wireframe" width="150">
 </div>
 
+---
+
 #### Gallery Page
 A visually rich section, the Gallery Page utilizes a grid layout to showcase previous tours.
 
@@ -874,6 +956,8 @@ A visually rich section, the Gallery Page utilizes a grid layout to showcase pre
 <div align="center">
    <img src="docs/figures/ii-design-gallery.webp" alt="Gallery Page Wireframe" width="150">
 </div>
+
+---
 
 #### Reviews Page
 User-generated content plays a key role in building trust. The Reviews page is designed with:
@@ -886,15 +970,19 @@ User-generated content plays a key role in building trust. The Reviews page is d
    <img src="docs/figures/ii-design-reviews.webp" alt="Reviews Page Wireframe" width="150">
 </div>
 
+---
+
 #### Contact Page
 This page simplifies communication, ensuring users can reach out effortlessly.
 
-- A structured contact form with labeled fields maintains clarity.
+- A structured contact form with labelled fields maintains clarity.
 - Dropdowns and radio buttons streamline form completion.
 
 <div align="center">
    <img src="docs/figures/ii-design-contact.webp" alt="Contact Page Wireframe" width="150">
 </div>
+
+---
 
 #### Success Page & 404 Page
 These pages enhance the user journey and error recovery:
@@ -916,7 +1004,9 @@ A key principle in interface and information design is ensuring consistency acro
 - Consistency Across the Interface
    - The navigation bar and footer remain persistent across all pages, ensuring users always have access to primary actions regardless of their location on the site.
    - Typography, spacing, and button styling follow a uniform design system, reinforcing brand identity and usability.
-   - Forms and CTAs maintain a consistent design language, with structured layouts, clear labeling, and predictable placements to enhance intuitive interactions.
+   - Forms and CTAs maintain a consistent design language, with structured layouts, clear labelling, and predictable placements to enhance intuitive interactions.
+
+---
 
 #### **Responsiveness**
 Responsiveness is a fundamental aspect of modern web design, ensuring that websites function seamlessly across various screen sizes and devices. A responsive design dynamically adapts to different viewports, maintaining usability and accessibility without compromising the user experience. The Clancy Nook website follows a mobile-first approach, progressively enhancing features for larger screens while ensuring optimal performance on smaller devices.
@@ -929,7 +1019,7 @@ Websites are designed for small screens first, with enhancements for larger devi
 3. **Adaptive Styling with Media Queries**: 
 CSS media queries adjust content based on device resolution, ensuring a tailored experience across mobile, tablet, and desktop.
 4. **Optimized Navigation for Usability**: Clear navigation improves user experience with hamburger menus for mobile, sticky headers for quick access, and footer navigation for alternative entry points.
-5. **Accessibility & Inclusive Design**: The site follows _Web Content Accessibility Guidelines_ (WCAG) guidelines, incorporating semantic HTML, alt atrributes, aria labels and readable typography for improved usability.
+5. **Accessibility & Inclusive Design**: The site follows _Web Content Accessibility Guidelines_ (WCAG) guidelines, incorporating semantic HTML, alt attributes, aria labels and readable typography for improved usability.
 
 Responsive web design ensures that a website provides an optimal viewing and interaction experience across various devices. The Clancy Nook wireframes follow a structured approach to responsiveness, adapting layouts and elements to different screen sizes through core breakpoints. These breakpoints ensure seamless transitions between mobile, tablet, and desktop views:
 
@@ -938,6 +1028,8 @@ Responsive web design ensures that a website provides an optimal viewing and int
 - **Laptop/Desktop (≥ 992px):** Maximizes screen real estate with a full-width layout, enhancing spacing and alignment for a visually engaging experience.  
 
 Each page follows a mobile-first approach, progressively adapting content and UI components for larger screens while ensuring a consistent and user-friendly experience.
+
+---
 
 #### Homepage (Grid-Based Adaptability)  
 The homepage wireframes illustrate how key sections dynamically adjust across devices.
@@ -950,6 +1042,8 @@ The homepage wireframes illustrate how key sections dynamically adjust across de
    <img src="docs/figures/responsiveness-homepage.webp" alt="Homepage Responsiveness" width="800">
 </div>
 
+---
+
 #### Tours Page (Content Scaling & Consistency)  
 The Tours page maintains readability across devices.
 
@@ -961,6 +1055,8 @@ The Tours page maintains readability across devices.
    <img src="docs/figures/responsiveness-tours.webp" alt="Tours Page Responsiveness" width="800">
 </div>
 
+---
+
 #### Gallery Page (Masonry Layout for Fluid Display)  
 Inspired by a masonry layout, the Gallery page adjusts dynamically.
 
@@ -970,6 +1066,8 @@ Inspired by a masonry layout, the Gallery page adjusts dynamically.
 <div align="center">
    <img src="docs/figures/responsiveness-gallery.webp" alt="Gallery Page Responsiveness" width="800">
 </div>
+
+---
 
 #### Reviews Page (Scalability of Testimonial Cards)  
 The Reviews page maintains structured spacing across breakpoints.
@@ -981,6 +1079,8 @@ The Reviews page maintains structured spacing across breakpoints.
 <div align="center">
    <img src="docs/figures/responsiveness-reviews.webp" alt="Reviews Page Responsiveness" width="800">
 </div>
+
+---
 
 #### Contact Page (Form Adaptability)  
 The Contact page ensures an intuitive and accessible form experience across devices.
@@ -994,6 +1094,8 @@ The Contact page ensures an intuitive and accessible form experience across devi
    <img src="docs/figures/responsiveness-contact.webp" alt="Contact Page Responsiveness" width="800">
 </div>
 
+---
+
 #### Success Page (Confirmation Layout)  
 The Success page provides clear user feedback and an easy navigation path after form submission.
 
@@ -1005,6 +1107,8 @@ The Success page provides clear user feedback and an easy navigation path after 
    <img src="docs/figures/responsiveness-success.webp" alt="Success Page Responsiveness" width="800">
 </div>
 
+---
+
 #### 404 Page (Consistent User Guidance)  
 The 404 error page ensures users can navigate back easily.
 
@@ -1015,12 +1119,16 @@ The 404 error page ensures users can navigate back easily.
    <img src="docs/figures/responsiveness-404.webp" alt="404 Page Responsiveness" width="800">
 </div>
 
+---
+
 #### **Project Planning**
 The work in this section has been principal in defining the core visual and functional framework of the website, ensuring that interface design, navigation systems, and information architecture are presented well for users. 
 
 The wireframes produced in Balsamiq serve as a crucial reference throughout the development process, providing a clear guide for structuring content, arranging interface elements, and ensuring consistency across devices. These wireframes help bridge the gap between conceptual planning and practical implementation, allowing for an iterative design process where adjustments can be made before committing to full development.  
 
 By finalizing the Skeleton Plane, I have established a solid blueprint for the **Surface Plane**. This stage will focus on refining visual styling, branding consistency, and aesthetic cohesion to enhance the user experience.
+
+---
 
 ### **Surface**
 The Surface Plane is the final stage of UX design, where structure, interaction, and aesthetics come together to create a visually polished and intuitive interface, shaped by the underlying skeleton. While earlier phases focused on functionality, content organization, and interactivity, this stage refines color schemes, typography, spacing, contrast, and branding consistency to bolster usability and engagement.
@@ -1037,6 +1145,8 @@ I have considered the following visual design principles:
 - **Clarity & Readability** – Using clear, legible fonts, adequate line spacing, and structured layouts to improve content consumption.
 - **Minimalism & Simplicity** – Removing unnecessary elements to highlight key interactions and maintain a clean, user-friendly experience.
 
+---
+
 #### **Branding & Aesthetic**
 Much of the surface plane has been directly influenced by my initial meeting with Louis Cane, where we explored the essence of Clancy Nook’s brand identity. During this discussion, we established a thematic direction rooted in storytelling, history, mystery, and intrigue, forming the core of Clancy Nook’s persona. These discussions guided the design choices, ensuring that every visual aspect of the website aligns with Louis’s existing branding, including the logos and imagery that evoke a sense of exploration and discovery.
 
@@ -1049,6 +1159,8 @@ These images play a crucial role in this alignment, depicting Louis Cane as Clan
 <div align="center">
    <img src="assets/images/clancy-nook-about.webp" alt="Clancy Nook Profile Icon on Social Media" width="200">
 </div>
+
+---
 
 #### **Color Palette**
 Color is essential for branding, navigation, and user interaction. The website’s palette balances historical authenticity with modern usability and accessibility. Inspired by Clancy Nook’s branding and Louis Cane’s tour guide persona, the aesthetic reflects Victorian-era storytelling, emphasizing mystery, heritage, and exploration.
@@ -1085,6 +1197,8 @@ The final palette was tested using _Chroma Tool_ for deuteranopia (red-green def
 <div align="center">
    <img src="docs/figures/color-colorblind-safe-checker.webp" alt="Clancy Nook color contrast validation" width="600">
 </div>
+
+---
 
 #### **Typography**
 When designing the Clancy Nook website, I aimed to replicate the original typography used in the Clancy Nook Facebook banner. However, as the exact font was unknown, I turned to _Google Fonts_ to find a close match. After thorough exploration, I selected **IM Fell Double Pica**, a historically inspired serif font that aligns with the brand’s heritage-driven aesthetic.
@@ -1137,8 +1251,12 @@ Montserrat offers several key benefits:
    <img src="docs/figures/montserrat.webp" alt="Clancy Nook primary font for text body" width="600">
 </div>
 
+---
+
 #### **Imagery**
 Visual storytelling plays a crucial role in shaping the Clancy Nook website, immersing users in rich historical narratives while enhancing engagement. Carefully curated imagery, subtle overlays, shadows and dynamic elements work together to create an authentic and visually compelling experience.
+
+---
 
 #### Hero Banners
 Hero images serve as focal points across the website, immediately setting the tone for visitors. Hero images are visually striking elements positioned near the top of pages, often spanning its full width. It provides visitors with an immediate introduction to the brand while shaping their first impression and overall user experience.
@@ -1160,6 +1278,8 @@ The hero image for the Tours page captures the intrigue of Clancy Nook’s story
 <div align="center">
    <img src="docs/figures/hero-banner-tour-page.webp" alt="Clancy Nook tour page hero banner" width="200">
 </div>
+
+---
 
 #### **Backgrounds**
 Throughout the site, full-width background images complement key pages, such as reviews and the contact page. They provide a strong seconsory connection to the service being provided, without overwhelming the content. Light blue has been selected on these pages as the background for the sectional elements containing content such as the review cards and form, ensuring accessibility for all users.
@@ -1185,6 +1305,8 @@ The contact page background captures the Thirsty Scholar pub, a well-known Manch
    <img src="docs/images/background-image-contact.webp" alt="Clancy Nook contact page background image" width="200">
 </div>
 
+---
+
 #### Black & White Imagery
 The Clancy Nook website incorporates historical imagery from the Manchester Local Image Collection, a public domain archive documenting the city's evolution. These black-and-white photographs of Victorian streets, industrial districts, and historic landmarks establish a strong sense of place and authenticity, immersing users in the setting before they even step onto a tour.
 
@@ -1208,6 +1330,8 @@ Additionally, group photos taken by tourists have been edited into black and whi
    <img src="assets/images/private-bookings-tour-3.webp" alt="Photograph of tour group on Ancoats Tour" width="500">
 </div>
 
+---
+
 #### Carousels
 To enhance user engagement and create an interactive experience, the tours page features image carousels, allowing visitors to scroll through a curated selection of historical and contemporary images. These carousels visually preview key locations, historical sites, and moments from past tours, striking a balance between historical authenticity and modern storytelling.
 
@@ -1221,6 +1345,8 @@ The carousel format was chosen to keep the page structured and visually engaging
 <div align="center">
    <img src="docs/images/carousel-example.webp" alt="Photograph of tour group on Ancoats Tour" width="600">
 </div>
+
+---
 
 ### Gallery
 The gallery page is intentionally the most colorful and visually rich section of the website, contrasting with the muted, vintage tones used elsewhere. While other sections focus on historical authenticity with black-and-white images, the gallery embraces full-color photography, emphasising the vibrancy and energy of the tours.
@@ -1245,6 +1371,8 @@ Most images in the gallery were taken by Louis Cane or were shared by tourists w
    <img src="docs/images/gallery-imagery.webp" alt="Imagery Arrangement and Choices" width="600">
 </div>
 
+---
+
 #### **Buttons**
 The button design across the Clancy Nook website prioritizes usability, accessibility, and aesthetic consistency to maximise user experience.
 
@@ -1254,6 +1382,8 @@ To ensure clarity and usability, button design follows web accessibility and UI/
 - **High Contrast for Readability**
 - **Large Clickable Areas**
 - **Clear Visual Feedback**
+
+---
 
 #### Call-to-Actin Buttons
 These Buttons maintain uniform spacing and dimensions across pages, improving clickability on both desktop and mobile. Text is always easily legible, avoiding low-contrast combinations. Buttons have ample padding, making them easy to tap on mobile devices.
@@ -1269,6 +1399,8 @@ Both button types change to a warm caramel tone upon hover or interaction. This 
    <img src="docs/images/dark-button.webp" alt="Dark button and hover effect" width="400">
 </div>
 
+---
+
 #### Navbar & Logo
 - **Navbar Tabs** Styled without borders, these buttons use a simple underlined effect on hover to maintain a clean, vintage aesthetic.
 - **Logo Home Button** Designed in _Canva_ based on Louis Cane's specifications, this logo replicates a wax seal style with Clancy Nook’s initials encircled by cotton flowers, symbolizing Manchester’s industrial heritage. On hover, the logo turns light blue, offering subtle interaction feedback.
@@ -1279,6 +1411,8 @@ Both button types change to a warm caramel tone upon hover or interaction. This 
 <div align="center">
    <img src="docs/images/logo-home-button.webp" alt="Logo with hovereffect" width="200">
 </div>
+
+---
 
 #### **Iconography**
 Icons play a vital role in enhancing navigation, accessibility, and user engagement across the Clancy Nook website. The use of _Font Awesome_ ensures a consistent and visually appealing icon set that aligns with the site's historical theme while maintaining modern usability.
@@ -1301,6 +1435,8 @@ The following design choices are:
    <img src="docs/images/iconography.webp" alt="Showcasing Iconography with hover effect" width="600">
 </div>
 
+---
+
 #### **Project Planning**
 The Surface Plane is where structure, interaction, and aesthetics merge into a polished, user-friendly interface. For Clancy Nook, this phase ensured the final design not only reflected its historical storytelling identity but also provided a seamless experience.
 
@@ -1308,10 +1444,14 @@ Every element—color, typography, buttons, and imagery—was chosen for usabili
 
 To stay on track and prioritise tasks effectively, my Github Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2) was continually used in the development process.
 
+---
+
 ## **Development**
 The Clancy Nook Walking Tours website is a user-centric, fully responsive, and visually engaging platform designed to showcase historic walking tours in Manchester. The goal is to provide an intuitive and accessible experience for both tourists and locals, ensuring seamless navigation, efficient booking options, and an engaging presentation of the tour offerings.
 
 This section outlines the step-by-step approach during development, the website features, challenges and solutions along the way, and the technologies used to bring the project to completion. 
+
+---
 
 ### **Approach**
 The development process is a structured, incremental approach, emphasising responsiveness, accessibility, and clean code. 
@@ -1329,6 +1469,8 @@ Industry best practices in front-end web development include the use of:
 
 The project is designed with these industry standards for front-end web development in mind. 
 
+---
+
 #### **Initial Setup**
 To kickstart development, the GitHub was established for version control, ensuring tracking of changes and shared access with mentors and Louis. Within the repository, a structured folder hierarchy was set up, including directories for assets, css, images, and pages, helping maintain an organized and scalable codebase.
 
@@ -1341,6 +1483,8 @@ A standardised HTML boilerplate was created to maintain consistency across all p
 <div align="center">
    <img src="docs/images/html-boilerplate.webp" alt="Image to show html boilerplate" width="600">
 </div>
+
+---
 
 #### **Core Layout and Navigation** 
 With the foundational setup in place, the next step was to develop the HTML and CSS files for key sections of the website. The navbar, uses Bootstrap’s navbar component, for uniformity across all pages and internal links facilitate easy navigation. The layout follows a mobile-first design approach, ensuring smooth responsiveness across different screen sizes. 
@@ -1355,6 +1499,8 @@ To maintain a cohesive and visually appealing design, CSS variables were impleme
 <div align="center">
    <img src="docs/images/css-variables.webp" alt="Image to show html boilerplate" width="300">
 </div>
+
+---
 
 #### **Website Development Sequence**
 
@@ -1379,6 +1525,8 @@ To guarantee full responsiveness:
 - **Media queries** were integrated into the stylesheets to ensure seamless adaptation across mobile, tablet, and desktop views.
 - Continuous **testing** was conducted throughout development to maintain optimal usability and aesthetics across various devices.
 
+---
+
 #### **Page Development Sequence**
 **Home Page:**
 
@@ -1398,6 +1546,8 @@ To guarantee full responsiveness:
 <div align="center">
    <img src="docs/images/development-homepage.webp" alt="Homepage" width="600">
 </div>
+
+---
 
 **Tours Page:**
 1. **Hero Section**  
@@ -1422,6 +1572,8 @@ To guarantee full responsiveness:
 <div align="center">
    <img src="docs/images/development-tours-page.webp" alt="Tours Page" width="600">
 </div>
+
+---
 
 **Reviews Page:**
 1. **Background Image Implementation**  
@@ -1448,6 +1600,8 @@ To guarantee full responsiveness:
 <div align="center">
    <img src="docs/images/development-reviews-page.webp" alt="Reviews Page" width="600">
 </div>
+
+---
 
 **Contact Page** 
 1. **Background Image Implementation**  
@@ -1482,6 +1636,8 @@ To guarantee full responsiveness:
    <img src="docs/images/development-contact-page.webp" alt="Contact Page" width="600">
 </div>
 
+---
+
 **Success & Error Pages** _(developed in tandem to ensure consistency)_
 1. **Header Section**  
    - Developed first (successful submission or an error occurrence)  
@@ -1501,6 +1657,8 @@ To guarantee full responsiveness:
    <img src="docs/images/development-404-page.webp" alt="404 Page" width="300">
 </div>
 
+---
+
 **Gallery Page** 
 1. **Mobile-First Approach**  
    - Ensured the gallery adapted seamlessly across different screen sizes.
@@ -1518,15 +1676,17 @@ To guarantee full responsiveness:
    <img src="docs/images/development-gallery-page.webp" alt="Gallery Page" width="600">
 </div>
 
+---
+
 ### **Features**
 The development of features on this website followed a structured, user-focused approach, ensuring responsiveness, accessibility, and intuitive navigation. Each feature was designed with usability and aesthetics in mind, leveraging Bootstrap components, CSS styling, and JavaScript enhancements where necessary.
 
 The development process prioritized core features essential for navigation and site functionality, followed by specific content elements that enhance the user experience.
 
+---
+
 #### **Core Features**
 **Navbar**
-
-The navigation bar (navbar) was developed as a persistent, site-wide feature, ensuring users could easily access all key sections of the website. It is structured using Bootstrap's navbar component, which provides a collapsible menu, a fixed-top layout, and a clear brand identity with the Clancy Nook logo.
 
 Structure and Functionality
 - Navbar Layout  
@@ -1558,9 +1718,9 @@ Responsiveness and Styling
    <img src="docs/images/core-feature-navbar.webp" alt="Navbar" width="300">
 </div>
 
-**Footer**
+---
 
-The footer was implemented across all pages, providing essential contact details, social media links, and quick navigation options. It is designed to be responsive, accessible, and visually consistent with the rest of the website. The footer is structured using Bootstrap’s grid system to ensure flexibility across different screen sizes. 
+**Footer**
 
 Structure and Functionality  
 - Contact Details Section  
@@ -1588,128 +1748,392 @@ Structure and Functionality
     - Are styled with rounded corners and shadows for an elevated button-like effect.
 
 Responsiveness and Styling  
-- Bootstrap’s grid system (row and col-6) ensures that the contact details and social media icons are evenly spaced.
-- Flexbox properties (d-md-flex justify-content-center justify-content-md-between) are used to control alignment across different screen sizes:
+- Bootstrap’s grid system ensures that the contact details and social media icons are evenly spaced.
+- Flexbox properties are used to control alignment across different screen sizes:
   - On larger screens, content is distributed horizontally.
-  - On smaller screens, elements are stack vertically for a cleaner layout.
-- The mini navigation buttons are styled with shadows (`shadow`) and padding (`p-2`) to create a soft, interactive feel.
+  - On smaller screens, elements are stack vertically in two columns for a cleaner layout.
+- The mini navigation buttons are styled with shadows and padding (p-2) to create a soft, interactive feel.
 -  Each anchored icon features a hover effect where the background color subtly changes, reinforcing the interactive nature of the navigation.
-
-This footer effectively combines functionality, responsiveness, and aesthetics, providing a structured yet visually appealing way to access key information and navigate the site efficiently.
 
 <div align="center">
    <img src="docs/images/core-feature-footer.webp" alt="Footer" width="300">
 </div>
 
+---
+
 #### **Specific Features**
 **Hero Banners**
 
-Hero banners were designed to create visual impact and engagement, serving as introductory sections on the home and tours and reviews pages.
+Structure and Functionality  
+- General Layout  
+  - Both hero banners are wrapped in a header element to provide semantic meaning and define the primary introduction for each page.  
+  - A full-width background image is applied using CSS to ensure the hero section spans the entire viewport.  
+  - The content is enclosed in a section to maintain flexibility in alignment and scaling across devices.  
+  - The d-flex align-items-center justify-content-center classes ensure the headings remain centered, both horizontally and vertically.  
+  - A container ensures adaptability while maintaining structured spacing.   
+  - The text is centrally aligned with text-center, ensuring readability against the background.    
+  - The w-100 class ensures the section spans the full width, maintaining a consistent layout.  
 
-- Used full-width background images with CSS overlays for readability.
-- Included compelling headlines and call-to-action (CTA) buttons to direct users toward the next step.
-- Designed with media queries to ensure text and images scale appropriately across devices.
+Responsiveness and Styling  
+- Typography & Readability  
+  - The large display-1 font size ensures that the hero text remains clear and readable on all devices.  
+  - The secondary heading (h2) is slightly smaller, providing hierarchical clarity while maintaining visual balance.  
+- Background Image Adaptability  
+  - The hero sections use CSS to apply a full-width background image.  
+  - The images are dynamically scaled to ensure they remain proportionally balanced on different screen sizes.  
+  - The use of overlay effects ensures that text remains readable against varying backgrounds.  
+- Hover & Interactive Effects  
+  - The text in the hero banners subtly changes color on hover, providing an interactive and dynamic feel.  
+  - The banners feature smooth transitions, making any interactions visually appealing.  
+- Larger Screens  
+  - On larger screens, the text scales up to ensure proper readability.  
+  - The flexbox properties adjust alignment dynamically, keeping the content centered and well-spaced.  
 
 <div align="center">
    <img src="docs/images/specific-features-hero-banner-1.webp" alt="Homepage Hero Banner" width="300">
    <img src="docs/images/specific-features-hero-banner-2.webp" alt="Tours Page Hero Banner" width="300">
 </div>
 
-**About Section**
+---
 
-The about section provided essential information about the site’s purpose while maintaining a visually appealing layout.
+**About Section** 
 
-- Implemented using Flexbox for a two-column layout, balancing text and imagery.
-- Styled with custom CSS refinements, including spacing and font adjustments.
-- Ensured alignment with the overall branding and tone of the website.
+Structure and Functionality  
+- General Layout  
+  - This section is nested within the main element, reinforcing its semantic importance as a key content area of the webpage. 
+  - The about section is wrapped within a section element, ensuring semantic clarity.  
+  - A Bootstrap container is used to maintain layout while allowing responsiveness.  
+  - A row structure divides the section into two key parts:  
+    - A circular profile image of Clancy Nook.  
+    - A text block containing a header (h2), paragraph content (p), and a signature image (img).  
+
+Responsiveness and Styling
+- Profile Image  
+  - The figure element contains an image of Clancy Nook, set to a fixed size of with a circular crop for a clean and professional appearance.  
+  - The image is center-aligned on smaller screens (col-12 text-center) and left-aligned on larger screens (col-lg-4).  
+- Text Content  
+  - A header element with an h2 display-5 heading introduces the section with "About."  
+  - The main text is housed in a p tag and is broken into two key paragraphs:  
+    - The first paragraph introduces Clancy Nook’s journey to Manchester and his historical studies.  
+    - The second paragraph highlights the deeper storytelling aspect of his tours, emphasizing human connections and historical narratives.  
+  - The text uses text-center for smaller screens and text-lg-start for left alignment on larger screens.  
+- Signature Element  
+  - A transparent signature image is placed at the bottom of the text block, reinforcing the personal branding of Clancy Nook.  
+  - It is positioned with col-12 text-end to align it to the right on larger screens.
+- Grid Expansion  
+  - On larger screens, the section has a two-column layout, with the image on the left and the text on the right.  
+  - The col-lg-4 and col-lg-8 classes ensure that the image and text are proportionally balanced, preventing excessive whitespace.   
+- Image Sizing and Proportions  
+  - The profile image maintains a fixed size to prevent unnecessary stretching. 
 
 <div align="center">
    <img src="docs/images/specific-feature-about.webp" alt="About Feature" width="300">
 </div>
 
-**Featured Tours Section**
+---
 
-The featured tours section was developed to highlight key offerings and encourage users to explore further.
+**Tour Overview Section**
 
-- Used Bootstrap card components for a clean and structured display.
-- Included images, descriptions, and CTA buttons, directing users to detailed tour pages.
-- Ensured a dynamic layout using Bootstrap's grid system and utility classes.
+Structure and Functionality  
+- General Layout  
+  - - This section is nested within the main element, reinforcing its semantic importance as a key content area of the webpage. 
+  - It is wrapped within a section element with an id="tour-cards", maintaining semantic clarity and ease of styling.  
+  - A container class ensures that the section remains properly aligned and responsive across different screen sizes.  
+  - A header introduces the section with a display-5 h2 heading, followed by a short instructional paragraph prompting users to interact with the tour cards.  
+- Tour Cards  
+  - The tour offerings are displayed as clickable cards based off Bootstrap's basic card with mixed content and a fixed width.
+  - Each card to a specific tour page using a tags with rel="related".  
+  - Each card is contained within an article element.  
+  - Each card consists of:  
+    - A historical black-and-white image representing the tour location.  
+    - A card title (h3) naming the tour.  
+    - A brief description (p) summarizing the key theme of the tour.  
+  - The tour cards are assigned Bootstrap column classes (col-12 col-md-6 col-lg-3) to ensure they adapt to screen width.  
+
+Responsiveness and Styling
+- Grid Adaptability  
+  - On small screens, the tour cards stack vertically (col-12), ensuring readability without excessive scrolling.  
+  - On medium screens, two cards are displayed per row (col-md-6), making better use of space.  
+  - On larger screens, all four cards are displayed in a single row (col-lg-3), creating a well-balanced, symmetrical layout.  
+- Card Sizing and Layout  
+  - The cards expand to fit the available space while maintaining a consistent aspect ratio.  
+  - The images scale proportionally, ensuring visual consistency across all screen sizes.  
+  - min-height rules have been applied at different breakpoints to ensure that card heights remain consistent where required, preventing misalignment caused by varying text lengths.  
+- Text and Image Alignment  
+  - The images are positioned at the top of each card (card-img-top), ensuring a clear visual hierarchy.  
+  - On larger screens, the text scales slightly for a refined and spacious layout.  
+- Interactive and Hover Effects  
+  - The entire card is clickable, making navigation more intuitive.  
+  - A subtle hover effect is applied, slightly enlarging the card and adding a shadow to enhance interactivity.  
+  - The images feature a soft transition effect, preventing abrupt shifts when resizing.  
+- Enhanced Readability and User Engagement  
+  - The text size is adjusted dynamically through CSS media queries to prevent it from appearing too small or too large on wide screens.  
+  - The color contrast ensures legibility, with a muted background allowing the black-and-white images and text to stand out.  
 
 <div align="center">
    <img src="docs/images/specific-features-featured-tours.webp" alt="Featured Tours Tiles" width="300">
 </div>
 
-**Tour Sections**
+---
 
-Each tour section was designed to present structured information while maintaining an engaging format.
+**Tours Sections**
 
-- Integrated Bootstrap card groups to display essential details such as cost, duration, and location.
-- Incorporated a carousel component for visual storytelling, allowing users to browse multiple images.
-- Used consistent styling to maintain uniformity across different tour pages.
+Structure and Functionality  
+- General Layout  
+  - The section is nested within the main element, reinforcing its role as a primary content area and enhancing accessibility for screen readers and search engines.  
+  - The section is divided into multiple section elements, each representing a different tour.  
+  - Each tour section contains a heading (h2), a descriptive paragraph, and a structured list of key tour details.    
+- Featured Tour Sections  
+  - Each tour section is structured using Bootstrap’s grid system, ensuring responsiveness and a balanced layout across different screen sizes.  
+  - The content for each tour is divided into two primary columns:  
+    - A Bootstrap carousel inside a figure element to display multiple historical images.  
+    - A div containing the tour description and key details.  
+  - The Bootstrap carousel (figure class="carousel slide") provides an interactive way to showcase multiple images for each tour.  
+    - The carousel-inner class wraps the different image slides.  
+    - carousel-item active ensures that the first image is displayed by default.  
+    - Left (carousel-control-prev) and right (carousel-control-next) buttons allow users to navigate between images.  
+    - The d-block w-100 class is applied to all images, ensuring they scale properly within the carousel.  
+  - The tour description is structured within a p tag inside a div assigned Bootstrap classes for alignment:  
+    - col-12 text-md-center text-lg-start ensures that text is centered on smaller screens and left-aligned on larger screens.  
+    - Additional spacing and alignment classes (justify-content-md-center justify-content-lg-start) ensure proper positioning within the grid.  
+  - The tour details section is based on Bootstrap's card group template, which allows for a collection of cards to be displayed in a structured row while maintaining a consistent height and alignment.  
+    - Each individual tour detail (cost, duration, distance, meeting location) is placed inside a card.  
+
+Responsiveness and Styling  
+- Grid Adaptability  
+  - On smaller screens, the tour details and images stack vertically, ensuring readability.  
+  - On medium screens, the grid adjusts to display text and images side by side.  
+  - On larger screens, the layout becomes more structured, with descriptions and images arranged for optimal readability.    
+- Carousel and Image Adaptation  
+  - Each tour includes a Bootstrap carousel (data-bs-ride="carousel") allowing users to navigate through multiple historical images.  
+  - The carousel automatically scales to fit different screen sizes without distortion.  
+  - Images are assigned the d-block w-100 class to ensure they maintain their proportions.  
+- Text and Card Sizing  
+  - The tour details section adjusts spacing and alignment using col-6 col-md-3 for proper distribution on different devices.
 
 <div align="center">
-   <img src="docs/images/specific-feature-tours-sections.webp" alt="Tours Feature" width="300">
+   <img src="docs/images/specific-feature-tours-sections.webp" alt="Tours Sections" width="300">
 </div>
+
+---
 
 **Review Tiles**
 
-The reviews section was developed to build credibility and trust, showcasing testimonials from previous users.
+Structure and Functionality  
+- General Layout  
+  - The section is nested within the main element, emphasizing its importance as a core part of the website's content.  
+  - The review tiles are structured as individual Bootstrap cards (article class="card"), ensuring a consistent, well-spaced layout across different screen sizes.  
+  - Each review card contains key details, including:  
+    - Review source (Trip Advisor) displayed at the top.  
+    - Tour name in an h3 heading.  
+    - Tour category (e.g., "True Crime in Ancoats") listed below the title.  
+    - Star rating visually representing the review score.  
+    - Review text enclosed within em tags to differentiate user-generated content.  
+    - Review date displayed at the bottom.  
+  - The entire section is wrapped in a section with id="review-cards", styled with Bootstrap’s row and d-flex classes for flexible alignment and spacing.  
 
-- Created custom-styled review tiles for a distinct appearance compared to standard cards.
-- Used a structured layout with Bootstrap’s grid system for even alignment.
-- Ensured responsive resizing using CSS techniques to maintain readability.
+Responsiveness and Styling  
+- Grid Adaptability  
+  - On small screens, review cards stack vertically (col-12), allowing for easy scrolling and readability.  
+  - On medium screens, the grid adjusts to a two-column layout (col-md-6).  
+  - On larger screens, reviews are arranged in a three-column layout (col-lg-4), ensuring balanced spacing.  
+  - min-height rules have been applied at different breakpoints to ensure that card heights remain consistent where required, preventing misalignment caused by varying text lengths.
+- Card Styling and Alignment  
+  - The cards have rounded-0 applied to maintain a modern, structured appearance.  
+  - The text remains center-aligned on smaller screens but is evenly spaced on larger displays.  
+  - justify-content-center justify-content-md-between classes ensure proper alignment between review cards, preventing excessive gaps.  
+- Review Content Formatting  
+  - The tour title (h3) is visually emphasized to make each review easily scannable.  
+  - The star rating icons are displayed in a row beneath the title, reinforcing high review scores.  
+  - The review text is italicized (em) to differentiate it from structured content.  
+- Interactive and Hover Effects  
+   - Subtle hover effects are applied to each review card, slightly elevating it with a shadow effect when hovered over.  
+   - The text transitions smoothly, preventing abrupt shifts when resizing.  
+   - The review tiles use a soft background color to contrast against the website’s theme, improving readability.  
+   - The text adjusts through CSS media queries, ensuring optimal font size on different devices.  
 
 <div align="center">
    <img src="docs/images/specific-feature-reviews.webp" alt="Reviews Tiles" width="300">
 </div>
 
+---
+
 **Form**
 
-The contact form was built to facilitate easy communication and inquiries, with a focus on usability and accessibility.
+Structure and Functionality  
+- General Layout  
+  - The form is nested within the main element.  
+  - The form is contained within form and wrapped in a div with id="form-container", ensuring proper spacing and alignment using Bootstrap’s container and justify-content-center classes.  
+  - A header section introduces the form with a h1 and h2 to provide clear guidance on its purpose.  
+  - A p element (id="contact-guidance") explains the different types of inquiries users can submit.  
+- Input Fields and User Details  
+  - The form captures key user information, structured with Bootstrap grid classes to ensure responsiveness:  
+    - Forename and Surname – Two input fields are required.  
+    - Email Address – An input field is required.  
+    - Phone Number – An optional input field.  
+    - Pronouns – An optional input field.  
+- Message Subject and Conditional Fields (_based on a JavaScript snippet by Dustin Horstmann found on CodePen_)
+  - A select dropdown (id="subject") allows users to choose from predefined topics and is required to ensure clarity in user inquiries.  
+  - Dynamic field display using JavaScript  
+    - The form includes a JavaScript function (toggleFields()) that dynamically shows or hides additional input fields based on user selections.  
+    - When the user selects "Booking a Tour" or "Private Booking," the tour selection options (id="tour-options") are revealed dynamically and become required.  
+    - When the user selects "Leave a Review," additional fields appear, including:  
+      - A star rating slider (id="rating") required when visible with a Font Awesome star icon positioned above.  
+      - A file upload input for users to submit an image (id="review-image"), optional.  
+    - The script ensures that required fields are only enabled when relevant, improving form validation and usability.  
+- Message Input and Submission  
+  - A textarea (id="message") is provided for users to enter additional details, required.  
+  - The submit button is required.  
+- JavaScript for Star Rating Slider (_based on a JavaScript snippet by Fajar Nur Whid found on CodePen, which animates a star along the slider track._)
+   - The updateStarPosition() function moves the star icon along the slider in real-time as the user interacts with the range input.
+   - The script selects the rating slider (id="rating") and listens for changes (input event).
+   When the user moves the slider, the updateStarPosition() function is triggered.
+   - The slider.value represents the selected rating (between 1 and 5). 
+      - The equation maps the slider value to a percentage-based position.
+      - The 93% limit prevents the star from overlapping the edges of the slider track.
+      - The +0.5rem offset ensures the star is visually centered above the corresponding number.
+   - A numeric scale (1-5) is added below the slider.
+      - The d-flex justify-content-between class ensures even spacing between the numbers (1-5).
+      - Each span represents a rating level, aligning directly beneath its corresponding slider position.
+      - This makes it easier for users to understand their selection while adjusting the slider.
 
-- Included essential input fields such as name, email, and message fields.
-- Used placeholders as labels to maintain a minimal and clean design.
-- Integrated radio buttons, dropdown selectors, and a rating slider, enhancing interactivity.
-- Implemented JavaScript functionality for dynamic field visibility, displaying certain fields only when needed.
+Responsiveness and Styling
+- Background and Layout  
+   - The form is wrapped inside a full-width container, ensuring it spans the entire screen width while maintaining proper spacing.  
+   - The form section uses id="contact-page-background" to apply an overlay background.  
+   - Bootstrap’s d-flex and justify-content-center align-content-center ensure that the form is centered horizontally and vertically.  
+- Input Fields  
+   - All text input fields, dropdowns, and the message textarea are styled using a custom box class to maintain uniform padding, border radius, and color consistency.  
+   - The form fields feature a highlight effect on focus, making it easy to see which field is currently active.  
+- Labels and Placeholders  
+   - Labels are hidden but still present in the HTML for screen reader accessibility.  
+   - Placeholders provide user guidance without cluttering the layout.  
+Submit Button  
+- The form's submit button uses a custom dark-themed button that contrasts with the lighter background, ensuring visibility.  
+- On hover, the button features a subtle color change.  
+- Adaptability 
+   - Small Screens (Mobile Devices) 
+      - The form fields stack vertically, ensuring readability on smaller screens.  
+      - Each input field takes up the full width preventing horizontal scrolling.  
+      - The submit button is centered beneath the fields for easy access.  
+   - Medium Screens (Tablets) 
+      - Some input fields are displayed side by side to reduce vertical space usage while maintaining readability.  
+         - The forename and surname fields appear on the same row.  
+         - The phone number and pronouns fields appear on the same row.
+- Large Screens (Laptops and Desktops)
+   - The form fields are distributed into multiple columns, ensuring a structured, professional look.  
+   - The email field is wider than other fields to account for longer email addresses.  
+   - The tour selection and review options dynamically expand when selected, ensuring a clutter-free appearance.  
+- Focus and Hover Effects   
+   - The submit button changes color on hover.  
 
 <div align="center">
    <img src="docs/images/specific-feature-form.webp" alt="Form Feature" width="300">
 </div>
 
+---
+
 **Gallery**
 
-The gallery page was developed to be simple yet visually impactful, showcasing high-quality images in an immersive format.
+Structure and Functionality
+- The gallery is nested within main element id="gallery".  
+- The images are grouped into three sections to adapt dynamically to different screen sizes:  
+  - Small Screens – A simple stacked layout where images appear in a single column for easy scrolling.  
+  - Medium Screens – A structured grid layout.  
+  - Large Screens – A multi-column flexbox layout, optimizing aesthetic balance and visual appeal.  
+- Images are wrapped in div elements.  
 
-- Used a grid layout with Bootstrap’s Flex and Display classes for responsiveness.
-- Ensured a seamless viewing experience with structured spacing and dynamic scaling.
-- Applied media queries to refine image positioning across different devices.
+Responsiveness and Styling
+- Small Screens (Mobile) – d-block d-sm-none  
+   - Single-column layout with images stacked vertically for easy scrolling.    
+- Medium Screens (Tablets) – d-none d-sm-block d-lg-none 
+   - A two-column layout with varied image sizes, creating a balanced grid appearance.  
+   - Images are equally distributed.  
+- Large Screens (Desktops) – d-none d-lg-block  
+   - A multi-row and multi-column layout, allowing for a more expansive gallery view.  
+- Image Sizing and Positioning  
+   - The `g-0` and `p-0` classes remove unwanted spacing, ensuring that images appear seamlessly aligned.  
+   - The `img-fluid` class is applied to each `<img>` tag, making images scale dynamically within their containers.  
+   - The `object-fit-cover` property ensures images maintain aspect ratios without distortion.  
+   - The gallery is grid-based, ensuring a balanced visual hierarchy.  
+   - Larger images are strategically placed to emphasize key moments, such as group shots or historic buildings.  
+   - Smaller images are interwoven to create variety while maintaining alignment.
+   - `img-fluid` and `object-fit-cover` ensure images remain properly scaled and cropped.  
+   - Horizontal and vertical images are consistently cropped to maintain a visually balanced layout.   
+- Contrast and Background Integration  
+   - The gallery’s background is neutral, allowing the images to stand out.  
+   - The color contrast ensures that the images are clearly visible across different lighting conditions.  
 
 <div align="center">
    <img src="docs/images/specific-feature-gallery.webp" alt="Gallery-Feature" width="300">
 </div>
 
+---
+
 #### **Other Features**
 In addition to the core and content-specific features, several supplementary sections were implemented to enhance user guidance, accessibility, and user feedback collection. 
 
+---
+
 **Booking Guidance Section**
 
-The Booking Guidance section was implemented to provide users with clear instructions on how to secure a tour booking.
-- Placed at the end of the Tours Page, ensuring users could find it after exploring available tours.
-- Structured similarly to the Review Guidance section, following a clear heading, instructional text, and call-to-action button format.
-- Used Bootstrap’s grid system for a structured, responsive layout.
-- Designed to be concise and visually clear, guiding users efficiently through the booking process.
+Structure and functionality  
+- The booking guide is wrapped in a section element id="booking-guide" , ensuring it is semantically grouped within the webpage.  
+- A div element holds all content.  
+- The section is divided into two key parts:
+  - The main booking instructions explaining the booking process.  
+  - A call-to-action button linking to Eventbrite for direct reservations.  
+- Eventbrite Integration  
+   - The Eventbrite booking system is linked via an anchor tag, ensuring users can quickly access the ticketing platform which opens in a new internet tab. 
+- Contact button
+   - The button links via an anchor tab to the contact.html page which contatins the contact form. 
+  
+Responsiveness and Styling 
+- Responsive Layout  
+   - On smaller screens, the booking instructions stack vertically, keeping text and buttons clearly visible.  
+   - On larger screens, the content is divided into two columns, allowing instructions and the Eventbrite button to appear side by side.  
+- Call-to-Action Buttons  
+   - The contact button is styled to:
+      - Center-align on small screens (justify-content-center).  
+      - Align to the right on larger screens (justify-content-lg-end).
+   - Eventbrite button 
+      - Contains an Eventbrite logo.  
+      - The button includes a hover effect, where the image changes color when hovered over.
+   - The contact button background changes color on hover, making it stand out and encouraging user interaction.  
 
 <div align="center">
    <img src="docs/images/other-feature-booking-guidance.webp" alt="Gallery-Feature" width="300">
 </div>
 
+---
+
 **Review Guidance Section**
 
-The Review Guidance section was developed to encourage and assist users in leaving feedback after their experience.
-- Placed at the end of the Reviews Page, mirroring the Booking Guidance section in both layout and functionality.
-- Provided step-by-step instructions on how users could submit a review.
-- Included a call-to-action button directing users to the appropriate review submission platform.
-- Used consistent design elements to align with the Tours Page, ensuring a familiar structure for users.
+### Review Guide  
+Structure and Functionality
+- The review guide is wrapped in section id="review-guide", ensuring semantic grouping within the webpage.  
+- A div class="container" maintains structured content placement.  
+- The section includes:
+  - A TripAdvisor logo for visual branding.
+  - A h2 element prompting users to leave a review.
+  - A paragraph explaining review submission options.
+  - A contact button
+  - A Trip advisor button
+- - Tripadvisor Integration  
+   - The Tripadvisor booking system is linked via an anchor tag, ensuring users can quickly access the ticketing platform which opens in a new internet tab. 
+- Contact button
+   - The button links via an anchor tab to the contact.html page which contatins the contact form. 
+
+Responsiveness and Styling
+- Adaptive Layout Across Screen Sizes
+   - On mobile screens, the section is stacked vertically.
+   - On tablet screens, the text size gets scaled up and the content stretches to take up the container width.
+   - On larger screens, the TripAdvisor logo moves to the left size using flex classes and the text moves to the right and scales up in size.
+- Background and Layout 
+   -The background applies a linear gradient overlay, ensuring readable contrast against the image and text color.   
+- Interactive Hover Effects  
+   - The TripAdvisor logo changes on hover, swapping to a different-colored version and a larger size.  
+   - The contact button background changes color on hover, making it stand out and encouraging user interaction.  
 
 <div align="center">
    <img src="docs/images/other-feature-review-guidance.webp" alt="Gallery-Feature" width="300">
