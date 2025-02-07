@@ -1034,8 +1034,6 @@ I have considered the following visual design principles:
 - **Clarity & Readability** – Using clear, legible fonts, adequate line spacing, and structured layouts to improve content consumption.
 - **Minimalism & Simplicity** – Removing unnecessary elements to highlight key interactions and maintain a clean, user-friendly experience.
 
----
-
 #### **Branding & Aesthetic**
 Much of the surface plane has been directly influenced by my initial meeting with Louis Cane, where we explored the essence of Clancy Nook’s brand identity. During this discussion, we established a thematic direction rooted in storytelling, history, mystery, and intrigue, forming the core of Clancy Nook’s persona. These discussions guided the design choices, ensuring that every visual aspect of the website aligns with Louis’s existing branding, including the logos and imagery that evoke a sense of exploration and discovery.
 
@@ -1048,8 +1046,6 @@ These images play a crucial role in this alignment, depicting Louis Cane as Clan
 <div align="center">
    <img src="assets/images/clancy-nook-about.webp" alt="Clancy Nook Profile Icon on Social Media" width="200">
 </div>
-
----
 
 #### **Color Palette**
 Color is essential for branding, navigation, and user interaction. The website’s palette balances historical authenticity with modern usability and accessibility. Inspired by Clancy Nook’s branding and Louis Cane’s tour guide persona, the aesthetic reflects Victorian-era storytelling, emphasizing mystery, heritage, and exploration.
@@ -1086,8 +1082,6 @@ The final palette was tested using _Chroma Tool_ for deuteranopia (red-green def
 <div align="center">
    <img src="docs/figures/color-colorblind-safe-checker.webp" alt="Clancy Nook color contrast validation" width="600">
 </div>
-
----
 
 #### **Typography**
 When designing the Clancy Nook website, I aimed to replicate the original typography used in the Clancy Nook Facebook banner. However, as the exact font was unknown, I turned to _Google Fonts_ to find a close match. After thorough exploration, I selected **IM Fell Double Pica**, a historically inspired serif font that aligns with the brand’s heritage-driven aesthetic.
@@ -1140,12 +1134,8 @@ Montserrat offers several key benefits:
    <img src="docs/figures/montserrat.webp" alt="Clancy Nook primary font for text body" width="600">
 </div>
 
----
-
 #### **Imagery**
 Visual storytelling plays a crucial role in shaping the Clancy Nook website, immersing users in rich historical narratives while enhancing engagement. Carefully curated imagery, subtle overlays, shadows and dynamic elements work together to create an authentic and visually compelling experience.
-
----
 
 #### Hero Banners
 Hero images serve as focal points across the website, immediately setting the tone for visitors. Hero images are visually striking elements positioned near the top of pages, often spanning its full width. It provides visitors with an immediate introduction to the brand while shaping their first impression and overall user experience.
@@ -1167,8 +1157,6 @@ The hero image for the Tours page captures the intrigue of Clancy Nook’s story
 <div align="center">
    <img src="docs/figures/hero-banner-tour-page.webp" alt="Clancy Nook tour page hero banner" width="200">
 </div>
-
----
 
 #### **Backgrounds**
 Throughout the site, full-width background images complement key pages, such as reviews and the contact page. They provide a strong seconsory connection to the service being provided, without overwhelming the content. Light blue has been selected on these pages as the background for the sectional elements containing content such as the review cards and form, ensuring accessibility for all users.
@@ -1194,8 +1182,6 @@ The contact page background captures the Thirsty Scholar pub, a well-known Manch
    <img src="docs/images/background-image-contact.webp" alt="Clancy Nook contact page background image" width="200">
 </div>
 
----
-
 #### Black & White Imagery
 The Clancy Nook website incorporates historical imagery from the Manchester Local Image Collection, a public domain archive documenting the city's evolution. These black-and-white photographs of Victorian streets, industrial districts, and historic landmarks establish a strong sense of place and authenticity, immersing users in the setting before they even step onto a tour.
 
@@ -1219,8 +1205,6 @@ Additionally, group photos taken by tourists have been edited into black and whi
    <img src="assets/images/private-bookings-tour-3.webp" alt="Photograph of tour group on Ancoats Tour" width="500">
 </div>
 
----
-
 #### Carousels
 To enhance user engagement and create an interactive experience, the tours page features image carousels, allowing visitors to scroll through a curated selection of historical and contemporary images. These carousels visually preview key locations, historical sites, and moments from past tours, striking a balance between historical authenticity and modern storytelling.
 
@@ -1234,8 +1218,6 @@ The carousel format was chosen to keep the page structured and visually engaging
 <div align="center">
    <img src="docs/images/carousel-example.webp" alt="Photograph of tour group on Ancoats Tour" width="600">
 </div>
-
----
 
 ### Gallery
 The gallery page is intentionally the most colorful and visually rich section of the website, contrasting with the muted, vintage tones used elsewhere. While other sections focus on historical authenticity with black-and-white images, the gallery embraces full-color photography, emphasising the vibrancy and energy of the tours.
@@ -1260,8 +1242,6 @@ Most images in the gallery were taken by Louis Cane or were shared by tourists w
    <img src="docs/images/gallery-imagery.webp" alt="Imagery Arrangement and Choices" width="600">
 </div>
 
----
-
 #### **Buttons**
 The button design across the Clancy Nook website prioritizes usability, accessibility, and aesthetic consistency to maximise user experience.
 
@@ -1271,8 +1251,6 @@ To ensure clarity and usability, button design follows web accessibility and UI/
 - **High Contrast for Readability**
 - **Large Clickable Areas**
 - **Clear Visual Feedback**
-
----
 
 #### Call-to-Actin Buttons
 These Buttons maintain uniform spacing and dimensions across pages, improving clickability on both desktop and mobile. Text is always easily legible, avoiding low-contrast combinations. Buttons have ample padding, making them easy to tap on mobile devices.
@@ -1288,8 +1266,6 @@ Both button types change to a warm caramel tone upon hover or interaction. This 
    <img src="docs/images/dark-button.webp" alt="Dark button and hover effect" width="400">
 </div>
 
----
-
 #### Navbar & Logo
 - **Navbar Tabs** Styled without borders, these buttons use a simple underlined effect on hover to maintain a clean, vintage aesthetic.
 - **Logo Home Button** Designed in _Canva_ based on Louis Cane's specifications, this logo replicates a wax seal style with Clancy Nook’s initials encircled by cotton flowers, symbolizing Manchester’s industrial heritage. On hover, the logo turns light blue, offering subtle interaction feedback.
@@ -1300,8 +1276,6 @@ Both button types change to a warm caramel tone upon hover or interaction. This 
 <div align="center">
    <img src="docs/images/logo-home-button.webp" alt="Logo with hovereffect" width="200">
 </div>
-
----
 
 #### **Iconography**
 Icons play a vital role in enhancing navigation, accessibility, and user engagement across the Clancy Nook website. The use of _Font Awesome_ ensures a consistent and visually appealing icon set that aligns with the site's historical theme while maintaining modern usability.
@@ -1323,15 +1297,6 @@ The following design choices are:
 <div align="center">
    <img src="docs/images/iconography.webp" alt="Showcasing Iconography with hover effect" width="600">
 </div>
-
----
-
-#### **Project Planning**
-The Surface Plane is where structure, interaction, and aesthetics merge into a polished, user-friendly interface. For Clancy Nook, this phase ensured the final design not only reflected its historical storytelling identity but also provided a seamless experience.
-
-Every element—color, typography, buttons, and imagery—was chosen for usability, branding, and accessibility. Each UX plane builds upon the last, shaping the final experience. The Surface Plane unites these layers, serving as a guide for development and ensuring the Clancy Nook website delivers an immersive and intuitive journey.
-
-To stay on track and prioritise tasks effectively, my Github Projects Board [here](https://github.com/users/TeseoLou/projects/3/views/2) was continually used in the development process.
 
 ---
 
@@ -1489,14 +1454,12 @@ The dropdowns provided explain the order in which features on each web page were
 
 </details>
 
-### **Features**
+### **Features** (4)
 The development of features on this website followed a structured, user-focused approach, ensuring responsiveness, accessibility, and intuitive navigation. Each feature was designed with usability and aesthetics in mind, leveraging Bootstrap components, CSS styling, and JavaScript enhancements where necessary.
 
 The development process prioritized core features essential for navigation and site functionality, followed by specific content elements that enhance the user experience.
 
----
-
-#### **Core Features**
+#### **Core Features** (4.1)
 **Navbar**
 
 Structure and Functionality
@@ -1528,8 +1491,6 @@ Responsiveness and Styling
 <div align="center">
    <img src="docs/images/core-feature-navbar.webp" alt="Navbar" width="300">
 </div>
-
----
 
 **Footer**
 
@@ -1570,9 +1531,7 @@ Responsiveness and Styling
    <img src="docs/images/core-feature-footer.webp" alt="Footer" width="300">
 </div>
 
----
-
-#### **Specific Features**
+#### **Specific Features** (4.2)
 **Hero Banners**
 
 Structure and Functionality  
@@ -1604,8 +1563,6 @@ Responsiveness and Styling
    <img src="docs/images/specific-features-hero-banner-1.webp" alt="Homepage Hero Banner" width="300">
    <img src="docs/images/specific-features-hero-banner-2.webp" alt="Tours Page Hero Banner" width="300">
 </div>
-
----
 
 **About Section** 
 
@@ -1640,8 +1597,6 @@ Responsiveness and Styling
 <div align="center">
    <img src="docs/images/specific-feature-about.webp" alt="About Feature" width="300">
 </div>
-
----
 
 **Tour Overview Section**
 
@@ -1685,8 +1640,6 @@ Responsiveness and Styling
    <img src="docs/images/specific-features-featured-tours.webp" alt="Featured Tours Tiles" width="300">
 </div>
 
----
-
 **Tours Sections**
 
 Structure and Functionality  
@@ -1726,8 +1679,6 @@ Responsiveness and Styling
    <img src="docs/images/specific-feature-tours-sections.webp" alt="Tours Sections" width="300">
 </div>
 
----
-
 **Review Tiles**
 
 Structure and Functionality  
@@ -1766,8 +1717,6 @@ Responsiveness and Styling
 <div align="center">
    <img src="docs/images/specific-feature-reviews.webp" alt="Reviews Tiles" width="300">
 </div>
-
----
 
 **Form**
 
@@ -1842,8 +1791,6 @@ Submit Button
    <img src="docs/images/specific-feature-form.webp" alt="Form Feature" width="300">
 </div>
 
----
-
 **Gallery**
 
 Structure and Functionality
@@ -1879,9 +1826,7 @@ Responsiveness and Styling
    <img src="docs/images/specific-feature-gallery.webp" alt="Gallery-Feature" width="300">
 </div>
 
----
-
-#### **Other Features**
+#### **Other Features** (4.3)
 In addition to the core and content-specific features, several supplementary sections were implemented to enhance user guidance, accessibility, and user feedback collection. 
 
 **Booking Guidance Section**
@@ -1913,8 +1858,6 @@ Responsiveness and Styling
 <div align="center">
    <img src="docs/images/other-feature-booking-guidance.webp" alt="Gallery-Feature" width="300">
 </div>
-
----
 
 **Review Guidance Section**
 
