@@ -1462,222 +1462,259 @@ The development process prioritized core features essential for navigation and s
 #### **Core Features** (4.1)
 **Navbar**
 
-Structure and Functionality
-- Navbar Layout  
-   - The navbar is built with Bootstrap's navbar-expand-lg class, ensuring it is:
-     - Expanded by default on large screen* for a horizontal layout.
-     - Collapsible into a hamburger menu on smaller devices.
-   - A logo is positioned on the left and linked to the homepage to reinforce brand identity.
-   - Navigation links are organized within an unordered list (ul) and aligned to the right using ms-auto.
-   - The contact button is styled separately for prominence and positioned with d-flex justify-content-end align-items-center.
-- Collapsible Menu
-   - The Bootstrap navbar-toggler button is used to collapse and expand the navigation menu on mobile screens.
-   - When clicked, it reveals the menu options while keeping the layout clean and uncluttered.
-- Enhanced with JavaScript snippet by Code Institute: Boardwalk Games Project
-   - A JavaScript function enhances usability by ensuring smooth scrolling to in-page sections.
-   - The script works by automatically collapsing the navbar after selection, improving usability on mobile devices.
+The navbar is the main navigation tool on the website, allowing users to quickly access different pages. It appears at the top of every page and includes links to the Home, About, Tours, Gallery, Reviews, and Contact sections.
 
-Responsiveness and Styling
-- The fixed-top class ensures the navbar remains visible as users scroll, improving accessibility and ease of navigation.
-- Bootstrap’s dark theme gives the navigation a modern and professional appearance.
-- The custom-styled contact button stands out, ensuring users can quickly access the contact page.
-- Navigation links feature hover effects, enhancing user interaction:
-   - The contact button changes background color on hover, reinforcing its importance.
-   - Other navigation links underline when hovered over, providing a visual cue for users.
-   - The logo changes on hover, simulating a color change effect that enhances brand interactivity and provides a subtle but engaging visual transition.
-- The logo is consistently sized and positioned, contributing to brand recognition across all screen sizes.
-- Media queries in the CSS further refine spacing and alignment for different devices.
+The navbar ensures visitors can easily move between different parts of the site. On larger screens, the menu is displayed across the top of the page, while on smaller screens, it collapses into a hamburger menu, which expands when tapped. This keeps the interface clean and uncluttered on mobile devices.
+
+- The logo is positioned on the left and also functions as a home button.
+- The navigation links are displayed in a row on large screens but are hidden in a dropdown menu on smaller screens.
+- A dedicated contact button makes it easy for users to reach out, standing out from the other links.
+- A smooth scrolling feature has been added, ensuring that when users click a link to an in-page section, they are taken there in a seamless motion rather than a sudden jump.
+- On mobile, once a user clicks a menu item, the dropdown automatically collapses, making it more user-friendly.
+- The navbar uses fixed-top, meaning it remains visible as users scroll, making navigation more accessible.
 
 <div align="center">
    <img src="docs/images/core-feature-navbar.webp" alt="Navbar" width="300">
 </div>
 
+- Consistency & Visibility: The navbar remains fixed at the top of the page so users always have access to navigation.
+- Dark Color Scheme: This gives the navbar a modern and professional appearance while ensuring good contrast for readability.
+- Hover Effects:
+   - The contact button changes color when hovered over, making it clear that it is an interactive element.
+   - The other navigation links underline on hover, providing a subtle visual cue.
+   - The logo changes slightly on hover, simulating a color shift that adds a small interactive touch.
+   - Mobile-Friendly Adjustments: The menu collapses into a hamburger icon on smaller screens to save space and keep the page looking clean.
+
+<details>
+<summary>Additional Information</summary>
+<br>
+Collapsible Menu for Mobile Users:
+
+- The navbar-toggler button is used to collapse and expand the menu when clicked, ensuring a clean and uncluttered interface on mobile devices.
+   - This functionality is built into Bootstrap, allowing for smooth transitions between expanded and collapsed states.
+- Uses a JavaScript snippet from Code Institute’s Boardwalk Games Project to improve usability.
+   - The script ensures smooth scrolling when navigating to different sections of the same page.
+   - On mobile devices, selecting a menu item automatically collapses the dropdown, preventing unnecessary clutter.
+   - Responsiveness and Styling
+</details>
+
+<br>
+
 **Footer**
 
-Structure and Functionality  
-- Contact Details Section  
-  - The contact information is housed within an article for semantic accuracy.  
-  - It includes a heading to highlight the section’s purpose.  
-  - A brief paragraph provides an introduction to the contact details.  
-  - The direct contact information includes:
-    - A phone number with an icon.  
-    - An email address with an envelope icon.  
-- Social Media Integration  
-  - Social media icons are linked to external platforms using anchor tags with attributes:
-    - target="_blank" ensures links open in a new tab.  
-    - rel="noopener" improves security when opening external links.  
-  - The icons for Instagram, Facebook, and LinkedIn use:
-    - Bootstrap’s column (col-4) layout to distribute icons evenly across the row.  
-  - The entire section is wrapped inside an aside element to indicate secondary content that complements the main page.
-- Website Author Attribution
-  - The website’s copyright information is displayed using:
-    - A paragraph element with the FontAwesome copyright icon.  
-- Mini Navigation Buttons 
-  - A secondary navigation menu is included at the bottom for quick access.  
-  - It is wrapped within a nav element inside #footer-navigation, improving semantic clarity.  
-  - Each button is represented by an icon-only navigation link using anchor tags, which:
-    - Provide quick access to different pages such as Home, About, Tours, Gallery, Reviews, and Contact.  
-    - Are styled with rounded corners and shadows for an elevated button-like effect.
+The footer ensures that users can easily find contact information and social media links while also offering mini navigation buttons for quick access to key pages.
 
-Responsiveness and Styling  
-- Bootstrap’s grid system ensures that the contact details and social media icons are evenly spaced.
-- Flexbox properties are used to control alignment across different screen sizes:
-  - On larger screens, content is distributed horizontally.
-  - On smaller screens, elements are stack vertically in two columns for a cleaner layout.
-- The mini navigation buttons are styled with shadows and padding (p-2) to create a soft, interactive feel.
--  Each anchored icon features a hover effect where the background color subtly changes, reinforcing the interactive nature of the navigation.
+- Contact Details Section
+   - Displays the phone number and email in a clear, easy-to-read format.
+   - Includes social media icons for Instagram, Facebook, and LinkedIn, allowing users to connect via external platforms.
+- Website Attribution
+   - Shows the copyright notice with the website author’s name.
+- Mini Navigation Buttons
+   - A set of icon-based buttons that provide a fast way to navigate between important sections.
+   - Includes home, about, tours, gallery, reviews, and contact buttons, making it easy for users to jump between pages.
 
 <div align="center">
    <img src="docs/images/core-feature-footer.webp" alt="Footer" width="300">
 </div>
 
+- Clear and Organized Layout
+   - The footer is structured to separate contact details, social links, and navigation for better readability.
+- Mobile Optimization
+   - On smaller screens, the elements stack vertically to keep everything easy to read.
+   - On larger screens, the layout spreads out horizontally for a balanced look.
+- Hover Effects on Icons:
+   - The social media icons subtly change on hover, reinforcing their interactivity.
+   - The mini navigation buttons have a slight hover effect to make them feel more engaging.
+- Soft Colors & Shadows: These design choices make the footer feel integrated with the rest of the site, maintaining visual harmony without being overwhelming.
+
+<details>
+<summary>Additional Information</summary>
+<br>
+Responsive Structure:
+
+- Bootstrap Grid for Alignment
+   - The grid system ensures balanced spacing, keeping the footer elements evenly distributed.
+   - On large screens, contact details, social icons, and navigation are arranged in a horizontal layout, providing a structured, easy-to-read format.
+   - On smaller screens, elements stack vertically, forming two columns for better readability and accessibility.
+- Flexbox for Adaptive Layouts
+   - Flex properties control the arrangement of footer elements, ensuring alignment across various screen sizes.
+   - On wide screens, elements are positioned side by side for a balanced layout.
+   - On narrow screens, Flexbox dynamically shifts elements into a column format, reducing clutter and improving usability.
+</details>
+
 #### **Specific Features** (4.2)
 **Hero Banners**
 
-Structure and Functionality  
-- General Layout  
-  - Both hero banners are wrapped in a header element to provide semantic meaning and define the primary introduction for each page.  
-  - A full-width background image is applied using CSS to ensure the hero section spans the entire viewport.  
-  - The content is enclosed in a section to maintain flexibility in alignment and scaling across devices.  
-  - The d-flex align-items-center justify-content-center classes ensure the headings remain centered, both horizontally and vertically.  
-  - A container ensures adaptability while maintaining structured spacing.   
-  - The text is centrally aligned with text-center, ensuring readability against the background.    
-  - The w-100 class ensures the section spans the full width, maintaining a consistent layout.  
+The hero banners serve as the visual introduction to key pages, creating an immediate impact while maintaining clear messaging and branding. These sections are designed to be fully responsive, ensuring they adapt seamlessly to different screen sizes while maintaining their readability and visual appeal.
 
-Responsiveness and Styling  
-- Typography & Readability  
-  - The large display-1 font size ensures that the hero text remains clear and readable on all devices.  
-  - The secondary heading (h2) is slightly smaller, providing hierarchical clarity while maintaining visual balance.  
-- Background Image Adaptability  
-  - The hero sections use CSS to apply a full-width background image.  
-  - The images are dynamically scaled to ensure they remain proportionally balanced on different screen sizes.  
-  - The use of overlay effects ensures that text remains readable against varying backgrounds.  
-- Hover & Interactive Effects  
-  - The text in the hero banners subtly changes color on hover, providing an interactive and dynamic feel.  
-  - The banners feature smooth transitions, making any interactions visually appealing.  
-- Larger Screens  
-  - On larger screens, the text scales up to ensure proper readability.  
-  - The flexbox properties adjust alignment dynamically, keeping the content centered and well-spaced.  
+These Features were designed to: 
+
+1. Provide a strong first impression
+2. Reinforce branding
+3. Ensure readability
+4. Adapt dynamically 
 
 <div align="center">
    <img src="docs/images/specific-features-hero-banner-1.webp" alt="Homepage Hero Banner" width="300">
    <img src="docs/images/specific-features-hero-banner-2.webp" alt="Tours Page Hero Banner" width="300">
 </div>
 
+- Background Images
+   - The banners use full-width background images to create a visually immersive experience.
+   - The images adjust proportionally to different screen sizes, preventing stretching or cropping.
+   - A subtle overlay effect is applied to enhance text visibility against complex backgrounds.
+- Typography & Readability
+   - The main heading (h1) uses a large display font to stand out.
+   - The secondary heading (h2) is slightly smaller to maintain a clear hierarchy.
+   - Text is center-aligned to keep it balanced within the banner.
+- Responsive Design & Layout
+   - On small screens, text scales down and remains centered for easy readability.
+   - On larger screens, text scales up to fill the space proportionally without overwhelming the design.
+
+<details>
+<summary>Additional Information</summary>
+<br>
+Setting the Background Image:
+
+- The background image is applied using the background-image property in CSS, ensuring that it covers the entire section without distortion.
+- The background size, cover, property ensures the image scales dynamically to fit different screen widths while maintaining its proportions.
+- The background position, center, keeps the most visually important part of the image in focus, preventing unwanted cropping.
+Overlay Effect for Readability
+- To ensure the text remains legible over the background image, an overlay effect is used.
+- This is implemented using an additional ::before pseudo-element, which sits on top of the background image.
+- The overlay uses rgba(237, 196, 121, .75):
+   - The rgba function applies a yellow overlay.
+   - The 0.75 value keeps it semi-transparent, allowing the image to remain visible while improving text contrast.
+</details>
+
+<br> 
+
 **About Section** 
 
-Structure and Functionality  
-- General Layout  
-  - This section is nested within the main element, reinforcing its semantic importance as a key content area of the webpage. 
-  - The about section is wrapped within a section element, ensuring semantic clarity.  
-  - A Bootstrap container is used to maintain layout while allowing responsiveness.  
-  - A row structure divides the section into two key parts:  
-    - A circular profile image of Clancy Nook.  
-    - A text block containing a header (h2), paragraph content (p), and a signature image (img).  
+The About Section provides visitors with background information on Clancy Nook, his journey, and his passion for storytelling through historical tours. It creates a personal connection with users, reinforcing authenticity and credibility. The section features a profile image, a brief biography, and a signature element that enhances branding.
 
-Responsiveness and Styling
-- Profile Image  
-  - The figure element contains an image of Clancy Nook, set to a fixed size of with a circular crop for a clean and professional appearance.  
-  - The image is center-aligned on smaller screens (col-12 text-center) and left-aligned on larger screens (col-lg-4).  
-- Text Content  
-  - A header element with an h2 display-5 heading introduces the section with "About."  
-  - The main text is housed in a p tag and is broken into two key paragraphs:  
-    - The first paragraph introduces Clancy Nook’s journey to Manchester and his historical studies.  
-    - The second paragraph highlights the deeper storytelling aspect of his tours, emphasizing human connections and historical narratives.  
-  - The text uses text-center for smaller screens and text-lg-start for left alignment on larger screens.  
-- Signature Element  
-  - A transparent signature image is placed at the bottom of the text block, reinforcing the personal branding of Clancy Nook.  
-  - It is positioned with col-12 text-end to align it to the right on larger screens.
-- Grid Expansion  
-  - On larger screens, the section has a two-column layout, with the image on the left and the text on the right.  
-  - The col-lg-4 and col-lg-8 classes ensure that the image and text are proportionally balanced, preventing excessive whitespace.   
-- Image Sizing and Proportions  
-  - The profile image maintains a fixed size to prevent unnecessary stretching. 
+This Feature utilises: 
+1. The inclusion of a profile image to add human touch, making Clancy’s tours feel more personal and engaging.  
+2. The small biography giving insight into Clancy Nook's credibility, helping potential customers feel a stronger connection to his work.
+ 
+- The section is divided into two primary parts 
+  - A circular profile image representing Clancy Nook. 
+      - It features a circular crop, creating a polished and professional appearance. 
+  - A text block containing a header, descriptive paragraphs, and a signature image.  
+- The biography is structured into two key paragraphs:  
+  - The first paragraph introduces Clancy Nook’s background, his move to Manchester, and his historical studies.  
+  - The second paragraph emphasizes his approach to storytelling, focusing on personal narratives and historical connections.   
+- A transparent signature image is placed at the bottom of the text block to reinforce Clancy Nook’s branding.  
 
 <div align="center">
-   <img src="docs/images/specific-feature-about.webp" alt="About Feature" width="300">
+=   <img src="docs/images/specific-feature-about.webp" alt="Tours Page Hero Banner" width="300">
 </div>
+
+- Clean and Balanced Design  
+   - The circular profile image keeps the section visually appealing while maintaining a sense of professionalism.  
+   - The structured layout ensures that the text and image are proportionally balanced, preventing excessive whitespace or clutter.  
+- Readability and User Experience  
+   - The text is center-aligned on small screens for easy reading but shifts to a left-aligned format on larger screens for a natural layout.  
+   - The use of Bootstrap’s responsive typography ensures that the content remains legible across all devices.  
+
+<details>
+<summary>Additional Information</summary>
+<br>
+- Grid Expansion and Responsiveness  
+   - On smaller screens (col-12), the profile image and text stack vertically, ensuring that the section remains easy to navigate.  
+   - On medium screens (col-md-6), the section shifts to a balanced two-column layout.  
+   - On larger screens (col-lg-4 for the image and col-lg-8 for text), the grid expands while maintaining proportional spacing.  
+- Text Adaptability  
+   - The text dynamically shifts from center-aligned (text-center) to left-aligned (text-lg-start) based on screen width.  
+   - Spacing and margins are adjusted through Bootstrap’s responsive classes to prevent crowding on smaller screens.  
+</details>
+
+<br>
 
 **Tour Overview Section**
 
-Structure and Functionality  
-- General Layout  
-  - - This section is nested within the main element, reinforcing its semantic importance as a key content area of the webpage. 
-  - It is wrapped within a section element with an id="tour-cards", maintaining semantic clarity and ease of styling.  
-  - A container class ensures that the section remains properly aligned and responsive across different screen sizes.  
-  - A header introduces the section with a display-5 h2 heading, followed by a short instructional paragraph prompting users to interact with the tour cards.  
-- Tour Cards  
-  - The tour offerings are displayed as clickable cards based off Bootstrap's basic card with mixed content and a fixed width.
-  - Each card to a specific tour page using a tags with rel="related".  
-  - Each card is contained within an article element.  
-  - Each card consists of:  
-    - A historical black-and-white image representing the tour location.  
-    - A card title (h3) naming the tour.  
-    - A brief description (p) summarizing the key theme of the tour.  
-  - The tour cards are assigned Bootstrap column classes (col-12 col-md-6 col-lg-3) to ensure they adapt to screen width.  
+The Tour Overview Section serves as an introduction to the service, so users can explore the different walking tours available. Each tour is presented as an interactive card, allowing users to click and navigate to a dedicated tour page for more details.
 
-Responsiveness and Styling
-- Grid Adaptability  
-  - On small screens, the tour cards stack vertically (col-12), ensuring readability without excessive scrolling.  
-  - On medium screens, two cards are displayed per row (col-md-6), making better use of space.  
-  - On larger screens, all four cards are displayed in a single row (col-lg-3), creating a well-balanced, symmetrical layout.  
-- Card Sizing and Layout  
-  - The cards expand to fit the available space while maintaining a consistent aspect ratio.  
-  - The images scale proportionally, ensuring visual consistency across all screen sizes.  
-  - min-height rules have been applied at different breakpoints to ensure that card heights remain consistent where required, preventing misalignment caused by varying text lengths.  
-- Text and Image Alignment  
-  - The images are positioned at the top of each card (card-img-top), ensuring a clear visual hierarchy.  
-  - On larger screens, the text scales slightly for a refined and spacious layout.  
-- Interactive and Hover Effects  
-  - The entire card is clickable, making navigation more intuitive.  
-  - A subtle hover effect is applied, slightly enlarging the card and adding a shadow to enhance interactivity.  
-  - The images feature a soft transition effect, preventing abrupt shifts when resizing.  
-- Enhanced Readability and User Engagement  
-  - The text size is adjusted dynamically through CSS media queries to prevent it from appearing too small or too large on wide screens.  
-  - The color contrast ensures legibility, with a muted background allowing the black-and-white images and text to stand out.  
+- Each tour is presented as a clickable card, allowing users to access more information.  
+- The cards follow Bootstrap's card component, providing a structured, visually balanced layout.  
+- Clicking on a card redirects users to the dedicated tour page, making navigation seamless.  
+- Each card contains:  
+  - A historical black-and-white image representing the location.  
+  - A card title displaying the tour name.  
+  - A brief description summarizing the tour experience.  
 
 <div align="center">
-   <img src="docs/images/specific-features-featured-tours.webp" alt="Featured Tours Tiles" width="300">
+   <img src="docs/images/specific-features-featured-tours.webp" alt="Tours Overview" width="300">
 </div>
+
+- Styling Enhancements for Readability & Engagement 
+   - Min-height rules are applied at different breakpoints to prevent misalignment due to varying text lengths.  
+   - Subtle hover effects improve interactivity:  
+      - Cards slightly enlarge when hovered over, with a soft shadow effect to enhance engagement.  
+   - Smooth transition effects allow images to resize fluidly, preventing abrupt layout shifts.  
+- Optimized for Readability
+   - Text sizes adjust dynamically using CSS media queries, ensuring they are neither too small on mobile screens nor too large on desktops.  
+   - A muted background enhances contrast, making the black-and-white tour images and text stand out clearly.  
+
+<details>
+<summary>Additional Information</summary>
+<br>
+Reponsiveness:
+- Bootstrap Grid Classes for Adaptability
+   - col-12: Ensures that each card takes up the full width on small screens, stacking vertically.  
+   - col-md-6: On medium screens, two cards are displayed per row, making better use of available space.  
+   - col-lg-3: On large screens, all four cards are displayed in a single row, creating a symmetrical and well-balanced structure  
+
+Consistent Card Heights  
+- Min-height rules were applied at different breakpoints to prevent cards from being misaligned due to varying text lengths
+</details>
+
+<br> 
 
 **Tours Sections**
 
-Structure and Functionality  
-- General Layout  
-  - The section is nested within the main element, reinforcing its role as a primary content area and enhancing accessibility for screen readers and search engines.  
-  - The section is divided into multiple section elements, each representing a different tour.  
-  - Each tour section contains a heading (h2), a descriptive paragraph, and a structured list of key tour details.    
-- Featured Tour Sections  
-  - Each tour section is structured using Bootstrap’s grid system, ensuring responsiveness and a balanced layout across different screen sizes.  
-  - The content for each tour is divided into two primary columns:  
-    - A Bootstrap carousel inside a figure element to display multiple historical images.  
-    - A div containing the tour description and key details.  
-  - The Bootstrap carousel (figure class="carousel slide") provides an interactive way to showcase multiple images for each tour.  
-    - The carousel-inner class wraps the different image slides.  
-    - carousel-item active ensures that the first image is displayed by default.  
-    - Left (carousel-control-prev) and right (carousel-control-next) buttons allow users to navigate between images.  
-    - The d-block w-100 class is applied to all images, ensuring they scale properly within the carousel.  
-  - The tour description is structured within a p tag inside a div assigned Bootstrap classes for alignment:  
-    - col-12 text-md-center text-lg-start ensures that text is centered on smaller screens and left-aligned on larger screens.  
-    - Additional spacing and alignment classes (justify-content-md-center justify-content-lg-start) ensure proper positioning within the grid.  
-  - The tour details section is based on Bootstrap's card group template, which allows for a collection of cards to be displayed in a structured row while maintaining a consistent height and alignment.  
-    - Each individual tour detail (cost, duration, distance, meeting location) is placed inside a card.  
+The Tours Section presents each guided tour in a visually structured and engaging way, allowing users to explore different options and access relevant details at a glance. Each tour has its own dedicated section featuring a carousel of historical images, a detailed tour description, and a structured display of key tour details.   
 
-Responsiveness and Styling  
-- Grid Adaptability  
-  - On smaller screens, the tour details and images stack vertically, ensuring readability.  
-  - On medium screens, the grid adjusts to display text and images side by side.  
-  - On larger screens, the layout becomes more structured, with descriptions and images arranged for optimal readability.    
-- Carousel and Image Adaptation  
-  - Each tour includes a Bootstrap carousel (data-bs-ride="carousel") allowing users to navigate through multiple historical images.  
-  - The carousel automatically scales to fit different screen sizes without distortion.  
-  - Images are assigned the d-block w-100 class to ensure they maintain their proportions.  
-- Text and Card Sizing  
-  - The tour details section adjusts spacing and alignment using col-6 col-md-3 for proper distribution on different devices.
+This design: 
+1. Allows users to quickly scan and compare different tours.  
+2. Creates a visually appealing layout that is easy to navigate.  
+3. Keeps multiple images in one place, reducing clutter and preventing long scrolling sections.    
+
+- Each tour section consists of:  
+  - A heading displaying the tour title.  
+  - A descriptive paragraph providing a brief overview of the experience.  
+  - A list of key details outlining the tour duration, distance, meeting location, and cost.  
 
 <div align="center">
    <img src="docs/images/specific-feature-tours-sections.webp" alt="Tours Sections" width="300">
 </div>
+
+- Each tour section is designed using Bootstrap’s grid system, allowing for flexible and adaptive layouts across different screen sizes.  
+- The tour details (cost, duration, distance, and meeting location) are presented in a structured group of cards, ensuring consistency across all tours.  
+   - These details are formatted using Bootstrap’s card group template, which ensures that all cards maintain equal height and alignment.  
+   - Each tour detail is displayed inside an individual card, making it easy to read and well-organized.
+- The alternating layout on larger screens helps break monotony and enhances visual interest.
+
+<details>
+<summary>Additional Information</summary>
+<br>
+
+- The content for each tour is divided into two primary columns:  
+  - A Bootstrap carousel inside a figure element to showcase multiple historical images.  
+  - A div containing the tour description and key details for easy reference.  
+- Image Carousel Functionality  
+   - The Bootstrap carousel (figure class="carousel slide") allows users to scroll through multiple images associated with each tour.  
+   - The carousel-inner class ensures that all images are contained within a slideshow, improving navigation.  
+   - The carousel-item active class ensures that the first image loads by default when the page is opened.  
+   - Left (carousel-control-prev) and right (carousel-control-next) navigation buttons enable manual scrolling between images. 
+- Alternating Layout for Better Visual Flow  
+   - As the screen size increases, the tours align differently using Bootstrap’s column ordering system.  
+   - On medium screens, images and descriptions are side by side in a straightforward two-column layout.  
+   - On larger screens, an alternating margin alignment technique is used to create a staggered visual effect:  
+      - Odd-numbered tour sections have their content aligned to the left using order-lg-1, while even-numbered tours align to the right using order-lg-2.  
+</details>
+
+<br> 
 
 **Review Tiles**
 
