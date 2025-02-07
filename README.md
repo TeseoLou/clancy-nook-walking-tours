@@ -1620,6 +1620,7 @@ This Feature utilises:
 <details>
 <summary>Additional Information</summary>
 <br>
+
 - Grid Expansion and Responsiveness  
    - On smaller screens (col-12), the profile image and text stack vertically, ensuring that the section remains easy to navigate.  
    - On medium screens (col-md-6), the section shifts to a balanced two-column layout.  
