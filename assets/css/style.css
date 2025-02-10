@@ -148,8 +148,7 @@ footer #direct-contact, footer #socials {
     flex-wrap: nowrap; /* Icons in a single row by default */
     justify-content: center;
     gap: 12px;
-    background-color: var(--primary-color--);
-    box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.1);
+    background-color: transparent !important;
 }
 
 #footer-navigation > p {
