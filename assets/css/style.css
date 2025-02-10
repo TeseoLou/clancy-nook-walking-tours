@@ -639,6 +639,18 @@ textarea {
     margin-left: -7px;
 }
 
+/*Success Page*/
+#success-image:hover {
+    content: url(../images/success-image-hover.webp); /*Responsive image for feedback*/
+    transition: ease-in-out;
+}
+
+/*Error Page*/
+#error-image:hover {
+    content: url(../images/404-image-hover.webp); /*Responsive image for feedback*/
+    transition: ease-in-out;
+}
+
 /*Media queries*/
 /*Plus Size Phones (Large Phones 375px and up)*/
 @media screen and (min-width: 375px) {
