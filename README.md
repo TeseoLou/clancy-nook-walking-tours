@@ -1952,3 +1952,15 @@ In addition to the core and content-specific features, several supplementary sec
    - The TripAdvisor logo changes on hover, swapping to a different-colored version and a larger size.  
    - The contact button background changes color on hover, making it stand out and encouraging user interaction.  
 
+## **Bugs** (5)
+
+## **Testing** (6) 
+
+## **Deployment** (7) 
+
+To deploy the page, I used GitHub Pages and followed these steps:
+
+1. I navigated to the project's repository and opened the Settings tab.
+2. In the left-hand menu, I clicked on the Pages section.
+3. Under the Source section, I selected the Main branch from the drop-down and clicked Save.
+4. A confirmation message appeared, indicating the deployment was successful, along with the live link to the website.
