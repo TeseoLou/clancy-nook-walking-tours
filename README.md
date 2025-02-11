@@ -1956,7 +1956,7 @@ In addition to the core and content-specific features, several supplementary sec
 
 During the development process, several bugs and unexpected issues arose, requiring investigation and troubleshooting. Below is a breakdown of the main bugs encountered, their causes, and how they were resolved (or why they couldn’t be fully fixed).
 
-### **Sticky Navbar Overlapping Page Content** (5.1)
+### **Navbar Overlap** (5.1)
 
 During the development of my website, I wanted the navbar to remain fixed at the top of the screen while scrolling to improve navigation. To achieve this, I used the Bootstrap class fixed-top in my nav element:
 
@@ -1975,7 +1975,7 @@ I made the following adjustments:
 
 This simple fix pushed the content down, ensuring it started below the navbar.
 
-### **Fixing Anchor Link Overlap with Navbar** (5.2)
+### **Anchor Link Overlap** (5.2)
 
 After setting my navbar to be fixed (fixed-top), I noticed a problem when clicking anchor links (e.g., "About" in the navbar). Instead of scrolling neatly to the section, the page would scroll too far up, hiding the start of the section behind the navbar.
 
@@ -1992,7 +1992,7 @@ To prevent this, I implemented a hidden anchor div that acted as an offset:
 
 This simple but effective trick significantly improved usability and ensured a seamless scrolling experience across my website. This solution was inspired by web design tutor @dereksiuau, whose method of using an offset anchor div provided an elegant and effective approach.
 
-### **Mini Navbar in the Footer** (5.3)
+### **Mini Navbar** (5.3)
 
 During the development of the website, I implemented a mini navigation bar in the footer to provide quick access to key pages. Initially, this component was structured using a div, but after further evaluation, I recognized that a more semantically accurate approach would be to use the nav element, aligning with accessibility and best practices.
 
@@ -2021,7 +2021,7 @@ I made the following adjustments:
 
 After implementing these fixes, the mini navbar in the footer correctly displayed in its intended format across all devices, maintained accessibility standards, and functioned smoothly while keeping its original styling.
 
-### **Social Media Icon Height Issue** (5.4)
+### **Anchored Icon Positioning** (5.4)
 
 While working on the footer section, I noticed that the social media icons (Instagram, Facebook, LinkedIn) were not aligning properly with the phone and email icons on the left side. This created a visual inconsistency, making the layout feel unbalanced.
 
@@ -2048,7 +2048,57 @@ I made the following adjustments:
 
 The phone, email, and social media icons now align perfectly, the footer section looks visually balanced across all screen sizes and the icons scale correctly, and there is no noticeable misalignment anymore.
 
-### **Creating a Responsive Layout for the About Section** (5.5)
+### **Hero Banner Responsiveness** (5.5)
+
+When designing the hero banner for my homepage, I wanted it to be fully responsive while maintaining a consistent visual appearance across different screen sizes. I took inspiration from the Love Running Project, which demonstrated how to structure a hero section effectively.
+
+Initially, when adjusting the page for different screen sizes, I noticed that:
+- On smaller screens, the entire image would shrink, reducing its impact.
+- On larger screens, the image stretched, sometimes losing focus on key visual elements.
+- The hero section wasn't behaving consistently, making the layout appear unpolished.
+
+Key Causes of the Problem:
+1. Default Scaling Behavior – Without specific styling, the hero image scaled proportionally with the width of the screen. This meant:
+   - On smaller screens, the entire image shrank down, reducing its visibility and impact.
+   - On larger screens, the image stretched wider than intended, sometimes shifting the focus away from key elements.
+2. Lack of a Fixed Height – Since images typically resize based on their container, the height of the hero image was changing dynamically, which caused inconsistent results across different devices.
+3. Background Image Properties – By default, if background-size is not explicitly set, the browser may either:
+   - Scale the image down to fit smaller screens.
+   - Expand the image width on larger screens, causing unwanted distortion or loss of key visual details.
+
+To resolve this, I applied CSS background properties to ensure the hero image maintained its size while adjusting dynamically to different screen widths:
+1. background-size: cover; ensures the image fills the section without stretching.
+2. background-position: center; keeps the most important part of the image visible.
+4. height: 400px; guarantees a consistent height across all devices.
+5. position: relative; sets the element's positioning relative to its normal position in the document flow.
+
+### **Call-to-Action Alignment** (5.6)
+
+After implementing the responsive hero image, I encountered a new issue The title  and subtitle within the call-to-action (#call-to-action) were not centrally aligned.
+
+The key issues were:
+- The text was shifting inconsistently across different screen sizes.
+- On smaller screens, it appeared too high or too low.
+- The overlay wasn't staying centered, affecting readability.
+- The call-to-action wasn’t positioned correctly over the hero image, making it look disjointed.
+
+Key Causes of the Issue
+1. Default Document Flow and Positioning Conflicts
+   - The #call-to-action overlay was inside the #homepage-hero section but was not positioned explicitly.
+   - Since block-level elements (like h1 and h2) follow normal document flow, they were shifting based on content and screen size changes, making alignment inconsistent.
+2. Lack of Defined Positioning
+   - The #call-to-action overlay initially relied on automatic alignment, which caused:
+      - On smaller screens, the text appeared too high or too low.
+      - On larger screens, the overlay wasn’t centered, affecting readability.
+3. Parent Element’s Default Behavior
+   - The #homepage-hero section was positioned relatively, but the call-to-action overlay needed explicit absolute positioning to stay aligned inside the hero banner.
+
+To ensure the call-to-action overlay remained consistently positioned, I applied absolute positioning within the #homepage-hero section:
+1. position: absolute; ensured that the #call-to-action overlay was anchored inside the #homepage-hero section instead of moving with the page content.
+2. top: 25%; placed the text in the upper third of the hero section, making it visually balanced.
+3. z-index: 100; ensured the text overlay stayed visible on top of the hero image.
+
+### **Responsive About Section** (5.7)
 
 One of the biggest challenges I faced while designing the About section was ensuring that it had a responsive layout that looked good across all screen sizes:
 
@@ -2075,6 +2125,196 @@ To resolve these issues, I structured the section using Bootstrap’s grid syste
    - On larger screens, the signature is aligned to the right, complementing the horizontal layout.
 
 By making the most of Bootstrap’s grid system and text utilities, I was able to achieve a fully flexible and visually appealing About section without requiring excessive custom CSS.
+
+### **Tour Card Heights** (5.8)
+
+When creating the Tours Overview section, I noticed an inconsistency where the tour cards were displaying at different heights. This created a misaligned and unpolished appearance, particularly on tablet and desktop screens.
+
+This was a problem I had encountered before in the Boardwalk Games walkthrough project, so I knew what was causing the issue and how to fix it.
+
+The root cause of the issue was:
+- The card height was being determined by the text content inside .card-body.
+- Cards with shorter descriptions had a smaller height, while those with longer descriptions expanded.
+- This caused the tour cards to misalign in a row, creating an uneven and visually unbalanced layout.
+
+To ensure all the tour cards maintained a consistent height, I applied a minimum height (min-height) to the .card-body section at different screen breakpoints:
+1. Applied min-height to .card-body to keep all cards uniform.
+2. Adjusted min-height at different screen sizes to maintain responsiveness.
+
+This meant all cards were the same height, creating a clean, professional layout. It prevented cards from collapsing when content was shorter than others and maintained responsiveness by adjusting min-height at different breakpoints.
+
+### **Tour Section Title** (5.9)
+
+When designing the featured tour sections, I wanted the title of each tour to adjust dynamically based on the screen size:
+- On mobile screens, the title should appear above the carousel for a stacked layout.
+- On small laptops (medium screens), the title should be positioned above the carousel but in a wider format.
+- On large desktops, the title should be beside the carousel and above the description, creating a more balanced and visually appealing layout.
+
+However, the titles were not behaving as expected across breakpoints, caused by:
+- Bootstrap’s default grid behavior, which stacked elements unpredictably across breakpoints.
+- Lack of explicit positioning for the title at different screen sizes.
+- Misalignment of flex properties, which caused inconsistencies in spacing and placement.
+
+To ensure the title adjusted correctly for all screen sizes, I:
+1. Used Bootstrap utility classes (d-flex, d-none, d-lg-flex) to dynamically display the title in different positions.
+2. Placed one h2 element above the carousel for mobile screens and another inside the text container for larger screens.
+3. Applied custom CSS margin and alignment adjustments at different breakpoints.
+
+The titles now adjust for a polished, readable layout. On mobile, they stack above the carousel; on medium screens, they stay above with proper spacing. On large desktops, they align beside the carousel and above the text, ensuring a cohesive design across all devices.
+
+### **Responsive Card Groups** (5.11)
+
+When designing the tour details card group using the Bootstrap Card Group template, I encountered issues with alignment and responsiveness across different screen sizes. The details (price, duration, distance, and location) were not aligning evenly and were shifting inconsistently depending on the screen size. Sometimes, they would appear misaligned or too spaced out, making the layout feel unpolished.
+
+The misalignment stemmed from Bootstrap's automatic column wrapping behavior combined with differences in text length. Specifically:
+- Unequal text lengths in the tour details (e.g., "Free" vs. "Thirsty Scholar, M1 5NP") caused height variations, making some cards appear taller than others.
+- Bootstrap’s default flex behavior was causing elements to shift into an uneven grid structure, especially on medium-sized screens.
+- Lack of a defined structure in how elements distributed within the .row class resulted in cards collapsing or stretching unevenly.
+- The absence of a fixed height for the .tour-details elements meant that smaller cards would shrink while longer text elements would expand, throwing off the overall alignment.
+
+I applied Bootstrap flex utilities and column sizing. The final solution involved:
+1. Applying Bootstrap’s row and col classes to maintain a two-column layout on smaller screens and a four-column layout on larger screens.
+2. Utilizing justify-content-md-center and justify-content-lg-start to ensure cards aligned properly at different breakpoints.
+3. Adding a .tour-details class with a fixed width to keep uniform spacing between elements.
+4. Using align-content-xl-between to ensure that on extra-large screens, the content distributed evenly without overlapping or excessive spacing.
+5. Fine-tuning spacing via media queries, adjusting margins and paddings for large desktops to prevent inconsistencies.
+
+The tour details cards now maintain even spacing across all screen sizes. On mobile screens, they stack neatly into two columns, while on medium screens, they stay balanced and centered. On large desktops, the cards align in a structured four-column layout, creating a polished and visually cohesive presentation.
+
+### **Gallery Layout** (5.12)
+
+When coding the gallery section, I initially used a masonry-style layout, similar to the approach in the Love Running project. This provided responsiveness but resulted in an unstructured look at the bottom of the page. The varying heights of different columns caused an uneven, jagged appearance, making the layout feel messy rather than polished.
+
+To address this, I first ensured that all landscape images shared the same aspect ratio and all portrait images maintained a uniform size. However, this only partially improved the issue—while it helped with visual consistency, the gallery still didn't align neatly across different breakpoints.
+
+Failed Attempts to Fix the Issue:
+- Using grid-auto-flow: dense; in CSS: I attempted to control image arrangement, but it still led to uneven column heights.
+- Setting fixed heights for images: This resulted in some images being awkwardly cropped, which disrupted the natural aspect ratio.
+- Forcing equal-height columns: This caused distortion in some images, reducing the overall aesthetic quality of the gallery.
+
+To achieve a clean and structured gallery layout, I implemented separate gallery designs at different breakpoints:
+1. The key to this structured layout was using div elements strategically to control the flow and organization of images, particularly in the tablet and laptop versions of the gallery.
+2. Tablet View
+   - Instead of a simple stacked list of images, I used div containers to create structured row groupings.
+   - Within each row, images were either placed side by side (landscape images) or arranged in a stacked column (portrait images).
+3. Laptop/Desktop View 
+   - Here, div containers defined specific columns within the grid, ensuring the layout remained balanced.
+   - Some div elements spanned multiple rows to fill space naturally, while others contained stacked portrait images to maintain a structured feel.
+   - Using d-flex and align-items-stretch, I ensured the images adapted dynamically without breaking the layout.
+
+By utilizing div-based grouping, I eliminated jagged edges at the bottom of the gallery, prevented uneven columns, and maintained a crisp, well-structured grid system across different screen sizes.
+
+### **Background Scrolling** (5.13)
+
+I encountered an issue where the background images on both the Reviews and Contact pages scrolled along with the content, rather than remaining static. This disrupted the intended aesthetic, making the pages feel less polished and reducing the immersive effect.
+
+Cause of issue: 
+- By default, the background property in CSS applies an image relative to the element’s content.
+- As users scrolled down, the background moved along with the content.
+- The .container and other sections had their own height properties.
+- This caused the background to shift instead of staying fixed in place.
+
+To fix this, I:
+1. Fixed Background Issue:
+   - The key fix was applying background-attachment: fixed;, ensuring the background remained static while content scrolled over it.
+2. Structural Adjustments:
+   - Used position: relative; to maintain content alignment.
+   - Set height: 100%; and width: 100vw; to ensure full coverage.
+3. Responsive Design for Different Screens:
+   - Implemented media queries to swap background images for medium and large screens.
+   - Prevented image distortion by selecting appropriately sized background images.
+   - Ensured clarity and visual consistency across all device sizes.
+
+The solution was found on MDN Web Docs, which recommended using background-attachment: fixed; to keep the background in place. Implementing this ensured the background remained fixed on both the Reviews and Contact pages, creating a more polished effect.
+
+### **Form Field Responsiveness** (5.14)
+
+Even after implementing Bootstrap’s grid system to keep input fields aligned on larger screens, I encountered an issue where some fields were unexpectedly pushed onto a new line. This disrupted the intended layout, making the form appear uneven and less structured.
+
+Cause of the Issue
+- The default Bootstrap column spacing (gutter) added unintended margins.
+- When a row’s total column width slightly exceeded 100%, it forced elements onto a new line.
+- This was especially problematic on mid-sized breakpoints where field widths fluctuated.
+
+As a solution I: 
+1. Refined Column Sizing
+   - Adjusted column sizes proportionally to ensure they fit within a single row.
+   - Used col-md-4, col-lg-3, and col-xl-3 to better distribute space without exceeding row limits.
+2. Made Margin & Padding Adjustments
+   - Manually reduced margins on input fields to prevent them from exceeding the row width.
+   - Applied margin: 0; to affected fields to override Bootstrap’s default spacing.
+   - Used row w-100 on the form’s container to ensure a consistent structure across breakpoints.
+
+The input fields now align correctly on all screen sizes, preventing unexpected breaks. Bootstrap’s responsive classes function smoothly without margin conflicts.
+
+### **Styling Form Inputs** (5.15)
+
+While using Bootstrap’s default input styling, I noticed inconsistencies in how the fields appeared across different browsers. Borders, background colors, and padding were not uniform, leading to a lack of visual consistency in the form design. Additionally, some inputs appeared slightly misaligned, disrupting the overall structure.
+
+Cause of the Issue:
+- Bootstrap’s built-in form styling varies slightly across browsers.
+- Default styles didn’t match the aesthetic of the rest of the form.
+- Inconsistent padding and borders made input fields look uneven.
+
+To ensure all input fields had a uniform and professional appearance, I created a custom .box class with the following styles:
+1. Consistent dimensions: Set width: 100%; height: 40px; to ensure uniform sizing.
+2. Matching background color: Applied background-color: var(--primary-color--); for seamless integration with the page design.
+3. Uniform borders: Used border: 1px solid var(--tertiary-color--); for a subtle but clear separation.
+4. Subtle depth effect: Added box-shadow: inset 0 0 1px 1px #af9f80; to create a slight inset effect, improving contrast and visibility.
+
+Input fields now appear consistent across all browsers, maintaining a polished and accessible design. Credit: The box-shadow technique was inspired by a Stack Overflow post by Zoltan Toth.
+
+### **Conditional Dropdowns** (5.16)
+
+When designing the contact form, I wanted specific fields—such as Tour Selection and Review Options — to appear only when relevant, based on user input. However, implementing this functionality from scratch was beyond my current development capabilities, so I looked to CodePen for assistance.
+
+Cause of the Issue:
+- By default, all form fields were displayed at once, making the form cluttered and overwhelming.
+- There was no logic to dynamically show or hide sections based on user choices.
+- I needed a way to keep the form clean and intuitive, ensuring users only saw relevant inputs.
+
+I found a CodePen demo by, which demonstrated how to toggle form fields:
+1. Implemented JavaScript with the toggleFields() function to show or hide fields based on selection.
+   - When users selected "Booking a Tour", the tour selection radio buttons appeared.
+   - When users selected "Leave a Review", the rating slider and file upload became visible.
+2. Enhancing the User Experience:
+   - Used .classList.add("hidden") and .classList.remove("hidden") for smooth field transitions.
+   - Ensured hidden fields didn’t disrupt the form layout when inactive.
+
+The form is now cleaner and more intuitive, showing only relevant fields based on user input. The logic for conditionally displaying form sections was inspired by Dustin Horstmann’s CodePen demo on dynamic form fields.
+
+### **Rating Slider** (5.17)
+
+To enhance user experience, the rating slider needed a star icon that moved dynamically as users selected a rating. I used Fajar Nur Wahid’s CodePen project on interactive sliders to help me style the slider. However, the star initially failed to align properly with the selected value, making the interaction feel imprecise.
+
+Cause of the Issue:
+- The star’s position was not dynamically updating in sync with the slider value.
+- The percentage offset applied wasn’t correctly scaled to the slider’s length.
+- CSS positioning and margins were not optimized for accurate alignment.
+
+To resolve this, I: 
+1. Implemented JavaScript to track slider movement and dynamically adjust the star’s position:
+   - The 93 value in the calculation represented the percentage range for mapping slider movement but needed fine-tuning to prevent the star from moving too far to the right.
+   - The +0.5rem adjustment was necessary to keep the star visually centered, preventing it from appearing too far left at lower values or too far right at maximum values.
+   - Tweaked CSS margins and left positioning to further refine alignment.
+
+The star now moves smoothly in sync with the slider, staying correctly centered over each rating. Inspired by Fajar Nur Wahid’s CodePen project on interactive sliders and Josh Collinsworth's Emoji Slider.
+
+### **Hidden Form Labels** (5.18)
+
+While testing the contact form with the WAVE accessibility tool, it flagged that my labels—set to be hidden for visual purposes—weren’t correctly connected to their corresponding input fields. This could make the form less accessible for screen readers and assistive technologies.
+
+Cause of the Issue:
+- I had labels for each input field but used display: none;, which removed them entirely from the document flow.
+- This meant screen readers couldn’t associate the labels with their respective inputs.
+- Without properly connected labels, users relying on assistive technology would struggle to understand form fields.
+
+I found a Bootstrap solution that maintains accessibility while keeping labels visually hidden:
+- Used the visually-hidden-focusable class instead of display: none;.
+- This ensures labels remain in the document for screen readers but don’t disrupt the visual design.
+- When users navigate via keyboard, the labels become visible, improving usability.
+
+The contact form is now accessible while maintaining a clean design. Hidden labels are readable by screen readers, resolving WAVE’s flagged issue. Solution inspired by Bootstrap’s visually-hidden-focusable class.
 
 ## **Testing** (6) 
 
