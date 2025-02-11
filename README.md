@@ -1954,6 +1954,37 @@ In addition to the core and content-specific features, several supplementary sec
 
 ## **Bugs** (5)
 
+During the development process, several bugs and unexpected issues arose, requiring investigation and troubleshooting. Below is a breakdown of the main bugs encountered, their causes, and how they were resolved (or why they couldn’t be fully fixed).
+
+### **Mini Navbar in the Footer** (5.1)
+
+During the development of the website, I implemented a mini navigation bar in the footer to provide quick access to key pages. Initially, this component was structured using a div, but after further evaluation, I recognized that a more semantically accurate approach would be to use the nav element, aligning with accessibility and best practices.
+
+Upon switching the div to a nav, I noticed that the styling I had previously applied was no longer functioning correctly. 
+
+The primary issues included:
+- Unexpected layout changes: The icons became misaligned and displayed in an unintended order.
+- Loss of background color and box shadow: The originally styled navigation box lost its intended background color and box shadow.
+- Spacing inconsistencies: The previously well-spaced icons were now too close together.
+- Responsiveness issues: The mini navbar did not maintain its intended compact form, particularly on larger screens.
+
+I made the following adjustments:
+1. Updated the CSS Selectors:
+   - Since nav has different default styling behavior compared to div, I explicitly targeted #footer-navigation and .footer-nav-box to ensure the new structure was styled consistently.
+2. Restored the Grid Layout for Icons
+   - By using display: flex and flex-wrap: nowrap on .footer-nav-box, I was able to keep the icons in a single row by default, ensuring they didn’t stack unintentionally.
+3. Enhanced Responsiveness with Media Queries
+   - On small screens, the mini navbar remained in a horizontal row.
+   - On larger screens, a grid-based layout was implemented (grid-template-columns: repeat(2, 1fr);), making the navbar more compact and readable.
+   - Fixed the Background Transparency
+   - The .footer-nav-box had lost its intended transparency due to inheritance differences in nav. Adding background-color: transparent !important; ensured the footer’s design remained visually appealing.
+4. Adjusted the Icon Spacing and Hover Effects
+   - Using gap: 12px; and restoring the transform: scale(1.2) hover effect, I ensured that the icons had sufficient spacing and smooth interactions.
+5. Ensured Accessibility Compliance
+   - The aria-label attributes for each link were checked to confirm that they provided descriptive, screen-reader-friendly navigation.
+
+After implementing these fixes, the mini navbar in the footer correctly displayed in its intended format across all devices, maintained accessibility standards, and functioned smoothly while keeping its original styling.
+
 ## **Testing** (6) 
 
 ## **Deployment** (7) 

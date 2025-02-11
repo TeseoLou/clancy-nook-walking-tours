@@ -143,6 +143,7 @@ footer #socials {
 /* Footer Navigation - Mobile First */
 #footer-navigation {
   display: flex;
+  background-color: var(--primary-color--);
   justify-content: center;
   align-items: center;
   margin: 0 0 10px 0;
