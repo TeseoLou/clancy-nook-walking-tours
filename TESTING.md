@@ -255,3 +255,226 @@ The following table summarizes the expected outcomes, testing performed, and res
 |               |The 404 image should be interactive and change on hover.                                                            |Hovered over the 404 image.                                                 |The illustration reacts to hover input, adding an engaging visual effect.                 |✔        |
 |               |The home button should change color on hover.                                                                       |Hovered over the home button.                                               |The button changes color on hover, indicating interactivity.                              |✔        |
 |               |Clicking the home button should navigate users back to the homepage.                                                |Clicked on the home button.                                                 |The button successfully redirects users to the homepage.                                  |✔        |
+
+## **Automated Testing**
+
+### **HTML Validation**
+
+To ensure the accuracy and compliance of the HTML code across the deployed website, the _World Wide Web Consortium_ (W3C) Nu HTML Checker was utilized as the primary validation tool. Each page’s HTML code was rigorously tested multiple times through the validator, which proved invaluable during the testing phase.
+
+The primary issues flagged by the validator were:
+
+1. Use of px in the width and height attributes on images – These were removed to ensure a more flexible and accessible design.
+2. Incorrect closing tags – Some elements had been improperly closed, which had gone unnoticed when manually reviewing the code for semantic accuracy. For instance, a section element had mistakenly been closed with a div, leading to structural inconsistencies.
+3. Misuse of alt text and descriptions – alt attributes had been applied to elements where they were not valid, such as anchor tags. These unnecessary attributes were removed to maintain proper HTML syntax.
+
+After identifying and addressing all issues flagged by the validator, all pages successfully passed the validation process, ensuring the HTML was both structurally sound and standards-compliant.
+
+### **CSS Validation**
+
+To ensure the stylesheets adhered to web standards and best practices, the _World Wide Web Consortium_ (W3C) CSS Validator was utilized. The stylesheet was put through the validation process and successfully passed at CSS Level 3 + SVG, confirming its compliance with modern CSS specifications.
+
+While the validation process did not identify any errors, several warnings were flagged. These warnings are informational and highlight aspects of the stylesheet that may require consideration.
+
+1. URI: TextArea
+    - This message typically appears when using the direct input or file upload mode in the validator. It does not indicate an actual problem with the stylesheet but rather a technical limitation of the validation tool.
+2. Imported style sheets are not checked in direct input and file upload modes
+    - When stylesheets import other CSS files using @import, the validator does not check the contents of those imported styles if the file was uploaded directly or pasted into the validator. This means external styles may not be fully analyzed in this mode.
+3. Due to their dynamic nature, CSS variables are currently not statically checked (Warnings at lines: 17, 27, 75, 97, 258)
+    - CSS variables (--custom-property) allow for dynamic styling changes, but since their values are determined at runtime, the validator cannot verify their correctness statically. This is a known limitation of CSS validation tools, rather than an issue with the stylesheet itself.
+4. Vendor extensions and pseudo-elements (Warnings at lines: 561, 562, 574, 575, 584)
+    - -webkit-appearance and -moz-appearance are browser-specific properties used to control the default styling of form elements. They are supported by specific browsers (WebKit for Chrome/Safari and Mozilla for Firefox) but are not part of the official CSS standard. These were necessary for cross-browser compatibility but were flagged as warnings since they are not part of the standard CSS specification.
+
+Despite these warnings, they do not impact the validity of the CSS.
+
+### **Lighthouse Auditing**
+
+To ensure optimal performance, accessibility, adherence to best practices, and SEO compliance, all webpages were thoroughly analyzed using Google Lighthouse. This auditing tool was run in both mobile and desktop modes to evaluate how the website performs across different devices and environments.
+
+#### **Performance**
+
+#### Homepage
+
+The homepage achieved an impressive 97% performance rating in the Lighthouse audit for desktop, demonstrating strong optimization and fast loading times.  When tested on mobile, the performance score was slightly lower at 84%. The reduction in performance was primarily due to the increased load times and resource constraints on mobile devices. 
+
+Despite these high score, several diagnostics were flagged:
+
+1. Preconnect to Required Origins
+   - Lighthouse recommended using pre-connect or dns-prefetch to establish early connections to third-party origins, particularly Google Fonts.  
+   - While I understood the recommendation, I wasn’t entirely sure how to correctly implement pre-connect confidently.  
+2. Largest Contentful Paint (LCP)
+   - The Largest Contentful Paint metric identified that the hero image inside #homepage-hero was the slowest-loading visible element.  
+   - I attempted some optimizations, but since the image is a crucial part of the design, I wasn’t sure how to further reduce its loading time without sacrificing quality. Preloading the image was suggested, but I was unfamiliar with the correct implementation.  
+3. Eliminate Render-Blocking Resources
+   - The audit flagged Bootstrap CSS (from JSDelivr CDN) and Google Fonts as render-blocking resources, meaning they delayed the first paint of the page.  
+   - Both Bootstrap and Google Fonts were essential for the design and typography of the site. Removing or deferring them would break the layout, and I wasn’t confident in alternatives that wouldn’t compromise the design.  
+4. Reduce Unused CSS
+   - Some unused CSS rules, particularly from Bootstrap and FontAwesome, were detected in the audit.  
+   - Since Bootstrap provides essential styling across the site, I couldn’t remove it entirely. I wasn’t sure how to properly remove unused CSS rules without breaking functionality.  
+5. Preload Largest Contentful Paint Image
+   - Lighthouse suggested preloading the hero image to reduce its rendering time.  
+   - While I understood the concept, I wasn’t sure how to implement it properly.  
+6. Image Elements Do Not Have Explicit width and height Attributes  
+   - Some images lacked explicit dimensions. 
+   - While I tried adding width and height attributes, I wanted the height and width to adjust responsively so only min-height and min-width were applied.  
+7. Minify CSS
+   - The audit suggested minifying the main stylesheet to reduce its size.  
+   - While I knew CSS minification was possible, I wasn’t sure how to properly integrate it into my workflow.  
+8. Serve Static Assets with an Efficient Cache Policy  
+   - Some images lacked long-term caching policies, meaning they were reloaded more frequently than necessary.  
+   - Since the site is hosted using GitHub Pages, I didn’t have full control over caching policies, and I wasn’t sure how to override them effectively.  
+
+#### Tours Page
+
+The Tours Page achieved an exceptional 99% performance rating on desktop, indicating that it is highly optimized for speed and efficiency. The mobile performance score was lower at 76%, reflecting the additional challenges mobile devices face with resource loading, network constraints, and rendering performance. 
+
+Despite these high score, several diagnostics were flagged:
+
+1. Eliminate Render-Blocking Resources
+    - The audit flagged Bootstrap CSS (from JSDelivr CDN) and Google Fonts as render-blocking resources, delaying the first paint of the page.
+    - Bootstrap and Google Fonts were integral to the design and removing them would compromise the site's appearance and functionality. 
+2. Preload Largest Contentful Paint Image
+    - The hero image in the #tours-hero section was identified as the Largest Contentful Paint (LCP) element, meaning it took the longest to load. Lighthouse suggested preloading this image to improve page speed.
+   - I attempted some optimizations, but since the image is a crucial part of the design, I wasn’t sure how to further reduce its loading time without sacrificing quality. Preloading the image was suggested, but I was unfamiliar with the correct implementation.  
+3. Image Elements Do Not Have Explicit width and height Attributes
+    - Some images on the page did not have explicit width and height attributes, causing Cumulative Layout Shift (CLS).
+    - While I attempted to define static dimensions where possible, some images are dynamically resized, making it difficult to apply fixed values across all screen sizes.
+4. Minify CSS
+    - The style.css file was flagged for potential minification to reduce its size and improve performance.
+    - I wasn't sure how to automate the process effectively within my development workflow.
+5. Serve Static Assets with an Efficient Cache Policy
+    - The audit detected 20 resources that lacked an efficient caching policy, meaning browsers were forced to re-download assets unnecessarily.
+    - Since the site is hosted on GitHub Pages, I had limited control over server caching settings, making this issue difficult to address.
+6. Reduce Unused CSS
+    - Unused CSS rules were detected in Bootstrap and FontAwesome, adding unnecessary bulk to the stylesheets.
+    - Since Bootstrap is a core part of the site's styling, I couldn’t selectively remove unused CSS without risking layout issues. I lacked the expertise to properly tree-shake unused styles.
+
+#### Gallery Page
+
+The Gallery Page performed exceptionally well, scoring 99% in performance on desktop, indicating excellent speed and optimization. The mobile performance score was slightly lower at 85%, primarily due to image-heavy content, render-blocking resources, and caching inefficiencies.
+
+Despite these high score, several diagnostics were flagged:
+
+1. Largest Contentful Paint (LCP)
+    - The largest visible element on the page was an image that took 4.18 seconds to fully load. This delay was caused by server response time (TTFB), loading delay, and image rendering time.
+    - I attempted some optimizations, but since the image is a crucial part of the design, I wasn’t sure how to further reduce its loading time without sacrificing quality. Preloading the image was suggested, but I was unfamiliar with the correct implementation.  
+2. Eliminate Render-Blocking Resources
+    - Render-blocking resources included Bootstrap CSS (from JSDelivr CDN) and Google Fonts, which slowed down the initial page rendering.
+    - Bootstrap and Google Fonts were essential to the styling and typography of the site. I wasn’t confident in removing or deferring them without breaking the page design.
+3. Reduce Unused CSS
+    - Unused CSS was detected in Bootstrap and FontAwesome, increasing the overall CSS file size.
+    - Since Bootstrap provides the core layout of the site, I couldn’t selectively remove unused styles without risking layout and design issues. 
+4. Image Elements Do Not Have Explicit width and height Attributes
+    - Some images lacked explicit dimensions, which contributed to Cumulative Layout Shift (CLS).
+    - Since many images are dynamically sized, I wasn’t sure how to set fixed width and height values without causing display issues on different devices.
+5. Minify CSS
+    - The main style.css file was flagged for minification to reduce its size and improve load time.
+    - While I knew that minifying CSS is beneficial, I wasn’t sure how to integrate it into my workflow.
+6. Serve Static Assets with an Efficient Cache Policy
+    - Some images lacked long-term caching, meaning users’ browsers had to re-download them instead of retrieving cached versions.
+    - Since the site is hosted on GitHub Pages, I had limited control over cache expiration settings, making this difficult to address.
+
+#### Reviews Page
+
+The Reviews Page achieved a 97% performance rating on desktop, demonstrating strong optimization. The mobile performance was lower at 75%, due to slow rendering times, large background images, and render-blocking resources.
+
+Despite these high score, several diagnostics were flagged:
+
+1. Largest Contentful Paint (LCP)
+    - The LCP element was the #reviews-page-background div, which took over 7 seconds to render, due to a large background image, server response delay, and slow rendering time.
+    - I altered my CCS to include two photos for my background image, one for desktop and one for mobile however this was still flagged.
+2. Eliminate Render-Blocking Resources
+    - Bootstrap CSS (from JSDelivr CDN) and Google Fonts were flagged as render-blocking resources, delaying the first paint of the page.
+    - Both Bootstrap and Google Fonts were essential to the design and layout of the site. I didn’t know how to defer them without breaking styling.
+3. Reduce Unused CSS
+    - Unused CSS from Bootstrap and FontAwesome was detected, increasing the total size of the stylesheet.
+    - Since Bootstrap is required for styling, I wasn’t confident in removing unused styles without causing unintended layout issues.
+4. Preload Largest Contentful Paint Image
+    - The audit suggested preloading the large background image (reviews-page-background-image.webp) to reduce loading time.
+    - I wasn’t sure how to properly implement preloading for a background image without affecting its styling or positioning.
+5. Image Elements Do Not Have Explicit width and height Attributes
+    - Some images lacked explicit dimensions, which contributed to Cumulative Layout Shift (CLS).
+    - Some images were dynamically loaded, making it difficult to set fixed width and height values across all screen sizes.
+6. Minify CSS
+    - The style.css file was flagged for minification to reduce its size and improve load time.
+    - While I knew that minifying CSS is a best practice, I wasn’t sure how to automate the process effectively.
+7. Serve Static Assets with an Efficient Cache Policy
+    - Some images lacked efficient caching, meaning they were re-downloaded unnecessarily instead of being retrieved from the browser’s cache.
+    - The site is hosted on GitHub Pages, where I have limited control over cache expiration settings, making this difficult to fix.
+
+#### Contact Page
+
+The Contact Page achieved a 97% performance rating on desktop, indicating strong optimization. Additionally, the mobile performance score was 91%, making it the highest-scoring page for mobile performance.
+
+Despite these high score, several diagnostics were flagged:
+
+1. Pre-connect to Required Origins
+    - The audit suggested adding pre-connect or dns-prefetch for Google Fonts and FontAwesome, which would reduce latency by pre-establishing early connections.
+   - While I understood the recommendation, I wasn’t entirely sure how to correctly implement pre-connect confidently.  
+2. Largest Contentful Paint (LCP)
+    - The LCP element was the #contact-page-background section, which contains a background image that slightly delayed loading.
+    - I altered my CCS to include two photos for my background image, one for desktop and one for mobile however this was still flagged.
+3. Eliminate Render-Blocking Resources
+    - Bootstrap CSS (from JSDelivr CDN) and Google Fonts were flagged as render-blocking, delaying the first paint of the page.
+    - These resources were necessary for the page’s styling and typography, and I didn’t know how to defer them effectively without breaking the layout.
+4. Reduce Unused CSS
+    - Unused styles from Bootstrap and FontAwesome were detected, increasing overall stylesheet size.
+    - Bootstrap is an essential part of the design system, and I wasn’t confident in removing unused styles without affecting layout integrity.
+5. Preload Largest Contentful Paint Image
+    - The audit recommended preloading the background image (contact-page-background-image-medium.webp) to improve LCP.
+    - Since it’s a background image, I wasn’t sure how to implement preload correctly without affecting page styling.
+6. Minify CSS
+    - The style.css file was flagged for minification, which could reduce its size and improve page speed.
+    - While I knew how to minify CSS manually, I wasn’t sure how to automate it properly in my workflow.
+7. Serve Static Assets with an Efficient Cache Policy
+    - Some static assets, including the contact page background image, lacked long-term caching, meaning they were reloaded more often than necessary.
+    - The site is hosted on GitHub Pages, where I have limited control over cache expiration settings.
+
+#### Success Page
+
+The Thank You Page achieved a 96% performance rating on desktop and an 82% performance rating on mobile. 
+
+Despite these high score, several diagnostics were flagged:
+
+1. Eliminate Render-Blocking Resources
+    - The Bootstrap CSS from JSDelivr (1,110ms delay) and Google Fonts (780ms delay) were flagged as render-blocking, meaning they slowed down the page load time.  
+    - Both Bootstrap and Google Fonts were essential for the website’s design, and I wasn’t sure how to defer them without breaking the layout.  
+2. Largest Contentful Paint (LCP) 
+    - The LCP element was #success-image, meaning this image was the largest visible element and took the most time to load.  
+    - I did specify a height for this image, but LCP timing can still be affected by network latency and render-blocking resources.  
+3. Reduce Unused CSS
+    - The Bootstrap styles and FontAwesome styles were flagged for containing unused CSS rules, contributing to unnecessary page weight.  
+    - Since Bootstrap is a core part of my styling, I didn’t know how to remove unused styles without breaking the layout.  
+4. Minify CSS
+    - The style.css file could be minified to reduce its size and improve page load speeds.  
+    - I wasn’t sure how to automate CSS minification properly without affecting my development workflow.  
+5. Serve Static Assets with an Efficient Cache Policy  
+    - The Thank You page’s static assets (including the success image) lacked a long-term cache policy, meaning they may be reloaded unnecessarily for returning visitors.  
+    - My site is hosted on GitHub Pages, where I have limited control over cache expiration policies.  
+
+#### 404 Page
+
+The 404 Page achieved a 99% performance rating on desktop and an 88% performance rating on mobile. 
+
+Despite these high score, several diagnostics were flagged:
+
+1. Eliminate Render-Blocking Resources 
+    - The Bootstrap CSS from JSDelivr (940ms delay) and Google Fonts (790ms delay) were flagged as render-blocking, meaning they slowed down the page load time.
+    - Both Bootstrap and Google Fonts were essential for the website’s design, and I wasn’t sure how to defer them without breaking the layout.
+2. Largest Contentful Paint (LCP)
+    - The LCP element was #error-image, meaning this image was the largest visible element and took the most time to load.
+    - I did specify a height for this image, but LCP timing can still be affected by network latency and render-blocking resources.  
+3. Reduce Unused CSS
+    - The Bootstrap styles and FontAwesome styles were flagged for containing unused CSS rules, contributing to unnecessary page weight.
+    - Since Bootstrap is a core part of my styling, I didn’t know how to remove unused styles without breaking the layout.
+4. Minify CSS
+    - The style.css file could be minified to reduce its size and improve page load speeds.
+    - I wasn’t sure how to automate CSS minification properly without affecting my development workflow.
+5. Serve Static Assets with an Efficient Cache Policy
+    - The 404-image.webp and other static assets lacked a long-term cache policy, meaning they may be reloaded unnecessarily for returning visitors.
+    - My site is hosted on GitHub Pages, where I have limited control over cache expiration policies.
+6. Page Prevented Back/Forward Cache Restoration
+    - The browser flagged an issue where the 404 page couldn’t be stored in the back/forward cache, making navigation slower.
+    - The issue was flagged because only pages with a 2XX status code can be cached, which isn’t applicable to a 404 page.
+
+#### **Usability and Optimization**
