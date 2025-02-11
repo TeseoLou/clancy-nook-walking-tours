@@ -64,7 +64,7 @@ The table below presents the results of the browser compatibility testing, detai
 
 ### **User Stories**
 
-To validate that the website meets user needs, a user stories testing phase was conducted. The user stories and their corresponding acceptance criteria had been developed throughout the project using GitHub's issue tracking system to ensure a structured approach.
+To validate that the website meets user needs, a user stories testing phase was conducted. The user stories which had been addressed and their corresponding acceptance criteria had been developed throughout the project using GitHub's issue tracking system to ensure a structured approach.
 
 For testing, the user stories table was shared with ten individuals who represented a diverse group in terms of computing knowledge. This included users with varying levels of technical proficiency, from casual web users to those with more advanced digital skills.
 

@@ -1964,3 +1964,5 @@ To deploy the page, I used GitHub Pages and followed these steps:
 2. In the left-hand menu, I clicked on the Pages section.
 3. Under the Source section, I selected the Main branch from the drop-down and clicked Save.
 4. A confirmation message appeared, indicating the deployment was successful, along with the live link to the website.
+
+Additionally, I will fork this repository so that it can be cloned for future use and development. 
