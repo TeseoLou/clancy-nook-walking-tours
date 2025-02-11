@@ -143,7 +143,6 @@ footer #socials {
 /* Footer Navigation - Mobile First */
 #footer-navigation {
   display: flex;
-  background-color: var(--primary-color--);
   justify-content: center;
   align-items: center;
   margin: 0 0 10px 0;
@@ -158,7 +157,6 @@ footer #socials {
   flex-wrap: nowrap; /* Icons in a single row by default */
   justify-content: center;
   gap: 12px;
-  background-color: transparent !important;
 }
 
 #footer-navigation > p {
@@ -718,34 +716,41 @@ textarea:focus {
   #signature {
     width: 180px;
   }
+
   #tour-cards .card-body {
     min-height: 222px;
   }
+
   #footer-navigation {
     height: 120px;
     width: 80px;
     margin-top: 34px;
-    background-color: var(--primary-color--);
     border-radius: 2px;
   }
+
   .footer-nav-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 16px;
     width: 90px; /* Keeps it compact */
   }
+
   footer #nav-buttons {
     padding-top: 8px;
   }
+
   footer #contact-details {
     font-size: 13px;
   }
+
   .featured-tours > h2 {
     font-size: 32px;
   }
+
   .featured-tours img {
     object-fit: initial; /*Prevents image strecthing horizontally*/
   }
+
   #reviews-page-background {
     background: url(../images/reviews-page-background-image-medium.webp)
       no-repeat center center/cover; /*Permits a responsive hero image*/
@@ -753,15 +758,19 @@ textarea:focus {
     position: relative; /*So image crops on different screens instead of resizing*/
     height: 100%; /*Fixed height to appeal to all screen sizes*/
   }
+
   #review-cards .card-title {
     font-size: 25px;
   }
+
   .review-content {
     font-size: 14px;
   }
+
   #review-cards .card {
     width: 340px;
   }
+
   .star-icon {
     font-size: 27px;
     margin-left: 0;
@@ -773,59 +782,74 @@ textarea:focus {
   #signature {
     width: 200px;
   }
+
   #tour-cards .card-body {
     min-height: 321px;
   }
+
   .carousel-item img {
     object-fit: scale-down; /*Prevents image strecthing horizontally*/
   }
+
   .tour-information {
     align-content: start;
   }
+
   #tour-1-info > h2 {
     margin-inline-start: -400px;
     font-size: 34px;
     height: 40px;
   }
+
   #tour-2-info > h2 {
     margin-inline-start: 453px;
     font-size: 34px;
     height: 40px;
   }
+
   .tour-information > p {
     margin-bottom: 6px;
     align-self: flex-start;
   }
+
   #tour-2-details {
     margin-left: 60px;
   }
+
   #tour-3-info > h2 {
     margin-inline-start: -400px;
     font-size: 34px;
     height: 40px;
     white-space: nowrap; /*Keep title all on one line*/
   }
+
   #private-bookings-title > h2 {
     margin-inline-end: -403px;
     font-size: 34px;
     height: 40px;
     text-align: end;
   }
+
   #tour-4-details {
     margin-left: 4px;
   }
+
   #booking-info #private-booking-contact-button {
     margin-right: 50px;
   }
+
   #review-cards .card-title {
     font-size: 26px;
   }
+
   .review-content {
     font-size: 14px;
   }
+
   #review-cards .card {
     width: 302.4px;
   }
+
   #review-cards {
     display: flex;
     flex-wrap: wrap;
@@ -844,16 +868,20 @@ textarea:focus {
   #tour-cards .card-body {
     min-height: 276px;
   }
+
   #footer-navigation {
     margin-top: 24px;
   }
+
   #booking-info #private-booking-contact-button {
     margin-right: 80px;
     margin-top: -42px;
   }
+
   .tour-information {
     height: 275.6px;
   }
+
   #tour-1-info > h2,
   #tour-2-info > h2,
   #tour-3-info > h2 {
@@ -862,23 +890,29 @@ textarea:focus {
     font-size: 38px;
     margin-left: 0;
   }
+
   #tour-2-info > h2 {
     justify-content: end;
   }
+
   #tour-2-details {
     margin-left: 108px;
   }
+
   #private-bookings-title > h2 {
     margin-inline-end: -3px;
     font-size: 38px;
     height: 40px;
   }
+
   #review-cards .card-title {
     font-size: 27px;
   }
+
   .review-content {
     font-size: 15px;
   }
+
   #review-cards .card {
     width: 360px;
   }
@@ -889,47 +923,60 @@ textarea:focus {
   #tour-cards .card-body {
     min-height: 252px;
   }
+
   #booking-info #private-booking-contact-button {
     margin-right: 110px;
     margin-top: -42px;
   }
+  
   .tour-information {
     height: 321.44px;
   }
+
   #tour-1-info > h2,
   #tour-2-info > h2 {
     margin-bottom: 8px;
     font-size: 44px;
   }
+
   .tour-information > p {
     font-size: 17px;
   }
+
   #tour-2-details {
     margin-left: 152px;
   }
+
   #tour-4-info > h2 {
     margin-inline-start: 274px;
     font-size: 44px;
     height: 40px;
   }
+
   #review-cards .card-title {
     font-size: 28px;
   }
+
   .review-content {
     font-size: 16px;
   }
+
   #review-cards .card {
     width: 420px;
   }
+
   #review-cards .first-row {
     min-height: 424px;
   }
+
   #review-cards .second-row {
     min-height: 573.59px;
   }
+
   #review-cards .third-row {
     min-height: 477.59px;
   }
+  
   #review-cards .fourth-row {
     min-height: 446.4px;
   }
