@@ -6,13 +6,13 @@ Testing is a crucial phase in web development that ensures the functionality, us
 
 Manual testing was a critical part of the Clancy Nook Project, ensuring that all features functioned correctly and provided a seamless user experience. Testing was conducted throughout the entire development process, incorporating real-time adjustments and refinements.
 
-A combination of DevTools, BrowserStack, and WAVE was used to conduct thorough testing:
+A combination of DevTools and BrowserStack was used to conduct thorough testing:
 
-- _DevTools_ allowed for in-depth inspection of responsive design, element behavior, and debugging across multiple screen sizes.
+1. _DevTools_ allowed for in-depth inspection of responsive design, element behavior, and debugging across multiple screen sizes.
 
-- _BrowserStack_ enabled cross-browser compatibility testing, making it possible to simulate older browser versions and various operating systems.
+2. _BrowserStack_ enabled cross-browser compatibility testing, making it possible to simulate older browser versions and various operating systems.
 
-- Regular deployment through _GitHub_ allowed for frequent testing iterations, making it easier to catch and address issues early in the development process.
+3. Regular deployment through _GitHub_ allowed for frequent testing iterations, making it easier to catch and address issues early in the development process.
 
 ### **Responsiveness**
 
@@ -33,6 +33,18 @@ The table below presents the results of the responsiveness testing, detailing ho
 |Links / URLs work       |✔         |✔                       |✔               |✔            |✔       |✔                 |✔                |
 |Images display properly |✔         |✔                       |✔               |✔            |✔       |✔                 |✔                |
 |Renders as expected     |✔         |✔                       |✔               |✔            |✔       |✔                 |✔                |
+
+<div align="center">
+   <img src="docs/images/manual-testing-responsiveness-mobile.webp" alt="Page Responsiveness on Mobile" width="800">
+</div>
+<br>
+<div align="center">
+   <img src="docs/images/manual-testing-responsiveness-tablet.webp" alt="Page Responsiveness on Tablet" width="800">
+</div>
+<br>
+<div align="center">
+   <img src="docs/images/manual-testing-responsiveness-desktop.webp" alt="Page Responsiveness on Desktop" width="800">
+</div>
 
 ### **Browser Compatibility**
 
@@ -258,6 +270,16 @@ The following table summarizes the expected outcomes, testing performed, and res
 
 ## **Automated Testing**
 
+Throughout the development process, a range of Chrome extensions were utilized to continuously evaluate and refine various aspects of the website, ensuring it met performance, accessibility, and SEO best practices. These tools provided real-time feedback, allowing for incremental improvements during development.
+
+1. _Detailed SEO Extension_ was used to analyze on-page SEO elements such as metadata, heading structures, canonical tags, and indexability. It helped ensure the site was fully optimized for search engines.
+
+2. _Google PageSpeed Insights_ was used alongside Lighthouse to assess page performance, highlighting areas for improvement such as render-blocking resources, caching policies, and image optimizations.
+
+3. _WAVE_ accessibility checker was used to complement Lighthouse and AccessibilityChecker by identifying potential issues affecting screen readers, color contrast, and keyboard navigation.
+
+4. _Pesticide_ was for debugging layout structures, Pesticide provided a visual outline of all elements on the page, making it easier to detect spacing issues and unintended overlaps in the site’s design.
+
 ### **HTML Validation**
 
 To ensure the accuracy and compliance of the HTML code across the deployed website, the _World Wide Web Consortium_ (W3C) Nu HTML Checker was utilized as the primary validation tool. Each page’s HTML code was rigorously tested multiple times through the validator, which proved invaluable during the testing phase.
@@ -270,9 +292,41 @@ The primary issues flagged by the validator were:
 
 After identifying and addressing all issues flagged by the validator, all pages successfully passed the validation process, ensuring the HTML was both structurally sound and standards-compliant.
 
+<div align="center">
+   <img src="docs/images/html-validator-home.webp" alt="W3C HTML Validator Result Homepage" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/html-validator-tours.webp" alt="W3C HTML Validator Result Tours Page" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/html-validator-gallery.webp" alt="W3C HTML Validator Result Gallery Page" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/html-validator-reviews.webp" alt="W3C HTML Validator Result Reviews Page" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/html-validator-contact.webp" alt="W3C HTML Validator Result Contact Page" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/html-validator-success.webp" alt="W3C HTML Validator Result Success Page" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/html-validator-error.webp" alt="W3C HTML Validator Result Error Page" width="400">
+</div>
+
 ### **CSS Validation**
 
-To ensure the stylesheets adhered to web standards and best practices, the _World Wide Web Consortium_ (W3C) CSS Validator was utilized. The stylesheet was put through the validation process and successfully passed at CSS Level 3 + SVG, confirming its compliance with modern CSS specifications.
+To ensure the stylesheets adhered to web standards and best practices, the _World Wide Web Consortium_ (W3C) CSS Validator was utilized. The stylesheet was put through the validation process and successfully passed at CSS Level 3 + SVG, confirming its compliance with modern CSS specifications
+
+<div align="center">
+   <img src="docs/images/css-validation.webp" alt="W3C CSS Validator Result" width="400">
+</div>
 
 While the validation process did not identify any errors, several warnings were flagged. These warnings are informational and highlight aspects of the stylesheet that may require consideration.
 
@@ -293,9 +347,14 @@ To ensure optimal performance, accessibility, adherence to best practices, and S
 
 #### **Performance**
 
-#### Homepage
+Homepage
 
 The homepage achieved an impressive 97% performance rating in the Lighthouse audit for desktop, demonstrating strong optimization and fast loading times.  When tested on mobile, the performance score was slightly lower at 84%. The reduction in performance was primarily due to the increased load times and resource constraints on mobile devices. 
+
+<div align="center">
+   <img src="docs/images/performance-test-homepage-desktop.webp" alt="Performance Homepage Result Desktop" width="200">
+   <img src="docs/images/performance-test-homepage-mobile.webp" alt="Performance Homepage Result Mobile" width="200">
+</div>
 
 Despite these high score, several diagnostics were flagged:
 
@@ -324,9 +383,14 @@ Despite these high score, several diagnostics were flagged:
    - Some images lacked long-term caching policies, meaning they were reloaded more frequently than necessary.  
    - Since the site is hosted using GitHub Pages, I didn’t have full control over caching policies, and I wasn’t sure how to override them effectively.  
 
-#### Tours Page
+Tours Page
 
 The Tours Page achieved an exceptional 99% performance rating on desktop, indicating that it is highly optimized for speed and efficiency. The mobile performance score was lower at 76%, reflecting the additional challenges mobile devices face with resource loading, network constraints, and rendering performance. 
+
+<div align="center">
+   <img src="docs/images/performance-test-tours-desktop.webp" alt="Performance Tours Page Result Desktop" width="200">
+   <img src="docs/images/performance-test-tours-mobile.webp" alt="Performance Tours Page Result Mobile" width="200">
+</div>
 
 Despite these high score, several diagnostics were flagged:
 
@@ -349,9 +413,14 @@ Despite these high score, several diagnostics were flagged:
     - Unused CSS rules were detected in Bootstrap and FontAwesome, adding unnecessary bulk to the stylesheets.
     - Since Bootstrap is a core part of the site's styling, I couldn’t selectively remove unused CSS without risking layout issues. I lacked the expertise to properly tree-shake unused styles.
 
-#### Gallery Page
+Gallery Page
 
 The Gallery Page performed exceptionally well, scoring 99% in performance on desktop, indicating excellent speed and optimization. The mobile performance score was slightly lower at 85%, primarily due to image-heavy content, render-blocking resources, and caching inefficiencies.
+
+<div align="center">
+   <img src="docs/images/performance-test-gallery-desktop.webp" alt="Performance Gallery Page Result Desktop" width="200">
+   <img src="docs/images/performance-test-gallery-mobile.webp" alt="Performance Gallery Page Result Mobile" width="200">
+</div>
 
 Despite these high score, several diagnostics were flagged:
 
@@ -374,9 +443,14 @@ Despite these high score, several diagnostics were flagged:
     - Some images lacked long-term caching, meaning users’ browsers had to re-download them instead of retrieving cached versions.
     - Since the site is hosted on GitHub Pages, I had limited control over cache expiration settings, making this difficult to address.
 
-#### Reviews Page
+Reviews Page
 
 The Reviews Page achieved a 97% performance rating on desktop, demonstrating strong optimization. The mobile performance was lower at 75%, due to slow rendering times, large background images, and render-blocking resources.
+
+<div align="center">
+   <img src="docs/images/performance-test-reviews-desktop.webp" alt="Performance Reviews Page Result Desktop" width="200">
+   <img src="docs/images/performance-test-reviews-mobile.webp" alt="Performance Reviews Page Result Mobile" width="200">
+</div>
 
 Despite these high score, several diagnostics were flagged:
 
@@ -402,9 +476,14 @@ Despite these high score, several diagnostics were flagged:
     - Some images lacked efficient caching, meaning they were re-downloaded unnecessarily instead of being retrieved from the browser’s cache.
     - The site is hosted on GitHub Pages, where I have limited control over cache expiration settings, making this difficult to fix.
 
-#### Contact Page
+Contact Page
 
 The Contact Page achieved a 97% performance rating on desktop, indicating strong optimization. Additionally, the mobile performance score was 91%, making it the highest-scoring page for mobile performance.
+
+<div align="center">
+   <img src="docs/images/performance-test-contact-desktop.webp" alt="Performance Contact Page Result Desktop" width="200">
+   <img src="docs/images/performance-test-contact-mobile.webp" alt="Performance Contact Page Result Mobile" width="200">
+</div>
 
 Despite these high score, several diagnostics were flagged:
 
@@ -430,9 +509,14 @@ Despite these high score, several diagnostics were flagged:
     - Some static assets, including the contact page background image, lacked long-term caching, meaning they were reloaded more often than necessary.
     - The site is hosted on GitHub Pages, where I have limited control over cache expiration settings.
 
-#### Success Page
+Success Page
 
 The Thank You Page achieved a 96% performance rating on desktop and an 82% performance rating on mobile. 
+
+<div align="center">
+   <img src="docs/images/performance-test-success-desktop.webp" alt="Performance Success Page Result Desktop" width="200">
+   <img src="docs/images/performance-test-success-mobile.webp" alt="Performance Success Page Result Mobile" width="200">
+</div>
 
 Despite these high score, several diagnostics were flagged:
 
@@ -452,9 +536,14 @@ Despite these high score, several diagnostics were flagged:
     - The Thank You page’s static assets (including the success image) lacked a long-term cache policy, meaning they may be reloaded unnecessarily for returning visitors.  
     - My site is hosted on GitHub Pages, where I have limited control over cache expiration policies.  
 
-#### 404 Page
+404 Page
 
 The 404 Page achieved a 99% performance rating on desktop and an 88% performance rating on mobile. 
+
+<div align="center">
+   <img src="docs/images/performance-test-error-desktop.webp" alt="Performance 404 Page Result Desktop" width="200">
+   <img src="docs/images/performance-test-error-mobile.webp" alt="Performance 404 Page Result Mobile" width="200">
+</div>
 
 Despite these high score, several diagnostics were flagged:
 
@@ -478,3 +567,82 @@ Despite these high score, several diagnostics were flagged:
     - The issue was flagged because only pages with a 2XX status code can be cached, which isn’t applicable to a 404 page.
 
 #### **Usability and Optimization**
+
+In addition to performance testing, the website was also analyzed for Accessibility, Best Practices, and SEO using Google's Lighthouse tool. Each of these categories evaluates different aspects of the site to ensure it is user-friendly, follows web standards, and is optimized for search engines.
+
+1. Accessibility: The site ensures an inclusive experience for all users, with proper semantic HTML, sufficient color contrast, screen reader compatibility, and accessible interactive elements.
+
+2. Best Practices:  The site follows modern web development standards, with secure HTTPS implementation, no vulnerabilities from outdated libraries, and best coding practices that contribute to a stable and smooth user experience.
+
+3. SEO (Search Engine Optimization): The website is fully optimized for search engines, with well-structured metadata, mobile-friendly design, proper indexing, and strong adherence to SEO guidelines, ensuring high visibility in search results.#
+
+Every page on the site achieved a 100% rating for Accessibility, Best Practices, and SEO on both desktop and mobile. These scores indicate that the website is fully optimized and committed to usability, security, and search engine optimization, reinforcing its quality and effectiveness for all users.
+
+<div align="center">
+   <img src="docs/images/lighthouse-test-homepage-desktop.webp" alt="Lighthouse Homepage Result" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/lighthouse-test-tours-page-desktop.webp" alt="Lighthouse Tours Page Result" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/lighthouse-test-gallery-desktop.webp" alt="Lighthouse Gallery Page Result" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/lighthouse-test-reviews-desktop.webp" alt="Lighthouse Reviews Page Result" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/lighthouse-test-contact-desktop.webp" alt="Lighthouse Contact Page Result" width="400">
+</div>
+
+<div align="center">
+   <img src="docs/images/lighthouse-test-success-desktop.webp" alt="Lighthouse Success Page Result" width="400">
+</div>
+
+The 404 page received a 96% rating for Best Practices, slightly below the perfect 100% due to "Browser errors were logged to the console"
+- The Lighthouse audit flagged missing resources that resulted in 404 errors, which slightly impacted the Best Practices score.
+- However, this is an inherent characteristic of a 404 page—its purpose is to handle missing resources and notify users when a requested page is not found.
+
+<div align="center">
+   <img src="docs/images/lighthouse-test-error-desktop.webp" alt="Lighthouse Error Page Result" width="400">
+</div>
+
+#### **Accessibility**
+
+In addition to Lighthouse testing, I conducted a detailed Accessibility Analysis using _AccessibilityChecker_ to ensure my website adheres to key accessibility standards. This audit evaluates how well the site meets recognized guidelines, including:
+
+1. WCAG 2.2 (Web Content Accessibility Guidelines) – The global standard for web accessibility, ensuring websites are usable by individuals with disabilities.
+2. Equality Act Compliance – Ensuring legal accessibility standards are met, particularly in regions where accessibility is a legal requirement.
+
+Site pages successfully passed a wide range of accessibility checks across three critical areas: Interaction & Navigation, Screen Reader & Assistive Technology, and Visual & Structural Accessibility.
+
+<div align="center">
+   <img src="docs/images/accessibilitychecker.webp" alt="AccessibilityChecker Result" width="400">
+</div>
+
+| Issue | Status |
+|-------|--------|
+| aria-hidden="true" elements do not contain focusable descendents | ✔ |
+| Image elements do not have alt attributes that are redundant text | ✔ |
+| Heading elements appear in a sequentially-descending order | ✔ |
+| List items are contained within ul, ol or menu parent elements | ✔ |
+| Lists contain only li elements and script supporting elements (script and template) | ✔ |
+| Links have a discernible name | ✔ |
+| Image elements have alt attributes | ✔ |
+| html element has a valid value for its lang attribute | ✔ |
+| html element has a lang attribute | ✔ |
+| Document has a title element | ✔ |
+| Buttons have an accessible name | ✔ |
+| aria-* attributes match their roles | ✔ |
+| ARIA attributes are used as specified for the element's role | ✔ |
+| aria-hidden="true" is not present on the document <body> | ✔ |
+| Elements use only permitted ARIA attributes | ✔ |
+| aria-* attributes have valid values | ✔ |
+| aria-* attributes are valid and not misspelled | ✔ |
+| Touch targets have sufficient size and spacing | ✔ |
+| user-scalable="no" is not used in the meta name="viewport" element, and maximum-scale is not less than 5 | ✔ |
+| Background and foreground colors have a sufficient contrast ratio | ✔ |
+
