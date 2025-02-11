@@ -196,18 +196,6 @@ footer #socials {
 
 /*Homepage*/
 
-/*About Section */
-#about-anchor {
-  height: 0.1px;
-  position: relative;
-  margin-top: -87px; /*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected (solution inspired by youtuber and web design tutor @dereksiuau)*/
-}
-
-#about {
-  margin-top: 87px; /*Prevents About section from overlapping the Hero Section due to addition of #about-anchor div element*/
-  padding-top: 20px;
-}
-
 /*Header Section*/
 #homepage-hero {
   background: url(../images/homepage-hero-image.webp) no-repeat center
@@ -233,6 +221,18 @@ footer #socials {
   padding-top: 40px;
   padding-left: 10px;
   z-index: 100; /*Allows call-to-action to overlap the hero image*/
+}
+
+/*About Section */
+#about-anchor {
+  height: 0.1px;
+  position: relative;
+  margin-top: -87px; /*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected (solution inspired by youtuber and web design tutor @dereksiuau)*/
+}
+
+#about {
+  margin-top: 87px; /*Prevents About section from overlapping the Hero Section due to addition of #about-anchor div element*/
+  padding-top: 20px;
 }
 
 /*Tour Cards Section*/
@@ -976,7 +976,7 @@ textarea:focus {
   #review-cards .third-row {
     min-height: 477.59px;
   }
-  
+
   #review-cards .fourth-row {
     min-height: 446.4px;
   }

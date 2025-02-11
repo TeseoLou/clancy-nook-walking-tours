@@ -26,7 +26,7 @@ _Project Milestone 1_
 #### 4.1. [Core Features](#core-features-41)
 #### 4.2. [Specific Features](#specific-features-42)
 #### 4.3 [Other Features](#other-features-43)
-#### 5. [Bugs](#bugs-5)
+### 5. [Bugs](#bugs-5)
 ### 6. [Testing](#testing-6)
 ### 7. [Deployment](#deployment-7)
 ### 8 [Technologies Used](#technologies-used-8)
@@ -1956,7 +1956,43 @@ In addition to the core and content-specific features, several supplementary sec
 
 During the development process, several bugs and unexpected issues arose, requiring investigation and troubleshooting. Below is a breakdown of the main bugs encountered, their causes, and how they were resolved (or why they couldn’t be fully fixed).
 
-### **Mini Navbar in the Footer** (5.1)
+### **Sticky Navbar Overlapping Page Content** (5.1)
+
+During the development of my website, I wanted the navbar to remain fixed at the top of the screen while scrolling to improve navigation. To achieve this, I used the Bootstrap class fixed-top in my nav element:
+
+However, this introduced an issue:
+- The start of the body content was cut off, hidden beneath the navbar.
+- This happened because the navbar was removed from the normal document flow, causing the rest of the page to ignore its height.
+- This issue was most noticeable on anchor links, as they scrolled to a position that placed sections behind the navbar.
+
+Cause of the Issue
+- The fixed-top class fixes the navbar to the top of the viewport, meaning it no longer occupies space in the document layout.
+- The page content started at the very top, effectively underneath the navbar.
+
+I made the following adjustments:
+1. Move body element down. 
+   - To ensure the body content was fully visible and not hidden by the navbar, I added padding-top: 86px; to the body element, where 86px is the height of the navbar.
+
+This simple fix pushed the content down, ensuring it started below the navbar.
+
+### **Fixing Anchor Link Overlap with Navbar** (5.2)
+
+After setting my navbar to be fixed (fixed-top), I noticed a problem when clicking anchor links (e.g., "About" in the navbar). Instead of scrolling neatly to the section, the page would scroll too far up, hiding the start of the section behind the navbar.
+
+Cause of the Issue:
+- Since the navbar was fixed, it no longer occupied space in the document layout.
+- Clicking an anchor link scrolled the section to the top of the viewport, placing it behind the navbar.
+- The first few lines of content were obscured, making navigation confusing.
+
+To prevent this, I implemented a hidden anchor div that acted as an offset:
+1. Created an empty div element with id="about-anchor" before the About section:
+   - This invisible div serves as a new anchor point for the link.
+2. Updated the navigation link to scroll to #about-anchor instead of #about:
+3. Styled the #about-anchor div to create an offset equal to the navbar height:
+
+This simple but effective trick significantly improved usability and ensured a seamless scrolling experience across my website. This solution was inspired by web design tutor @dereksiuau, whose method of using an offset anchor div provided an elegant and effective approach.
+
+### **Mini Navbar in the Footer** (5.3)
 
 During the development of the website, I implemented a mini navigation bar in the footer to provide quick access to key pages. Initially, this component was structured using a div, but after further evaluation, I recognized that a more semantically accurate approach would be to use the nav element, aligning with accessibility and best practices.
 
@@ -1984,6 +2020,61 @@ I made the following adjustments:
    - The aria-label attributes for each link were checked to confirm that they provided descriptive, screen-reader-friendly navigation.
 
 After implementing these fixes, the mini navbar in the footer correctly displayed in its intended format across all devices, maintained accessibility standards, and functioned smoothly while keeping its original styling.
+
+### **Social Media Icon Height Issue** (5.4)
+
+While working on the footer section, I noticed that the social media icons (Instagram, Facebook, LinkedIn) were not aligning properly with the phone and email icons on the left side. This created a visual inconsistency, making the layout feel unbalanced.
+
+The key issues were:
+- The social media icons were slightly higher than the phone and email icons.
+- The phone and email icons aligned perfectly with the text, while the social media icons did not.
+- The difference was more noticeable on smaller screens, where the misalignment became more pronounced.
+
+After inspecting the CSS and HTML, I found that:
+1. Font Awesome icons have different default sizes and alignment properties, depending on whether they are solid (fa-solid) or brand (fa-brands).
+2. The phone and email icons used fa-lg or fa-xl, which slightly adjusted their vertical alignment with text.
+3. The social media icons were inside anchor elements, which introduced inline styles that modified their positioning.
+4. The default height and margin-bottom values were not the same across the icons, causing them to shift out of alignment.
+
+I made the following adjustments:
+1. Standardized Icon Sizes
+   - I made sure all icons used consistent Font Awesome classes to match their size. 
+2. Applied Explicit CSS Rules
+   - I added the following styles to ensure uniform height (24px), bottom margin (8px) and lafter padding (0):
+3. Aligned Icons Using Flexbox
+   - To further refine alignment, I updated the social media row to use flexbox: display: flex; align-items: center; justify-content: space-between;
+4. Checked for Responsive Behavior
+   - I tested the fix on various screen sizes to make sure the alignment remained consistent across different breakpoints.
+
+The phone, email, and social media icons now align perfectly, the footer section looks visually balanced across all screen sizes and the icons scale correctly, and there is no noticeable misalignment anymore.
+
+### **Creating a Responsive Layout for the About Section** (5.5)
+
+One of the biggest challenges I faced while designing the About section was ensuring that it had a responsive layout that looked good across all screen sizes:
+
+- On smaller screens (mobile and tablets): The layout needed to be vertically stacked, with the image appearing above the text for a natural reading flow.
+- On larger screens (laptops and desktops): The layout needed to be horizontally aligned, with the image on one side and the text + signature on the other side to create a visually balanced structure.
+
+At first, my attempts did not scale properly across devices:
+- The text and image alignment was inconsistent.
+- The image would sometimes overlap the text.
+- The signature positioning felt awkward in some cases.
+
+To resolve these issues, I structured the section using Bootstrap’s grid system for flexible, responsive positioning:
+1. Wrapped everything inside a .row so that Bootstrap automatically handled column layouts:
+   - This ensures responsiveness without needing complex media queries.
+2. Defined column behavior for different screen sizes:
+   - col-12 for mobile: Image and text are stacked vertically.
+   - col-lg-4 for larger screens: Image takes up 4 out of 12 columns, placing it to the side.
+   - col-lg-8 for larger screens: Text takes up 8 out of 12 columns, ensuring alignment next to the image.
+4. Used Bootstrap’s text alignment classes (text-center, text-lg-start, text-end) to control text alignment dynamically:
+   - On mobile screens, the text remains centered.
+   - On larger screens, the text aligns left (text-lg-start) to match the horizontal layout.
+5. Positioned the signature (#signature) correctly using Bootstrap’s flex utilities:
+   - On mobile screens, the signature appears below the text.
+   - On larger screens, the signature is aligned to the right, complementing the horizontal layout.
+
+By making the most of Bootstrap’s grid system and text utilities, I was able to achieve a fully flexible and visually appealing About section without requiring excessive custom CSS.
 
 ## **Testing** (6) 
 
