@@ -3,7 +3,82 @@ _Project Milestone 1_
 
 ![Clancy Nook Walking Tours](docs/images/development-homepage.webp)
 
+# **Contents**
 
+# **Clancy Nook | Walking Tours**  
+
+## **Contents**  
+
+### [Site Overview](#1-site-overview)
+- #### [Project Criteria](#11-project-criteria)  
+- #### [Web Developer Showcase](#12-web-developer-showcase)  
+- #### [Key Goals](#13-key-goals)  
+### [User Experience](#2-user-experience)
+- #### [Strategy](#21-strategy)
+- #### [Scope](#22-strategy)
+- #### [Structure](#23-structure)
+- #### [Skeleton](#24-skeleton)
+- #### [Surface](#25-surface)  
+### [Features](#3-features)
+- #### [Core Features](#31-core-features)
+- #### [Specific Features](#32-specific-features)
+- #### [Other Features](#33-other-features)  
+   - [Booking Guidance Section](#331-booking-guidance-section)
+   - [Review Guidance Section](#332-review-guidance-section)
+### [Process Methodology](#4-process-methodology)
+- #### [Approach](#41-approach)  
+- #### [Initial Setup](#42-initial-setup)  
+- #### [Page Template](#43-page-template)  
+- #### [Workflow](#44-workflow)  
+### [Testing](#5-testing) 
+### [Bugs and Fixes](#6-bugs-and-fixes) 
+- #### [Navbar Overlap](#61-navbar-overlap)  
+- #### [Anchor Link Overlap](#62-anchor-link-overlap)  
+- #### [Mini Navbar](#63-mini-navbar)  
+- #### [Anchored Icon Positioning](#64-anchored-icon-positioning)  
+- #### [Hero Banner Responsiveness](#65-hero-banner-responsiveness)  
+- #### [Call-to-Action Alignment](#66-call-to-action-alignment)  
+- #### [Responsive About Section](#67-responsive-about-section)  
+- #### [Tour Card Heights](#68-tour-card-heights)  
+- #### [Tour Section Title](#69-tour-section-title)  
+- #### [Responsive Card Groups](#610-responsive-card-groups)  
+- #### [Gallery Layout](#611-gallery-layout)  
+- #### [Background Scrolling](#612-background-scrolling)  
+- #### [Form Field Responsiveness](#613-form-field-responsiveness)  
+- #### [Styling Form Inputs](#614-styling-form-inputs)  
+- #### [Conditional Dropdowns](#615-conditional-dropdowns)  
+- #### [Rating Slider](#616-rating-slider)  
+- #### [Hidden Form Labels](#617-hidden-form-labels)  
+- #### [Outcome](#618-outcome)  
+### [Deployment](#7-deployment) 
+### [Future Developments](#8-future-developments)
+- #### [Addressing Lighthouse Performance Insights](#81-lighthouse-performance-insights)  
+- #### [Enhanced Contact Form Functionality](#82-enhanced-contact-form-functionality)  
+- #### [Video Content Integration](#83-video-content-integration)  
+- #### [Downloadable Tour PDFs](#84-downloadable-tour-pdfs)  
+- #### [Forking the Repository and Custom Domain Name](#85-repository-forking-custom-domain)    
+### [Technologies Used](#9-technologies-used)
+- #### [Language Frameworks](#91-language-frameworks)  
+- #### [Development Environments](#92-development-environments)  
+- #### [Code Extensions](#93-code-extensions)  
+- #### [Planning Tools](#94-planning-tools)  
+- #### [Design Tools](#95-design-tools)  
+- #### [Browser Extensions](#96-browser-extensions)  
+- #### [README Tools](#97-readme-tools)  
+- #### [Testing Tools](#98-testing-tools)  
+### [Content Resources](#10-content-resources)
+- #### [Imagery](#101-imagery)  
+- #### [Information Sources](#102-information-sources)  
+- #### [Online Resources](#103-online-resources)  
+- #### [Books](#104-books)  
+- #### [Code Institute Resources](#105-code-institute-resources)  
+### [Individual Credits](#11-individual-credits)
+- #### [Content Creators](#111-content-creators)  
+- #### [Code Snippet Authors](#112-code-snippet-authors)  
+- #### [Testers and Checkers](#113-testers-and-checkers)  
+- #### [Learning Facilitators](#114-learning-facilitators)  
+- #### [Peers](#115-peers)  
+### [Honourable Mentions](#12-honourable-mentions) 
 
 ---
 
@@ -12,7 +87,7 @@ This Website is a responsive, user-focused website designed for **Clancy Nook**,
 
 Visit the deployed site on GitHub [here](https://teseolou.github.io/clancy-nook-walking-tours/index.html).
 
-## **1.2. Project Criteria** 
+## **1.1. Project Criteria** 
 This project is designed to meet the following key requirements:
 1. Create a **static front-end website** of at least 3 pages, or a single scrolling page divided into at least 3 distinct sections.
 2. Incorporate **HTML5** and **CSS3** technologies to structure and style the site.
@@ -21,7 +96,7 @@ This project is designed to meet the following key requirements:
 5. Provide **clear, user-focused content** that fulfils both user and business goals.
 6. Host the project on **GitHub Pages**, with version control via Git and complete documentation in a this README.md file.
 
-## **1.3. Web Developer Showcase** 
+## **1.2. Web Developer Showcase** 
 As a developer in training, this project aims to demonstrate:
 1. Proficiency in HTML5 and CSS3 to create **structured and styled web pages**.
 2. The ability to implement **responsive design principles**, ensuring the site adapts to mobile, tablet, and desktop devices.
@@ -32,7 +107,7 @@ As a developer in training, this project aims to demonstrate:
 7. Use of **validation tools** (e.g., W3C HTML and CSS Validator) to confirm compliance with modern web standards.
 8. Implement **performance analytics tools** such as Lighthouse to optimise the site's performance, accessibility, and adherence to best practices.
 
-## **1.4. Key Goals** 
+## **1.3. Key Goals** 
 The **Clancy Nook** project focuses on achieving the following:
 1. Offer an intuitive, engaging platform for tourists, locals, corporate and community clients to learn about and book walking tours.
 2. Showcase Clancy Nook's expertise and services offered.
@@ -1478,7 +1553,7 @@ The review tiles section showcases customer testimonials to build credibility an
    - The CSS flexbox properties are used to distribute the cards evenly, preventing excessive white space.
 </details>  
 
-### *3.2.6. Form**
+### **3.2.6. Form** 
 
 The contact form allows users to submit inquiries, book tours, or leave reviews. It is designed for ease of use, with dynamic fields appearing based on user selections. The form is structured to be fully responsive.
 
