@@ -23,8 +23,6 @@ _Project Milestone 1_
 - #### [Core Features](#31-core-features)
 - #### [Specific Features](#32-specific-features)
 - #### [Other Features](#33-other-features)  
-   - [Booking Guidance Section](#331-booking-guidance-section)
-   - [Review Guidance Section](#332-review-guidance-section)
 ### [Process Methodology](#4-process-methodology)
 - #### [Approach](#41-approach)  
 - #### [Initial Setup](#42-initial-setup)  
