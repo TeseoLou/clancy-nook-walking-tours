@@ -1,9 +1,9 @@
 /*Google Fonts Import*/
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* CSS Variables */
+/*CSS Variables*/
 :root {
-  --primary-font--: "Montserrat", serif;
+  --primary-font--: "Montserrat", serif; /*Primary Font*/
   --secondary-font--: "IM Fell Double Pica", serif;
   --primary-color--: #f3eed8; /*Cream*/
   --secondary-color--: #2b4a4a; /*Dark Blue*/
@@ -14,10 +14,10 @@
 
 /*Global Styles*/
 body {
-  font-family: var(--primary-font--);
-  color: var(--tertiary-color--);
+  font-family: var(--primary-font--); /*Sets primary font*/
+  color: var(--tertiary-color--); /*Sets text color*/
   padding-top: 86px; /*Prevent Navbar covering top of body*/
-  background-color: var(--primary-color--);
+  background-color: var(--primary-color--); /*Sets the background color*/
   min-height: 100vh; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
   display: flex; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
   flex-direction: column; /*Push Footer to Bottom of Page, solution provided by Nehal Ahmad on DEV*/
@@ -29,9 +29,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--secondary-font--);
-  color: var(--tertiary-color--);
-  text-transform: uppercase;
+  font-family: var(--secondary-font--); /*Sets the font to the secondary font variable*/
+  color: var(--tertiary-color--); /*Applies the tertiary color to all headings*/
+  text-transform: uppercase; /*Converts all heading text to uppercase*/
 }
 
 hr {
@@ -39,69 +39,64 @@ hr {
 }
 
 .section {
-  padding-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 1rem; /*Adds spacing at the top of each section*/
+  margin-bottom: 1rem; /*Adds space below each section*/
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /*Removes the default underline from links*/
 }
 
 .card {
-  border-radius: 0;
+  border-radius: 0; /*Removes rounded corners*/
 }
 
-/* Buttons */
+/*Buttons*/
 .custom-button-light {
-  border: 1px solid var(--secondary-color--);
-  border-radius: 2px;
-  background-color: var(--primary-color--);
-  color: var(--tertiary-color--);
-  width: 9rem;
-  padding: 3px 6px;
-  width: 130px;
-  transition: ease-in-out;
+  border: 1px solid var(--secondary-color--); /*Adds thin border*/
+  border-radius: 2px; /*Slightly rounds the corners*/
+  background-color: var(--primary-color--); /*Sets background color*/
+  color: var(--tertiary-color--); /*Sets text color*/
+  width: 9rem; /*Defines button width*/
+  padding: 3px 6px; /*Adds space inside button*/
+  width: 130px; /*Overrides width to fixed siz*/
+  transition: ease-in-out; /*Smooth transition*/
 }
+
 .custom-button-light:hover {
-  border: 1px solid var(--secondary-color--);
-  border-radius: 2px;
-  background-color: var(--highlight-color-warm--);
-  color: var(--tertiary-color--);
-  width: 9rem;
-  padding: 3px 6px;
-  width: 130px;
-  transition: ease-in-out;
+  background-color: var(--highlight-color-warm--); /*Changes background color on hover*/
+  color: var(--tertiary-color--); /*Keeps text color consistent*/
 }
 
 .custom-button-dark {
-  border: 1px solid var(--secondary-color--);
-  border-radius: 2px;
-  background-color: var(--secondary-color--);
-  font-family: var(--secondary-font--);
-  text-transform: uppercase;
-  color: var(--primary-color--);
-  width: 9rem;
-  padding: 3px 6px;
-  width: 130px;
-  transition: ease-in-out;
+  border: 1px solid var(--secondary-color--); /*Adds a thin border*/
+  border-radius: 2px; /*Slightly rounds corners*/
+  background-color: var(--secondary-color--); /*Sets background to secondary color*/
+  font-family: var(--secondary-font--); /*Applies secondary font*/
+  text-transform: uppercase; /*Converts text to uppercase*/
+  color: var(--primary-color--); /*Sets text color*/
+  width: 9rem; /*Defines button width*/
+  padding: 3px 6px; /*Adds spacing inside the button*/
+  width: 130px; /*Overrides width to a fixed size*/
+  transition: ease-in-out; /*Smooth transition*/
 }
 
 .custom-button-dark:hover {
-  background-color: var(--highlight-color-warm--);
-  transition: background-color 0.3s ease-in-out;
+  background-color: var(--highlight-color-warm--); /*Changes background color on hover*/
+  transition: background-color 0.3s ease-in-out; /*Smooth transition effect*/
 }
 
 /*Navbar Styles*/
 #navbar {
-  background-color: var(--secondary-color--);
-  color: var(--tertiary-color--);
-  box-shadow: 0 5px 10px rgba(36, 36, 36, 0.5);
+  background-color: var(--secondary-color--); /*Sets background color of navbar*/
+  color: var(--tertiary-color--); /*Sets text color*/
+  box-shadow: 0 5px 10px rgba(36, 36, 36, 0.5); /*Adds shadow*/
 }
 
 #navbar .navbar-nav * {
-  font-family: var(--secondary-font--);
-  font-size: 1rem;
-  text-transform: uppercase;
+  font-family: var(--secondary-font--); /*Applies secondary font to all navbar items*/
+  font-size: 1rem; /*Sets a consistent font size*/
+  text-transform: uppercase; /*Converts text to uppercase*/
 }
 
 #navbar .nav-link {
@@ -111,87 +106,86 @@ a {
 }
 
 #navbar .nav-link:hover {
-  text-decoration: underline; /*Accessible feedback from hover*/
+  text-decoration: underline; /*Provides visual feedback on hover for accessibility*/
 }
 
 #navbar .navbar-toggler {
-  border: none;
+  border: none; /*Removes default border from the navbar toggle button*/
 }
 
 #navbar-logo:hover {
   content: url(../images/logo-hover.webp); /*Responsive logo with different colors for feedback*/
-  transition: ease-in-out;
+  transition: ease-in-out; /*Smooth transition effect*/
 }
 
-/*Footer Section*/
+/* Footer Section */
 footer {
-  background-color: rgba(237, 196, 121, 0.6);
-  box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
-  margin-top: auto; /*Push Footer to the Bottom of the Page, solution provided by Nehal Ahmad on DEV*/
-  padding-top: 3px;
+  background-color: rgba(237, 196, 121, 0.6); /*Sets background color */
+  box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1); /*Adds a subtle shadow above footer*/
+  margin-top: auto; /*Pushes the footer to the bottom of the page (Solution by Nehal Ahmad on DEV)*/
+  padding-top: 3px; /*Adds spacing at the top of the footer*/
 }
 
 footer #contact-details {
-  font-size: 12px;
+  font-size: 12px; /*Sets smaller font size*/
 }
 
 footer #direct-contact,
 footer #socials {
-  padding: 0;
+  padding: 0; /*Removes default padding*/
 }
 
-/* Footer Navigation - Mobile First */
+/*Footer Navigation - Mobile First*/
 #footer-navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0 10px 0;
-  border-radius: 12px;
-  padding: 8px 16px;
+  display: flex; /*Enables flexbox*/
+  justify-content: center; /*Centers navigation items horizontally*/
+  align-items: center; /*Aligns items vertically*/
+  margin: 0 0 10px 0; /*Adds bottom margin*/
+  border-radius: 12px; /*Rounds edges of navigation container*/
+  padding: 8px 16px; /*Adds padding inside container*/
 }
 
-/* Navigation Box */
+/*Navigation Box*/
 .footer-nav-box {
-  display: flex;
-  background-color: var(--primary-color--);
-  flex-wrap: nowrap; /* Icons in a single row by default */
-  justify-content: center;
-  gap: 12px;
+  display: flex; /*Uses flexbox*/
+  background-color: var(--primary-color--); /*Sets background color*/
+  flex-wrap: nowrap; /*Ensures icons stay in a single row*/
+  justify-content: center; /*Centers content*/
+  gap: 12px; /*Adds spacing between items*/
 }
 
 #footer-navigation > p {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem; /*Adds space above paragraph*/
+  margin-bottom: 1rem; /*Adds space below paragraph*/
 }
 
-/* Footer Icons */
+/*Footer Icons*/
 .footer-nav-box a {
-  text-decoration: none;
+  text-decoration: none; /*Removes underline from links*/
 }
 
 .footer-nav-icon {
-  color: var(--tertiary-color--);
-  transition: transform 0.2s ease-in-out;
+  color: var(--tertiary-color--); /*Sets icon color*/
+  transition: transform 0.2s ease-in-out; /*Smooth transition effect when interacted with*/
 }
 
-/* Hover Effect */
 .footer-nav-box a:hover .footer-nav-icon {
-  transform: scale(1.2);
+  transform: scale(1.2); /*Enlarges icons slightly on hover*/
 }
 
 #social-media-icons * {
-  height: 24px;
-  margin-bottom: 8px;
-  padding-left: 0;
-  color: var(--tertiary-color--);
+  height: 24px; /*Sets a fixed height*/
+  margin-bottom: 8px; /*Adds spacing below each icon*/
+  padding-left: 0; /*Ensures icons align*/
+  color: var(--tertiary-color--); /*Sets the icon color*/
 }
 
 #social-media-icons a:hover * {
-  transform: scale(1.2);
+  transform: scale(1.2); /*Enlarges social media icons on hover*/
 }
 
 #website-author {
-  margin-left: -11px;
+  margin-left: -11px; /*Adjusts positioning*/
 }
 
 /*Homepage*/
@@ -206,778 +200,785 @@ footer #socials {
 }
 
 #call-to-action {
-  /* Final rgba valye sets the opacity so it is semi-transparent */
+  /*Final rgba value sets the opacity so semi-transparent*/
   background-color: rgba(
     237,
     196,
     121,
     0.75
-  ); /*Transparent call-to-action element for readibility but visible hero image (inspired by Love Running Project)*/
-
-  position: absolute;
-  top: 25%;
-  width: 70%;
-  min-height: 200px;
-  padding-top: 40px;
-  padding-left: 10px;
-  z-index: 100; /*Allows call-to-action to overlap the hero image*/
+  ); /*Creates a semi-transparent background (inspired by Love Running Project)*/
+  position: absolute; /*Positions the call-to-action element over hero image*/
+  top: 25%; /*Places the element 25% from the top of container*/
+  width: 70%; /*Sets the width to 70% of container*/
+  min-height: 200px; /*Ensures minimum height*/
+  padding-top: 40px; /*Adds spacing at the top*/
+  padding-left: 10px; /*Adds left padding for text spacing*/
+  z-index: 100; /*Ensures the call-to-action overlaps the hero image*/
 }
 
-/*About Section */
+/* About Section */
 #about-anchor {
-  height: 0.1px;
-  position: relative;
-  margin-top: -87px; /*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected (solution inspired by youtuber and web design tutor @dereksiuau)*/
+  height: 0.1px; /* Creates a small, nearly invisible anchor point */
+  position: relative; /* Ensures proper positioning for anchor behavior */
+  margin-top: -87px; /* Prevents the navbar from overlapping the About section when the ABOUT anchor is selected (solution inspired by YouTuber and web design tutor @dereksiuau) */
 }
 
 #about {
-  margin-top: 87px; /*Prevents About section from overlapping the Hero Section due to addition of #about-anchor div element*/
-  padding-top: 20px;
+  margin-top: 87px; /* Prevents the About section from overlapping the Hero section due to the addition of the #about-anchor div */
+  padding-top: 20px; /* Adds spacing at the top for better readability */
 }
 
 /*Tour Cards Section*/
 #tour-cards .card {
-  margin: 0.6rem;
-  border: none;
+  margin: 0.6rem; /*Adds spacing around each tour card*/
+  border: none; /*Removes the default card border*/
 }
 
 #tour-cards .card:hover {
-  box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5);
-  transform: scale(1.01);
+  box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5); /*Adds a shadow effect on hover*/
+  transform: scale(1.01); /*Slightly enlarges the card on hover*/
 }
 
 #tour-cards .card-body {
-  background-color: rgba(126, 165, 162, 0.6);
+  background-color: rgba(126, 165, 162, 0.6); /*Sets semi-transparent background color*/
 }
 
 #tour-cards .card-title {
-  color: var(--tertiary-color--);
+  color: var(--tertiary-color--); /*Sets color for card title*/
 }
 
 /*Tours Page*/
 
 /*Header Section*/
 #tours-hero {
-  background: url(../images/tours-hero-image.webp) no-repeat center center/cover; /*Permits a responsive hero image*/
-  position: relative; /*So image crops on different screens instead of resizing*/
-  height: 230px; /*Fixed height to appeal to all screen sizes*/
-  width: auto;
+  background: url(../images/tours-hero-image.webp) no-repeat center center/cover; /*Sets a responsive hero image that covers section*/
+  position: relative; /*Ensures the image crops dynamically on different screens instead of resizing*/
+  height: 230px; /*Sets a fixed height to maintain consistency across screen sizes*/
+  width: auto; /*Allows the width to adjust automatically based on content*/
 }
 
 #title-section {
-  background-color: rgba(237, 196, 121, 0.75);
+  background-color: rgba(237, 196, 121, 0.75); /*Sets semi-transparent background color for the title section */
 }
 
 #tours-call-to-action * {
-  font-family: var(--primary-font--);
-  font-size: 1.1rem;
-  font-weight: 300;
-  text-transform: none;
+  font-family: var(--primary-font--); /*Applies the primary font to all elements inside the section*/
+  font-size: 1.1rem; /*Sets a slightly larger font size*/
+  font-weight: 300; /*Uses a lighter font weight*/
+  text-transform: none; /*Ensures text remains in its original casing*/
 }
 
 /*Booking Guide Section*/
 #booking-guide {
-  background-color: rgb(178, 201, 199);
-  box-shadow: 0px 5px 10px rgba(36, 36, 36, 0.5);
-  width: 100vw;
+  background-color: rgb(178, 201, 199); /*Sets soft background color for section*/
+  box-shadow: 0px 5px 10px rgba(36, 36, 36, 0.5); /*Adds a subtle shadow effect*/
+  width: 100vw; /*Ensures the section spans full width of viewport*/
 }
 
 #booking-guide p,
 #booking-info li {
-  font-size: 14px;
+  font-size: 14px; /*Sets a consistent font size for paragraph and list items*/
 }
 
 #eventbrite-link > img:hover {
-  content: url(../images/eventbrite-logo-hover.webp); /*Responsive logo with different colors for feedback*/
-  transition: ease-in-out;
+  content: url(../images/eventbrite-logo-hover.webp); /*Changes logo on hover*/
+  transition: ease-in-out; /*Applies a smooth transition effect*/
 }
 
-/*Featured Tours Section*/
+/*Tours Sections*/
 #a-tale-of-two-cities-anchor,
 #true-crime-in-ancoats-anchor,
 #stories-of-whalley-range-anchor,
 #private-bookings-anchor {
-  height: 0.1px;
-  position: relative;
-  margin-top: -87px; /*Prevent Navbar from overlapping About Section when ABOUT anchor tag selected (solution inspired by youtuber and web design tutor @dereksiuau)*/
+  height: 0.1px; /*Creates a small anchor point*/
+  position: relative; /*Ensures proper positioning for anchor behavior*/
+  margin-top: -87px; /*Prevents the navbar from overlapping the section when an anchor is selected (solution inspired by YouTuber and web design tutor @dereksiuau)*/
 }
 
 #a-tale-of-two-cities,
 #true-crime-in-ancoats,
 #stories-of-whalley-range,
 #private-bookings {
-  padding-top: 107px;
+  padding-top: 107px; /*Adds spacing to ensure content is properly positioned*/
 }
 
 .featured-tours img {
-  object-fit: scale-down; /*Prevents image strecthing horizontally*/
+  object-fit: scale-down; /*Prevents images stretching horizontally*/
 }
 
 .tour-information .card {
-  background-color: transparent;
-  border: none;
+  background-color: transparent; /*Removes background color from tour cards*/
+  border: none; /*Removes borders for a cleaner look*/
 }
 
 .featured-tours > h2 {
-  font-size: 29px;
+  font-size: 29px; /*Sets larger font size for section headings*/
 }
 
 .tour-information > p {
-  font-size: 14px;
+  font-size: 14px; /*Ensures consistent font size for descriptions*/
 }
 
 .tour-details {
-  font-size: 11px;
-  width: 160px;
+  font-size: 11px; /*Sets a smaller font size for additional tour details*/
+  width: 160px; /*Defines fixed width for tour details*/
 }
 
 #tour-4-details {
-  margin-left: 0px;
+  margin-left: 0px; /*Ensures proper alignment for the fourth tour's details*/
 }
 
 /*Gallery Page*/
 #photos {
-  line-height: 0;
+  line-height: 0; /*Removes extra space between inline-block elements*/
 }
 
 #photos div {
-  margin: 0;
-  padding: 0;
+  margin: 0; /*Removes margin*/
+  padding: 0; /*Removes padding*/
 }
 
 #photos img {
-  width: 100%;
-  line-height: 1em;
-  padding: 0;
-  margin: 0;
+  width: 100%; /*Ensures images take up the full width of container*/
+  line-height: 1em; /*Maintains consistent spacing between images*/
+  padding: 0; /*Removes any internal spacing around images*/
+  margin: 0; /*Ensures images are tightly packed together*/
 }
 
 /*Reviews Page*/
 #reviews-page-background {
   background: url(../images/reviews-page-background-image.webp) no-repeat center
-    center/cover; /*Permits a responsive hero image*/
-  position: relative; /*So image crops on different screens instead of resizing*/
-  background-attachment: fixed; /*So background image remains static while scrolling*/
-  height: 100%; /*Fixed height to appeal to all screen sizes*/
-  width: 100vw;
+    center/cover; /*Ensures the background image is responsive and covers the entire section*/
+  position: relative; /*Allows the image to crop dynamically instead of resizing*/
+  background-attachment: fixed; /*Keeps the background image static while scrolling*/
+  height: 100%; /*Ensures the section maintains a consistent height across all screen sizes*/
+  width: 100vw; /*Makes the section span full viewport width*/
 }
 
 #reviews-title-section {
-  background-color: rgba(237, 196, 121, 0.75);
-  width: 95vw;
-  margin-top: 35px;
+  background-color: rgba(237, 196, 121, 0.75); /*Sets a semi-transparent background color*/
+  width: 95vw; /*Makes the section span 95% of the viewport width*/
+  margin-top: 35px; /*Adds space above the title section*/
 }
 
 #review-cards * {
-  text-align: center;
+  text-align: center; /*Centers text for all elements within review cards*/
 }
 
 #review-cards .card {
-  margin: 0.5rem;
-  box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5);
-  border: none;
-  width: 90vw;
+  margin: 0.5rem; /*Adds spacing around review cards*/
+  box-shadow: 5px 5px 10px rgba(36, 36, 36, 0.5); /*Applies a subtle shadow*/
+  border: none; /*Removes default card borders*/
+  width: 90vw; /*Makes cards span 90% of the viewport width*/
 }
 
 #review-cards .card:hover {
-  box-shadow: 10px 10px 10px rgba(36, 36, 36, 0.5);
-  transform: scale(1.01);
+  box-shadow: 10px 10px 10px rgba(36, 36, 36, 0.5); /*Increases shadow effect on hover*/
+  transform: scale(1.01); /*Slightly enlarges the card*/
 }
 
 #review-cards .review-content {
-  background-color: rgba(126, 165, 162, 0.6);
-  border: 0;
-  border-radius: 0;
-  padding-left: 10px;
-  padding-right: 10px;
+  background-color: rgba(126, 165, 162, 0.6); /*Adds a semi-transparent background*/
+  border: 0; /*Removes borders*/
+  border-radius: 0; /*Keeps sharp corners*/
+  padding-left: 10px; /*Adds padding on the left*/
+  padding-right: 10px; /*Adds padding on the right*/
 }
 
 #review-cards .card-title {
-  font-size: 24px;
-  color: var(--tertiary-color--);
-  padding-left: 10px;
+  font-size: 24px; /* Increases the title font size */
+  color: var(--tertiary-color--); /* Sets the text color */
+  padding-left: 10px; /* Adds spacing inside the card */
   padding-right: 10px;
 }
 
 #review-cards .source,
 #review-cards .date {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 0;
+  padding-top: 10px; /*Adds spacing above source and date*/
+  padding-bottom: 10px; /*Adds spacing below*/
+  margin-bottom: 0; /*Removes extra bottom margin*/
 }
 
 .review-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  font-size: 13px;
+  display: flex; /*Enables flexbox*/
+  flex-direction: column; /*Stacks content vertically*/
+  justify-content: space-between; /*Distributes space evenly inside the review content*/
+  height: 100%; /*Ensures content fills the available height*/
+  font-size: 13px; /*Sets a smaller font size for readability*/
 }
 
 /*Review Guide Section*/
 /*Styling for the review guide container*/
 #review-guide {
-  position: relative;
+  position: relative; /*Positions the section relative to its normal flow*/
   background: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.8) 40%,
     rgba(0, 0, 0, 0) 100%
-  );
-  padding-top: 5px;
-  border-radius: 0px;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 10px;
+  ); /*Creates a fading gradient effect for background*/
+  padding-top: 5px; /*Adds spacing at the top*/
+  border-radius: 0px; /*Keeps sharp edges*/
+  width: 100vw; /*Ensures the section spans the full width of the viewport*/
+  display: flex; /*Uses flexbox for layout*/
+  flex-direction: column; /*Stacks content vertically*/
+  justify-content: flex-end; /*Aligns content towards the bottom*/
+  padding-bottom: 10px; /*Adds spacing at the bottom*/
 }
 
 #review-guide h2 {
-  color: var(--primary-color--);
+  color: var(--primary-color--); /*Sets heading color to primary color*/
 }
 
 #review-guide p {
-  font-size: 18px;
-  color: var(--primary-color--);
+  font-size: 18px; /*Increases font size*/
+  color: var(--primary-color--); /*Sets text color to primary color*/
 }
 
 #tripadvisor-link > img:hover {
-  content: url(../images/trip-advisor-logo-hover.webp); /*Responsive logo with different colors for feedback*/
-  transition: ease-in-out;
-  transform: scale(1.2);
+  content: url(../images/trip-advisor-logo-hover.webp); /*Changes logo on hover*/
+  transition: ease-in-out; /*Applies a smooth transition effect*/
+  transform: scale(1.2); /*Enlarges the logo slightly on hover*/
 }
 
 /*Contact Page*/
 #contact-page-background {
   background: url(../images/contact-page-background-image.webp) no-repeat center
-    center/cover; /*Permits a responsive hero image*/
-  position: relative; /*So image crops on different screens instead of resizing*/
-  background-attachment: fixed; /*So background image remains static while scrolling*/
-  height: 100%; /*Fixed height to appeal to all screen sizes*/
-  width: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 20px;
+    center/cover; /*Ensures a responsive background image that covers section*/
+  position: relative; /*Allows image to crop instead of resizing*/
+  background-attachment: fixed; /*Keeps background image static while scrolling*/
+  height: 100%; /*Ensures the section maintains a consistent height across all screen sizes*/
+  width: auto; /*Allows width to adjust dynamically*/
+  display: flex; /*Enables flexbox*/
+  align-items: center; /*Centers content vertically*/
+  justify-content: center; /*Centers content horizontally*/
+  padding: 50px 20px; /*Adds spacing around content*/
 }
 
 #form-container {
-  background-color: rgba(151, 190, 187, 0.95); /*Semi-transparent background*/
-  padding: 30px;
-  border-radius: 2px;
-  max-width: 70rem;
-  width: 100%;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /*Subtle shadow for depth*/
-  text-align: center;
+  background-color: rgba(151, 190, 187, 0.95); /*Sets semi-transparent background for readability*/
+  padding: 30px; /*Adds internal spacing*/
+  border-radius: 2px; /*Slightly rounds the corners*/
+  max-width: 70rem; /*Restricts maximum width for a balanced layout*/
+  width: 100%; /*Ensures responsiveness*/
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /*Adds a subtle shadow for depth*/
+  text-align: center; /*Centers text content*/
 }
 
-/*Apply gap only on flex parent, not `.box`*/
+/*Apply gap only on flex parent not .box*/
 #contact-form-body {
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /*Enables flexbox*/
+  flex-wrap: wrap; /*Allows wrapping*/
   gap: 1rem; /*Adds spacing between items*/
 }
 
 #contact-form-body .row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem; /*Ensures proper spacing*/
+  display: flex; /*Uses flexbox for rows*/
+  flex-wrap: wrap; /*Ensures form inputs adjust on smaller screens*/
+  gap: 1rem; /*Adds spacing between form elements*/
 }
 
 .input-container {
-  padding: 2px 1px;
-  margin: 0px;
+  padding: 2px 1px; /*Adds slight padding*/
+  margin: 0px; /*Removes default margins*/
 }
+
 /*Ensure consistent styling and spacing*/
 .box {
   width: 100%; /*Makes inputs full width by default*/
-  height: 40px;
-  background-color: var(--primary-color--);
-  border: 1px solid var(--tertiary-color--);
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 14px;
-  box-shadow: inset 0 0 1px 1px #af9f80;
+  height: 40px; /*Sets a uniform height for inputs*/
+  background-color: var(--primary-color--); /*Matches the site's primary color*/
+  border: 1px solid var(--tertiary-color--); /*Defines a clear border*/
+  padding: 10px; /*Adds internal spacing*/
+  border-radius: 5px; /*Softens the edges*/
+  font-size: 14px; /*Sets readable font size*/
+  box-shadow: inset 0 0 1px 1px #af9f80; /*Adds subtle inner shadow for depth*/
 }
 
 textarea {
-  background-color: var(--primary-color--); /*Keeps the same background*/
-  width: 100%;
-  border: 1px solid var(--tertiary-color--);
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
+  background-color: var(--primary-color--); /*Keeps same background as inputs*/
+  width: 100%; /*Ensures full-width resizing*/
+  border: 1px solid var(--tertiary-color--); /*Matches input borders*/
+  padding: 5px 10px; /*Adds spacing*/
+  border-radius: 5px; /*Softens edges*/
+  font-size: 14px; /*Sets font size*/
   resize: vertical; /*Allows vertical resizing*/
-  height: 100px; /*Sets a reasonable default height*/
-  box-shadow: inset 0 0 1px 1px #af9f80;
-  margin: 5px 1px;
+  height: 100px; /*Sets reasonable default height*/
+  box-shadow: inset 0 0 1px 1px #af9f80; /*Adds inner shadow*/
+  margin: 5px 1px; /*Provides spacing*/
 }
 
 .box:focus,
 textarea:focus {
-  background-color: #efd59f; /*Highlights input when focused*/
-  outline: #3c331c;
+  background-color: #efd59f; /*Highlights input*/
+  outline: #3c331c; /*Ensures clear focus indication*/
 }
 
 .hidden {
-  display: none !important; /*Ensures it is completely removed when toggled*/
+  display: none !important; /*Completely hides elements when toggled*/
 }
 
 #tour-options {
-  display: flex; /*Enables inline layout */
-  flex-wrap: wrap;
-  text-align: start;
-  align-items: center; /*Aligns radio buttons and labels on the same line and buttons are the same size*/
-  justify-content: flex-start;
-  margin: 5px 0;
-  padding: 0;
+  display: flex; /* Enables a flexible inline layout */
+  flex-wrap: wrap; /* Allows items to wrap onto a new line if needed */
+  text-align: start; /* Aligns text to the left */
+  align-items: center; /* Aligns radio buttons and labels on the same line */
+  justify-content: flex-start; /* Aligns items to the start of the container */
+  margin: 5px 0; /* Adds vertical spacing */
+  padding: 0; /* Removes default padding */
 }
 
 #tour-options label {
-  margin: 0px; /*Ensures space between labels*/
-  font-size: 12.5px;
+  margin: 0px; /* Ensures consistent spacing between labels */
+  font-size: 12.5px; /* Sets a standard font size */
 }
 
 .radio-container {
-  display: flex;
-  align-items: center;
-  gap: 8px; /*Space between radio button and label*/
-  padding: 0 0 0 4px;
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Aligns radio buttons and labels */
+  gap: 8px; /* Adds spacing between the radio button and label */
+  padding: 0 0 0 4px; /* Adds left padding */
 }
 
 .radio-container input[type="radio"] {
-  appearance: none;
-  width: 15px;
-  height: 15px;
-  border: 1px solid var(--tertiary-color--);
-  border-radius: 50%;
-  position: relative;
-  cursor: pointer;
-  background: var(--primary-color--);
+  appearance: none; /* Removes default styling */
+  width: 15px; /* Sets the width of the radio button */
+  height: 15px; /* Sets the height */
+  border: 1px solid var(--tertiary-color--); /* Adds a border */
+  border-radius: 50%; /* Makes the radio button circular */
+  position: relative; /* Ensures correct positioning */
+  cursor: pointer; /* Changes cursor to indicate interactivity */
+  background: var(--primary-color--); /* Sets background color */
 }
 
 .radio-container input[type="radio"]:checked::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background-color: var(--secondary-color--);
-  border-radius: 50%;
-  position: absolute;
+  content: ""; /* Adds a checkmark effect */
+  width: 8px; /* Sets width of selected dot */
+  height: 8px; /* Sets height */
+  background-color: var(--secondary-color--); /* Sets color of selected radio button */
+  border-radius: 50%; /* Keeps the shape circular */
+  position: absolute; /* Positions dot in center */
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /* Centers the dot */
 }
 
 /*Centers Range Slider and Labels*/
 #review-options {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  padding-left: 30px;
-  font-size: 13px;
+  display: flex; /*Uses flexbox*/
+  flex-direction: column; /*Stacks items vertically*/
+  align-items: center; /*Centers items*/
+  justify-content: center; /*Aligns content centrally*/
+  text-align: center; /*Centers text*/
+  width: 100%; /*Sets full width*/
+  padding-left: 30px; /*Adds left padding*/
+  font-size: 13px; /*Sets font size*/
 }
 
 /*Container for Range Slider*/
 .range-container {
-  position: relative;
-  width: 250px;
+  position: relative; /*Ensures correct placement of elements*/
+  width: 250px; /*Sets fixed width*/
 }
 
-/*Range Slider */
+/*Range Slider*/
 #rating {
-  appearance: none; /* Standard property for all browsers */
-  -webkit-appearance: none; /* Chrome, Safari */
-  -moz-appearance: none; /* Firefox */
-  width: 112%;
-  height: 6px;
-  background: var(--highlight-color-warm--);
-  outline: none;
-  border-radius: 5px;
-  position: relative;
-  margin-bottom: 20px;
-  cursor: pointer;
+  appearance: none; /*Removes default styling*/
+  -webkit-appearance: none; /*Chrome, Safari*/
+  -moz-appearance: none; /*Firefox*/
+  width: 112%; /*Ensures full width*/
+  height: 6px; /*Sets slider thickness*/
+  background: var(--highlight-color-warm--); /*Sets background color*/
+  outline: none; /*Removes default outline*/
+  border-radius: 5px; /*Rounds edges*/
+  position: relative; /*Positions correctly*/
+  margin-bottom: 20px; /*Adds space below*/
+  cursor: pointer; /*Indicates interactivity*/
 }
 
-/*For WebKit browsers*/
+/*Styles for WebKit browsers*/
 #rating::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 35px;
+  width: 35px; /*Sets size of thumb*/
   height: 35px;
-  background: transparent;
-  cursor: pointer;
+  background: transparent; /*Makes the thumb transparent*/
+  cursor: pointer; /*Indicates interactivity*/
 }
 
-/*Firefox*/
+/* Styles for Firefox */
 #rating::-moz-range-thumb {
-  width: 35px;
+  width: 35px; /*Sets size of thumb*/
   height: 35px;
-  background: transparent;
-  cursor: pointer;
+  background: transparent; /*Makes the thumb transparent*/
+  cursor: pointer; /*Indicates interactivity*/
 }
 
 /*Style for the Font Awesome star*/
 .star-icon {
-  position: absolute;
-  font-size: 20px;
-  color: var(--secondary-color--);
-  pointer-events: none; /*Prevents interference*/
+  position: absolute; /*Positions the star correctly*/
+  font-size: 20px; /*Sets size of icon*/
+  color: var(--secondary-color--); /*Sets color*/
+  pointer-events: none; /*Prevents interference with user input*/
   top: 0px;
   left: 0;
-  transition: transform 0.2s ease-in-out;
-  z-index: 1;
-  margin-left: -7px;
+  transition: transform 0.2s ease-in-out; /*Adds smooth scaling effect*/
+  z-index: 1; /*Ensures the star is above other elements*/
+  margin-left: -7px; /*Adjusts positioning*/
 }
 
 /*Scale Numbers*/
 .range-scale {
-  display: flex;
-  justify-content: space-between;
-  width: 112%;
-  font-size: 15px;
-  color: var(--tertiary-color--);
-  margin-top: -10px;
+  display: flex; /*Uses flexbox*/
+  justify-content: space-between; /*Spreads numbers evenly*/
+  width: 112%; /*Ensures proper alignment*/
+  font-size: 15px; /*Sets font size*/
+  color: var(--tertiary-color--); /*Sets text color*/
+  margin-top: -10px; /*Adjusts spacing*/
 }
 
 .file-upload-container {
-  padding-left: 30px;
-  display: flex;
-  justify-content: center;
+  padding-left: 30px; /*Adds left padding*/
+  display: flex; /*Uses flexbox*/
+  justify-content: center; /*Centers content*/
 }
 
 #review-options label[for="review-image"] {
   margin: 0px auto; /*Centers horizontally*/
-  text-align: center;
-  width: inherit;
+  text-align: center; /*Centers text*/
+  width: inherit; /*Maintains container width*/
 }
 
 #review-image {
-  justify-self: center;
-  font-size: 11px;
-  position: relative;
-  width: 180px;
+  justify-self: center; /*Centers image*/
+  font-size: 11px; /*Sets font size*/
+  position: relative; /*Ensures correct positioning*/
+  width: 180px; /*Sets fixed width*/
+  margin-bottom: 10px; /*Adds spacing below*/
 }
 
-#review-image {
-  margin-bottom: 10px;
-}
 .file-upload-container {
-  padding-left: 40px;
-  margin-left: -7px;
+  padding-left: 40px; /*Adds left padding*/
+  margin-left: -7px; /*Adjusts alignment*/
 }
 
 /*Success Page*/
 #success-image:hover {
-  content: url(../images/success-image-hover.webp); /*Responsive image for feedback*/
-  transition: ease-in-out;
+  content: url(../images/success-image-hover.webp); /*Changes image on hover*/
+  transition: ease-in-out; /*Smooth transition effect*/
 }
 
-/*Error Page*/
+/* Error Page */
 #error-image:hover {
-  content: url(../images/404-image-hover.webp); /*Responsive image for feedback*/
-  transition: ease-in-out;
+  content: url(../images/404-image-hover.webp); /*Changes image on hover*/
+  transition: ease-in-out; /*Smooth transition effect*/
 }
 
-/*Media queries*/
+/*Media Queries*/
 /*Plus Size Phones (Large Phones 375px and up)*/
 @media screen and (min-width: 375px) {
   .star-icon {
-    font-size: 24px;
-    margin-left: -2px;
+    font-size: 24px; /*Increases icon size for better visibility*/
+    margin-left: -2px; /*Adjusts positioning for better alignment*/
   }
 }
 
-/*Media queries*/
-/*Small devaices or landscape phones (small tablets 575px and up)*/
+/*Small devices or landscape phones (small tablets 575px and up)*/
 @media screen and (min-width: 575px) {
+  /*Review Page*/
   #review-cards .card {
-    width: 517.79px;
+    width: 517.79px; /*Sets a fixed width for review cards on larger screens*/
   }
+
   /*Contact Page*/
   #contact-page-background {
     background: url(../images/contact-page-background-image-medium.webp)
-      no-repeat center center/cover; /*Permits a responsive hero image*/
-    position: relative; /*So image crops on different screens instead of resizing*/
-    background-attachment: fixed; /*So background image remains static while scrolling*/
-    height: auto; /*Fixed height to appeal to all screen sizes*/
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
+      no-repeat center center/cover; /*Uses a different background image for medium screens*/
+    position: relative; /*Ensures the image crops dynamically rather than resizing*/
+    background-attachment: fixed; /*Keeps the background image static while scrolling*/
+    height: auto; /*Allows the height to adjust based on content*/
+    width: 100%; /*Ensures the section spans the full width of the screen*/
+    display: flex; /*Uses flexbox*/
+    align-items: center; /*Centers content vertically*/
+    justify-content: center; /*Centers content horizontally*/
+    padding: 50px 20px; /*Adds spacing*/
   }
 }
 
-/* Medium devices (tablets 768px and up)*/
+/*Medium devices (tablets 768px and up)*/
 @media screen and (min-width: 768px) {
+  
+  /*Homepage*/
   #signature {
-    width: 180px;
+    width: 180px; /*Increases the signature image size*/
   }
 
   #tour-cards .card-body {
-    min-height: 222px;
+    min-height: 222px; /*Ensures a consistent height for card content*/
   }
 
   #footer-navigation {
-    height: 120px;
-    width: 80px;
-    margin-top: 34px;
-    border-radius: 2px;
+    height: 120px; /*Adjusts footer navigation height*/
+    width: 80px; /*Sets a fixed width*/
+    margin-top: 34px; /*Adds spacing above the footer navigation*/
+    border-radius: 2px; /*Rounds corners slightly*/
   }
 
   .footer-nav-box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 16px;
-    width: 90px; /* Keeps it compact */
+    display: grid; /*Uses a grid layout*/
+    grid-template-columns: repeat(2, 1fr); /*Creates 2 equal columns*/
+    gap: 16px; /*Adds spacing between elements*/
+    width: 90px; /*Keeps navigation compact*/
   }
 
   footer #nav-buttons {
-    padding-top: 8px;
+    padding-top: 8px; /*Adds spacing above the navigation buttons*/
   }
 
   footer #contact-details {
-    font-size: 13px;
+    font-size: 13px; /*Increases font size*/
   }
 
+  /* Tours Page */
   .featured-tours > h2 {
-    font-size: 32px;
+    font-size: 32px; /*Increases heading size*/
   }
 
   .featured-tours img {
-    object-fit: initial; /*Prevents image strecthing horizontally*/
+    object-fit: initial; /*Prevents images from stretching horizontally*/
   }
 
+  /* Reviews Page */
   #reviews-page-background {
     background: url(../images/reviews-page-background-image-medium.webp)
-      no-repeat center center/cover; /*Permits a responsive hero image*/
-    background-attachment: fixed; /*So background image remains static while scrolling*/
-    position: relative; /*So image crops on different screens instead of resizing*/
-    height: 100%; /*Fixed height to appeal to all screen sizes*/
+      no-repeat center center/cover; /*Uses a different background image for medium screens*/
+    background-attachment: fixed; /*Keeps background image static while scrolling*/
+    position: relative; /*Ensures image crops dynamically instead of resizing*/
+    height: 100%; /*Ensures full height*/
   }
 
   #review-cards .card-title {
-    font-size: 25px;
+    font-size: 25px; /*Increases font size for review card titles*/
   }
 
   .review-content {
-    font-size: 14px;
+    font-size: 14px; /*Adjusts font size*/
   }
 
   #review-cards .card {
-    width: 340px;
+    width: 340px; /*Sets a fixed width for review cards*/
   }
 
+  /*Contact Page*/
   .star-icon {
-    font-size: 27px;
-    margin-left: 0;
+    font-size: 27px; /*Enlarges star icons*/
+    margin-left: 0; /*Aligns star icon properly*/
   }
 }
 
 /*Large devices (laptops 992px and up)*/
 @media screen and (min-width: 992px) {
+  /*Homepage*/
   #signature {
-    width: 200px;
+    width: 200px; /*Increases size of signature*/
   }
 
   #tour-cards .card-body {
-    min-height: 321px;
+    min-height: 321px; /*Ensures consistent height for tour card content*/
   }
 
+  /*Tours Page*/
   .carousel-item img {
-    object-fit: scale-down; /*Prevents image strecthing horizontally*/
+    object-fit: scale-down; /*Prevents images from stretching horizontally in the carousel*/
   }
 
   .tour-information {
-    align-content: start;
+    align-content: start; /*Aligns content to the start of container*/
   }
 
   #tour-1-info > h2 {
-    margin-inline-start: -400px;
-    font-size: 34px;
-    height: 40px;
+    margin-inline-start: -400px; /*Adjusts title positioning*/
+    font-size: 34px; /*Increases heading font size*/
+    height: 40px; /*Sets fixed height for alignment*/
   }
 
   #tour-2-info > h2 {
-    margin-inline-start: 453px;
-    font-size: 34px;
-    height: 40px;
+    margin-inline-start: 453px; /*Positions title further to the right*/
+    font-size: 34px; /*Matches heading size*/
+    height: 40px; /*Sets a fixed height*/
   }
 
   .tour-information > p {
-    margin-bottom: 6px;
-    align-self: flex-start;
+    margin-bottom: 6px; /*Adds spacing below tour information text*/
+    align-self: flex-start; /*Aligns paragraph text to the top*/
   }
 
   #tour-2-details {
-    margin-left: 60px;
+    margin-left: 60px; /*Adjusts left margin*/
   }
 
   #tour-3-info > h2 {
-    margin-inline-start: -400px;
-    font-size: 34px;
-    height: 40px;
-    white-space: nowrap; /*Keep title all on one line*/
+    margin-inline-start: -400px; /*Moves heading left for better alignment*/
+    font-size: 34px; /*Ensures consistency in heading size*/
+    height: 40px; /*Sets a fixed height*/
+    white-space: nowrap; /*Prevents title from wrapping onto multiple lines*/
   }
 
   #private-bookings-title > h2 {
-    margin-inline-end: -403px;
-    font-size: 34px;
-    height: 40px;
-    text-align: end;
+    margin-inline-end: -403px; /*Aligns title to right*/
+    font-size: 34px; /*Ensures consistency in heading size*/
+    height: 40px; /*Sets a fixed height*/
+    text-align: end; /*Aligns text to right*/
   }
 
   #tour-4-details {
-    margin-left: 4px;
+    margin-left: 4px; /*Fine-tunes alignment*/
   }
 
   #booking-info #private-booking-contact-button {
-    margin-right: 50px;
+    margin-right: 50px; /*Adds spacing to the right of the private booking button*/
   }
 
+  /*Reviews Page*/
   #review-cards .card-title {
-    font-size: 26px;
+    font-size: 26px; /*Increases the review card title font size*/
   }
 
   .review-content {
-    font-size: 14px;
+    font-size: 14px; /*Ensures readability for review content*/
   }
 
   #review-cards .card {
-    width: 302.4px;
+    width: 302.4px; /*Adjusts width of review cards*/
   }
 
   #review-cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /*Enables flexbox*/
+    flex-wrap: wrap; /*Ensures responsiveness by wrapping cards onto new lines*/
   }
 }
 
 /*Larger devices (large laptops 1085px and up)*/
 @media screen and (min-width: 1085px) {
   #tour-cards .card-body {
-    min-height: 331px;
+    min-height: 331px; /*Ensures consistent height for tour card content*/
   }
 }
 
 /*Extra Large devices (desktops 1200px and up)*/
 @media screen and (min-width: 1200px) {
   #tour-cards .card-body {
-    min-height: 276px;
+    min-height: 276px; /*Adjusts tour card height for better layout*/
   }
 
   #footer-navigation {
-    margin-top: 24px;
+    margin-top: 24px; /*Adjusts spacing for footer navigation*/
   }
 
   #booking-info #private-booking-contact-button {
-    margin-right: 80px;
-    margin-top: -42px;
+    margin-right: 80px; /*Moves button further to right*/
+    margin-top: -42px; /*Adjusts vertical positioning*/
   }
 
   .tour-information {
-    height: 275.6px;
+    height: 275.6px; /*Sets a fixed height*/
   }
 
   #tour-1-info > h2,
   #tour-2-info > h2,
   #tour-3-info > h2 {
-    margin-inline-start: auto;
-    margin-bottom: 8px;
-    font-size: 38px;
-    margin-left: 0;
+    margin-inline-start: auto; /*Centers headings*/
+    margin-bottom: 8px; /*Adds space below headings*/
+    font-size: 38px; /*Increases heading font size*/
+    margin-left: 0; /*Ensures alignment*/
   }
 
   #tour-2-info > h2 {
-    justify-content: end;
+    justify-content: end; /*Aligns heading to right*/
   }
 
   #tour-2-details {
-    margin-left: 108px;
+    margin-left: 108px; /*Adjusts spacing*/
   }
 
   #private-bookings-title > h2 {
-    margin-inline-end: -3px;
-    font-size: 38px;
-    height: 40px;
+    margin-inline-end: -3px; /*Adjusts positioning*/
+    font-size: 38px; /*Increases heading font size*/
+    height: 40px; /*Sets a fixed height*/
   }
 
   #review-cards .card-title {
-    font-size: 27px;
+    font-size: 27px; /*Increases review card title size*/
   }
 
   .review-content {
-    font-size: 15px;
+    font-size: 15px; /*Adjusts review content font size*/
   }
 
   #review-cards .card {
-    width: 360px;
+    width: 360px; /*Adjusts review card width*/
   }
 }
 
-/*Extra Extra Large devices (large desktops 1400px and up)*/
+/* Extra Extra Large devices (large desktops 1400px and up) */
 @media screen and (min-width: 1400px) {
   #tour-cards .card-body {
-    min-height: 252px;
+    min-height: 252px; /*Reduces height of tour card body*/
   }
 
   #booking-info #private-booking-contact-button {
-    margin-right: 110px;
-    margin-top: -42px;
+    margin-right: 110px; /*Moves button further to right*/
+    margin-top: -42px; /*Adjusts vertical positioning*/
   }
   
   .tour-information {
-    height: 321.44px;
+    height: 321.44px; /*Increases tour information section height*/
   }
 
   #tour-1-info > h2,
   #tour-2-info > h2 {
-    margin-bottom: 8px;
-    font-size: 44px;
+    margin-bottom: 8px; /*Adds spacing below headings*/
+    font-size: 44px; /*Increases heading font size*/
   }
 
   .tour-information > p {
-    font-size: 17px;
+    font-size: 17px; /*Adjusts font size*/
   }
 
   #tour-2-details {
-    margin-left: 152px;
+    margin-left: 152px; /*Adjusts spacing for tour details*/
   }
 
   #tour-4-info > h2 {
-    margin-inline-start: 274px;
-    font-size: 44px;
-    height: 40px;
+    margin-inline-start: 274px; /*Adjusts positioning of heading*/
+    font-size: 44px; /*Increases font size*/
+    height: 40px; /*Sets fixed height*/
   }
 
   #review-cards .card-title {
-    font-size: 28px;
+    font-size: 28px; /*Increases review card title size*/
   }
 
   .review-content {
-    font-size: 16px;
+    font-size: 16px; /*Adjusts review content font size*/
   }
 
   #review-cards .card {
-    width: 420px;
+    width: 420px; /*Expands width of review cards*/
   }
 
   #review-cards .first-row {
-    min-height: 424px;
+    min-height: 424px; /*Ensures uniform height for first-row cards*/
   }
 
   #review-cards .second-row {
-    min-height: 573.59px;
+    min-height: 573.59px; /*Ensures uniform height for second-row cards*/
   }
 
   #review-cards .third-row {
-    min-height: 477.59px;
+    min-height: 477.59px; /*Ensures uniform height for third-row cards*/
   }
 
   #review-cards .fourth-row {
-    min-height: 446.4px;
+    min-height: 446.4px; /*Ensures uniform height for fourth-row cards*/
   }
 }

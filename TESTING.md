@@ -1,9 +1,8 @@
-# **Testing** (5)
+# **5. Testing**
 
 Testing is a crucial phase in web development that ensures the functionality, usability, and overall performance of a website. This document covers various aspects of manual testing, including responsiveness, browser compatibility, user stories and features. Automated testing was also used to ensure code quality, with HTML and CSS validators checking adherence to web standards. Website performance and SEO was evaluated, while accessibility testing ensured compliance with standards for an inclusive user experience.
 
-## **Manual Testing** (5.1)
-
+## **5.1. Manual Testing** 
 Manual testing was a critical part of the Clancy Nook Project, ensuring that all features functioned correctly and provided a seamless user experience. Testing was conducted throughout the entire development process, incorporating real-time adjustments and refinements.
 
 A combination of DevTools and BrowserStack was used to conduct thorough testing:
@@ -14,7 +13,7 @@ A combination of DevTools and BrowserStack was used to conduct thorough testing:
 
 3. Regular deployment through _GitHub_ allowed for frequent testing iterations, making it easier to catch and address issues early in the development process.
 
-### **Responsiveness**
+### **5.1.1. Responsiveness**
 
 To ensure that the website adapts properly across different screen sizes and devices, manual testing was conducted using available physical devices at the time, including smartphones, tablets, and desktops, as well as _DevTools_ in modern web browsers. 
 
@@ -40,7 +39,7 @@ The table below presents the results of the responsiveness testing, detailing ho
 
 ![Page Responsiveness on Desktop](docs/images/manual-testing-responsiveness-desktop.webp)
 
-### **Browser Compatibility**
+### **5.1.2. Browser Compatibility**
 
 To ensure the website functions and appears consistently across different web browsers, manual and automated testing was conducted. This process involved testing on physical devices, as well as using a trial of _BrowserStack_, a cloud-based testing platform that allows for compatibility testing across a wide range of browsers, including versions not available on local machines.
 
@@ -70,7 +69,7 @@ The table below presents the results of the browser compatibility testing, detai
 
 ![Browser Compatibility on Desktop](docs/images/cross-browser-compatability.webp)
 
-### **User Stories**
+### **5.1.3. User Stories**
 
 To validate that the website meets user needs, a user stories testing phase was conducted. The user stories which had been addressed and their corresponding acceptance criteria had been developed throughout the project using GitHub's issue tracking system to ensure a structured approach.
 
@@ -143,7 +142,12 @@ The results of the user stories testing are documented in the table below, showi
 |                                                                                                                                           |        |Each icon is clickable and links to the relevant Clancy Nook social media pages, opening in a new tab.                                                                                                                                       |✔           |
 |                                                                                                                                           |        |A call-to-action message encourages users to follow and share their experiences, such as "Follow us for updates and share your stories!"                                                                                                     |✔           |
 
-### **Features Testing**
+Explanation of Colors:   
+- 🔴 **Must-Have (Red)** → Critical to the website’s function & user experience   
+- 🟡 **Should-Have (Yellow)** → Important enhancements but not vital for MVP   
+- 🟢 **Could-Have (Green)** → Nice-to-have features   
+
+### **5.1.4. Features Testing**
 
 Due to the scale of the website and the number of interactive elements, feature testing was conducted manually, primarily by myself. This allowed for a thorough and detailed review of each component, ensuring functionality, responsiveness, and consistency.
 
@@ -264,7 +268,7 @@ The following table summarizes the expected outcomes, testing performed, and res
 |               |The home button should change color on hover.                                                                       |Hovered over the home button.                                               |The button changes color on hover, indicating interactivity.                              |✔        |
 |               |Clicking the home button should navigate users back to the homepage.                                                |Clicked on the home button.                                                 |The button successfully redirects users to the homepage.                                  |✔        |
 
-## **Automated Testing** (5.2)
+## **5.2. Automated Testing** 
 
 Throughout the development process, a range of Chrome extensions were utilized to continuously evaluate and refine various aspects of the website, ensuring it met performance, accessibility, and SEO best practices. These tools provided real-time feedback, allowing for incremental improvements during development.
 
@@ -276,7 +280,7 @@ Throughout the development process, a range of Chrome extensions were utilized t
 
 4. _Pesticide_ was for debugging layout structures, Pesticide provided a visual outline of all elements on the page, making it easier to detect spacing issues and unintended overlaps in the site’s design.
 
-### **HTML Validation**
+### **5.2.1. HTML Validation**
 
 To ensure the accuracy and compliance of the HTML code across the deployed website, the _World Wide Web Consortium_ (W3C) Nu HTML Checker was utilized as the primary validation tool. Each page’s HTML code was rigorously tested multiple times through the validator, which proved invaluable during the testing phase.
 
@@ -302,7 +306,7 @@ After identifying and addressing all issues flagged by the validator, all pages 
 
 ![W3C HTML Validator Result Error Page](docs/images/html-validator-error.webp)
 
-### **CSS Validation**
+### **5.2.2. CSS Validation**
 
 To ensure the stylesheets adhered to web standards and best practices, the _World Wide Web Consortium_ (W3C) CSS Validator was utilized. The stylesheet was put through the validation process and successfully passed at CSS Level 3 + SVG, confirming its compliance with modern CSS specifications
 
@@ -321,11 +325,11 @@ While the validation process did not identify any errors, several warnings were 
 
 Despite these warnings, they do not impact the validity of the CSS.
 
-### **Lighthouse Auditing**
+### **5.2.3. Lighthouse Auditing**
 
 To ensure optimal performance, accessibility, adherence to best practices, and SEO compliance, all webpages were thoroughly analyzed using Google Lighthouse. This auditing tool was run in both mobile and desktop modes to evaluate how the website performs across different devices and environments.
 
-#### **Performance**
+#### **5.2.3.a. Performance**
 
 Homepage
 
@@ -532,7 +536,7 @@ Despite these high score, several diagnostics were flagged:
     - The browser flagged an issue where the 404 page couldn’t be stored in the back/forward cache, making navigation slower.
     - The issue was flagged because only pages with a 2XX status code can be cached, which isn’t applicable to a 404 page.
 
-#### **Usability and Optimization**
+#### **5.2.3.b. Usability and Optimization**
 
 In addition to performance testing, the website was also analyzed for Accessibility, Best Practices, and SEO using Google's Lighthouse tool. Each of these categories evaluates different aspects of the site to ensure it is user-friendly, follows web standards, and is optimized for search engines.
 
@@ -562,7 +566,7 @@ The 404 page received a 96% rating for Best Practices, slightly below the perfec
 
 ![Lighthouse Error Page Result](docs/images/lighthouse-test-error-desktop.webp)
 
-#### **Accessibility**
+### **5.2.4. Accessibility**
 
 In addition to Lighthouse testing, I conducted an Accessibility Analysis using _AccessibilityChecker_ to ensure my website adheres to key accessibility standards. This audit evaluates how well the site meets recognized guidelines, including:
 
@@ -596,6 +600,6 @@ Site pages successfully passed a wide range of accessibility checks across three
 | user-scalable="no" is not used in the meta name="viewport" element, and maximum-scale is not less than 5 | ✔ |
 | Background and foreground colors have a sufficient contrast ratio | ✔ |
 
-## **Bugs and Fixes** (6)
+# **6. Bugs and Fixes** 
 
 For a detailed breakdown of bugs encountered and their resolutions throughout the development process, please proceed to the next section in the [README.md](README.md). This section provides insights into the challenges faced and how they were resolved to ensure a smooth user experience.

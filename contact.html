@@ -67,35 +67,31 @@
             <!--Contact Form submits data to "success.html" using the GET method-->
             <form action="success.html" method="GET" id="contact-form-body" class="container-fluid w-100 d-flex justify-content-center align-content-center">
                 <div class="row w-100 d-flex flex-wrap justify-content-between">
-                    <!-- Forename & Surname-->
+                    <!--Forename & Surname-->
                     <div class="input-container col-12 col-md-5 col-lg-3">
                         <label for="forename" class="visually-hidden-focusable">Forename:</label>
                         <input type="text" id="forename" name="forename" class="box" placeholder="Forename*" required>
                     </div>
-            
                     <div class="input-container col-12 col-md-5 col-lg-3">
                         <label for="surname" class="visually-hidden-focusable">Surname:</label>
                         <input type="text" id="surname" name="surname" class="box" placeholder="Surname*" required>
                     </div>
-            
-                    <!-- Email-->
+                    <!--Email-->
                     <div class="input-container col-12 col-lg-5">
                         <label for="email" class="visually-hidden-focusable">Email:</label>
                         <input type="email" id="email" name="email" class="box" placeholder="Email Address*" required>
                     </div>
-            
-                    <!-- Phone Number & Pronouns (30% each at md) -->
+                    <!--Phone Number-->
                     <div class="input-container col-12 col-md-4 col-lg-3">
                         <label for="phone" class="visually-hidden-focusable">Phone Number:</label>
                         <input type="tel" id="phone" name="phone" class="box" placeholder="Phone Number">
                     </div>
-            
+                    <!--Pronouns-->
                     <div class="input-container col-12 col-md-4 col-lg-3">
                         <label for="pronouns" class="visually-hidden-focusable">Pronouns:</label>
                         <input type="text" id="pronouns" name="pronouns" class="box" placeholder="Pronouns">
                     </div>
-            
-                    <!-- Message Subject (60%) & Tour Options (40%) -->
+                    <!--Message Subject-->
                     <div class="input-container col-12 col-md-7">
                         <label for="subject" class="visually-hidden-focusable">Message Subject:</label>
                         <select id="subject" name="subject" class="box" required>
@@ -107,7 +103,7 @@
                             <option value="other">Other</option>
                         </select>
                     </div>
-            
+                    <!--Choose a Tour-->
                     <div id="tour-options" class="hidden col-12 col-md-5 row">
                         <label class="col-12">Select a Tour:</label>
                         <div class="radio-container col-12">
@@ -123,14 +119,14 @@
                             <label for="whalley">Stories of Whalley Range</label>
                         </div>
                     </div>
-                    <!-- Conditional Fields for Reviews -->
+                    <!--Conditional Fields for Reviews-->
                     <div id="review-options" class="hidden col-12 row w-100">
                         <label for="rating">Rate Your Experience (1-5)</label> 
                         <div class="range-container">
-                            <!-- Font Awesome Star (Positioned Above the Slider) -->
+                            <!--Font Awesome Star (Positioned Above the Slider)-->
                             <i class="fas fa-star star-icon"></i>
                             <input type="range" id="rating" name="rating" min="1" max="5">
-                            <!-- Scale Below Slider -->
+                            <!--Scale Below Slider-->
                             <div class="range-scale d-flex justify-content-between">
                                 <span>1</span>
                                 <span>2</span>
@@ -140,17 +136,17 @@
                             </div>
                         </div>
                         <label for="review-image">Upload an Image (JPEG/PNG)</label>
-                        <!-- File Input Container -->
+                        <!--File Input Container-->
                         <div class="file-upload-container">
                             <input type="file" id="review-image" name="review-image" accept="image/jpeg, image/png" class="custom-file-input">
                         </div>
                     </div>
-                    <!-- Message -->
+                    <!--Message-->
                     <div class="input-container col-12">
                         <label for="message" class="visually-hidden-focusable">Your Message (Required):</label>
                         <textarea id="message" name="message" rows="5"></textarea>
                     </div>
-                    <!-- Submit Button -->
+                    <!--Submit Button-->
                     <div class="col-12">
                         <button type="submit" class="custom-button-dark my-3">Submit</button>
                     </div>
